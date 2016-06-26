@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CA0C7241D1FAC4E001EDC89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C7231D1FAC4E001EDC89 /* main.m */; };
+		4CA0C7271D1FAC4E001EDC89 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C7261D1FAC4E001EDC89 /* AppDelegate.m */; };
+		4CA0C72A1D1FAC4E001EDC89 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C7291D1FAC4E001EDC89 /* ViewController.m */; };
+		4CA0C72D1D1FAC4E001EDC89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA0C72B1D1FAC4E001EDC89 /* Main.storyboard */; };
+		4CA0C72F1D1FAC4E001EDC89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA0C72E1D1FAC4E001EDC89 /* Assets.xcassets */; };
+		4CA0C7321D1FAC4E001EDC89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA0C7301D1FAC4E001EDC89 /* LaunchScreen.storyboard */; };
+		4CA0C73D1D1FAC4F001EDC89 /* BabySleepTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C73C1D1FAC4F001EDC89 /* BabySleepTests.m */; };
+		4CA0C7481D1FAC4F001EDC89 /* BabySleepUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C7471D1FAC4F001EDC89 /* BabySleepUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CA0C7391D1FAC4F001EDC89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CA0C7171D1FAC4E001EDC89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CA0C71E1D1FAC4E001EDC89;
+			remoteInfo = BabySleep;
+		};
+		4CA0C7441D1FAC4F001EDC89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CA0C7171D1FAC4E001EDC89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CA0C71E1D1FAC4E001EDC89;
+			remoteInfo = BabySleep;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4CA0C71F1D1FAC4E001EDC89 /* BabySleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabySleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CA0C7231D1FAC4E001EDC89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CA0C7251D1FAC4E001EDC89 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4CA0C7261D1FAC4E001EDC89 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4CA0C7281D1FAC4E001EDC89 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4CA0C7291D1FAC4E001EDC89 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4CA0C72C1D1FAC4E001EDC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4CA0C72E1D1FAC4E001EDC89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CA0C7311D1FAC4E001EDC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4CA0C7331D1FAC4E001EDC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CA0C7381D1FAC4F001EDC89 /* BabySleepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabySleepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CA0C73C1D1FAC4F001EDC89 /* BabySleepTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BabySleepTests.m; sourceTree = "<group>"; };
+		4CA0C73E1D1FAC4F001EDC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CA0C7431D1FAC4F001EDC89 /* BabySleepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabySleepUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CA0C7471D1FAC4F001EDC89 /* BabySleepUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BabySleepUITests.m; sourceTree = "<group>"; };
+		4CA0C7491D1FAC4F001EDC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CA0C71C1D1FAC4E001EDC89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CA0C7351D1FAC4F001EDC89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CA0C7401D1FAC4F001EDC89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CA0C7161D1FAC4E001EDC89 = {
+			isa = PBXGroup;
+			children = (
+				4CA0C7211D1FAC4E001EDC89 /* BabySleep */,
+				4CA0C73B1D1FAC4F001EDC89 /* BabySleepTests */,
+				4CA0C7461D1FAC4F001EDC89 /* BabySleepUITests */,
+				4CA0C7201D1FAC4E001EDC89 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CA0C7201D1FAC4E001EDC89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CA0C71F1D1FAC4E001EDC89 /* BabySleep.app */,
+				4CA0C7381D1FAC4F001EDC89 /* BabySleepTests.xctest */,
+				4CA0C7431D1FAC4F001EDC89 /* BabySleepUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CA0C7211D1FAC4E001EDC89 /* BabySleep */ = {
+			isa = PBXGroup;
+			children = (
+				4CA0C7251D1FAC4E001EDC89 /* AppDelegate.h */,
+				4CA0C7261D1FAC4E001EDC89 /* AppDelegate.m */,
+				4CA0C7281D1FAC4E001EDC89 /* ViewController.h */,
+				4CA0C7291D1FAC4E001EDC89 /* ViewController.m */,
+				4CA0C72B1D1FAC4E001EDC89 /* Main.storyboard */,
+				4CA0C72E1D1FAC4E001EDC89 /* Assets.xcassets */,
+				4CA0C7301D1FAC4E001EDC89 /* LaunchScreen.storyboard */,
+				4CA0C7331D1FAC4E001EDC89 /* Info.plist */,
+				4CA0C7221D1FAC4E001EDC89 /* Supporting Files */,
+			);
+			path = BabySleep;
+			sourceTree = "<group>";
+		};
+		4CA0C7221D1FAC4E001EDC89 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CA0C7231D1FAC4E001EDC89 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CA0C73B1D1FAC4F001EDC89 /* BabySleepTests */ = {
+			isa = PBXGroup;
+			children = (
+				4CA0C73C1D1FAC4F001EDC89 /* BabySleepTests.m */,
+				4CA0C73E1D1FAC4F001EDC89 /* Info.plist */,
+			);
+			path = BabySleepTests;
+			sourceTree = "<group>";
+		};
+		4CA0C7461D1FAC4F001EDC89 /* BabySleepUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4CA0C7471D1FAC4F001EDC89 /* BabySleepUITests.m */,
+				4CA0C7491D1FAC4F001EDC89 /* Info.plist */,
+			);
+			path = BabySleepUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CA0C71E1D1FAC4E001EDC89 /* BabySleep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CA0C74C1D1FAC4F001EDC89 /* Build configuration list for PBXNativeTarget "BabySleep" */;
+			buildPhases = (
+				4CA0C71B1D1FAC4E001EDC89 /* Sources */,
+				4CA0C71C1D1FAC4E001EDC89 /* Frameworks */,
+				4CA0C71D1D1FAC4E001EDC89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BabySleep;
+			productName = BabySleep;
+			productReference = 4CA0C71F1D1FAC4E001EDC89 /* BabySleep.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4CA0C7371D1FAC4F001EDC89 /* BabySleepTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CA0C74F1D1FAC4F001EDC89 /* Build configuration list for PBXNativeTarget "BabySleepTests" */;
+			buildPhases = (
+				4CA0C7341D1FAC4F001EDC89 /* Sources */,
+				4CA0C7351D1FAC4F001EDC89 /* Frameworks */,
+				4CA0C7361D1FAC4F001EDC89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CA0C73A1D1FAC4F001EDC89 /* PBXTargetDependency */,
+			);
+			name = BabySleepTests;
+			productName = BabySleepTests;
+			productReference = 4CA0C7381D1FAC4F001EDC89 /* BabySleepTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4CA0C7421D1FAC4F001EDC89 /* BabySleepUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CA0C7521D1FAC4F001EDC89 /* Build configuration list for PBXNativeTarget "BabySleepUITests" */;
+			buildPhases = (
+				4CA0C73F1D1FAC4F001EDC89 /* Sources */,
+				4CA0C7401D1FAC4F001EDC89 /* Frameworks */,
+				4CA0C7411D1FAC4F001EDC89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CA0C7451D1FAC4F001EDC89 /* PBXTargetDependency */,
+			);
+			name = BabySleepUITests;
+			productName = BabySleepUITests;
+			productReference = 4CA0C7431D1FAC4F001EDC89 /* BabySleepUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CA0C7171D1FAC4E001EDC89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Michael;
+				TargetAttributes = {
+					4CA0C71E1D1FAC4E001EDC89 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					4CA0C7371D1FAC4F001EDC89 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 4CA0C71E1D1FAC4E001EDC89;
+					};
+					4CA0C7421D1FAC4F001EDC89 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 4CA0C71E1D1FAC4E001EDC89;
+					};
+				};
+			};
+			buildConfigurationList = 4CA0C71A1D1FAC4E001EDC89 /* Build configuration list for PBXProject "BabySleep" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4CA0C7161D1FAC4E001EDC89;
+			productRefGroup = 4CA0C7201D1FAC4E001EDC89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CA0C71E1D1FAC4E001EDC89 /* BabySleep */,
+				4CA0C7371D1FAC4F001EDC89 /* BabySleepTests */,
+				4CA0C7421D1FAC4F001EDC89 /* BabySleepUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CA0C71D1D1FAC4E001EDC89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CA0C7321D1FAC4E001EDC89 /* LaunchScreen.storyboard in Resources */,
+				4CA0C72F1D1FAC4E001EDC89 /* Assets.xcassets in Resources */,
+				4CA0C72D1D1FAC4E001EDC89 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CA0C7361D1FAC4F001EDC89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CA0C7411D1FAC4F001EDC89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CA0C71B1D1FAC4E001EDC89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CA0C72A1D1FAC4E001EDC89 /* ViewController.m in Sources */,
+				4CA0C7271D1FAC4E001EDC89 /* AppDelegate.m in Sources */,
+				4CA0C7241D1FAC4E001EDC89 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CA0C7341D1FAC4F001EDC89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CA0C73D1D1FAC4F001EDC89 /* BabySleepTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CA0C73F1D1FAC4F001EDC89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CA0C7481D1FAC4F001EDC89 /* BabySleepUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CA0C73A1D1FAC4F001EDC89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CA0C71E1D1FAC4E001EDC89 /* BabySleep */;
+			targetProxy = 4CA0C7391D1FAC4F001EDC89 /* PBXContainerItemProxy */;
+		};
+		4CA0C7451D1FAC4F001EDC89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CA0C71E1D1FAC4E001EDC89 /* BabySleep */;
+			targetProxy = 4CA0C7441D1FAC4F001EDC89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4CA0C72B1D1FAC4E001EDC89 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CA0C72C1D1FAC4E001EDC89 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4CA0C7301D1FAC4E001EDC89 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CA0C7311D1FAC4E001EDC89 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CA0C74A1D1FAC4F001EDC89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4CA0C74B1D1FAC4F001EDC89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CA0C74D1D1FAC4F001EDC89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BabySleep/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.babysleep.BabySleep;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4CA0C74E1D1FAC4F001EDC89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BabySleep/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.babysleep.BabySleep;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4CA0C7501D1FAC4F001EDC89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BabySleepTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.babysleep.BabySleepTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BabySleep.app/BabySleep";
+			};
+			name = Debug;
+		};
+		4CA0C7511D1FAC4F001EDC89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BabySleepTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.babysleep.BabySleepTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BabySleep.app/BabySleep";
+			};
+			name = Release;
+		};
+		4CA0C7531D1FAC4F001EDC89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BabySleepUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.babysleep.BabySleepUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BabySleep;
+			};
+			name = Debug;
+		};
+		4CA0C7541D1FAC4F001EDC89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BabySleepUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.babysleep.BabySleepUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BabySleep;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CA0C71A1D1FAC4E001EDC89 /* Build configuration list for PBXProject "BabySleep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CA0C74A1D1FAC4F001EDC89 /* Debug */,
+				4CA0C74B1D1FAC4F001EDC89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CA0C74C1D1FAC4F001EDC89 /* Build configuration list for PBXNativeTarget "BabySleep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CA0C74D1D1FAC4F001EDC89 /* Debug */,
+				4CA0C74E1D1FAC4F001EDC89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4CA0C74F1D1FAC4F001EDC89 /* Build configuration list for PBXNativeTarget "BabySleepTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CA0C7501D1FAC4F001EDC89 /* Debug */,
+				4CA0C7511D1FAC4F001EDC89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4CA0C7521D1FAC4F001EDC89 /* Build configuration list for PBXNativeTarget "BabySleepUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CA0C7531D1FAC4F001EDC89 /* Debug */,
+				4CA0C7541D1FAC4F001EDC89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CA0C7171D1FAC4E001EDC89 /* Project object */;
+}
