@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 
+#import "SliderViewController.h"
+
+#import "LeftViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +21,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+    [SliderViewController sharedSliderController].mainVCClassName = @"ViewController";
+    
+    [SliderViewController sharedSliderController].LeftVC=[[LeftViewController alloc] init];
+    [SliderViewController sharedSliderController].RightVC=[[UIViewController alloc] init];
+    
+    UINavigationController *controller = [[UINavigationController alloc] initWithRootViewController:[SliderViewController sharedSliderController]];
+    
+    self.window.rootViewController = controller;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 
