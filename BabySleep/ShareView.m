@@ -19,7 +19,7 @@
         self.layer.cornerRadius = CGRectGetWidth(frame) * 0.5;
         self.backgroundColor = color;
         
-        UILabel *label = [[UILabel alloc] initWithFrame:frame];
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(frame), CGRectGetHeight(frame))];
         label.font = [UIFont systemFontOfSize:24];
         label.textColor = HexRGB(0x1688D2);
         label.textAlignment = NSTextAlignmentCenter;

@@ -53,16 +53,22 @@
     pengyouquan.delagate = self;
     [self.view addSubview:pengyouquan];
     
-    ShareView *weibo = [[ShareView alloc] initWithFrame:CGRectMake(CGRectGetMinX(weixin.frame) + 94, 334, 140, 140) Name:@"微博" Color:HexRGB(0xFAD4B2)];
+    ShareView *weibo = [[ShareView alloc] initWithFrame:CGRectMake(CGRectGetMaxX(weixin.frame) + 85 - 140, 334, 140, 140) Name:@"微博" Color:HexRGB(0xFAD4B2)];
     weibo.tag = TABLEVIEW_BEGIN_TAG + 2;
     weibo.delagate = self;
     [self.view addSubview:weibo];
-
 }
 
 - (void)clickAction:(NSInteger)tag
 {
-    
+    switch (tag) {
+        case TABLEVIEW_BEGIN_TAG:
+            
+            break;
+            
+        default:
+            break;
+    }
 }
 
 - (void)goBack

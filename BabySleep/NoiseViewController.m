@@ -43,6 +43,7 @@
     
     UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(22, 106, SCREENWIDTH - 22 * 2, SCREENHEIGHT - 106)];
     textView.editable = NO;
+    textView.backgroundColor = [UIColor clearColor];
     textView.showsVerticalScrollIndicator = NO;
     textView.showsHorizontalScrollIndicator = NO;
     textView.textColor = HexRGB(0x5B7B90);

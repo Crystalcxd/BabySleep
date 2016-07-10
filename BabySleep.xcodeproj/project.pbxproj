@@ -15,6 +15,12 @@
 		4CA0C7321D1FAC4E001EDC89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA0C7301D1FAC4E001EDC89 /* LaunchScreen.storyboard */; };
 		4CA0C73D1D1FAC4F001EDC89 /* BabySleepTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C73C1D1FAC4F001EDC89 /* BabySleepTests.m */; };
 		4CA0C7481D1FAC4F001EDC89 /* BabySleepUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C7471D1FAC4F001EDC89 /* BabySleepUITests.m */; };
+		4CA8344B1D30DB48007543B5 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA834471D30DB48007543B5 /* libWeChatSDK.a */; };
+		4CA8344D1D30DB78007543B5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA8344C1D30DB78007543B5 /* SystemConfiguration.framework */; };
+		4CA8344F1D30DB86007543B5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA8344E1D30DB86007543B5 /* libz.tbd */; };
+		4CA834511D30DB9B007543B5 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA834501D30DB9B007543B5 /* libsqlite3.0.tbd */; };
+		4CA834531D30DBAB007543B5 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA834521D30DBAB007543B5 /* libc++.tbd */; };
+		4CA834551D30DDC0007543B5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA834541D30DDC0007543B5 /* CoreTelephony.framework */; };
 		4CE52F991D28CAD9009576C6 /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52F981D28CAD9009576C6 /* SliderViewController.m */; };
 		4CE52FA21D28CB12009576C6 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52F9E1D28CB12009576C6 /* Utility.m */; };
 		4CE52FA31D28CB12009576C6 /* WMUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52FA01D28CB12009576C6 /* WMUserDefault.m */; };
@@ -69,6 +75,15 @@
 		4CA0C7431D1FAC4F001EDC89 /* BabySleepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabySleepUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA0C7471D1FAC4F001EDC89 /* BabySleepUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BabySleepUITests.m; sourceTree = "<group>"; };
 		4CA0C7491D1FAC4F001EDC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CA834471D30DB48007543B5 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		4CA834481D30DB48007543B5 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		4CA834491D30DB48007543B5 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		4CA8344A1D30DB48007543B5 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		4CA8344C1D30DB78007543B5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4CA8344E1D30DB86007543B5 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4CA834501D30DB9B007543B5 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		4CA834521D30DBAB007543B5 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		4CA834541D30DDC0007543B5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		4CE52F971D28CAD9009576C6 /* SliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderViewController.h; sourceTree = "<group>"; };
 		4CE52F981D28CAD9009576C6 /* SliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderViewController.m; sourceTree = "<group>"; };
 		4CE52F9D1D28CB12009576C6 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
@@ -102,6 +117,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA834551D30DDC0007543B5 /* CoreTelephony.framework in Frameworks */,
+				4CA834531D30DBAB007543B5 /* libc++.tbd in Frameworks */,
+				4CA834511D30DB9B007543B5 /* libsqlite3.0.tbd in Frameworks */,
+				4CA8344F1D30DB86007543B5 /* libz.tbd in Frameworks */,
+				4CA8344D1D30DB78007543B5 /* SystemConfiguration.framework in Frameworks */,
+				4CA8344B1D30DB48007543B5 /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +146,11 @@
 		4CA0C7161D1FAC4E001EDC89 = {
 			isa = PBXGroup;
 			children = (
+				4CA834541D30DDC0007543B5 /* CoreTelephony.framework */,
+				4CA834521D30DBAB007543B5 /* libc++.tbd */,
+				4CA834501D30DB9B007543B5 /* libsqlite3.0.tbd */,
+				4CA8344E1D30DB86007543B5 /* libz.tbd */,
+				4CA8344C1D30DB78007543B5 /* SystemConfiguration.framework */,
 				4CA0C7211D1FAC4E001EDC89 /* BabySleep */,
 				4CA0C73B1D1FAC4F001EDC89 /* BabySleepTests */,
 				4CA0C7461D1FAC4F001EDC89 /* BabySleepUITests */,
@@ -145,6 +171,7 @@
 		4CA0C7211D1FAC4E001EDC89 /* BabySleep */ = {
 			isa = PBXGroup;
 			children = (
+				4CA834461D30DB48007543B5 /* open source */,
 				4CE52F9A1D28CB12009576C6 /* Utility */,
 				4CE52F961D28CAD9009576C6 /* SliderViewController */,
 				4CA0C7251D1FAC4E001EDC89 /* AppDelegate.h */,
@@ -195,6 +222,17 @@
 				4CA0C7491D1FAC4F001EDC89 /* Info.plist */,
 			);
 			path = BabySleepUITests;
+			sourceTree = "<group>";
+		};
+		4CA834461D30DB48007543B5 /* open source */ = {
+			isa = PBXGroup;
+			children = (
+				4CA834471D30DB48007543B5 /* libWeChatSDK.a */,
+				4CA834481D30DB48007543B5 /* WechatAuthSDK.h */,
+				4CA834491D30DB48007543B5 /* WXApi.h */,
+				4CA8344A1D30DB48007543B5 /* WXApiObject.h */,
+			);
+			path = "open source";
 			sourceTree = "<group>";
 		};
 		4CE52F961D28CAD9009576C6 /* SliderViewController */ = {
@@ -547,6 +585,11 @@
 				INFOPLIST_FILE = BabySleep/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BabySleep/open",
+					source,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.michael.babysleep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -562,6 +605,11 @@
 				INFOPLIST_FILE = BabySleep/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BabySleep/open",
+					source,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.michael.babysleep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

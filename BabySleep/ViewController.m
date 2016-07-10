@@ -14,6 +14,8 @@
 
 @interface ViewController ()
 
+@property (nonatomic , strong) UIButton *playBtn;
+
 @end
 
 @implementation ViewController
@@ -34,7 +36,15 @@
     [rightBtn addTarget:self action:@selector(share) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:rightBtn];
 
+    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 27, SCREENWIDTH, 25)];
+    title.textColor = HexRGB(0x1688D2);
+    title.textAlignment = NSTextAlignmentCenter;
+    title.text = @"宝贝快睡";
+    title.font = [UIFont systemFontOfSize:18];
+    [self.view addSubview:title];
     
+    self.playBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.playBtn.frame = CGRectMake(SCREENWIDTH * 0.5 - 39, SCREENHEIGHT - , <#CGFloat width#>, <#CGFloat height#>)
 }
 
 -(void)goMenuView

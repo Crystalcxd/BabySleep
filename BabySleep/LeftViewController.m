@@ -49,7 +49,7 @@
         imageView.image = [UIImage imageNamed:imgStr];
         [self.view addSubview:imageView];
         
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(imageView.frame), CGRectGetMinY(imageView.frame) - 8, 200, 28)];
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(imageView.frame) + 13, CGRectGetMinY(imageView.frame) - 8, 200, 28)];
         label.font = [UIFont systemFontOfSize:20];
         label.textColor = HexRGB(0xFFFFFF);
         label.text = titleArr[i];
