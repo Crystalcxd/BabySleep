@@ -21,6 +21,8 @@
 		4CA834511D30DB9B007543B5 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA834501D30DB9B007543B5 /* libsqlite3.0.tbd */; };
 		4CA834531D30DBAB007543B5 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA834521D30DBAB007543B5 /* libc++.tbd */; };
 		4CA834551D30DDC0007543B5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA834541D30DDC0007543B5 /* CoreTelephony.framework */; };
+		4CAE50891D3550A4009FE262 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE50881D3550A4009FE262 /* Images.xcassets */; };
+		4CAE508B1D3552AB009FE262 /* adx2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE508A1D3552AB009FE262 /* adx2@2x.png */; };
 		4CE52F991D28CAD9009576C6 /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52F981D28CAD9009576C6 /* SliderViewController.m */; };
 		4CE52FA21D28CB12009576C6 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52F9E1D28CB12009576C6 /* Utility.m */; };
 		4CE52FA31D28CB12009576C6 /* WMUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52FA01D28CB12009576C6 /* WMUserDefault.m */; };
@@ -84,6 +86,8 @@
 		4CA834501D30DB9B007543B5 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		4CA834521D30DBAB007543B5 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		4CA834541D30DDC0007543B5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		4CAE50881D3550A4009FE262 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4CAE508A1D3552AB009FE262 /* adx2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adx2@2x.png"; sourceTree = "<group>"; };
 		4CE52F971D28CAD9009576C6 /* SliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderViewController.h; sourceTree = "<group>"; };
 		4CE52F981D28CAD9009576C6 /* SliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderViewController.m; sourceTree = "<group>"; };
 		4CE52F9D1D28CB12009576C6 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
@@ -192,6 +196,7 @@
 				4CA0C72E1D1FAC4E001EDC89 /* Assets.xcassets */,
 				4CA0C7301D1FAC4E001EDC89 /* LaunchScreen.storyboard */,
 				4CA0C7331D1FAC4E001EDC89 /* Info.plist */,
+				4CAE50881D3550A4009FE262 /* Images.xcassets */,
 				4CA0C7221D1FAC4E001EDC89 /* Supporting Files */,
 			);
 			path = BabySleep;
@@ -279,6 +284,7 @@
 		A4FEA12E1D2B559900FB7FE0 /* pic */ = {
 			isa = PBXGroup;
 			children = (
+				4CAE508A1D3552AB009FE262 /* adx2@2x.png */,
 				A4FEA12F1D2B559900FB7FE0 /* baby@2x.png */,
 				A4FEA1301D2B559900FB7FE0 /* cleaner@2x.png */,
 				A4FEA1311D2B559900FB7FE0 /* girl@2x.png */,
@@ -401,6 +407,8 @@
 				A4FEA1381D2B559900FB7FE0 /* whitenoise.mp3 in Resources */,
 				4CA0C72F1D1FAC4E001EDC89 /* Assets.xcassets in Resources */,
 				A4FEA13B1D2B559900FB7FE0 /* girl@2x.png in Resources */,
+				4CAE50891D3550A4009FE262 /* Images.xcassets in Resources */,
+				4CAE508B1D3552AB009FE262 /* adx2@2x.png in Resources */,
 				A4FEA1351D2B559900FB7FE0 /* cleaner.mp3 in Resources */,
 				A4FEA1371D2B559900FB7FE0 /* hairdryer.mp3 in Resources */,
 				A4FEA13A1D2B559900FB7FE0 /* cleaner@2x.png in Resources */,
@@ -580,6 +588,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BabySleep/Info.plist;
@@ -600,6 +609,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BabySleep/Info.plist;
