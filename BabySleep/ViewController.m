@@ -44,7 +44,7 @@
     [self.view addSubview:title];
     
     self.playBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.playBtn.frame = CGRectMake(SCREENWIDTH * 0.5 - 39, SCREENHEIGHT - , <#CGFloat width#>, <#CGFloat height#>)
+    self.playBtn.frame = CGRectMake(SCREENWIDTH * 0.5 - 39, SCREENHEIGHT - 200, 78, 78);
 }
 
 -(void)goMenuView
