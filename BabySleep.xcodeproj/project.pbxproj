@@ -15,7 +15,6 @@
 		4CA0C7321D1FAC4E001EDC89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA0C7301D1FAC4E001EDC89 /* LaunchScreen.storyboard */; };
 		4CA0C73D1D1FAC4F001EDC89 /* BabySleepTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C73C1D1FAC4F001EDC89 /* BabySleepTests.m */; };
 		4CA0C7481D1FAC4F001EDC89 /* BabySleepUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C7471D1FAC4F001EDC89 /* BabySleepUITests.m */; };
-		4CA8344B1D30DB48007543B5 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA834471D30DB48007543B5 /* libWeChatSDK.a */; };
 		4CA8344D1D30DB78007543B5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA8344C1D30DB78007543B5 /* SystemConfiguration.framework */; };
 		4CA8344F1D30DB86007543B5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA8344E1D30DB86007543B5 /* libz.tbd */; };
 		4CA834511D30DB9B007543B5 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA834501D30DB9B007543B5 /* libsqlite3.0.tbd */; };
@@ -23,6 +22,11 @@
 		4CA834551D30DDC0007543B5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA834541D30DDC0007543B5 /* CoreTelephony.framework */; };
 		4CAE50891D3550A4009FE262 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE50881D3550A4009FE262 /* Images.xcassets */; };
 		4CAE508B1D3552AB009FE262 /* adx2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE508A1D3552AB009FE262 /* adx2@2x.png */; };
+		4CAE508D1D368312009FE262 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAE508C1D368312009FE262 /* libWeChatSDK.a */; };
+		4CAE50921D368FC5009FE262 /* MptTableHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE508F1D368FC5009FE262 /* MptTableHeadCell.m */; };
+		4CAE50931D368FC5009FE262 /* MptTableHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE50911D368FC5009FE262 /* MptTableHeadView.m */; };
+		4CAE50971D369057009FE262 /* MptPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE50961D369057009FE262 /* MptPageControl.m */; };
+		4CAE509A1D369419009FE262 /* CartoonHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE50991D369419009FE262 /* CartoonHeadView.m */; };
 		4CE52F991D28CAD9009576C6 /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52F981D28CAD9009576C6 /* SliderViewController.m */; };
 		4CE52FA21D28CB12009576C6 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52F9E1D28CB12009576C6 /* Utility.m */; };
 		4CE52FA31D28CB12009576C6 /* WMUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52FA01D28CB12009576C6 /* WMUserDefault.m */; };
@@ -77,7 +81,6 @@
 		4CA0C7431D1FAC4F001EDC89 /* BabySleepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabySleepUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA0C7471D1FAC4F001EDC89 /* BabySleepUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BabySleepUITests.m; sourceTree = "<group>"; };
 		4CA0C7491D1FAC4F001EDC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CA834471D30DB48007543B5 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		4CA834481D30DB48007543B5 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
 		4CA834491D30DB48007543B5 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		4CA8344A1D30DB48007543B5 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
@@ -88,6 +91,16 @@
 		4CA834541D30DDC0007543B5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		4CAE50881D3550A4009FE262 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4CAE508A1D3552AB009FE262 /* adx2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adx2@2x.png"; sourceTree = "<group>"; };
+		4CAE508C1D368312009FE262 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		4CAE508E1D368FC5009FE262 /* MptTableHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MptTableHeadCell.h; sourceTree = "<group>"; };
+		4CAE508F1D368FC5009FE262 /* MptTableHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MptTableHeadCell.m; sourceTree = "<group>"; };
+		4CAE50901D368FC5009FE262 /* MptTableHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MptTableHeadView.h; sourceTree = "<group>"; };
+		4CAE50911D368FC5009FE262 /* MptTableHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MptTableHeadView.m; sourceTree = "<group>"; };
+		4CAE50941D36901E009FE262 /* WMMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMacro.h; sourceTree = "<group>"; };
+		4CAE50951D369057009FE262 /* MptPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MptPageControl.h; sourceTree = "<group>"; };
+		4CAE50961D369057009FE262 /* MptPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MptPageControl.m; sourceTree = "<group>"; };
+		4CAE50981D369419009FE262 /* CartoonHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartoonHeadView.h; sourceTree = "<group>"; };
+		4CAE50991D369419009FE262 /* CartoonHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartoonHeadView.m; sourceTree = "<group>"; };
 		4CE52F971D28CAD9009576C6 /* SliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderViewController.h; sourceTree = "<group>"; };
 		4CE52F981D28CAD9009576C6 /* SliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderViewController.m; sourceTree = "<group>"; };
 		4CE52F9D1D28CB12009576C6 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
@@ -123,10 +136,10 @@
 			files = (
 				4CA834551D30DDC0007543B5 /* CoreTelephony.framework in Frameworks */,
 				4CA834531D30DBAB007543B5 /* libc++.tbd in Frameworks */,
+				4CAE508D1D368312009FE262 /* libWeChatSDK.a in Frameworks */,
 				4CA834511D30DB9B007543B5 /* libsqlite3.0.tbd in Frameworks */,
 				4CA8344F1D30DB86007543B5 /* libz.tbd in Frameworks */,
 				4CA8344D1D30DB78007543B5 /* SystemConfiguration.framework in Frameworks */,
-				4CA8344B1D30DB48007543B5 /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +201,14 @@
 				A4FEA13F1D2B990200FB7FE0 /* NoiseViewController.m */,
 				A42349B41D2CAD9E009A5ECC /* ShareViewController.h */,
 				A42349B51D2CAD9E009A5ECC /* ShareViewController.m */,
+				4CAE508E1D368FC5009FE262 /* MptTableHeadCell.h */,
+				4CAE508F1D368FC5009FE262 /* MptTableHeadCell.m */,
+				4CAE50901D368FC5009FE262 /* MptTableHeadView.h */,
+				4CAE50911D368FC5009FE262 /* MptTableHeadView.m */,
+				4CAE50951D369057009FE262 /* MptPageControl.h */,
+				4CAE50961D369057009FE262 /* MptPageControl.m */,
+				4CAE50981D369419009FE262 /* CartoonHeadView.h */,
+				4CAE50991D369419009FE262 /* CartoonHeadView.m */,
 				A42349B11D2C9F46009A5ECC /* TFLargerHitButton.h */,
 				A42349B21D2C9F46009A5ECC /* TFLargerHitButton.m */,
 				A42349B71D2CF1CA009A5ECC /* ShareView.h */,
@@ -232,7 +253,7 @@
 		4CA834461D30DB48007543B5 /* open source */ = {
 			isa = PBXGroup;
 			children = (
-				4CA834471D30DB48007543B5 /* libWeChatSDK.a */,
+				4CAE508C1D368312009FE262 /* libWeChatSDK.a */,
 				4CA834481D30DB48007543B5 /* WechatAuthSDK.h */,
 				4CA834491D30DB48007543B5 /* WXApi.h */,
 				4CA8344A1D30DB48007543B5 /* WXApiObject.h */,
@@ -254,6 +275,7 @@
 			children = (
 				4CE52F9D1D28CB12009576C6 /* Utility.h */,
 				4CE52F9E1D28CB12009576C6 /* Utility.m */,
+				4CAE50941D36901E009FE262 /* WMMacro.h */,
 				4CE52F9F1D28CB12009576C6 /* WMUserDefault.h */,
 				4CE52FA01D28CB12009576C6 /* WMUserDefault.m */,
 			);
@@ -272,11 +294,11 @@
 		A4FEA1281D2B559900FB7FE0 /* music */ = {
 			isa = PBXGroup;
 			children = (
-				A4FEA1291D2B559900FB7FE0 /* audio.mp3 */,
+				A4FEA12D1D2B559900FB7FE0 /* whitenoise.mp3 */,
 				A4FEA12A1D2B559900FB7FE0 /* cleaner.mp3 */,
 				A4FEA12B1D2B559900FB7FE0 /* girl.mp3 */,
 				A4FEA12C1D2B559900FB7FE0 /* hairdryer.mp3 */,
-				A4FEA12D1D2B559900FB7FE0 /* whitenoise.mp3 */,
+				A4FEA1291D2B559900FB7FE0 /* audio.mp3 */,
 			);
 			path = music;
 			sourceTree = "<group>";
@@ -437,10 +459,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CAE509A1D369419009FE262 /* CartoonHeadView.m in Sources */,
+				4CAE50931D368FC5009FE262 /* MptTableHeadView.m in Sources */,
 				A42349B31D2C9F46009A5ECC /* TFLargerHitButton.m in Sources */,
 				4CA0C72A1D1FAC4E001EDC89 /* ViewController.m in Sources */,
 				4CE52FA31D28CB12009576C6 /* WMUserDefault.m in Sources */,
 				A42349B91D2CF1CA009A5ECC /* ShareView.m in Sources */,
+				4CAE50921D368FC5009FE262 /* MptTableHeadCell.m in Sources */,
+				4CAE50971D369057009FE262 /* MptPageControl.m in Sources */,
 				4CA0C7271D1FAC4E001EDC89 /* AppDelegate.m in Sources */,
 				4CA0C7241D1FAC4E001EDC89 /* main.m in Sources */,
 				4CE52FA61D29057C009576C6 /* LeftViewController.m in Sources */,
@@ -598,6 +624,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/BabySleep/open",
 					source,
+					"$(PROJECT_DIR)/BabySleep/open",
+					source,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.michael.babysleep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -617,6 +645,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/BabySleep/open",
+					source,
 					"$(PROJECT_DIR)/BabySleep/open",
 					source,
 				);

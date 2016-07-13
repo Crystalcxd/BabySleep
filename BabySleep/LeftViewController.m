@@ -47,20 +47,27 @@
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(39, 159 + i * 93, 15, 15)];
         NSString *imgStr = imageArr[i];
         imageView.image = [UIImage imageNamed:imgStr];
-        [self.view addSubview:imageView];
+//        [self.view addSubview:imageView];
         
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(imageView.frame) + 13, CGRectGetMinY(imageView.frame) - 8, 200, 28)];
         label.font = [UIFont systemFontOfSize:20];
         label.textColor = HexRGB(0xFFFFFF);
         label.text = titleArr[i];
-        [self.view addSubview:label];
+//        [self.view addSubview:label];
         
         UILabel *line = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMinY(imageView.frame) + 47, 232, 1.5)];
         line.backgroundColor = HexRGB(0xB1CBFC);
         [self.view addSubview:line];
         
         UIButton *clickBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        clickBtn.frame = CGRectMake(0, 113 + i * 93, 232, 90);
+        clickBtn.frame = CGRectMake(39, 123 + i * 93, 232, 80);
+        [clickBtn setImage:[UIImage imageNamed:imgStr] forState:UIControlStateNormal];
+        [clickBtn setTitle:titleArr[i] forState:UIControlStateNormal];
+        [clickBtn setTitleColor:HexRGB(0xffffff) forState:UIControlStateNormal];
+        [clickBtn setTitleColor:HexRGB(0xA0E5F8) forState:UIControlStateHighlighted];
+        [clickBtn setTitleEdgeInsets:UIEdgeInsetsMake(0, 13, 0, 0)];
+        [clickBtn.titleLabel setFont:[UIFont systemFontOfSize:20]];
+        [clickBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
         clickBtn.tag = TABLEVIEW_BEGIN_TAG + i;
         [clickBtn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:clickBtn];

@@ -36,7 +36,7 @@
     [self.view addSubview:title];
     
     TFLargerHitButton *backBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(22, 33, 14, 14)];
-    [backBtn setImage:[UIImage imageNamed:@"cancel"] forState:UIControlStateNormal];
+    [backBtn setImage:[UIImage imageNamed:@"cancel2"] forState:UIControlStateNormal];
     [backBtn addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:backBtn];
