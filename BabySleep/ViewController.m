@@ -16,7 +16,14 @@
 
 #import "CartoonHeadView.h"
 
+#import "WMUserDefault.h"
+
+#import <AVFoundation/AVFoundation.h>
+
 @interface ViewController ()<HeadViewDelegate,HeadViewDataSource>
+{
+    AVAudioPlayer *player;
+}
 
 @property (nonatomic , strong) UIButton *playBtn;
 
@@ -27,6 +34,8 @@
 @property (nonatomic , strong) NSMutableArray *picArray;
 
 @property (nonatomic , strong) NSMutableArray *musicArray;
+
+@property (nonatomic , assign) NSInteger playTime;
 
 @end
 
@@ -192,6 +201,52 @@
     //        
     //        [self goWebViewWith:str];
     //    }
+}
+
+- (void)tableHeadView:(MptTableHeadView *)headView didScrollToIndex:(NSUInteger)index
+{
+    
+}
+
+-(void)audioPlayWithPath:(NSURL *)url
+{
+    if (player)
+    {
+        [player stop];
+        player = nil;
+    }
+    
+    NSString *playMins = [WMUserDefault objectValueForKey:@"playtime"];
+    
+    self.playTime = playMins.integerValue * 60;
+    
+    player=[[AVAudioPlayer alloc] initWithContentsOfURL:url error:Nil];
+    [player prepareToPlay];
+    [player play];
+    player.numberOfLoops = -1;
+    
+    //设置锁屏仍能继续播放
+    [[AVAudioSession sharedInstance] setActive: YES error: nil];
+    [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategorySoloAmbient error:nil];
+    [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategoryPlayback error:nil];
+    
+    [self performSelector:@selector(playMusic) withObject:nil afterDelay:1.0];
+}
+
+-(void)playMusic
+{
+    self.playTime -- ;
+    
+    if (self.playTime <= 0) {
+        
+    }else{
+        
+    }
+}
+
+- (void)stopMusic
+{
+    
 }
 
 - (void)didReceiveMemoryWarning {

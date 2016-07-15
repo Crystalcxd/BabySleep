@@ -66,4 +66,6 @@ typedef enum : NSUInteger {
 
 - (void)tableHeadView:(MptTableHeadView *)headView didSelectIndex:(NSUInteger)index;
 
+- (void)tableHeadView:(MptTableHeadView *)headView didScrollToIndex:(NSUInteger)index;
+
 @end
