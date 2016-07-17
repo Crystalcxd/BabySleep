@@ -221,6 +221,15 @@
 //    self.runloopTimer = nil;
 }
 
+- (void)scrollWithType:(ScrollType)type
+{
+    if (type == ScrollTypeBack) {
+        [self.scrollView setContentOffset:CGPointMake(0, 0) animated:YES];
+    }else{
+        [self.scrollView setContentOffset:CGPointMake(CGRectGetWidth(self.scrollView.frame)*2, 0) animated:YES];
+    }
+}
+
 - (void)loadViews{
     [self getDisplayImagesWithCurpage:_curPage];
     //移掉划出屏幕外的图片 保存3个
@@ -314,8 +323,9 @@
         _curPage = [self validPageValue:_curPage-1];
         [self loadViews];
     }
+    
     if (self.autoScroll) {
-        self.pageControl.currentPage = _curPage;
+//        self.pageControl.currentPage = _curPage;
     }
 }
 
@@ -325,8 +335,24 @@
 //    self.runloopTimer = nil;
 }
 
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
+    NSLog(@"page ==== %ld",_curPage);
+    if (self.pageControl.currentPage != _curPage) {
+        if ([_delegate respondsToSelector:@selector(tableHeadView:didScrollToIndex:)]) {
+            [_delegate tableHeadView:self didScrollToIndex:_curPage];
+        }
+    }
+
+    self.pageControl.currentPage = _curPage;
+}// called when setContentOffset/scrollRectVisible:animated: finishes. not called if not animating
+
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     NSLog(@"page ==== %ld",_curPage);
+    if (self.pageControl.currentPage != _curPage) {
+        if ([_delegate respondsToSelector:@selector(tableHeadView:didScrollToIndex:)]) {
+            [_delegate tableHeadView:self didScrollToIndex:_curPage];
+        }
+    }
     self.pageControl.currentPage = _curPage;
     [scrollView setContentOffset:CGPointMake(CGRectGetWidth(scrollView.frame), 0) animated:YES];
     

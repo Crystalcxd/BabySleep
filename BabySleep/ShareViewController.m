@@ -14,6 +14,8 @@
 
 #import "ShareView.h"
 
+#import "WXApi.h"
+
 @interface ShareViewController ()<ShareViewDelegate>
 
 @end
@@ -52,11 +54,6 @@
     pengyouquan.tag = TABLEVIEW_BEGIN_TAG + 1;
     pengyouquan.delagate = self;
     [self.view addSubview:pengyouquan];
-    
-//    ShareView *weibo = [[ShareView alloc] initWithFrame:CGRectMake(CGRectGetMaxX(weixin.frame) + 85 - 140, 334, 140, 140) Name:@"微博" Color:HexRGB(0xFAD4B2)];
-//    weibo.tag = TABLEVIEW_BEGIN_TAG + 2;
-//    weibo.delagate = self;
-//    [self.view addSubview:weibo];
 }
 
 - (void)clickAction:(NSInteger)tag
@@ -68,6 +65,56 @@
             
         default:
             break;
+    }
+    WXMediaMessage *message = [self wxShareSiglMessageScene:[UIImage imageNamed:@"icon120.png"]];
+    message.title = @"宝贝快睡";
+    message.description = @"宝贝快睡";
+    
+    [self ShareWeixinLinkContent:message WXType:tag - TABLEVIEW_BEGIN_TAG];
+}
+
+#pragma mark - 微信分享
+- (WXMediaMessage *)wxShareSiglMessageScene:(UIImage *)image
+{
+    WXMediaMessage *message = [WXMediaMessage message];
+    
+    WXWebpageObject *pageObject = [WXWebpageObject object];
+    pageObject.webpageUrl = @"https://itunes.apple.com/cn/app/id1128178648?mt=8";
+    
+    message.mediaObject = pageObject;
+    
+    [message setThumbData:UIImageJPEGRepresentation(image,1)];
+
+    return message;
+}
+
+- (void)ShareWeixinLinkContent:(WXMediaMessage *)message WXType:(NSInteger)scene {
+    if ([WXApi isWXAppInstalled]) {
+        SendMessageToWXReq *wxRequest = [[SendMessageToWXReq alloc] init];
+        
+        if ([message.mediaObject isKindOfClass:[WXWebpageObject class]]) {
+            WXWebpageObject *webpageObject = message.mediaObject;
+            if (webpageObject.webpageUrl.length == 0) {
+                wxRequest.text = message.title;
+                wxRequest.bText = YES;
+            } else {
+                wxRequest.message = message;
+            }
+        } else if ([message.mediaObject isKindOfClass:[WXImageObject class]]) {
+            wxRequest.bText = NO;
+            wxRequest.message = message;
+        } else if ([message.mediaObject isKindOfClass:[WXVideoObject class]]) {
+            wxRequest.bText = NO;
+            wxRequest.message = message;
+        }
+        
+        wxRequest.bText = NO;
+        wxRequest.scene = (int)scene;
+        
+        [WXApi sendReq:wxRequest];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"分享失败" message:@"请使用其它分享途径。" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alert show];
     }
 }
 

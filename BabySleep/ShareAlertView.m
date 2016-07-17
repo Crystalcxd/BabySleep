@@ -1,0 +1,141 @@
+//
+//  ShareAlertView.m
+//  BabySleep
+//
+//  Created by Michael on 2016/7/17.
+//  Copyright © 2016年 Michael. All rights reserved.
+//
+
+#import "ShareAlertView.h"
+
+#import "TFLargerHitButton.h"
+
+#import "Utility.h"
+
+#import "WXApi.h"
+
+@interface ShareAlertView ()
+
+@property (nonatomic , strong) UIView *boardView;
+
+@end
+
+@implementation ShareAlertView
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.boardView = [[UIView alloc] initWithFrame:CGRectMake(SCREENWIDTH * 0.5 - 121, -234, 242, 234)];
+        self.boardView.backgroundColor = HexRGB(0xFCDEE9);
+        [self addSubview:self.boardView];
+        
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(26, 52, 195, 99)];
+        label.numberOfLines = 3;
+        label.text = @"现在分享给微信好友可以延长播放时间至60分钟喔！";
+        label.textColor = HexRGB(0xFA7FAD);
+        label.font = [UIFont systemFontOfSize:24];
+        [self.boardView addSubview:label];
+        
+        TFLargerHitButton *cancel = [TFLargerHitButton buttonWithType:UIButtonTypeCustom];
+        cancel.frame = CGRectMake(206, 15, 18, 18);
+        [cancel setImage:[UIImage imageNamed:@"cancel"] forState:UIControlStateNormal];
+        [cancel addTarget:self action:@selector(fadeView) forControlEvents:UIControlEventTouchUpInside];
+        [self.boardView addSubview:cancel];
+        
+        UIButton *shareBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        shareBtn.frame = CGRectMake(0, 164, 242, 70);
+        [shareBtn setBackgroundColor:HexRGB(0xFFD1E2)];
+        [shareBtn setTitle:@"分享" forState:UIControlStateNormal];
+        [shareBtn setTitleColor:HexRGB(0xFF5D80) forState:UIControlStateNormal];
+        [shareBtn.titleLabel setFont:[UIFont systemFontOfSize:18]];
+        [shareBtn addTarget:self action:@selector(share) forControlEvents:UIControlEventTouchUpInside];
+        [self.boardView addSubview:shareBtn];
+    }
+    
+    return self;
+}
+
+- (void)showView
+{
+    [UIView animateWithDuration:0.5 animations:^{
+        CGRect frame = self.boardView.frame;
+        frame.origin.y = SCREENHEIGHT * 0.5 - 137;
+        self.boardView.frame = frame;
+    }];
+}
+
+- (void)fadeView
+{
+    [UIView animateWithDuration:0.5 animations:^{
+        CGRect frame = self.boardView.frame;
+        frame.origin.y = SCREENHEIGHT;
+        self.boardView.frame = frame;
+    } completion:^(BOOL finished) {
+        [self removeFromSuperview];
+    }];
+}
+
+- (void)share
+{
+    WXMediaMessage *message = [self wxShareSiglMessageScene:[UIImage imageNamed:@"icon120.png"]];
+    message.title = @"宝贝快睡";
+    message.description = @"宝贝快睡";
+    
+    [self ShareWeixinLinkContent:message WXType:0];
+}
+
+#pragma mark - 微信分享
+- (WXMediaMessage *)wxShareSiglMessageScene:(UIImage *)image
+{
+    WXMediaMessage *message = [WXMediaMessage message];
+    
+    WXWebpageObject *pageObject = [WXWebpageObject object];
+    pageObject.webpageUrl = @"https://itunes.apple.com/cn/app/id1128178648?mt=8";
+    
+    message.mediaObject = pageObject;
+    
+    [message setThumbData:UIImageJPEGRepresentation(image,1)];
+    
+    return message;
+}
+
+- (void)ShareWeixinLinkContent:(WXMediaMessage *)message WXType:(NSInteger)scene {
+    if ([WXApi isWXAppInstalled]) {
+        SendMessageToWXReq *wxRequest = [[SendMessageToWXReq alloc] init];
+        
+        if ([message.mediaObject isKindOfClass:[WXWebpageObject class]]) {
+            WXWebpageObject *webpageObject = message.mediaObject;
+            if (webpageObject.webpageUrl.length == 0) {
+                wxRequest.text = message.title;
+                wxRequest.bText = YES;
+            } else {
+                wxRequest.message = message;
+            }
+        } else if ([message.mediaObject isKindOfClass:[WXImageObject class]]) {
+            wxRequest.bText = NO;
+            wxRequest.message = message;
+        } else if ([message.mediaObject isKindOfClass:[WXVideoObject class]]) {
+            wxRequest.bText = NO;
+            wxRequest.message = message;
+        }
+        
+        wxRequest.bText = NO;
+        wxRequest.scene = (int)scene;
+        
+        [WXApi sendReq:wxRequest];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"分享失败" message:@"请使用其它分享途径。" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alert show];
+    }
+}
+
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
+}
+*/
+
+@end

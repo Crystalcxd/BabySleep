@@ -135,6 +135,10 @@
     {
         NSString *strMsg = resp.errCode == 0 ? @"分享成功" : @"分享取消";
         [self alertWithTitle:@"" msg:strMsg];
+        
+        if (resp.errCode == 0) {
+            [WMUserDefault setObjectValue:@"60" forKey:@"playtime"];
+        }
     }
 }
 

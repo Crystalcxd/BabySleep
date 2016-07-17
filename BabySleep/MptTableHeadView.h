@@ -14,6 +14,11 @@ typedef enum : NSUInteger {
     MptTableHeadViewOther,
 } MptTableHeadViewType;
 
+typedef enum : NSUInteger {
+    ScrollTypeBack = 0,
+    ScrollTypeForce,
+} ScrollType;
+
 @class MptTableHeadCell;
 @class MptPageControl;
 
@@ -47,6 +52,8 @@ typedef enum : NSUInteger {
 // 刷新轮播图数据
 - (void)reloadData;
 - (void)stopAnimation;
+
+- (void)scrollWithType:(ScrollType)type;
 
 @end
 

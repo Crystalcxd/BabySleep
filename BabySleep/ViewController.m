@@ -15,6 +15,7 @@
 #import "MptTableHeadView.h"
 
 #import "CartoonHeadView.h"
+#import "ShareAlertView.h"
 
 #import "WMUserDefault.h"
 
@@ -37,6 +38,14 @@
 
 @property (nonatomic , assign) NSInteger playTime;
 
+@property (nonatomic , assign) NSInteger currentPlayTime;
+
+@property (nonatomic , strong) UILabel *currentTime;
+
+@property (nonatomic , strong) UILabel *totalTime;
+
+@property (nonatomic , assign) NSInteger musicIndex;
+
 @end
 
 @implementation ViewController
@@ -48,7 +57,7 @@
     self.view.backgroundColor = HexRGB(0xDBF4FF);
     
     self.picArray = [NSMutableArray arrayWithObjects:@"baby",@"cleaner",@"girl",@"hairdryer",@"radio", nil];
-    self.musicArray = [NSMutableArray arrayWithObjects:@"whitenoise",@"cleaner",@"girl",@"hairdryer",@"audio", nil];
+    self.musicArray = [NSMutableArray arrayWithObjects:@"audio",@"cleaner",@"girl",@"hairdryer",@"whitenoise", nil];
 
     TFLargerHitButton *leftBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(22, 33, 15, 14)];
     [leftBtn setImage:[UIImage imageNamed:@"menu"] forState:UIControlStateNormal];
@@ -89,14 +98,23 @@
     
     self.playBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     self.playBtn.frame = CGRectMake(SCREENWIDTH * 0.5 - 39, scrollViewY, 78, 78);
+    [self.playBtn setImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
+    [self.playBtn setImage:[UIImage imageNamed:@"stop"] forState:UIControlStateSelected];
+    [self.playBtn addTarget:self action:@selector(playBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.playBtn];
     
     UIButton *previousBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     previousBtn.frame = CGRectMake(CGRectGetMinX(self.playBtn.frame) - 50 - 51, CGRectGetMidY(self.playBtn.frame) - 17, 51, 34);
+    [previousBtn setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
+    previousBtn.tag = TABLEVIEW_BEGIN_TAG;
+    [previousBtn addTarget:self action:@selector(jumpBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:previousBtn];
     
     UIButton *latterBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     latterBtn.frame = CGRectMake(CGRectGetMaxX(self.playBtn.frame) + 50, CGRectGetMidY(self.playBtn.frame) - 17, 51, 34);
+    [latterBtn setImage:[UIImage imageNamed:@"next"] forState:UIControlStateNormal];
+    latterBtn.tag = TABLEVIEW_BEGIN_TAG + 1;
+    [latterBtn addTarget:self action:@selector(jumpBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:latterBtn];
     
     scrollViewY = 460;
@@ -113,9 +131,23 @@
     progressBG.backgroundColor = RGBA(236, 228, 242, 1);
     [self.view addSubview:progressBG];
     
-    self.progressView = [[UIView alloc] initWithFrame:CGRectMake(0, scrollViewY, 100, 20)];
+    self.progressView = [[UIView alloc] initWithFrame:CGRectMake(0, scrollViewY, 1, 20)];
     self.progressView.backgroundColor = RGBA(254, 211, 227, 1);
     [self.view addSubview:self.progressView];
+    
+    self.currentTime = [[UILabel alloc] initWithFrame:CGRectMake(0, scrollViewY, 52, 20)];
+    self.currentTime.textAlignment = NSTextAlignmentRight;
+    self.currentTime.font = [UIFont systemFontOfSize:14];
+    self.currentTime.textColor = HexRGB(0x1688D2);
+    self.currentTime.text = @"00:00";
+    [self.view addSubview:self.currentTime];
+    
+    self.totalTime = [[UILabel alloc] initWithFrame:CGRectMake(SCREENWIDTH - 52, scrollViewY, 52, 20)];
+    self.totalTime.textAlignment = NSTextAlignmentLeft;
+    self.totalTime.font = [UIFont systemFontOfSize:14];
+    self.totalTime.textColor = HexRGB(0x1688D2);
+    self.totalTime.text = @"00:00";
+    [self.view addSubview:self.totalTime];
     
     scrollViewY = 506;
     if (SCREENWIDTH == 375) {
@@ -143,7 +175,10 @@
 
 -(void)share
 {
+    ShareAlertView *alertView = [[ShareAlertView alloc] initWithFrame:self.view.frame];
+    [self.view addSubview:alertView];
     
+    [alertView showView];
 }
 
 #pragma mark
@@ -174,48 +209,63 @@
 }
 
 - (void)tableHeadView:(MptTableHeadView *)headView didSelectIndex:(NSUInteger)index {
-//    [self goWebView];
     return;
-    
-    //    if (self.array.count == 0) {
-    //        return;
-    //    }
-    //
-    //    id objc = nil;
-    //    if (self.array.count > index) {
-    //        objc = [self.array objectAtIndex:index];
-    //    } else {
-    //        return;
-    //    }
-    //
-    //    if ([objc isKindOfClass:[NSString class]]) {
-    //        return;
-    //    }
-    //    else if ([objc isKindOfClass:[AVObject class]]) {
-    //        AVObject *object = (AVObject *)objc;
-    //
-    //        NSString *str = [Utility safeStringWith:[object objectForKey:@"jumpUrl"]];
-    //        if ([str isEqualToString:@""] || [str isEqualToString:@" "]) {
-    //            return;
-    //        }
-    //        
-    //        [self goWebViewWith:str];
-    //    }
 }
 
 - (void)tableHeadView:(MptTableHeadView *)headView didScrollToIndex:(NSUInteger)index
 {
+    NSLog(@"page ==== %ld",index);
     
+    [self stopMusic];
+    
+    self.currentPlayTime = 0;
+
+    [self playMusicWithIndex:index];
+
+    [self playMusicInstall];
+    
+    self.playBtn.selected = YES;
+}
+
+-(void)playBtnAction:(id)sender
+{
+    UIButton *btn = (UIButton *)sender;
+    
+    if (btn.selected) {
+        [self pauseMusic];
+    }else{
+        if (player) {
+            [player play];
+        }else{
+            self.currentPlayTime = 0;
+            [self playMusicWithIndex:self.musicIndex];
+        }
+        
+        [self playMusicInstall];
+    }
+    
+    btn.selected = !btn.selected;
+}
+
+-(void)jumpBtnAction:(id)sender
+{
+    UIButton *btn = (UIButton *)sender;
+    
+    [self.tableheadView scrollWithType:btn.tag - TABLEVIEW_BEGIN_TAG];
+}
+
+- (void)playMusicWithIndex:(NSInteger)index
+{
+    NSString *musicName = self.musicArray[index];
+    
+    //1.音频文件的url路径
+    NSString *musicFilePath= [[NSBundle mainBundle] pathForResource:musicName ofType:@"mp3"];
+    
+    [self audioPlayWithPath:[[NSURL alloc] initFileURLWithPath:musicFilePath]];
 }
 
 -(void)audioPlayWithPath:(NSURL *)url
 {
-    if (player)
-    {
-        [player stop];
-        player = nil;
-    }
-    
     NSString *playMins = [WMUserDefault objectValueForKey:@"playtime"];
     
     self.playTime = playMins.integerValue * 60;
@@ -229,24 +279,62 @@
     [[AVAudioSession sharedInstance] setActive: YES error: nil];
     [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategorySoloAmbient error:nil];
     [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategoryPlayback error:nil];
-    
-    [self performSelector:@selector(playMusic) withObject:nil afterDelay:1.0];
 }
 
--(void)playMusic
+- (void)playMusicInstall
 {
-    self.playTime -- ;
+    self.totalTime.text = [self timeStringWith:self.playTime];
     
-    if (self.playTime <= 0) {
+    [self updateProgressView];
+    
+    [self performSelector:@selector(playMusicTimer) withObject:nil afterDelay:1.0];
+}
+
+-(void)playMusicTimer
+{
+    self.currentPlayTime ++;
+    
+    if (self.currentPlayTime >= self.playTime) {
+        [self stopMusic];
         
+        self.currentPlayTime = 0;
     }else{
         
+        [self performSelector:@selector(playMusicTimer) withObject:nil afterDelay:1.0];
     }
+    
+    [self updateProgressView];
 }
 
 - (void)stopMusic
 {
+    [player stop];
+    player = nil;
     
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(playMusicTimer) object:nil];
+}
+
+- (void)pauseMusic
+{
+    [player pause];
+    
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(playMusicTimer) object:nil];
+}
+
+- (void)updateProgressView
+{
+    CGFloat percent = self.currentPlayTime * 1.0 / self.playTime;
+    
+    CGRect frame = self.progressView.frame;
+    frame.size.width = percent * SCREENWIDTH;
+    self.progressView.frame = frame;
+    
+    self.currentTime.text = [self timeStringWith:self.currentPlayTime];
+}
+
+- (NSString *)timeStringWith:(NSInteger)time
+{
+    return [NSString stringWithFormat:@"%@%ld:%@%ld",time/60 > 9 ? @"" : @"0",time/60,time%60 > 9 ? @"" : @"0",time%60];
 }
 
 - (void)didReceiveMemoryWarning {

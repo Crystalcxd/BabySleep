@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C3DA1EF1D3B504F0003B5FD /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3DA1EE1D3B504F0003B5FD /* libWeChatSDK.a */; };
+		4C3DA1F21D3B5B5F0003B5FD /* ShareAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DA1F11D3B5B5F0003B5FD /* ShareAlertView.m */; };
+		4C3DA1F41D3B62650003B5FD /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3DA1F31D3B62650003B5FD /* icon120.png */; };
 		4CA0C7241D1FAC4E001EDC89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C7231D1FAC4E001EDC89 /* main.m */; };
 		4CA0C7271D1FAC4E001EDC89 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C7261D1FAC4E001EDC89 /* AppDelegate.m */; };
 		4CA0C72A1D1FAC4E001EDC89 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C7291D1FAC4E001EDC89 /* ViewController.m */; };
@@ -22,7 +25,6 @@
 		4CA834551D30DDC0007543B5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA834541D30DDC0007543B5 /* CoreTelephony.framework */; };
 		4CAE50891D3550A4009FE262 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE50881D3550A4009FE262 /* Images.xcassets */; };
 		4CAE508B1D3552AB009FE262 /* adx2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE508A1D3552AB009FE262 /* adx2@2x.png */; };
-		4CAE508D1D368312009FE262 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAE508C1D368312009FE262 /* libWeChatSDK.a */; };
 		4CAE50921D368FC5009FE262 /* MptTableHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE508F1D368FC5009FE262 /* MptTableHeadCell.m */; };
 		4CAE50931D368FC5009FE262 /* MptTableHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE50911D368FC5009FE262 /* MptTableHeadView.m */; };
 		4CAE50971D369057009FE262 /* MptPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE50961D369057009FE262 /* MptPageControl.m */; };
@@ -65,6 +67,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C3DA1EE1D3B504F0003B5FD /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		4C3DA1F01D3B5B5F0003B5FD /* ShareAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareAlertView.h; sourceTree = "<group>"; };
+		4C3DA1F11D3B5B5F0003B5FD /* ShareAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareAlertView.m; sourceTree = "<group>"; };
+		4C3DA1F31D3B62650003B5FD /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
 		4CA0C71F1D1FAC4E001EDC89 /* BabySleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabySleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA0C7231D1FAC4E001EDC89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CA0C7251D1FAC4E001EDC89 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,7 +97,6 @@
 		4CA834541D30DDC0007543B5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		4CAE50881D3550A4009FE262 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4CAE508A1D3552AB009FE262 /* adx2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adx2@2x.png"; sourceTree = "<group>"; };
-		4CAE508C1D368312009FE262 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		4CAE508E1D368FC5009FE262 /* MptTableHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MptTableHeadCell.h; sourceTree = "<group>"; };
 		4CAE508F1D368FC5009FE262 /* MptTableHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MptTableHeadCell.m; sourceTree = "<group>"; };
 		4CAE50901D368FC5009FE262 /* MptTableHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MptTableHeadView.h; sourceTree = "<group>"; };
@@ -136,7 +141,7 @@
 			files = (
 				4CA834551D30DDC0007543B5 /* CoreTelephony.framework in Frameworks */,
 				4CA834531D30DBAB007543B5 /* libc++.tbd in Frameworks */,
-				4CAE508D1D368312009FE262 /* libWeChatSDK.a in Frameworks */,
+				4C3DA1EF1D3B504F0003B5FD /* libWeChatSDK.a in Frameworks */,
 				4CA834511D30DB9B007543B5 /* libsqlite3.0.tbd in Frameworks */,
 				4CA8344F1D30DB86007543B5 /* libz.tbd in Frameworks */,
 				4CA8344D1D30DB78007543B5 /* SystemConfiguration.framework in Frameworks */,
@@ -213,6 +218,8 @@
 				A42349B21D2C9F46009A5ECC /* TFLargerHitButton.m */,
 				A42349B71D2CF1CA009A5ECC /* ShareView.h */,
 				A42349B81D2CF1CA009A5ECC /* ShareView.m */,
+				4C3DA1F01D3B5B5F0003B5FD /* ShareAlertView.h */,
+				4C3DA1F11D3B5B5F0003B5FD /* ShareAlertView.m */,
 				4CA0C72B1D1FAC4E001EDC89 /* Main.storyboard */,
 				4CA0C72E1D1FAC4E001EDC89 /* Assets.xcassets */,
 				4CA0C7301D1FAC4E001EDC89 /* LaunchScreen.storyboard */,
@@ -253,7 +260,7 @@
 		4CA834461D30DB48007543B5 /* open source */ = {
 			isa = PBXGroup;
 			children = (
-				4CAE508C1D368312009FE262 /* libWeChatSDK.a */,
+				4C3DA1EE1D3B504F0003B5FD /* libWeChatSDK.a */,
 				4CA834481D30DB48007543B5 /* WechatAuthSDK.h */,
 				4CA834491D30DB48007543B5 /* WXApi.h */,
 				4CA8344A1D30DB48007543B5 /* WXApiObject.h */,
@@ -294,11 +301,11 @@
 		A4FEA1281D2B559900FB7FE0 /* music */ = {
 			isa = PBXGroup;
 			children = (
-				A4FEA12D1D2B559900FB7FE0 /* whitenoise.mp3 */,
+				A4FEA1291D2B559900FB7FE0 /* audio.mp3 */,
 				A4FEA12A1D2B559900FB7FE0 /* cleaner.mp3 */,
 				A4FEA12B1D2B559900FB7FE0 /* girl.mp3 */,
 				A4FEA12C1D2B559900FB7FE0 /* hairdryer.mp3 */,
-				A4FEA1291D2B559900FB7FE0 /* audio.mp3 */,
+				A4FEA12D1D2B559900FB7FE0 /* whitenoise.mp3 */,
 			);
 			path = music;
 			sourceTree = "<group>";
@@ -306,6 +313,7 @@
 		A4FEA12E1D2B559900FB7FE0 /* pic */ = {
 			isa = PBXGroup;
 			children = (
+				4C3DA1F31D3B62650003B5FD /* icon120.png */,
 				4CAE508A1D3552AB009FE262 /* adx2@2x.png */,
 				A4FEA12F1D2B559900FB7FE0 /* baby@2x.png */,
 				A4FEA1301D2B559900FB7FE0 /* cleaner@2x.png */,
@@ -430,6 +438,7 @@
 				4CA0C72F1D1FAC4E001EDC89 /* Assets.xcassets in Resources */,
 				A4FEA13B1D2B559900FB7FE0 /* girl@2x.png in Resources */,
 				4CAE50891D3550A4009FE262 /* Images.xcassets in Resources */,
+				4C3DA1F41D3B62650003B5FD /* icon120.png in Resources */,
 				4CAE508B1D3552AB009FE262 /* adx2@2x.png in Resources */,
 				A4FEA1351D2B559900FB7FE0 /* cleaner.mp3 in Resources */,
 				A4FEA1371D2B559900FB7FE0 /* hairdryer.mp3 in Resources */,
@@ -460,6 +469,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CAE509A1D369419009FE262 /* CartoonHeadView.m in Sources */,
+				4C3DA1F21D3B5B5F0003B5FD /* ShareAlertView.m in Sources */,
 				4CAE50931D368FC5009FE262 /* MptTableHeadView.m in Sources */,
 				A42349B31D2C9F46009A5ECC /* TFLargerHitButton.m in Sources */,
 				4CA0C72A1D1FAC4E001EDC89 /* ViewController.m in Sources */,
@@ -626,6 +636,10 @@
 					source,
 					"$(PROJECT_DIR)/BabySleep/open",
 					source,
+					"$(PROJECT_DIR)/BabySleep/open",
+					source,
+					"$(PROJECT_DIR)/BabySleep/open",
+					source,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.michael.babysleep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -645,6 +659,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/BabySleep/open",
+					source,
+					"$(PROJECT_DIR)/BabySleep/open",
+					source,
 					"$(PROJECT_DIR)/BabySleep/open",
 					source,
 					"$(PROJECT_DIR)/BabySleep/open",
