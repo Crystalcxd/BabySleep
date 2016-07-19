@@ -55,8 +55,8 @@
         label.text = titleArr[i];
 //        [self.view addSubview:label];
         
-        UILabel *line = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMinY(imageView.frame) + 47, 232, 1.5)];
-        line.backgroundColor = HexRGB(0xB1CBFC);
+        UIImageView *line = [[UIImageView alloc] initWithFrame:CGRectMake(0, CGRectGetMinY(imageView.frame) + 47, SCREENWIDTH * 0.618667, 3)];
+        line.image = [UIImage imageNamed:@"line"];
         [self.view addSubview:line];
         
         UIButton *clickBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -113,7 +113,7 @@
 - (void)sendMail
 {
     MFMailComposeViewController *mailComposer = [[MFMailComposeViewController alloc] init];
-    [mailComposer setToRecipients:[NSArray arrayWithObject:@"1259959450@qq.com"]];
+    [mailComposer setToRecipients:[NSArray arrayWithObject:@"207945016@qq.com"]];
     mailComposer.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     mailComposer.modalPresentationStyle = UIModalPresentationFormSheet;
     

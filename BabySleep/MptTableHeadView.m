@@ -87,6 +87,18 @@
         }else{
             self.pageControl = [[MptPageControl alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(self.scrollView.frame)-kPageControl_H, SCREENWIDTH, kPageControl_H) Type:type];
         }
+        
+        self.backArraw = [[UIImageView alloc] initWithFrame:CGRectMake(15, 164, 15, 38)];
+        self.backArraw.image = [UIImage imageNamed:@"left"];
+        self.backArraw.hidden = YES;
+        [self addSubview:self.backArraw];
+        
+        self.nextArraw = [[UIImageView alloc] initWithFrame:CGRectMake(SCREENWIDTH - 15 - 15, CGRectGetMinY(self.backArraw.frame), 15, 38)];
+        self.nextArraw.image = [UIImage imageNamed:@"left"];
+        self.nextArraw.hidden = YES;
+        self.nextArraw.transform = CGAffineTransformRotate(self.nextArraw.transform, M_PI);
+
+        [self addSubview:self.nextArraw];
 //        [self addSubview:self.pageControl];
     }
     return self;
@@ -368,7 +380,15 @@
     self.autoScroll = YES;
 }
 
+- (void)showArraw
+{
+    self.backArraw.hidden = NO;
+    self.nextArraw.hidden = NO;
+}
+
 - (void)handleTap:(UITapGestureRecognizer *)tap {
+    [self showArraw];
+    
     if ([_delegate respondsToSelector:@selector(tableHeadView:didSelectIndex:)]) {
         [_delegate tableHeadView:self didSelectIndex:_curPage];
     }

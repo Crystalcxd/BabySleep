@@ -76,7 +76,16 @@
     title.font = [UIFont systemFontOfSize:18];
     [self.view addSubview:title];
     
-    CGFloat scrollViewY = 84;
+    CGFloat scrollViewY = 98;
+    if (SCREENWIDTH == 414) {
+        scrollViewY = 123;
+    }
+    
+    UIImageView *shadow = [[UIImageView alloc] initWithFrame:CGRectMake(0, scrollViewY, 375, 483)];
+    shadow.image = [UIImage imageNamed:@"shadow"];
+    [self.view addSubview:shadow];
+
+    scrollViewY = 84;
     if (SCREENWIDTH == 375) {
         scrollViewY = 118;
     }else if (SCREENWIDTH == 414) {
@@ -89,6 +98,7 @@
     
     [self.view addSubview:self.tableheadView];
 
+    
     scrollViewY = 372;
     if (SCREENWIDTH == 375) {
         scrollViewY = 465;
@@ -99,6 +109,7 @@
     self.playBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     self.playBtn.frame = CGRectMake(SCREENWIDTH * 0.5 - 39, scrollViewY, 78, 78);
     [self.playBtn setImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
+    [self.playBtn setImage:[UIImage imageNamed:@"play"] forState:UIControlStateHighlighted];
     [self.playBtn setImage:[UIImage imageNamed:@"stop"] forState:UIControlStateSelected];
     [self.playBtn addTarget:self action:@selector(playBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.playBtn];
@@ -106,6 +117,7 @@
     UIButton *previousBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     previousBtn.frame = CGRectMake(CGRectGetMinX(self.playBtn.frame) - 50 - 51, CGRectGetMidY(self.playBtn.frame) - 17, 51, 34);
     [previousBtn setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
+    [previousBtn setImage:[UIImage imageNamed:@"back"] forState:UIControlStateHighlighted];
     previousBtn.tag = TABLEVIEW_BEGIN_TAG;
     [previousBtn addTarget:self action:@selector(jumpBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:previousBtn];
@@ -113,6 +125,7 @@
     UIButton *latterBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     latterBtn.frame = CGRectMake(CGRectGetMaxX(self.playBtn.frame) + 50, CGRectGetMidY(self.playBtn.frame) - 17, 51, 34);
     [latterBtn setImage:[UIImage imageNamed:@"next"] forState:UIControlStateNormal];
+    [latterBtn setImage:[UIImage imageNamed:@"next"] forState:UIControlStateHighlighted];
     latterBtn.tag = TABLEVIEW_BEGIN_TAG + 1;
     [latterBtn addTarget:self action:@selector(jumpBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:latterBtn];

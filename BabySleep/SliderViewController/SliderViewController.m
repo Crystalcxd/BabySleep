@@ -72,8 +72,8 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
 
 - (id)init{
     if (self = [super init]){
-        _LeftSContentOffset=240/320.0*SCREENWIDTH;
-        _RightSContentOffset=240/320.0*SCREENWIDTH;
+        _LeftSContentOffset=0.618667*SCREENWIDTH;
+        _RightSContentOffset=0.618667*SCREENWIDTH;
         _LeftSContentScale=1.0;
         _RightSContentScale=1.0;
         _LeftSJudgeOffset=100;
@@ -156,7 +156,7 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
 
     _blackCoverView = [[UIView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:_blackCoverView];
-    _blackCoverView.backgroundColor = [UIColor colorWithWhite:0.0f alpha:1.0f];
+    _blackCoverView.backgroundColor = HexRGB(0xFCDEE9);
     _blackCoverView.hidden = YES;
 }
 

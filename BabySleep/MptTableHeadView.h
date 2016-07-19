@@ -42,6 +42,9 @@ typedef enum : NSUInteger {
 @property (nonatomic, assign) NSUInteger curPage;
 @property (nonatomic, assign) BOOL autoScroll;
 
+@property (nonatomic, strong) UIImageView *backArraw;
+@property (nonatomic, strong) UIImageView *nextArraw;
+
 @property (nonatomic, strong) MptPageControl *pageControl;
 
 @property (nonatomic, weak_delegate) id<HeadViewDataSource> dataSource;
