@@ -28,6 +28,8 @@
     if (self) {
         self.boardView = [[UIView alloc] initWithFrame:CGRectMake(SCREENWIDTH * 0.5 - 121, -234, 242, 234)];
         self.boardView.backgroundColor = HexRGB(0xFCDEE9);
+        self.boardView.layer.borderWidth = 1.0;
+        self.boardView.layer.borderColor = HexRGB(0xFFD1E2).CGColor;
         [self addSubview:self.boardView];
         
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(26, 52, 195, 99)];

@@ -34,6 +34,8 @@
 
 @property (nonatomic , strong) NSMutableArray *picArray;
 
+@property (nonatomic , strong) NSMutableArray *titleImgArray;
+
 @property (nonatomic , strong) NSMutableArray *musicArray;
 
 @property (nonatomic , assign) NSInteger playTime;
@@ -56,35 +58,33 @@
     
     self.view.backgroundColor = HexRGB(0xDBF4FF);
     
+    UIImageView *bgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg"]];
+    bgView.frame = self.view.bounds;
+    [self.view addSubview:bgView];
+    
     self.picArray = [NSMutableArray arrayWithObjects:@"baby",@"cleaner",@"girl",@"hairdryer",@"radio", nil];
+    self.titleImgArray = [NSMutableArray arrayWithObjects:@"whitenoisetitle",@"cleanertitle",@"canontitle",@"hairdryertitle",@"radiotitle", nil];
     self.musicArray = [NSMutableArray arrayWithObjects:@"audio",@"cleaner",@"girl",@"hairdryer",@"whitenoise", nil];
 
-    TFLargerHitButton *leftBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(22, 38, 15, 14)];
+    TFLargerHitButton *leftBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(22, 43, 15, 14)];
     [leftBtn setImage:[UIImage imageNamed:@"menu"] forState:UIControlStateNormal];
     [leftBtn addTarget:self action:@selector(goMenuView) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:leftBtn];
     
-    TFLargerHitButton *rightBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(SCREENWIDTH - 22 - 15, 38, 20, 21)];
+    TFLargerHitButton *rightBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(SCREENWIDTH - 22 - 15, 40, 20, 21)];
     [rightBtn setImage:[UIImage imageNamed:@"strawberry"] forState:UIControlStateNormal];
     [rightBtn addTarget:self action:@selector(share) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:rightBtn];
 
-    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 32, SCREENWIDTH, 25)];
-    title.textColor = HexRGB(0x1688D2);
-    title.textAlignment = NSTextAlignmentCenter;
-    title.text = @"宝贝快睡";
-    title.font = [UIFont systemFontOfSize:18];
-    [self.view addSubview:title];
+    UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake((SCREENWIDTH - 71.35) * 0.5, 42, 71.35, 17.39)];
+    titleView.image = [UIImage imageNamed:@"babysleep"];
+    [self.view addSubview:titleView];
     
     CGFloat scrollViewY = 98;
     if (SCREENWIDTH == 414) {
         scrollViewY = 123;
     }
     
-    UIImageView *shadow = [[UIImageView alloc] initWithFrame:CGRectMake(0, scrollViewY, 375, 483)];
-    shadow.image = [UIImage imageNamed:@"shadow"];
-    [self.view addSubview:shadow];
-
     scrollViewY = 84;
     if (SCREENWIDTH == 375) {
         scrollViewY = 118;
@@ -109,7 +109,7 @@
     self.playBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     self.playBtn.frame = CGRectMake(SCREENWIDTH * 0.5 - 39, scrollViewY, 78, 78);
     [self.playBtn setImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
-    [self.playBtn setImage:[UIImage imageNamed:@"play"] forState:UIControlStateHighlighted];
+    [self.playBtn setImage:[UIImage imageNamed:@""] forState:UIControlStateHighlighted];
     [self.playBtn setImage:[UIImage imageNamed:@"stop"] forState:UIControlStateSelected];
     [self.playBtn addTarget:self action:@selector(playBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.playBtn];
@@ -117,7 +117,7 @@
     UIButton *previousBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     previousBtn.frame = CGRectMake(CGRectGetMinX(self.playBtn.frame) - 50 - 51, CGRectGetMidY(self.playBtn.frame) - 17, 51, 34);
     [previousBtn setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
-    [previousBtn setImage:[UIImage imageNamed:@"back"] forState:UIControlStateHighlighted];
+    [previousBtn setImage:[UIImage imageNamed:@""] forState:UIControlStateHighlighted];
     previousBtn.tag = TABLEVIEW_BEGIN_TAG;
     [previousBtn addTarget:self action:@selector(jumpBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:previousBtn];
@@ -125,7 +125,7 @@
     UIButton *latterBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     latterBtn.frame = CGRectMake(CGRectGetMaxX(self.playBtn.frame) + 50, CGRectGetMidY(self.playBtn.frame) - 17, 51, 34);
     [latterBtn setImage:[UIImage imageNamed:@"next"] forState:UIControlStateNormal];
-    [latterBtn setImage:[UIImage imageNamed:@"next"] forState:UIControlStateHighlighted];
+    [latterBtn setImage:[UIImage imageNamed:@""] forState:UIControlStateHighlighted];
     latterBtn.tag = TABLEVIEW_BEGIN_TAG + 1;
     [latterBtn addTarget:self action:@selector(jumpBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:latterBtn];
@@ -216,6 +216,7 @@
     if ([objc isKindOfClass:[NSString class]]) {
         NSString *imgUrl = (NSString *)objc;
         cell.imageView.image = [UIImage imageNamed:imgUrl];
+        cell.titleView.image = [UIImage imageNamed:self.titleImgArray[index]];
     }
     
     return cell;

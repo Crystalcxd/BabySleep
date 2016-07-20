@@ -34,12 +34,10 @@
     
     CGFloat width = [[SliderViewController sharedSliderController] LeftSContentOffset];
     
-    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(37, 27, 80, 25)];
-    title.font = [UIFont systemFontOfSize:18];
-    title.textColor = HexRGB(0xDBF7FF);
-    title.text = @"宝贝快睡";
-    [self.view addSubview:title];
-    
+    UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake(39, 38, 71.35, 17.39)];
+    titleView.image = [UIImage imageNamed:@"babysleep_white"];
+    [self.view addSubview:titleView];
+        
     NSArray *imageArr = [NSArray arrayWithObjects:@"noise",@"share",@"advice", nil];
     NSArray *titleArr = [NSArray arrayWithObjects:@"白噪音",@"分享给好友",@"您的建议", nil];
     
