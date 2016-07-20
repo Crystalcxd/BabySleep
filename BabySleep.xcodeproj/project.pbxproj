@@ -36,6 +36,8 @@
 		A42349B31D2C9F46009A5ECC /* TFLargerHitButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A42349B21D2C9F46009A5ECC /* TFLargerHitButton.m */; };
 		A42349B61D2CAD9E009A5ECC /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42349B51D2CAD9E009A5ECC /* ShareViewController.m */; };
 		A42349B91D2CF1CA009A5ECC /* ShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = A42349B81D2CF1CA009A5ECC /* ShareView.m */; };
+		A4E3FB341D3F6E7C00EEEF94 /* 华康圆体W3.otf in Resources */ = {isa = PBXBuildFile; fileRef = A4E3FB321D3F6E7B00EEEF94 /* 华康圆体W3.otf */; };
+		A4E3FB351D3F6E7C00EEEF94 /* 华康圆体W5.TTF in Resources */ = {isa = PBXBuildFile; fileRef = A4E3FB331D3F6E7C00EEEF94 /* 华康圆体W5.TTF */; };
 		A4FEA1341D2B559900FB7FE0 /* audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4FEA1291D2B559900FB7FE0 /* audio.mp3 */; };
 		A4FEA1351D2B559900FB7FE0 /* cleaner.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4FEA12A1D2B559900FB7FE0 /* cleaner.mp3 */; };
 		A4FEA1361D2B559900FB7FE0 /* girl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4FEA12B1D2B559900FB7FE0 /* girl.mp3 */; };
@@ -120,6 +122,8 @@
 		A42349B51D2CAD9E009A5ECC /* ShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
 		A42349B71D2CF1CA009A5ECC /* ShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareView.h; sourceTree = "<group>"; };
 		A42349B81D2CF1CA009A5ECC /* ShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareView.m; sourceTree = "<group>"; };
+		A4E3FB321D3F6E7B00EEEF94 /* 华康圆体W3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "华康圆体W3.otf"; sourceTree = "<group>"; };
+		A4E3FB331D3F6E7C00EEEF94 /* 华康圆体W5.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "华康圆体W5.TTF"; sourceTree = "<group>"; };
 		A4FEA1291D2B559900FB7FE0 /* audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio.mp3; sourceTree = "<group>"; };
 		A4FEA12A1D2B559900FB7FE0 /* cleaner.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cleaner.mp3; sourceTree = "<group>"; };
 		A4FEA12B1D2B559900FB7FE0 /* girl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = girl.mp3; sourceTree = "<group>"; };
@@ -289,9 +293,19 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		A4E3FB311D3F6E7B00EEEF94 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				A4E3FB321D3F6E7B00EEEF94 /* 华康圆体W3.otf */,
+				A4E3FB331D3F6E7C00EEEF94 /* 华康圆体W5.TTF */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
 		A4FEA1271D2B559900FB7FE0 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				A4E3FB311D3F6E7B00EEEF94 /* font */,
 				A4FEA1281D2B559900FB7FE0 /* music */,
 				A4FEA12E1D2B559900FB7FE0 /* pic */,
 			);
@@ -437,10 +451,12 @@
 				A4FEA1381D2B559900FB7FE0 /* whitenoise.mp3 in Resources */,
 				4CA0C72F1D1FAC4E001EDC89 /* Assets.xcassets in Resources */,
 				A4FEA13B1D2B559900FB7FE0 /* girl@2x.png in Resources */,
+				A4E3FB341D3F6E7C00EEEF94 /* 华康圆体W3.otf in Resources */,
 				4CAE50891D3550A4009FE262 /* Images.xcassets in Resources */,
 				4C3DA1F41D3B62650003B5FD /* icon120.png in Resources */,
 				4CAE508B1D3552AB009FE262 /* adx2@2x.png in Resources */,
 				A4FEA1351D2B559900FB7FE0 /* cleaner.mp3 in Resources */,
+				A4E3FB351D3F6E7C00EEEF94 /* 华康圆体W5.TTF in Resources */,
 				A4FEA1371D2B559900FB7FE0 /* hairdryer.mp3 in Resources */,
 				A4FEA13A1D2B559900FB7FE0 /* cleaner@2x.png in Resources */,
 				4CA0C72D1D1FAC4E001EDC89 /* Main.storyboard in Resources */,
