@@ -71,12 +71,12 @@
     [leftBtn addTarget:self action:@selector(goMenuView) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:leftBtn];
     
-    TFLargerHitButton *rightBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(SCREENWIDTH - 22 - 15, 40, 20, 21)];
+    TFLargerHitButton *rightBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(SCREENWIDTH - 23 - 15, 39, 20, 21)];
     [rightBtn setImage:[UIImage imageNamed:@"strawberry"] forState:UIControlStateNormal];
     [rightBtn addTarget:self action:@selector(share) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:rightBtn];
 
-    UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake((SCREENWIDTH - 71.35) * 0.5, 42, 71.35, 17.39)];
+    UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake((SCREENWIDTH - 71.35) * 0.5, 40, 71.35, 19.39)];
     titleView.image = [UIImage imageNamed:@"babysleep"];
     [self.view addSubview:titleView];
     
@@ -117,7 +117,7 @@
     UIButton *previousBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     previousBtn.frame = CGRectMake(CGRectGetMinX(self.playBtn.frame) - 50 - 51, CGRectGetMidY(self.playBtn.frame) - 17, 51, 34);
     [previousBtn setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
-    [previousBtn setImage:[UIImage imageNamed:@""] forState:UIControlStateHighlighted];
+    [previousBtn setImage:nil forState:UIControlStateHighlighted];
     previousBtn.tag = TABLEVIEW_BEGIN_TAG;
     [previousBtn addTarget:self action:@selector(jumpBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:previousBtn];
@@ -150,14 +150,14 @@
     
     self.currentTime = [[UILabel alloc] initWithFrame:CGRectMake(0, scrollViewY, 52, 20)];
     self.currentTime.textAlignment = NSTextAlignmentRight;
-    self.currentTime.font = [UIFont systemFontOfSize:14];
+    self.currentTime.font = [UIFont fontWithName:@"PingFangSC-Regular" size:14];
     self.currentTime.textColor = HexRGB(0x1688D2);
     self.currentTime.text = @"00:00";
     [self.view addSubview:self.currentTime];
     
     self.totalTime = [[UILabel alloc] initWithFrame:CGRectMake(SCREENWIDTH - 52, scrollViewY, 52, 20)];
     self.totalTime.textAlignment = NSTextAlignmentLeft;
-    self.totalTime.font = [UIFont systemFontOfSize:14];
+    self.totalTime.font = [UIFont fontWithName:@"PingFangSC-Regular" size:14];
     self.totalTime.textColor = HexRGB(0x1688D2);
     self.totalTime.text = @"00:00";
     [self.view addSubview:self.totalTime];
@@ -174,6 +174,8 @@
     adBtn.frame = CGRectMake(SCREENWIDTH * 0.5 - 139, scrollViewY, 278, 62);
     [adBtn addTarget:self action:@selector(goOtherAppDownload) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:adBtn];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playBtnAction:) name:@"pauseMusic" object:nil];
 }
 
 -(void)goMenuView
@@ -245,9 +247,19 @@
 {
     UIButton *btn = (UIButton *)sender;
     
+    BOOL fromNotification = NO;
+    
+    if (!btn) {
+        btn = self.playBtn;
+        fromNotification = YES;
+    }
+    
     if (btn.selected) {
         [self pauseMusic];
     }else{
+        if (fromNotification) {
+            return;
+        }
         if (player) {
             [player play];
         }else{
@@ -289,10 +301,10 @@
     [player play];
     player.numberOfLoops = -1;
     
-    //设置锁屏仍能继续播放
-    [[AVAudioSession sharedInstance] setActive: YES error: nil];
-    [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategorySoloAmbient error:nil];
-    [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategoryPlayback error:nil];
+//    //设置锁屏仍能继续播放
+//    [[AVAudioSession sharedInstance] setActive: YES error: nil];
+//    [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategorySoloAmbient error:nil];
+//    [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategoryPlayback error:nil];
 }
 
 - (void)playMusicInstall

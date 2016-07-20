@@ -32,14 +32,14 @@
     topView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.5];
     [self.view addSubview:topView];
     
-    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 27, SCREENWIDTH, 25)];
+    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 29, SCREENWIDTH, 25)];
     title.textColor = HexRGB(0x1688D2);
     title.textAlignment = NSTextAlignmentCenter;
     title.text = @"分享给好友";
-    title.font = [UIFont systemFontOfSize:18];
+    title.font = [UIFont fontWithName:@"DFPYuanW5" size:18];
     [self.view addSubview:title];
     
-    TFLargerHitButton *backBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(22, 33, 14, 14)];
+    TFLargerHitButton *backBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(22, 35, 14, 14)];
     [backBtn setImage:[UIImage imageNamed:@"cancel2"] forState:UIControlStateNormal];
     [backBtn addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
     
@@ -67,8 +67,8 @@
             break;
     }
     WXMediaMessage *message = [self wxShareSiglMessageScene:[UIImage imageNamed:@"icon120.png"]];
-    message.title = @"宝贝快睡";
-    message.description = @"宝贝快睡";
+    message.title = @"宝贝快睡，婴儿睡眠好帮手";
+    message.description = @"宝贝快睡，婴儿睡眠好帮手";
     
     [self ShareWeixinLinkContent:message WXType:tag - TABLEVIEW_BEGIN_TAG];
 }

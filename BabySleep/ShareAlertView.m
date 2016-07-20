@@ -36,7 +36,7 @@
         label.numberOfLines = 3;
         label.text = @"现在分享给微信好友可以延长播放时间至60分钟喔！";
         label.textColor = HexRGB(0xFA7FAD);
-        label.font = [UIFont systemFontOfSize:24];
+        label.font = [UIFont fontWithName:@"DFPYuanW3" size:24];
         [self.boardView addSubview:label];
         
         TFLargerHitButton *cancel = [TFLargerHitButton buttonWithType:UIButtonTypeCustom];
@@ -81,8 +81,8 @@
 - (void)share
 {
     WXMediaMessage *message = [self wxShareSiglMessageScene:[UIImage imageNamed:@"icon120.png"]];
-    message.title = @"宝贝快睡";
-    message.description = @"宝贝快睡";
+    message.title = @"宝贝快睡，婴儿睡眠好帮手";
+    message.description = @"宝贝快睡，婴儿睡眠好帮手";
     
     [self ShareWeixinLinkContent:message WXType:0];
 }

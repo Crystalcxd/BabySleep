@@ -20,7 +20,7 @@
         self.backgroundColor = color;
         
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(frame), CGRectGetHeight(frame))];
-        label.font = [UIFont systemFontOfSize:24];
+        label.font = [UIFont fontWithName:@"DFPYuanW3" size:24];
         label.textColor = HexRGB(0x1688D2);
         label.textAlignment = NSTextAlignmentCenter;
         label.text = name;

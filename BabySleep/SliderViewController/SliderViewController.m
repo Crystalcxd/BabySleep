@@ -122,9 +122,7 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
-    NSLog(@"appear");
-    
+        
     NSArray *array = [_mainContentView subviews];
     
     NSInteger count = array.count;
@@ -156,8 +154,28 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
 
     _blackCoverView = [[UIView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:_blackCoverView];
+    self.view.clipsToBounds = NO;
     _blackCoverView.backgroundColor = HexRGB(0xFCDEE9);
     _blackCoverView.hidden = YES;
+    _blackCoverView.layer.shadowColor = RGBA(165, 118, 196, 0.65).CGColor;
+    _blackCoverView.layer.shadowOffset = CGSizeMake(-2, 0);
+    
+    UIView *shadowView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 3, SCREENHEIGHT)];
+    
+    CAGradientLayer *gradientLayer = [CAGradientLayer layer];  // 设置渐变效果
+    gradientLayer.bounds = shadowView.bounds;
+    gradientLayer.borderWidth = 0;
+    
+    gradientLayer.frame = shadowView.bounds;
+    gradientLayer.colors = [NSArray arrayWithObjects:
+                             (id)[RGBA(165, 118, 196, 0.65) CGColor],
+                             (id)[[UIColor clearColor] CGColor], nil];
+    gradientLayer.startPoint = CGPointMake(0, 0);
+    gradientLayer.endPoint = CGPointMake(1, 0);
+    
+    [shadowView.layer insertSublayer:gradientLayer atIndex:0];
+    
+    [_blackCoverView addSubview:shadowView];
 }
 
 - (void)initChildControllers:(UIViewController*)leftVC rightVC:(UIViewController*)rightVC
@@ -459,9 +477,9 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
             break;
     }
     
-//    _mainContentView.layer.shadowOffset = CGSizeMake(shadowW, 1.0);
-//    _mainContentView.layer.shadowColor = [UIColor blackColor].CGColor;
-//    _mainContentView.layer.shadowOpacity = 0.8f;
+    _mainContentView.layer.shadowOffset = CGSizeMake(2, 0);
+    _mainContentView.layer.shadowColor = RGBA(165, 118, 196, 0.65).CGColor;
+    _mainContentView.layer.shadowOpacity = 1.0f;
 }
 
 

@@ -34,7 +34,7 @@
     
     CGFloat width = [[SliderViewController sharedSliderController] LeftSContentOffset];
     
-    UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake(39, 38, 71.35, 17.39)];
+    UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake(39, 38, 71.35, 18.39)];
     titleView.image = [UIImage imageNamed:@"babysleep_white"];
     [self.view addSubview:titleView];
         
@@ -48,7 +48,7 @@
 //        [self.view addSubview:imageView];
         
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(imageView.frame) + 13, CGRectGetMinY(imageView.frame) - 8, 200, 28)];
-        label.font = [UIFont systemFontOfSize:20];
+        label.font = [UIFont fontWithName:@"DFPYuanW5" size:20];
         label.textColor = HexRGB(0xFFFFFF);
         label.text = titleArr[i];
 //        [self.view addSubview:label];

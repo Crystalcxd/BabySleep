@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>华康圆体W5.TTF</string>
+		<string>华康圆体W3.otf</string>
+		<string>PingFang.ttc</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -50,34 +56,33 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
-    <key>LSApplicationQueriesSchemes</key>
-    
-    <array>
-        <string>mqqbrowser</string>
-        <string>mqq</string>
-        <string>mqqapi</string>
-        <string>mqqopensdkapiV2</string>
-        <string>weixin</string>
-        <string>wechat</string>
-        <string>tencent</string>
-        <string>QQ</string>
-        <string>wtloginmqq2</string>
-        <string>mqqopensdkapiV3</string>
-        <string>mqqopensdkapiV2</string>
-        <string>mqqwpa</string>
-        <string>mqqOpensdkSSoLogin</string>
-        <string>mqq</string>
-        <string>mqzoneopensdkapiV2</string>
-        <string>mqzoneopensdkapi19</string>
-        <string>mqzoneopensdkapi</string>
-        <string>mqzoneopensdk</string>
-        <string>mqzone</string>
-        <string>wtloginmqq2</string>
-        <string>mqqopensdkapiV3</string>
-        <string>mqqwpa</string>
-        <string>mqqopensdkapiV2</string>
-        <string>mqqOpensdkSSoLogin</string>
-        <string>openmobileqq</string>
-    </array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>mqqbrowser</string>
+		<string>mqq</string>
+		<string>mqqapi</string>
+		<string>mqqopensdkapiV2</string>
+		<string>weixin</string>
+		<string>wechat</string>
+		<string>tencent</string>
+		<string>QQ</string>
+		<string>wtloginmqq2</string>
+		<string>mqqopensdkapiV3</string>
+		<string>mqqopensdkapiV2</string>
+		<string>mqqwpa</string>
+		<string>mqqOpensdkSSoLogin</string>
+		<string>mqq</string>
+		<string>mqzoneopensdkapiV2</string>
+		<string>mqzoneopensdkapi19</string>
+		<string>mqzoneopensdkapi</string>
+		<string>mqzoneopensdk</string>
+		<string>mqzone</string>
+		<string>wtloginmqq2</string>
+		<string>mqqopensdkapiV3</string>
+		<string>mqqwpa</string>
+		<string>mqqopensdkapiV2</string>
+		<string>mqqOpensdkSSoLogin</string>
+		<string>openmobileqq</string>
+	</array>
 </dict>
 </plist>

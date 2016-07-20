@@ -38,6 +38,7 @@
     
 }
 
+@property (nonatomic, assign) BOOL arrawAnimation;
 //@property (nonatomic, weak)  NSTimer *runloopTimer;
 @property (nonatomic, strong) NSMutableArray *onsScreenTags;
 @property (nonatomic, strong) NSMutableArray *onScreenCells;
@@ -90,12 +91,13 @@
         
         self.backArraw = [[UIImageView alloc] initWithFrame:CGRectMake(15, 164, 15, 38)];
         self.backArraw.image = [UIImage imageNamed:@"left"];
-        self.backArraw.hidden = YES;
+//        self.backArraw.hidden = YES;
+        self.backArraw.alpha = 0.0;
         [self addSubview:self.backArraw];
         
         self.nextArraw = [[UIImageView alloc] initWithFrame:CGRectMake(SCREENWIDTH - 15 - 15, CGRectGetMinY(self.backArraw.frame), 15, 38)];
         self.nextArraw.image = [UIImage imageNamed:@"left"];
-        self.nextArraw.hidden = YES;
+        self.nextArraw.alpha = 0.0;
         self.nextArraw.transform = CGAffineTransformRotate(self.nextArraw.transform, M_PI);
 
         [self addSubview:self.nextArraw];
@@ -382,8 +384,30 @@
 
 - (void)showArraw
 {
-    self.backArraw.hidden = NO;
-    self.nextArraw.hidden = NO;
+    if (self.arrawAnimation) {
+        return;
+    }
+    
+    self.arrawAnimation = YES;
+    
+    [UIView animateWithDuration:0.2 animations:^{
+        self.backArraw.alpha = 1.0;
+        self.nextArraw.alpha = 1.0;
+    } completion:^(BOOL finished) {
+        [self performSelector:@selector(fadeArraw) withObject:nil afterDelay:0.5];
+    }];
+}
+
+- (void)fadeArraw
+{
+    __weak typeof(self) weakSelf = self;
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        self.backArraw.alpha = 0.0;
+        self.nextArraw.alpha = 0.0;
+    } completion:^(BOOL finished) {
+        weakSelf.arrawAnimation = NO;
+    }];
 }
 
 - (void)handleTap:(UITapGestureRecognizer *)tap {
