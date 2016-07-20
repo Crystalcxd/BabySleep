@@ -59,17 +59,17 @@
     self.picArray = [NSMutableArray arrayWithObjects:@"baby",@"cleaner",@"girl",@"hairdryer",@"radio", nil];
     self.musicArray = [NSMutableArray arrayWithObjects:@"audio",@"cleaner",@"girl",@"hairdryer",@"whitenoise", nil];
 
-    TFLargerHitButton *leftBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(22, 33, 15, 14)];
+    TFLargerHitButton *leftBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(22, 38, 15, 14)];
     [leftBtn setImage:[UIImage imageNamed:@"menu"] forState:UIControlStateNormal];
     [leftBtn addTarget:self action:@selector(goMenuView) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:leftBtn];
     
-    TFLargerHitButton *rightBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(SCREENWIDTH - 22 - 15, 33, 15, 14)];
+    TFLargerHitButton *rightBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(SCREENWIDTH - 22 - 15, 38, 20, 21)];
     [rightBtn setImage:[UIImage imageNamed:@"strawberry"] forState:UIControlStateNormal];
     [rightBtn addTarget:self action:@selector(share) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:rightBtn];
 
-    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 27, SCREENWIDTH, 25)];
+    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 32, SCREENWIDTH, 25)];
     title.textColor = HexRGB(0x1688D2);
     title.textAlignment = NSTextAlignmentCenter;
     title.text = @"宝贝快睡";
