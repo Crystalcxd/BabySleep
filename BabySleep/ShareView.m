@@ -10,13 +10,25 @@
 
 #import "Utility.h"
 
+@interface ShareView ()
+
+@property (nonatomic , strong) UIColor *normalColor;
+
+@property (nonatomic , strong) UIColor *selectColor;
+
+@end
+
 @implementation ShareView
 
-- (instancetype)initWithFrame:(CGRect)frame Name:(NSString *)name Color:(UIColor *)color
+- (instancetype)initWithFrame:(CGRect)frame Name:(NSString *)name Color:(UIColor *)color selectColor:(UIColor *)selectColor
 {
     self = [super initWithFrame:frame];
     if (self) {
         self.layer.cornerRadius = CGRectGetWidth(frame) * 0.5;
+        
+        self.normalColor = color;
+        self.selectColor = selectColor;
+        
         self.backgroundColor = color;
         
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(frame), CGRectGetHeight(frame))];
@@ -31,6 +43,16 @@
     }
     
     return self;
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    self.backgroundColor = self.selectColor;
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    self.backgroundColor = self.normalColor;
 }
 
 - (void)click:(UITapGestureRecognizer *)recognizer

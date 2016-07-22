@@ -10,6 +10,7 @@
 		4C3DA1F21D3B5B5F0003B5FD /* ShareAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DA1F11D3B5B5F0003B5FD /* ShareAlertView.m */; };
 		4C3DA1F41D3B62650003B5FD /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3DA1F31D3B62650003B5FD /* icon120.png */; };
 		4C3DA1FA1D3B6E3E0003B5FD /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3DA1F61D3B6E3E0003B5FD /* libWeChatSDK.a */; };
+		4C60581F1D424E9E0003EAF3 /* TouchAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C60581E1D424E9E0003EAF3 /* TouchAnimationView.m */; };
 		4CA0C7241D1FAC4E001EDC89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C7231D1FAC4E001EDC89 /* main.m */; };
 		4CA0C7271D1FAC4E001EDC89 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C7261D1FAC4E001EDC89 /* AppDelegate.m */; };
 		4CA0C72A1D1FAC4E001EDC89 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C7291D1FAC4E001EDC89 /* ViewController.m */; };
@@ -76,6 +77,8 @@
 		4C3DA1F71D3B6E3E0003B5FD /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
 		4C3DA1F81D3B6E3E0003B5FD /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		4C3DA1F91D3B6E3E0003B5FD /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		4C60581D1D424E9E0003EAF3 /* TouchAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchAnimationView.h; sourceTree = "<group>"; };
+		4C60581E1D424E9E0003EAF3 /* TouchAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchAnimationView.m; sourceTree = "<group>"; };
 		4CA0C71F1D1FAC4E001EDC89 /* BabySleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabySleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA0C7231D1FAC4E001EDC89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CA0C7251D1FAC4E001EDC89 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -235,6 +238,8 @@
 				A42349B81D2CF1CA009A5ECC /* ShareView.m */,
 				4C3DA1F01D3B5B5F0003B5FD /* ShareAlertView.h */,
 				4C3DA1F11D3B5B5F0003B5FD /* ShareAlertView.m */,
+				4C60581D1D424E9E0003EAF3 /* TouchAnimationView.h */,
+				4C60581E1D424E9E0003EAF3 /* TouchAnimationView.m */,
 				4CA0C72B1D1FAC4E001EDC89 /* Main.storyboard */,
 				4CA0C72E1D1FAC4E001EDC89 /* Assets.xcassets */,
 				4CA0C7301D1FAC4E001EDC89 /* LaunchScreen.storyboard */,
@@ -495,6 +500,7 @@
 				4CAE50971D369057009FE262 /* MptPageControl.m in Sources */,
 				4CA0C7271D1FAC4E001EDC89 /* AppDelegate.m in Sources */,
 				4CA0C7241D1FAC4E001EDC89 /* main.m in Sources */,
+				4C60581F1D424E9E0003EAF3 /* TouchAnimationView.m in Sources */,
 				4CE52FA61D29057C009576C6 /* LeftViewController.m in Sources */,
 				A4FEA1401D2B990200FB7FE0 /* NoiseViewController.m in Sources */,
 				4CE52FA21D28CB12009576C6 /* Utility.m in Sources */,

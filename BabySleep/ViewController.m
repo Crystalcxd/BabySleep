@@ -16,6 +16,7 @@
 
 #import "CartoonHeadView.h"
 #import "ShareAlertView.h"
+#import "TouchAnimationView.h"
 
 #import "WMUserDefault.h"
 
@@ -68,12 +69,14 @@
 
     TFLargerHitButton *leftBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(22, 43, 15, 14)];
     [leftBtn setImage:[UIImage imageNamed:@"menu"] forState:UIControlStateNormal];
-    [leftBtn addTarget:self action:@selector(goMenuView) forControlEvents:UIControlEventTouchUpInside];
+    [leftBtn addTarget:self action:@selector(goMenuView:) forControlEvents:UIControlEventTouchUpInside];
+    [leftBtn setAdjustsImageWhenHighlighted:NO];
     [self.view addSubview:leftBtn];
     
     TFLargerHitButton *rightBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(SCREENWIDTH - 23 - 15, 39, 20, 21)];
     [rightBtn setImage:[UIImage imageNamed:@"strawberry"] forState:UIControlStateNormal];
-    [rightBtn addTarget:self action:@selector(share) forControlEvents:UIControlEventTouchUpInside];
+    [rightBtn addTarget:self action:@selector(share:) forControlEvents:UIControlEventTouchUpInside];
+    [rightBtn setAdjustsImageWhenHighlighted:NO];
     [self.view addSubview:rightBtn];
 
     UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake((SCREENWIDTH - 71.35) * 0.5, 40, 71.35, 19.39)];
@@ -178,8 +181,14 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playBtnAction:) name:@"pauseMusic" object:nil];
 }
 
--(void)goMenuView
+-(void)goMenuView:(id)sender
 {
+    UIButton *button = (UIButton *)sender;
+    
+    TouchAnimationView *view = [[TouchAnimationView alloc] initWithFrame:CGRectMake(button.center.x - 5, button.center.y - 5, 10, 10)];
+    [self.view addSubview:view];
+    [view disappearAnimation];
+    
     [[SliderViewController sharedSliderController] leftItemClick];
 }
 
@@ -188,8 +197,14 @@
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/cn/app/le-yi-le-you-hui-quan/id1004844450?mt=8"]];
 }
 
--(void)share
+-(void)share:(id)sender
 {
+    UIButton *button = (UIButton *)sender;
+    
+    TouchAnimationView *view = [[TouchAnimationView alloc] initWithFrame:CGRectMake(button.center.x - 5, button.center.y - 5, 10, 10)];
+    [self.view addSubview:view];
+    [view disappearAnimation];
+
     ShareAlertView *alertView = [[ShareAlertView alloc] initWithFrame:self.view.frame];
     [self.view addSubview:alertView];
     
@@ -247,6 +262,10 @@
 {
     UIButton *btn = (UIButton *)sender;
     
+    TouchAnimationView *view = [[TouchAnimationView alloc] initWithFrame:CGRectMake(btn.center.x - 5, btn.center.y - 5, 10, 10)];
+    [self.view addSubview:view];
+    [view disappearAnimation];
+
     BOOL fromNotification = NO;
     
     if (!btn) {
@@ -275,6 +294,12 @@
 
 -(void)jumpBtnAction:(id)sender
 {
+    UIButton *button = (UIButton *)sender;
+    
+    TouchAnimationView *view = [[TouchAnimationView alloc] initWithFrame:CGRectMake(button.center.x - 5, button.center.y - 5, 10, 10)];
+    [self.view addSubview:view];
+    [view disappearAnimation];
+
     UIButton *btn = (UIButton *)sender;
     
     [self.tableheadView scrollWithType:btn.tag - TABLEVIEW_BEGIN_TAG];

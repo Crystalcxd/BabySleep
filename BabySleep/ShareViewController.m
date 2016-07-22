@@ -45,12 +45,12 @@
     
     [self.view addSubview:backBtn];
 
-    ShareView *weixin = [[ShareView alloc] initWithFrame:CGRectMake(SCREENWIDTH * 0.5 - 70, 156, 140, 140) Name:@"微信" Color:HexRGB(0xD1EEA1)];
+    ShareView *weixin = [[ShareView alloc] initWithFrame:CGRectMake(SCREENWIDTH * 0.5 - 70, 156, 140, 140) Name:@"微信" Color:HexRGB(0xC2EC7D) selectColor:HexRGB(0xD1EEA1)];
     weixin.tag = TABLEVIEW_BEGIN_TAG;
     weixin.delagate = self;
     [self.view addSubview:weixin];
     
-    ShareView *pengyouquan = [[ShareView alloc] initWithFrame:CGRectMake(SCREENWIDTH * 0.5 - 70, 350, 140, 140) Name:@"朋友圈" Color:HexRGB(0xB1DCF3)];
+    ShareView *pengyouquan = [[ShareView alloc] initWithFrame:CGRectMake(SCREENWIDTH * 0.5 - 70, 350, 140, 140) Name:@"朋友圈" Color:HexRGB(0x9CD6F6) selectColor:HexRGB(0xB1DCF3)];
     pengyouquan.tag = TABLEVIEW_BEGIN_TAG + 1;
     pengyouquan.delagate = self;
     [self.view addSubview:pengyouquan];

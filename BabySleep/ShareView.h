@@ -14,7 +14,7 @@
 
 @property (nonatomic , assign) id<ShareViewDelegate> delagate;
 
-- (instancetype)initWithFrame:(CGRect)frame Name:(NSString *)name Color:(UIColor *)color;
+- (instancetype)initWithFrame:(CGRect)frame Name:(NSString *)name Color:(UIColor *)color selectColor:(UIColor *)selectColor;
 
 @end
 
