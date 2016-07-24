@@ -145,12 +145,15 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
 {
     _rightSideView = [[UIView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:_rightSideView];
-
-    _leftSideView = [[UIView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:_leftSideView];
     
     _mainContentView = [[UIView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:_mainContentView];
+
+    CGRect frame = self.view.bounds;
+    frame.origin.x = -SCREENWIDTH;
+    
+    _leftSideView = [[UIView alloc] initWithFrame:frame];
+    [self.view addSubview:_leftSideView];
 
     _blackCoverView = [[UIView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:_blackCoverView];
@@ -256,11 +259,11 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
         
         [UIView animateWithDuration:_LeftSOpenDuration
                          animations:^{
-                             _mainContentView.transform = conT;
+                             _leftSideView.transform = conT;
                              
                              _blackCoverView.hidden = NO;
                              _blackCoverView.alpha = kBlackCoverMaxAlpha;
-                             _blackCoverView.frame = _mainContentView.frame;
+                             _blackCoverView.transform = conT;
                          }
                          completion:^(BOOL finished) {
                              _tapGestureRec.enabled = YES;
@@ -302,9 +305,9 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
     CGAffineTransform oriT = CGAffineTransformIdentity;
     [UIView animateWithDuration:_mainContentView.transform.tx==_LeftSContentOffset?_LeftSCloseDuration:_RightSCloseDuration
                      animations:^{
-                         _mainContentView.transform = oriT;
+                         _leftSideView.transform = oriT;
                          _blackCoverView.alpha = 0.0f;
-                         _blackCoverView.frame = _mainContentView.frame;
+                         _blackCoverView.transform = oriT;
                      }
                      completion:^(BOOL finished) {
                          _tapGestureRec.enabled = NO;

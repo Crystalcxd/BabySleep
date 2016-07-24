@@ -36,7 +36,7 @@
     
     /*画圆*/
     //边框圆
-    CGContextSetRGBStrokeColor(context,1,209/255.0,226/255.0,1.0);//画笔线的颜色
+    CGContextSetRGBStrokeColor(context,252/255.0,48/255.0,137/255.0,1.0);//画笔线的颜色
     CGContextSetLineWidth(context, 0.6);//线的宽度
     //void CGContextAddArc(CGContextRef c,CGFloat x, CGFloat y,CGFloat radius,CGFloat startAngle,CGFloat endAngle, int clockwise)1弧度＝180°/π （≈57.3°） 度＝弧度×180°/π 360°＝360×π/180 ＝2π 弧度
     // x,y为圆点坐标，radius半径，startAngle为开始的弧度，endAngle为 结束的弧度，clockwise 0为顺时针，1为逆时针。
@@ -48,9 +48,9 @@
 {
     __weak typeof (self) weakSelf = self;
 
-    [UIView animateWithDuration:0.5 animations:^{
-        [weakSelf setTransform:CGAffineTransformMakeScale(4, 4)];
-//        [weakSelf setAlpha:0.5];
+    [UIView animateWithDuration:1.0 animations:^{
+        [weakSelf setTransform:CGAffineTransformMakeScale(64.0/44, 64.0/44)];
+        [weakSelf setAlpha:0.0];
     } completion:^(BOOL finished) {
         [weakSelf removeFromSuperview];
     }];

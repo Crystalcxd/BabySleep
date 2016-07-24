@@ -32,13 +32,35 @@
         self.boardView.layer.borderColor = HexRGB(0xFFD1E2).CGColor;
         [self addSubview:self.boardView];
         
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(26, 52, 195, 99)];
-        label.numberOfLines = 3;
-        label.text = @"现在分享给微信好友可以延长播放时间至60分钟喔！";
-        label.textColor = HexRGB(0xFA7FAD);
-        label.font = [UIFont fontWithName:@"DFPYuanW3" size:24];
-        [self.boardView addSubview:label];
+//        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(26, 52, 195, 99)];
+//        label.numberOfLines = 3;
+//        label.text = @"现在分享给微信好友可以延长播放时间至60分钟喔！";
+//        label.textColor = HexRGB(0xFA7FAD);
+//        label.font = [UIFont fontWithName:@"DFPYuanW3" size:24];
+//        [self.boardView addSubview:label];
         
+        UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(26, 52, 195, 120)];
+        textView.editable = NO;
+        textView.backgroundColor = [UIColor clearColor];
+        textView.showsVerticalScrollIndicator = NO;
+        textView.showsHorizontalScrollIndicator = NO;
+        textView.textColor = HexRGB(0xFA7FAD);
+        textView.scrollEnabled = NO;
+        textView.font = [UIFont fontWithName:@"DFPYuanW3" size:24];
+        textView.text = @"现在分享给微信好友可以延长播放时间至60分钟喔！";
+        
+        NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+        paragraphStyle.lineSpacing = 9;// 字体的行间距
+        
+        NSDictionary *attributes = @{
+                                     NSFontAttributeName:textView.font,
+                                     NSParagraphStyleAttributeName:paragraphStyle,
+                                     NSForegroundColorAttributeName:textView.textColor
+                                     };
+        textView.attributedText = [[NSAttributedString alloc] initWithString:textView.text attributes:attributes];
+        
+        [self.boardView addSubview:textView];
+
         TFLargerHitButton *cancel = [TFLargerHitButton buttonWithType:UIButtonTypeCustom];
         cancel.frame = CGRectMake(206, 15, 18, 18);
         [cancel setImage:[UIImage imageNamed:@"cancel"] forState:UIControlStateNormal];

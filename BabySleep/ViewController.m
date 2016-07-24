@@ -17,6 +17,7 @@
 #import "CartoonHeadView.h"
 #import "ShareAlertView.h"
 #import "TouchAnimationView.h"
+#import "TouchInsideAnimationView.h"
 
 #import "WMUserDefault.h"
 
@@ -153,14 +154,14 @@
     
     self.currentTime = [[UILabel alloc] initWithFrame:CGRectMake(0, scrollViewY, 52, 20)];
     self.currentTime.textAlignment = NSTextAlignmentRight;
-    self.currentTime.font = [UIFont fontWithName:@"PingFangSC-Regular" size:14];
+    self.currentTime.font = [UIFont fontWithName:@"PingFangSC-Light" size:14];
     self.currentTime.textColor = HexRGB(0x1688D2);
     self.currentTime.text = @"00:00";
     [self.view addSubview:self.currentTime];
     
     self.totalTime = [[UILabel alloc] initWithFrame:CGRectMake(SCREENWIDTH - 52, scrollViewY, 52, 20)];
     self.totalTime.textAlignment = NSTextAlignmentLeft;
-    self.totalTime.font = [UIFont fontWithName:@"PingFangSC-Regular" size:14];
+    self.totalTime.font = [UIFont fontWithName:@"PingFangSC-Light" size:14];
     self.totalTime.textColor = HexRGB(0x1688D2);
     self.totalTime.text = @"00:00";
     [self.view addSubview:self.totalTime];
@@ -185,9 +186,7 @@
 {
     UIButton *button = (UIButton *)sender;
     
-    TouchAnimationView *view = [[TouchAnimationView alloc] initWithFrame:CGRectMake(button.center.x - 5, button.center.y - 5, 10, 10)];
-    [self.view addSubview:view];
-    [view disappearAnimation];
+    [self touchAnimationWithBtn:button];
     
     [[SliderViewController sharedSliderController] leftItemClick];
 }
@@ -201,14 +200,71 @@
 {
     UIButton *button = (UIButton *)sender;
     
-    TouchAnimationView *view = [[TouchAnimationView alloc] initWithFrame:CGRectMake(button.center.x - 5, button.center.y - 5, 10, 10)];
-    [self.view addSubview:view];
-    [view disappearAnimation];
-
+    [self touchAnimationWithBtn:button];
+    
     ShareAlertView *alertView = [[ShareAlertView alloc] initWithFrame:self.view.frame];
     [self.view addSubview:alertView];
     
     [alertView showView];
+}
+
+-(void)playBtnAction:(id)sender
+{
+    UIButton *btn = (UIButton *)sender;
+    
+    [self touchAnimationWithBtn:btn];
+    
+    BOOL fromNotification = NO;
+    
+    if (!btn) {
+        btn = self.playBtn;
+        fromNotification = YES;
+    }
+    
+    if (btn.selected) {
+        [self pauseMusic];
+    }else{
+        if (fromNotification) {
+            return;
+        }
+        if (player) {
+            [player play];
+        }else{
+            self.currentPlayTime = 0;
+            [self playMusicWithIndex:self.musicIndex];
+        }
+        
+        [self playMusicInstall];
+    }
+    
+    btn.selected = !btn.selected;
+}
+
+-(void)jumpBtnAction:(id)sender
+{
+    UIButton *button = (UIButton *)sender;
+    
+    [self touchAnimationWithBtn:button];
+    
+    TouchAnimationView *view = [[TouchAnimationView alloc] initWithFrame:CGRectMake(button.center.x - 5, button.center.y - 5, 10, 10)];
+    [self.view addSubview:view];
+    [view disappearAnimation];
+    
+    UIButton *btn = (UIButton *)sender;
+    
+    [self.tableheadView scrollWithType:btn.tag - TABLEVIEW_BEGIN_TAG];
+}
+
+- (void)touchAnimationWithBtn:(UIButton *)button
+{
+    TouchAnimationView *view = [[TouchAnimationView alloc] initWithFrame:CGRectMake(button.center.x - 22, button.center.y - 22, 44, 44)];
+    [self.view addSubview:view];
+    
+    TouchInsideAnimationView *insideView = [[TouchInsideAnimationView alloc] initWithFrame:CGRectMake(button.center.x - 4, button.center.y - 4, 8, 8)];
+    [self.view addSubview:insideView];
+    
+    [view disappearAnimation];
+    [insideView disappearAnimation];
 }
 
 #pragma mark
@@ -256,53 +312,6 @@
     [self playMusicInstall];
     
     self.playBtn.selected = YES;
-}
-
--(void)playBtnAction:(id)sender
-{
-    UIButton *btn = (UIButton *)sender;
-    
-    TouchAnimationView *view = [[TouchAnimationView alloc] initWithFrame:CGRectMake(btn.center.x - 5, btn.center.y - 5, 10, 10)];
-    [self.view addSubview:view];
-    [view disappearAnimation];
-
-    BOOL fromNotification = NO;
-    
-    if (!btn) {
-        btn = self.playBtn;
-        fromNotification = YES;
-    }
-    
-    if (btn.selected) {
-        [self pauseMusic];
-    }else{
-        if (fromNotification) {
-            return;
-        }
-        if (player) {
-            [player play];
-        }else{
-            self.currentPlayTime = 0;
-            [self playMusicWithIndex:self.musicIndex];
-        }
-        
-        [self playMusicInstall];
-    }
-    
-    btn.selected = !btn.selected;
-}
-
--(void)jumpBtnAction:(id)sender
-{
-    UIButton *button = (UIButton *)sender;
-    
-    TouchAnimationView *view = [[TouchAnimationView alloc] initWithFrame:CGRectMake(button.center.x - 5, button.center.y - 5, 10, 10)];
-    [self.view addSubview:view];
-    [view disappearAnimation];
-
-    UIButton *btn = (UIButton *)sender;
-    
-    [self.tableheadView scrollWithType:btn.tag - TABLEVIEW_BEGIN_TAG];
 }
 
 - (void)playMusicWithIndex:(NSInteger)index

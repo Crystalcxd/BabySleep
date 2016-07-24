@@ -34,7 +34,9 @@
     
     CGFloat width = [[SliderViewController sharedSliderController] LeftSContentOffset];
     
-    UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake(39, 38, 71.35, 18.39)];
+    CGFloat leftPadding = SCREENWIDTH - width;
+    
+    UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake(39 + leftPadding, 38, 71.35, 18.39)];
     titleView.image = [UIImage imageNamed:@"babysleep_white"];
     [self.view addSubview:titleView];
         
@@ -53,28 +55,28 @@
         label.text = titleArr[i];
 //        [self.view addSubview:label];
         
-        UIImageView *line = [[UIImageView alloc] initWithFrame:CGRectMake(0, CGRectGetMinY(imageView.frame) + 47, SCREENWIDTH * 0.618667, 3)];
+        UIImageView *line = [[UIImageView alloc] initWithFrame:CGRectMake(leftPadding, CGRectGetMinY(imageView.frame) + 47, SCREENWIDTH * 0.618667, 3)];
         line.image = [UIImage imageNamed:@"line"];
         [self.view addSubview:line];
         
         UIButton *clickBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        clickBtn.frame = CGRectMake(39, 123 + i * 93, 232, 80);
+        clickBtn.frame = CGRectMake(39 + leftPadding, 123 + i * 93, 232, 80);
         [clickBtn setImage:[UIImage imageNamed:imgStr] forState:UIControlStateNormal];
         [clickBtn setTitle:titleArr[i] forState:UIControlStateNormal];
         [clickBtn setTitleColor:HexRGB(0xffffff) forState:UIControlStateNormal];
         [clickBtn setTitleColor:HexRGB(0xA0E5F8) forState:UIControlStateHighlighted];
         [clickBtn setTitleEdgeInsets:UIEdgeInsetsMake(0, 13, 0, 0)];
-        [clickBtn.titleLabel setFont:[UIFont systemFontOfSize:20]];
+        [clickBtn.titleLabel setFont:[UIFont fontWithName:@"DFPYuanW5" size:20]];
         [clickBtn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
         clickBtn.tag = TABLEVIEW_BEGIN_TAG + i;
         [clickBtn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:clickBtn];
     }
     
-    TFLargerHitButton *btn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(37, SCREENHEIGHT - 42, 56, 20)];
+    TFLargerHitButton *btn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(37 + leftPadding, SCREENHEIGHT - 42, 56, 20)];
     [btn setTitle:@"其他应用" forState:UIControlStateNormal];
     [btn setTitleColor:HexRGB(0x1688D2) forState:UIControlStateNormal];
-    [btn.titleLabel setFont:[UIFont systemFontOfSize:14]];
+    [btn.titleLabel setFont:[UIFont fontWithName:@"DFPYuanW5" size:14]];
     [btn addTarget:self action:@selector(goOtherAppDownload) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
 }
