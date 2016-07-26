@@ -70,6 +70,8 @@
         UIButton *shareBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         shareBtn.frame = CGRectMake(0, 164, 242, 70);
         [shareBtn setBackgroundColor:HexRGB(0xFFD1E2)];
+        [shareBtn setBackgroundImage:[self createImageWithColor:HexRGB(0xFFD1E2)] forState:UIControlStateNormal];
+        [shareBtn setBackgroundImage:[self createImageWithColor:RGBA(253, 183, 209, 1)] forState:UIControlStateHighlighted];
         [shareBtn setTitle:@"分享" forState:UIControlStateNormal];
         [shareBtn setTitleColor:HexRGB(0xFF5D80) forState:UIControlStateNormal];
         [shareBtn.titleLabel setFont:[UIFont systemFontOfSize:18]];
@@ -78,6 +80,18 @@
     }
     
     return self;
+}
+
+- (UIImage*) createImageWithColor: (UIColor*) color
+{
+    CGRect rect=CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return theImage;
 }
 
 - (void)showView

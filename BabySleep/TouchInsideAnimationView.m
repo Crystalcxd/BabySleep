@@ -16,7 +16,7 @@
     if (self) {
         self.layer.cornerRadius = CGRectGetWidth(frame) * 0.5;
         
-        self.backgroundColor = [UIColor colorWithWhite:0 alpha:0.5];
+        self.backgroundColor = [UIColor colorWithRed:252.0/255 green:48.0/255  blue:137.0/255 alpha:0.5];
     }
     
     return self;
@@ -26,12 +26,12 @@
 {
     __weak typeof (self) weakSelf = self;
 
-    [UIView animateWithDuration:0.5 animations:^{
-        weakSelf.backgroundColor = [UIColor colorWithWhite:0 alpha:1.0];
+    [UIView animateWithDuration:0.2 animations:^{
+        self.backgroundColor = [UIColor colorWithRed:252.0/255 green:48.0/255  blue:137.0/255 alpha:1.0];
         [weakSelf setTransform:CGAffineTransformScale(weakSelf.transform, 12.0/8, 12.0/8)];
     } completion:^(BOOL finished) {
-        [UIView animateWithDuration:1.0 animations:^{
-            weakSelf.backgroundColor = [UIColor colorWithWhite:0 alpha:0.0];
+        [UIView animateWithDuration:0.5 animations:^{
+            self.backgroundColor = [UIColor colorWithRed:252.0/255 green:48.0/255  blue:137.0/255 alpha:0.0];
             [weakSelf setTransform:CGAffineTransformScale(weakSelf.transform, 6.0/12, 6.0/12)];
         } completion:^(BOOL finished) {
             [weakSelf removeFromSuperview];

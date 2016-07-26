@@ -184,9 +184,9 @@
 
 -(void)goMenuView:(id)sender
 {
-    UIButton *button = (UIButton *)sender;
+//    UIButton *button = (UIButton *)sender;
     
-    [self touchAnimationWithBtn:button];
+//    [self touchAnimationWithBtn:button];
     
     [[SliderViewController sharedSliderController] leftItemClick];
 }
@@ -212,11 +212,13 @@
 {
     UIButton *btn = (UIButton *)sender;
     
-    [self touchAnimationWithBtn:btn];
+    if ([btn isKindOfClass:[UIButton class]]) {
+        [self touchAnimationWithBtn:btn];
+    }
     
     BOOL fromNotification = NO;
     
-    if (!btn) {
+    if (![btn isKindOfClass:[UIButton class]]) {
         btn = self.playBtn;
         fromNotification = YES;
     }
@@ -245,10 +247,6 @@
     UIButton *button = (UIButton *)sender;
     
     [self touchAnimationWithBtn:button];
-    
-    TouchAnimationView *view = [[TouchAnimationView alloc] initWithFrame:CGRectMake(button.center.x - 5, button.center.y - 5, 10, 10)];
-    [self.view addSubview:view];
-    [view disappearAnimation];
     
     UIButton *btn = (UIButton *)sender;
     
@@ -335,10 +333,10 @@
     [player play];
     player.numberOfLoops = -1;
     
-//    //设置锁屏仍能继续播放
-//    [[AVAudioSession sharedInstance] setActive: YES error: nil];
-//    [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategorySoloAmbient error:nil];
-//    [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategoryPlayback error:nil];
+    //设置锁屏仍能继续播放
+    [[AVAudioSession sharedInstance] setActive: YES error: nil];
+    [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategorySoloAmbient error:nil];
+    [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategoryPlayback error:nil];
 }
 
 - (void)playMusicInstall

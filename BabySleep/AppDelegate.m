@@ -20,6 +20,16 @@
 
 @implementation AppDelegate
 
+static void displayStatusChanged(CFNotificationCenterRef center,
+                                void *observer,
+                                CFStringRef name,
+                                const void *object,
+                                CFDictionaryRef userInfo) {
+    if (name ==CFSTR("com.apple.springboard.lockcomplete")) {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"kDisplayStatusLocked"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -27,6 +37,12 @@
         [WMUserDefault setObjectValue:@"5" forKey:@"playtime"];
     }
     
+    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(),
+                                    NULL,
+                                    displayStatusChanged,
+                                    CFSTR("com.apple.springboard.lockcomplete"),
+                                    NULL,
+                                    CFNotificationSuspensionBehaviorDeliverImmediately);
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
@@ -75,13 +91,27 @@
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"pauseMusic" object:nil];
+    UIApplicationState state = [[UIApplication sharedApplication] applicationState];
+    if (state ==UIApplicationStateInactive) {
+        NSLog(@"按了锁屏键");
+    }
+    else if (state == UIApplicationStateBackground) {
+        if (![[NSUserDefaults standardUserDefaults] boolForKey:@"kDisplayStatusLocked"]) {
+            NSLog(@"按了home键，或者跳转到另一个app");
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"pauseMusic" object:nil];
+        }
+        else {
+            NSLog(@"按了锁屏键");
+        }
+    }
+//    [self performSelector:@selector(checkBright) withObject:nil afterDelay:3.0];
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"kDisplayStatusLocked"];
+    [[NSUserDefaults standardUserDefaults] synchronize];    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {

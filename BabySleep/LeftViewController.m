@@ -41,6 +41,7 @@
     [self.view addSubview:titleView];
         
     NSArray *imageArr = [NSArray arrayWithObjects:@"noise",@"share",@"advice", nil];
+    NSArray *selectImageArr = [NSArray arrayWithObjects:@"whitenoise_touch" ,@"share_touch",@"suggest_touch",nil];
     NSArray *titleArr = [NSArray arrayWithObjects:@"白噪音",@"分享给好友",@"您的建议", nil];
     
     for (int i = 0; i < imageArr.count; i++) {
@@ -62,6 +63,7 @@
         UIButton *clickBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         clickBtn.frame = CGRectMake(39 + leftPadding, 123 + i * 93, 232, 80);
         [clickBtn setImage:[UIImage imageNamed:imgStr] forState:UIControlStateNormal];
+        [clickBtn setImage:[UIImage imageNamed:selectImageArr[i]] forState:UIControlStateHighlighted];
         [clickBtn setTitle:titleArr[i] forState:UIControlStateNormal];
         [clickBtn setTitleColor:HexRGB(0xffffff) forState:UIControlStateNormal];
         [clickBtn setTitleColor:HexRGB(0xA0E5F8) forState:UIControlStateHighlighted];
