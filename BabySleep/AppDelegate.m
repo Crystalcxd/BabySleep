@@ -14,7 +14,12 @@
 
 #import "WMUserDefault.h"
 
+#import "MMPDeepSleepPreventer.h"
+
 @interface AppDelegate ()
+
+@property (nonatomic, unsafe_unretained) UIBackgroundTaskIdentifier backgroundIdentifier;
+@property (nonatomic)UIBackgroundTaskIdentifier taskID;
 
 @end
 
@@ -61,6 +66,10 @@ static void displayStatusChanged(CFNotificationCenterRef center,
 
     [WXApi registerApp:WXAppId];
 
+    //增强后台运行
+    MMPDeepSleepPreventer *niceSleep = [[MMPDeepSleepPreventer alloc] init];
+    [niceSleep startPreventSleep];
+
     return YES;
 }
 
@@ -91,6 +100,18 @@ static void displayStatusChanged(CFNotificationCenterRef center,
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
+//    self.isInBackground = YES;
+    UIApplication *app = [UIApplication sharedApplication];
+    self.taskID = [app beginBackgroundTaskWithExpirationHandler:^{ //如果系统觉得我们运行时间太长，将执行这个程序块，并停止运行应用程序
+        
+        [app endBackgroundTask:self.taskID];
+    }];
+    
+    if (self.taskID == UIBackgroundTaskInvalid) {//UIBackgroundTaskInvalid表示系统没有为我们提供额外的时间
+        
+        return;
+    }
+
     UIApplicationState state = [[UIApplication sharedApplication] applicationState];
     if (state ==UIApplicationStateInactive) {
         NSLog(@"按了锁屏键");

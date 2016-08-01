@@ -19,6 +19,8 @@
 #import "TouchAnimationView.h"
 #import "TouchInsideAnimationView.h"
 
+#import "AudioTask.h"
+
 #import "WMUserDefault.h"
 
 #import <AVFoundation/AVFoundation.h>
@@ -301,6 +303,8 @@
 {
     NSLog(@"page ==== %ld",index);
     
+    self.musicIndex = index;
+    
     [self stopMusic];
     
     self.currentPlayTime = 0;
@@ -328,15 +332,17 @@
     
     self.playTime = playMins.integerValue * 60;
     
-    player=[[AVAudioPlayer alloc] initWithContentsOfURL:url error:Nil];
-    [player prepareToPlay];
-    [player play];
-    player.numberOfLoops = -1;
+    [[AudioTask shareAudioTask] setUrl:url];
+    [[AudioTask shareAudioTask] startTaskWithTyep:backgroundTask];
     
-    //设置锁屏仍能继续播放
-    [[AVAudioSession sharedInstance] setActive: YES error: nil];
-    [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategorySoloAmbient error:nil];
-    [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategoryPlayback error:nil];
+//    //设置锁屏仍能继续播放
+//    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback withOptions:AVAudioSessionCategoryOptionMixWithOthers error:nil];
+//    [[AVAudioSession sharedInstance] setActive: YES error: nil];
+//    
+//    player=[[AVAudioPlayer alloc] initWithContentsOfURL:url error:Nil];
+//    player.numberOfLoops = -1;
+//    [player prepareToPlay];
+//    [player play];
 }
 
 - (void)playMusicInstall
@@ -366,15 +372,19 @@
 
 - (void)stopMusic
 {
-    [player stop];
-    player = nil;
+    [[AudioTask shareAudioTask] stopTaskWithType:backgroundTask];
+
+//    [player stop];
+//    player = nil;
     
     [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(playMusicTimer) object:nil];
 }
 
 - (void)pauseMusic
 {
-    [player pause];
+    [[AudioTask shareAudioTask] stopTaskWithType:backgroundTask];
+
+//    [player pause];
     
     [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(playMusicTimer) object:nil];
 }

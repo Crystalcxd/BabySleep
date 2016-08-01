@@ -40,6 +40,9 @@
 		A42349B91D2CF1CA009A5ECC /* ShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = A42349B81D2CF1CA009A5ECC /* ShareView.m */; };
 		A4E3FB341D3F6E7C00EEEF94 /* 华康圆体W3.otf in Resources */ = {isa = PBXBuildFile; fileRef = A4E3FB321D3F6E7B00EEEF94 /* 华康圆体W3.otf */; };
 		A4E3FB351D3F6E7C00EEEF94 /* 华康圆体W5.TTF in Resources */ = {isa = PBXBuildFile; fileRef = A4E3FB331D3F6E7C00EEEF94 /* 华康圆体W5.TTF */; };
+		A4E5DF581D4F18C7008AABE4 /* MMPDeepSleepPreventer.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E5DF561D4F18C7008AABE4 /* MMPDeepSleepPreventer.m */; };
+		A4E5DF591D4F18C7008AABE4 /* MMPSilence.wav in Resources */ = {isa = PBXBuildFile; fileRef = A4E5DF571D4F18C7008AABE4 /* MMPSilence.wav */; };
+		A4E5DF5D1D4F29DE008AABE4 /* AudioTask.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E5DF5C1D4F29DE008AABE4 /* AudioTask.m */; };
 		A4FEA1341D2B559900FB7FE0 /* audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4FEA1291D2B559900FB7FE0 /* audio.mp3 */; };
 		A4FEA1351D2B559900FB7FE0 /* cleaner.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4FEA12A1D2B559900FB7FE0 /* cleaner.mp3 */; };
 		A4FEA1361D2B559900FB7FE0 /* girl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4FEA12B1D2B559900FB7FE0 /* girl.mp3 */; };
@@ -130,6 +133,11 @@
 		A42349B81D2CF1CA009A5ECC /* ShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareView.m; sourceTree = "<group>"; };
 		A4E3FB321D3F6E7B00EEEF94 /* 华康圆体W3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "华康圆体W3.otf"; sourceTree = "<group>"; };
 		A4E3FB331D3F6E7C00EEEF94 /* 华康圆体W5.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "华康圆体W5.TTF"; sourceTree = "<group>"; };
+		A4E5DF551D4F18C7008AABE4 /* MMPDeepSleepPreventer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPDeepSleepPreventer.h; sourceTree = "<group>"; };
+		A4E5DF561D4F18C7008AABE4 /* MMPDeepSleepPreventer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPDeepSleepPreventer.m; sourceTree = "<group>"; };
+		A4E5DF571D4F18C7008AABE4 /* MMPSilence.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MMPSilence.wav; sourceTree = "<group>"; };
+		A4E5DF5B1D4F29DE008AABE4 /* AudioTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioTask.h; sourceTree = "<group>"; };
+		A4E5DF5C1D4F29DE008AABE4 /* AudioTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioTask.m; sourceTree = "<group>"; };
 		A4FEA1291D2B559900FB7FE0 /* audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio.mp3; sourceTree = "<group>"; };
 		A4FEA12A1D2B559900FB7FE0 /* cleaner.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cleaner.mp3; sourceTree = "<group>"; };
 		A4FEA12B1D2B559900FB7FE0 /* girl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = girl.mp3; sourceTree = "<group>"; };
@@ -214,6 +222,8 @@
 		4CA0C7211D1FAC4E001EDC89 /* BabySleep */ = {
 			isa = PBXGroup;
 			children = (
+				A4E5DF5A1D4F29DE008AABE4 /* MusicHelper */,
+				A4E5DF541D4F18C7008AABE4 /* MMPDeepSleepPreventer */,
 				4C3DA1F51D3B6E3E0003B5FD /* opensource */,
 				4CE52F9A1D28CB12009576C6 /* Utility */,
 				4CE52F961D28CAD9009576C6 /* SliderViewController */,
@@ -310,6 +320,25 @@
 				A4E3FB331D3F6E7C00EEEF94 /* 华康圆体W5.TTF */,
 			);
 			path = font;
+			sourceTree = "<group>";
+		};
+		A4E5DF541D4F18C7008AABE4 /* MMPDeepSleepPreventer */ = {
+			isa = PBXGroup;
+			children = (
+				A4E5DF551D4F18C7008AABE4 /* MMPDeepSleepPreventer.h */,
+				A4E5DF561D4F18C7008AABE4 /* MMPDeepSleepPreventer.m */,
+				A4E5DF571D4F18C7008AABE4 /* MMPSilence.wav */,
+			);
+			path = MMPDeepSleepPreventer;
+			sourceTree = "<group>";
+		};
+		A4E5DF5A1D4F29DE008AABE4 /* MusicHelper */ = {
+			isa = PBXGroup;
+			children = (
+				A4E5DF5B1D4F29DE008AABE4 /* AudioTask.h */,
+				A4E5DF5C1D4F29DE008AABE4 /* AudioTask.m */,
+			);
+			path = MusicHelper;
 			sourceTree = "<group>";
 		};
 		A4FEA1271D2B559900FB7FE0 /* Resource */ = {
@@ -455,6 +484,7 @@
 			files = (
 				4CA0C7321D1FAC4E001EDC89 /* LaunchScreen.storyboard in Resources */,
 				A4FEA1341D2B559900FB7FE0 /* audio.mp3 in Resources */,
+				A4E5DF591D4F18C7008AABE4 /* MMPSilence.wav in Resources */,
 				A4FEA13C1D2B559900FB7FE0 /* hairdryer@2x.png in Resources */,
 				A4FEA13D1D2B559900FB7FE0 /* radio@2x.png in Resources */,
 				A4FEA1391D2B559900FB7FE0 /* baby@2x.png in Resources */,
@@ -500,6 +530,7 @@
 				4CAE50931D368FC5009FE262 /* MptTableHeadView.m in Sources */,
 				A42349B31D2C9F46009A5ECC /* TFLargerHitButton.m in Sources */,
 				4CA0C72A1D1FAC4E001EDC89 /* ViewController.m in Sources */,
+				A4E5DF581D4F18C7008AABE4 /* MMPDeepSleepPreventer.m in Sources */,
 				4CE52FA31D28CB12009576C6 /* WMUserDefault.m in Sources */,
 				A42349B91D2CF1CA009A5ECC /* ShareView.m in Sources */,
 				4CAE50921D368FC5009FE262 /* MptTableHeadCell.m in Sources */,
@@ -513,6 +544,7 @@
 				4CE52FA21D28CB12009576C6 /* Utility.m in Sources */,
 				A42349B61D2CAD9E009A5ECC /* ShareViewController.m in Sources */,
 				4CE52F991D28CAD9009576C6 /* SliderViewController.m in Sources */,
+				A4E5DF5D1D4F29DE008AABE4 /* AudioTask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,7 +686,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xiaodong Cui (PLUE6QWNG3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BabySleep/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
