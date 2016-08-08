@@ -81,8 +81,18 @@
     WXWebpageObject *pageObject = [WXWebpageObject object];
     pageObject.webpageUrl = @"https://itunes.apple.com/cn/app/id1128178648?mt=8";
     
-    message.mediaObject = pageObject;
+    WXFileObject *fileObject = [WXFileObject object];
+    fileObject.fileExtension = @"mp3";
     
+    NSString*filePath = [[NSBundle mainBundle] pathForResource:@"girl" ofType:@"mp3"];
+    NSData* data= [NSData dataWithContentsOfFile:filePath];
+    fileObject.fileData = data;
+    
+    message.mediaObject = fileObject;
+    
+    message.title = @"girl.mp3";
+    message.description = @"girl.mp3";
+
     [message setThumbData:UIImageJPEGRepresentation(image,1)];
 
     return message;
@@ -104,6 +114,9 @@
             wxRequest.bText = NO;
             wxRequest.message = message;
         } else if ([message.mediaObject isKindOfClass:[WXVideoObject class]]) {
+            wxRequest.bText = NO;
+            wxRequest.message = message;
+        } else if ([message.mediaObject isKindOfClass:[WXFileObject class]]) {
             wxRequest.bText = NO;
             wxRequest.message = message;
         }
