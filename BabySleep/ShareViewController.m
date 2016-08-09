@@ -81,18 +81,8 @@
     WXWebpageObject *pageObject = [WXWebpageObject object];
     pageObject.webpageUrl = @"https://itunes.apple.com/cn/app/id1128178648?mt=8";
     
-    WXFileObject *fileObject = [WXFileObject object];
-    fileObject.fileExtension = @"mp3";
+    message.mediaObject = pageObject;
     
-    NSString*filePath = [[NSBundle mainBundle] pathForResource:@"girl" ofType:@"mp3"];
-    NSData* data= [NSData dataWithContentsOfFile:filePath];
-    fileObject.fileData = data;
-    
-    message.mediaObject = fileObject;
-    
-    message.title = @"girl.mp3";
-    message.description = @"girl.mp3";
-
     [message setThumbData:UIImageJPEGRepresentation(image,1)];
 
     return message;
