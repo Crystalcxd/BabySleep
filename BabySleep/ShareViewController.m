@@ -106,6 +106,9 @@
         } else if ([message.mediaObject isKindOfClass:[WXVideoObject class]]) {
             wxRequest.bText = NO;
             wxRequest.message = message;
+        } else if ([message.mediaObject isKindOfClass:[WXFileObject class]]) {
+            wxRequest.bText = NO;
+            wxRequest.message = message;
         }
         
         wxRequest.bText = NO;

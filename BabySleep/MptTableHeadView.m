@@ -350,7 +350,7 @@
 }
 
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
-    NSLog(@"page ==== %ld",_curPage);
+    NSLog(@"page ==== %ld",(unsigned long)_curPage);
     if (self.pageControl.currentPage != _curPage) {
         if ([_delegate respondsToSelector:@selector(tableHeadView:didScrollToIndex:)]) {
             [_delegate tableHeadView:self didScrollToIndex:_curPage];
@@ -361,7 +361,7 @@
 }// called when setContentOffset/scrollRectVisible:animated: finishes. not called if not animating
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    NSLog(@"page ==== %ld",_curPage);
+    NSLog(@"page ==== %ld",(unsigned long)_curPage);
     if (self.pageControl.currentPage != _curPage) {
         if ([_delegate respondsToSelector:@selector(tableHeadView:didScrollToIndex:)]) {
             [_delegate tableHeadView:self didScrollToIndex:_curPage];

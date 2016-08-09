@@ -301,7 +301,7 @@
 
 - (void)tableHeadView:(MptTableHeadView *)headView didScrollToIndex:(NSUInteger)index
 {
-    NSLog(@"page ==== %ld",index);
+    NSLog(@"page ==== %ld",(unsigned long)index);
     
     self.musicIndex = index;
     

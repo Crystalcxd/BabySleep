@@ -208,7 +208,7 @@
         
         if (propertySetError)
         {
-            MMPALog(@"Error setting kAudioSessionProperty_OverrideCategoryMixWithOthers: %d", propertySetError);
+            MMPALog(@"Error setting kAudioSessionProperty_OverrideCategoryMixWithOthers: %d", (int)propertySetError);
         }
         
 #pragma clang diagnostic pop
