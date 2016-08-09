@@ -34,7 +34,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.1.1</string>
+	<string>1.1.2</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>mqqbrowser</string>
@@ -82,8 +82,6 @@
 	<array>
 		<string>audio</string>
 	</array>
-	<key>UIFileSharingEnabled</key>
-	<true/>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
