@@ -18,6 +18,8 @@ static AudioTask *audioTask;
     
     //当前系统音量(闹铃响起前记录)
     CGFloat systemVolumBeforeAlarmRang_;
+    
+    BOOL isPlaying;
 }
 
 + (id)shareAudioTask
@@ -193,6 +195,7 @@ static AudioTask *audioTask;
         [app endBackgroundTask:bgTask];
         bgTask = UIBackgroundTaskInvalid;
         [player stop];
+        isPlaying = NO;
         NSLog(@"###############Background Task Expired.");
     };
     bgTask = [app beginBackgroundTaskWithExpirationHandler:expirationHandler];
@@ -215,6 +218,8 @@ static AudioTask *audioTask;
         player.numberOfLoops = numberOfLoops; //Infinite
         [player prepareToPlay];
         [player play];
+        
+        isPlaying = YES;
     });
 }
 
@@ -241,13 +246,15 @@ static AudioTask *audioTask;
     if(player != nil && [player isPlaying])
     {
         [player stop];
+//        player = nil;
+        isPlaying = NO;
     }
     
-    if(bgTask != UIBackgroundTaskInvalid)
-    {
-        [[UIApplication sharedApplication] endBackgroundTask:bgTask];
-        bgTask=UIBackgroundTaskInvalid;
-    }
+//    if(bgTask != UIBackgroundTaskInvalid)
+//    {
+//        [[UIApplication sharedApplication] endBackgroundTask:bgTask];
+//        bgTask=UIBackgroundTaskInvalid;
+//    }
 }
 
 - (void)setVolumToZero:(BOOL)flag
@@ -368,7 +375,10 @@ static AudioTask *audioTask;
     {
         [self jhh_setUpAudioSession];
         //后台
-        [player play];
+        
+        if (isPlaying){
+            [player play];
+        }
     }
     else
     {
@@ -384,7 +394,9 @@ static AudioTask *audioTask;
     {
         [self jhh_setUpAudioSession];
         //后台
-        [player play];
+        if (isPlaying){
+            [player play];
+        }
     }
     else
     {

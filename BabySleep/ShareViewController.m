@@ -83,6 +83,16 @@
     
     message.mediaObject = pageObject;
     
+//    WXFileObject *object = [WXFileObject object];
+//    object.fileExtension = @"mp3";
+//    
+//    NSString*filePath = [[NSBundle mainBundle] pathForResource:@"girl" ofType:@"mp3"];
+//    NSData* data= [NSData dataWithContentsOfFile:filePath];
+//    
+//    object.fileData = data;
+//    
+//    message.mediaObject = object;
+    
     [message setThumbData:UIImageJPEGRepresentation(image,1)];
 
     return message;
