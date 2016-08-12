@@ -185,11 +185,7 @@
 }
 
 -(void)goMenuView:(id)sender
-{
-//    UIButton *button = (UIButton *)sender;
-    
-//    [self touchAnimationWithBtn:button];
-    
+{    
     [[SliderViewController sharedSliderController] leftItemClick];
 }
 
@@ -334,15 +330,6 @@
     
     [[AudioTask shareAudioTask] setUrl:url];
     [[AudioTask shareAudioTask] startTaskWithTyep:backgroundTask];
-    
-//    //设置锁屏仍能继续播放
-//    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback withOptions:AVAudioSessionCategoryOptionMixWithOthers error:nil];
-//    [[AVAudioSession sharedInstance] setActive: YES error: nil];
-//    
-//    player=[[AVAudioPlayer alloc] initWithContentsOfURL:url error:Nil];
-//    player.numberOfLoops = -1;
-//    [player prepareToPlay];
-//    [player play];
 }
 
 - (void)playMusicInstall
@@ -373,9 +360,6 @@
 - (void)stopMusic
 {
     [[AudioTask shareAudioTask] stopTaskWithType:backgroundTask];
-
-//    [player stop];
-//    player = nil;
     
     [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(playMusicTimer) object:nil];
 }
@@ -383,8 +367,6 @@
 - (void)pauseMusic
 {
     [[AudioTask shareAudioTask] stopTaskWithType:backgroundTask];
-
-//    [player pause];
     
     [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(playMusicTimer) object:nil];
 }
