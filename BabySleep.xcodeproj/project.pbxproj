@@ -695,7 +695,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/BabySleep/opensource",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.michael.babysleep;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.motherstory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -716,7 +716,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/BabySleep/opensource",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.michael.babysleep;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.motherstory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
