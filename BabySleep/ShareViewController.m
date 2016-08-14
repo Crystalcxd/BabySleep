@@ -26,21 +26,21 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = HexRGB(0xDBF4FF);
+    self.view.backgroundColor = HexRGB(0xffffff);
     
     UIView *topView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 70)];
     topView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.5];
     [self.view addSubview:topView];
     
     UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 29, SCREENWIDTH, 25)];
-    title.textColor = HexRGB(0x1688D2);
+    title.textColor = HexRGB(0xFF756F);
     title.textAlignment = NSTextAlignmentCenter;
     title.text = @"分享给好友";
     title.font = [UIFont fontWithName:@"DFPYuanW5" size:18];
     [self.view addSubview:title];
     
     TFLargerHitButton *backBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(22, 35, 14, 14)];
-    [backBtn setImage:[UIImage imageNamed:@"cancel2"] forState:UIControlStateNormal];
+    [backBtn setImage:[UIImage imageNamed:@"cancel"] forState:UIControlStateNormal];
     [backBtn addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:backBtn];

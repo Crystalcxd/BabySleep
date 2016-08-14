@@ -98,88 +98,88 @@
         scrollViewY = 157;
     }
     
-    self.tableheadView = [[MptTableHeadView alloc] initWithFrame:CGRectMake(0, scrollViewY, SCREENWIDTH, SCREENWIDTH == 320 ? 278 : 297) Type:MptTableHeadViewOther];
-    self.tableheadView.dataSource = self;
-    self.tableheadView.delegate = self;
-    
-    [self.view addSubview:self.tableheadView];
-
-    
-    scrollViewY = 372;
-    if (SCREENWIDTH == 375) {
-        scrollViewY = 465;
-    }else if (SCREENWIDTH == 414) {
-        scrollViewY = 518;
-    }
-    
-    self.playBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.playBtn.frame = CGRectMake(SCREENWIDTH * 0.5 - 39, scrollViewY, 78, 78);
-    [self.playBtn setImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
-    [self.playBtn setAdjustsImageWhenHighlighted:NO];
-    [self.playBtn setImage:[UIImage imageNamed:@"stop"] forState:UIControlStateSelected];
-    [self.playBtn addTarget:self action:@selector(playBtnAction:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:self.playBtn];
-    
-    UIButton *previousBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    previousBtn.frame = CGRectMake(CGRectGetMinX(self.playBtn.frame) - 50 - 51, CGRectGetMidY(self.playBtn.frame) - 17, 51, 34);
-    [previousBtn setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
-    [previousBtn setAdjustsImageWhenHighlighted:NO];
-    previousBtn.tag = TABLEVIEW_BEGIN_TAG;
-    [previousBtn addTarget:self action:@selector(jumpBtnAction:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:previousBtn];
-    
-    UIButton *latterBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    latterBtn.frame = CGRectMake(CGRectGetMaxX(self.playBtn.frame) + 50, CGRectGetMidY(self.playBtn.frame) - 17, 51, 34);
-    [latterBtn setImage:[UIImage imageNamed:@"next"] forState:UIControlStateNormal];
-    [latterBtn setAdjustsImageWhenHighlighted:NO];
-    latterBtn.tag = TABLEVIEW_BEGIN_TAG + 1;
-    [latterBtn addTarget:self action:@selector(jumpBtnAction:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:latterBtn];
-    
-    scrollViewY = 460;
-    if (SCREENHEIGHT == 568) {
-        scrollViewY = 477;
-    }
-    if (SCREENWIDTH == 375) {
-        scrollViewY = 578;
-    }else if (SCREENWIDTH == 414) {
-        scrollViewY = 631;
-    }
-    
-    UIView *progressBG = [[UIView alloc] initWithFrame:CGRectMake(0, scrollViewY, SCREENWIDTH, 20)];
-    progressBG.backgroundColor = RGBA(236, 228, 242, 1);
-    [self.view addSubview:progressBG];
-    
-    self.progressView = [[UIView alloc] initWithFrame:CGRectMake(0, scrollViewY, 1, 20)];
-    self.progressView.backgroundColor = RGBA(254, 211, 227, 1);
-    [self.view addSubview:self.progressView];
-    
-    self.currentTime = [[UILabel alloc] initWithFrame:CGRectMake(0, scrollViewY, 52, 20)];
-    self.currentTime.textAlignment = NSTextAlignmentRight;
-    self.currentTime.font = [UIFont fontWithName:@"PingFangSC-Light" size:14];
-    self.currentTime.textColor = HexRGB(0x1688D2);
-    self.currentTime.text = @"00:00";
-    [self.view addSubview:self.currentTime];
-    
-    self.totalTime = [[UILabel alloc] initWithFrame:CGRectMake(SCREENWIDTH - 52, scrollViewY, 52, 20)];
-    self.totalTime.textAlignment = NSTextAlignmentLeft;
-    self.totalTime.font = [UIFont fontWithName:@"PingFangSC-Light" size:14];
-    self.totalTime.textColor = HexRGB(0x1688D2);
-    self.totalTime.text = @"00:00";
-    [self.view addSubview:self.totalTime];
-    
-    scrollViewY = 506;
-    if (SCREENWIDTH == 375) {
-        scrollViewY = 605;
-    }else if (SCREENWIDTH == 414) {
-        scrollViewY = 674;
-    }
-
-    UIButton *adBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [adBtn setImage:[UIImage imageNamed:@"adx2"] forState:UIControlStateNormal];
-    adBtn.frame = CGRectMake(SCREENWIDTH * 0.5 - 139, scrollViewY, 278, 62);
-    [adBtn addTarget:self action:@selector(goOtherAppDownload) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:adBtn];
+//    self.tableheadView = [[MptTableHeadView alloc] initWithFrame:CGRectMake(0, scrollViewY, SCREENWIDTH, SCREENWIDTH == 320 ? 278 : 297) Type:MptTableHeadViewOther];
+//    self.tableheadView.dataSource = self;
+//    self.tableheadView.delegate = self;
+//    
+//    [self.view addSubview:self.tableheadView];
+//
+//    
+//    scrollViewY = 372;
+//    if (SCREENWIDTH == 375) {
+//        scrollViewY = 465;
+//    }else if (SCREENWIDTH == 414) {
+//        scrollViewY = 518;
+//    }
+//    
+//    self.playBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    self.playBtn.frame = CGRectMake(SCREENWIDTH * 0.5 - 39, scrollViewY, 78, 78);
+//    [self.playBtn setImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
+//    [self.playBtn setAdjustsImageWhenHighlighted:NO];
+//    [self.playBtn setImage:[UIImage imageNamed:@"stop"] forState:UIControlStateSelected];
+//    [self.playBtn addTarget:self action:@selector(playBtnAction:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:self.playBtn];
+//    
+//    UIButton *previousBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    previousBtn.frame = CGRectMake(CGRectGetMinX(self.playBtn.frame) - 50 - 51, CGRectGetMidY(self.playBtn.frame) - 17, 51, 34);
+//    [previousBtn setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
+//    [previousBtn setAdjustsImageWhenHighlighted:NO];
+//    previousBtn.tag = TABLEVIEW_BEGIN_TAG;
+//    [previousBtn addTarget:self action:@selector(jumpBtnAction:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:previousBtn];
+//    
+//    UIButton *latterBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    latterBtn.frame = CGRectMake(CGRectGetMaxX(self.playBtn.frame) + 50, CGRectGetMidY(self.playBtn.frame) - 17, 51, 34);
+//    [latterBtn setImage:[UIImage imageNamed:@"next"] forState:UIControlStateNormal];
+//    [latterBtn setAdjustsImageWhenHighlighted:NO];
+//    latterBtn.tag = TABLEVIEW_BEGIN_TAG + 1;
+//    [latterBtn addTarget:self action:@selector(jumpBtnAction:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:latterBtn];
+//    
+//    scrollViewY = 460;
+//    if (SCREENHEIGHT == 568) {
+//        scrollViewY = 477;
+//    }
+//    if (SCREENWIDTH == 375) {
+//        scrollViewY = 578;
+//    }else if (SCREENWIDTH == 414) {
+//        scrollViewY = 631;
+//    }
+//    
+//    UIView *progressBG = [[UIView alloc] initWithFrame:CGRectMake(0, scrollViewY, SCREENWIDTH, 20)];
+//    progressBG.backgroundColor = RGBA(236, 228, 242, 1);
+//    [self.view addSubview:progressBG];
+//    
+//    self.progressView = [[UIView alloc] initWithFrame:CGRectMake(0, scrollViewY, 1, 20)];
+//    self.progressView.backgroundColor = RGBA(254, 211, 227, 1);
+//    [self.view addSubview:self.progressView];
+//    
+//    self.currentTime = [[UILabel alloc] initWithFrame:CGRectMake(0, scrollViewY, 52, 20)];
+//    self.currentTime.textAlignment = NSTextAlignmentRight;
+//    self.currentTime.font = [UIFont fontWithName:@"PingFangSC-Light" size:14];
+//    self.currentTime.textColor = HexRGB(0x1688D2);
+//    self.currentTime.text = @"00:00";
+//    [self.view addSubview:self.currentTime];
+//    
+//    self.totalTime = [[UILabel alloc] initWithFrame:CGRectMake(SCREENWIDTH - 52, scrollViewY, 52, 20)];
+//    self.totalTime.textAlignment = NSTextAlignmentLeft;
+//    self.totalTime.font = [UIFont fontWithName:@"PingFangSC-Light" size:14];
+//    self.totalTime.textColor = HexRGB(0x1688D2);
+//    self.totalTime.text = @"00:00";
+//    [self.view addSubview:self.totalTime];
+//    
+//    scrollViewY = 506;
+//    if (SCREENWIDTH == 375) {
+//        scrollViewY = 605;
+//    }else if (SCREENWIDTH == 414) {
+//        scrollViewY = 674;
+//    }
+//
+//    UIButton *adBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [adBtn setImage:[UIImage imageNamed:@"adx2"] forState:UIControlStateNormal];
+//    adBtn.frame = CGRectMake(SCREENWIDTH * 0.5 - 139, scrollViewY, 278, 62);
+//    [adBtn addTarget:self action:@selector(goOtherAppDownload) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:adBtn];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playBtnAction:) name:@"pauseMusic" object:nil];
 }
