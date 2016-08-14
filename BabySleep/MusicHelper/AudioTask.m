@@ -200,6 +200,8 @@ static AudioTask *audioTask;
     };
     bgTask = [app beginBackgroundTaskWithExpirationHandler:expirationHandler];
     
+    [self jhh_setUpAudioSession];
+    
     dispatch_async(dispatch_get_main_queue(), ^{
         
         //        OSStatus osStatus;
@@ -370,6 +372,9 @@ static AudioTask *audioTask;
 #pragma mark -
 - (void)beginInterruption  /* something has caused your audio session to be interrupted */
 {
+    //打断就停止播放音乐
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"pauseMusic" object:nil];
+
     //区分前台后台,否则总有一种情况调不起音频,原因未知
     if([UIApplication sharedApplication].applicationState == UIApplicationStateBackground)
     {
@@ -377,7 +382,7 @@ static AudioTask *audioTask;
         //后台
         
         if (isPlaying){
-            [player play];
+//            [player play];
         }
     }
     else
@@ -395,7 +400,7 @@ static AudioTask *audioTask;
         [self jhh_setUpAudioSession];
         //后台
         if (isPlaying){
-            [player play];
+//            [player play];
         }
     }
     else
