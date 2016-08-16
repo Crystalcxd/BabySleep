@@ -125,7 +125,8 @@
 
 - (void)goOtherAppDownload
 {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/cn/app/le-yi-le-you-hui-quan/id1004844450?mt=8"]];
+    //跳优惠券
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/cn/app/id1004844450?mt=8"]];
 }
 
 - (void)mailComposeController:(MFMailComposeViewController *)controller

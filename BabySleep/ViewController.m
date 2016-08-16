@@ -191,7 +191,8 @@
 
 - (void)goOtherAppDownload
 {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/cn/app/le-yi-le-you-hui-quan/id1141414335?mt=8"]];
+    //跳妈咪好睡
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/cn/app/id1141414335?mt=8"]];
 }
 
 -(void)share:(id)sender
