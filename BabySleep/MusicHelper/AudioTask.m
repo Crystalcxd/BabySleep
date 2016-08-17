@@ -377,7 +377,7 @@ static AudioTask *audioTask;
         //后台
         
         if (isPlaying){
-            [player play];
+//            [player play];
         }
     }
     else
@@ -395,7 +395,7 @@ static AudioTask *audioTask;
         [self jhh_setUpAudioSession];
         //后台
         if (isPlaying){
-            [player play];
+//            [player play];
         }
     }
     else

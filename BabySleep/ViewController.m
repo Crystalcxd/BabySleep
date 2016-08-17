@@ -66,6 +66,12 @@
     bgView.frame = self.view.bounds;
     [self.view addSubview:bgView];
     
+    UIView *topView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 70)];
+    topView.backgroundColor = HexRGB(0xffffff);
+    topView.layer.borderColor = RGBA(208, 208, 208, 0.3).CGColor;
+    topView.layer.borderWidth = 1.5;
+    [self.view addSubview:topView];
+
     self.picArray = [NSMutableArray arrayWithObjects:@"baby",@"cleaner",@"girl",@"hairdryer",@"radio", nil];
     self.titleImgArray = [NSMutableArray arrayWithObjects:@"whitenoisetitle",@"cleanertitle",@"canontitle",@"hairdryertitle",@"radiotitle", nil];
     self.musicArray = [NSMutableArray arrayWithObjects:@"audio",@"cleaner",@"girl",@"hairdryer",@"whitenoise", nil];

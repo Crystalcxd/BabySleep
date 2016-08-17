@@ -25,7 +25,9 @@
     self.view.backgroundColor = HexRGB(0xffffff);
     
     UIView *topView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 70)];
-    topView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.5];
+    topView.backgroundColor = HexRGB(0xffffff);
+    topView.layer.borderColor = RGBA(208, 208, 208, 0.3).CGColor;
+    topView.layer.borderWidth = 1.5;
     [self.view addSubview:topView];
     
     UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 29, SCREENWIDTH, 25)];
@@ -41,7 +43,7 @@
     
     [self.view addSubview:backBtn];
     
-    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(22, 106, SCREENWIDTH - 22 * 2, SCREENHEIGHT - 106)];
+    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(12, 100, SCREENWIDTH - 12 * 2, SCREENHEIGHT - 100)];
     textView.editable = NO;
     textView.backgroundColor = [UIColor clearColor];
     textView.showsVerticalScrollIndicator = NO;
