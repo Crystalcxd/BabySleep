@@ -15,7 +15,6 @@
 #import "MptTableHeadView.h"
 
 #import "CartoonHeadView.h"
-#import "ShareAlertView.h"
 #import "TouchAnimationView.h"
 #import "TouchInsideAnimationView.h"
 
@@ -60,14 +59,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.view.backgroundColor = HexRGB(0xDBF4FF);
+    self.view.backgroundColor = HexRGB(0xffffff);
     
-    UIImageView *bgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg"]];
-    bgView.frame = self.view.bounds;
-    [self.view addSubview:bgView];
-    
-    UIView *topView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 70)];
-    topView.backgroundColor = HexRGB(0xffffff);
+    UIView *topView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 65)];
+    topView.backgroundColor = [UIColor clearColor];
     topView.layer.borderColor = RGBA(208, 208, 208, 0.3).CGColor;
     topView.layer.borderWidth = 1.5;
     [self.view addSubview:topView];
@@ -76,18 +71,12 @@
     self.titleImgArray = [NSMutableArray arrayWithObjects:@"whitenoisetitle",@"cleanertitle",@"canontitle",@"hairdryertitle",@"radiotitle", nil];
     self.musicArray = [NSMutableArray arrayWithObjects:@"audio",@"cleaner",@"girl",@"hairdryer",@"whitenoise", nil];
 
-    TFLargerHitButton *leftBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(22, 43, 15, 14)];
+    TFLargerHitButton *leftBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(16, 37, 15, 14)];
     [leftBtn setImage:[UIImage imageNamed:@"menu"] forState:UIControlStateNormal];
     [leftBtn addTarget:self action:@selector(goMenuView:) forControlEvents:UIControlEventTouchUpInside];
     [leftBtn setAdjustsImageWhenHighlighted:NO];
     [self.view addSubview:leftBtn];
     
-    TFLargerHitButton *rightBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(SCREENWIDTH - 23 - 15, 39, 20, 21)];
-    [rightBtn setImage:[UIImage imageNamed:@"strawberry"] forState:UIControlStateNormal];
-    [rightBtn addTarget:self action:@selector(share:) forControlEvents:UIControlEventTouchUpInside];
-    [rightBtn setAdjustsImageWhenHighlighted:NO];
-    [self.view addSubview:rightBtn];
-
     UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake((SCREENWIDTH - 71.35) * 0.5, 40, 71.35, 19.39)];
     titleView.image = [UIImage imageNamed:@"babysleep"];
     [self.view addSubview:titleView];
@@ -197,23 +186,6 @@
 //    [self touchAnimationWithBtn:button];
     
     [[SliderViewController sharedSliderController] leftItemClick];
-}
-
-- (void)goOtherAppDownload
-{
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/cn/app/le-yi-le-you-hui-quan/id1004844450?mt=8"]];
-}
-
--(void)share:(id)sender
-{
-    UIButton *button = (UIButton *)sender;
-    
-    [self touchAnimationWithBtn:button];
-    
-    ShareAlertView *alertView = [[ShareAlertView alloc] initWithFrame:self.view.frame];
-    [self.view addSubview:alertView];
-    
-    [alertView showView];
 }
 
 -(void)playBtnAction:(id)sender
