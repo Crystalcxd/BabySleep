@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C202D501D72EA8100E150D3 /* EditMusicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C202D4F1D72EA8100E150D3 /* EditMusicView.m */; };
 		4C3DA1F21D3B5B5F0003B5FD /* ShareAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DA1F11D3B5B5F0003B5FD /* ShareAlertView.m */; };
 		4C3DA1F41D3B62650003B5FD /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3DA1F31D3B62650003B5FD /* icon120.png */; };
 		4C3DA1FA1D3B6E3E0003B5FD /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3DA1F61D3B6E3E0003B5FD /* libWeChatSDK.a */; };
@@ -25,10 +26,6 @@
 		4CA834551D30DDC0007543B5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA834541D30DDC0007543B5 /* CoreTelephony.framework */; };
 		4CAE50891D3550A4009FE262 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE50881D3550A4009FE262 /* Images.xcassets */; };
 		4CAE508B1D3552AB009FE262 /* adx2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE508A1D3552AB009FE262 /* adx2@2x.png */; };
-		4CAE50921D368FC5009FE262 /* MptTableHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE508F1D368FC5009FE262 /* MptTableHeadCell.m */; };
-		4CAE50931D368FC5009FE262 /* MptTableHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE50911D368FC5009FE262 /* MptTableHeadView.m */; };
-		4CAE50971D369057009FE262 /* MptPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE50961D369057009FE262 /* MptPageControl.m */; };
-		4CAE509A1D369419009FE262 /* CartoonHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE50991D369419009FE262 /* CartoonHeadView.m */; };
 		4CDEA46E1D604531006E3AA8 /* home_head.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CDEA4691D604531006E3AA8 /* home_head.png */; };
 		4CDEA46F1D604531006E3AA8 /* home_m4a_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CDEA46A1D604531006E3AA8 /* home_m4a_1.png */; };
 		4CDEA4701D604531006E3AA8 /* home_m4a_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CDEA46B1D604531006E3AA8 /* home_m4a_2.png */; };
@@ -80,6 +77,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C202D4E1D72EA8100E150D3 /* EditMusicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditMusicView.h; sourceTree = "<group>"; };
+		4C202D4F1D72EA8100E150D3 /* EditMusicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditMusicView.m; sourceTree = "<group>"; };
 		4C3DA1F01D3B5B5F0003B5FD /* ShareAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareAlertView.h; sourceTree = "<group>"; };
 		4C3DA1F11D3B5B5F0003B5FD /* ShareAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareAlertView.m; sourceTree = "<group>"; };
 		4C3DA1F31D3B62650003B5FD /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
@@ -112,15 +111,7 @@
 		4CA834541D30DDC0007543B5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		4CAE50881D3550A4009FE262 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4CAE508A1D3552AB009FE262 /* adx2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adx2@2x.png"; sourceTree = "<group>"; };
-		4CAE508E1D368FC5009FE262 /* MptTableHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MptTableHeadCell.h; sourceTree = "<group>"; };
-		4CAE508F1D368FC5009FE262 /* MptTableHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MptTableHeadCell.m; sourceTree = "<group>"; };
-		4CAE50901D368FC5009FE262 /* MptTableHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MptTableHeadView.h; sourceTree = "<group>"; };
-		4CAE50911D368FC5009FE262 /* MptTableHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MptTableHeadView.m; sourceTree = "<group>"; };
 		4CAE50941D36901E009FE262 /* WMMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMacro.h; sourceTree = "<group>"; };
-		4CAE50951D369057009FE262 /* MptPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MptPageControl.h; sourceTree = "<group>"; };
-		4CAE50961D369057009FE262 /* MptPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MptPageControl.m; sourceTree = "<group>"; };
-		4CAE50981D369419009FE262 /* CartoonHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartoonHeadView.h; sourceTree = "<group>"; };
-		4CAE50991D369419009FE262 /* CartoonHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartoonHeadView.m; sourceTree = "<group>"; };
 		4CDEA4691D604531006E3AA8 /* home_head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_head.png; sourceTree = "<group>"; };
 		4CDEA46A1D604531006E3AA8 /* home_m4a_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_m4a_1.png; sourceTree = "<group>"; };
 		4CDEA46B1D604531006E3AA8 /* home_m4a_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_m4a_2.png; sourceTree = "<group>"; };
@@ -243,20 +234,14 @@
 				4CA0C7261D1FAC4E001EDC89 /* AppDelegate.m */,
 				4CA0C7281D1FAC4E001EDC89 /* ViewController.h */,
 				4CA0C7291D1FAC4E001EDC89 /* ViewController.m */,
+				4C202D4E1D72EA8100E150D3 /* EditMusicView.h */,
+				4C202D4F1D72EA8100E150D3 /* EditMusicView.m */,
 				4CE52FA41D29057C009576C6 /* LeftViewController.h */,
 				4CE52FA51D29057C009576C6 /* LeftViewController.m */,
 				A4FEA13E1D2B990200FB7FE0 /* NoiseViewController.h */,
 				A4FEA13F1D2B990200FB7FE0 /* NoiseViewController.m */,
 				A42349B41D2CAD9E009A5ECC /* ShareViewController.h */,
 				A42349B51D2CAD9E009A5ECC /* ShareViewController.m */,
-				4CAE508E1D368FC5009FE262 /* MptTableHeadCell.h */,
-				4CAE508F1D368FC5009FE262 /* MptTableHeadCell.m */,
-				4CAE50901D368FC5009FE262 /* MptTableHeadView.h */,
-				4CAE50911D368FC5009FE262 /* MptTableHeadView.m */,
-				4CAE50951D369057009FE262 /* MptPageControl.h */,
-				4CAE50961D369057009FE262 /* MptPageControl.m */,
-				4CAE50981D369419009FE262 /* CartoonHeadView.h */,
-				4CAE50991D369419009FE262 /* CartoonHeadView.m */,
 				A42349B11D2C9F46009A5ECC /* TFLargerHitButton.h */,
 				A42349B21D2C9F46009A5ECC /* TFLargerHitButton.m */,
 				A42349B71D2CF1CA009A5ECC /* ShareView.h */,
@@ -549,20 +534,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CAE509A1D369419009FE262 /* CartoonHeadView.m in Sources */,
 				4C3DA1F21D3B5B5F0003B5FD /* ShareAlertView.m in Sources */,
-				4CAE50931D368FC5009FE262 /* MptTableHeadView.m in Sources */,
 				A42349B31D2C9F46009A5ECC /* TFLargerHitButton.m in Sources */,
 				4CA0C72A1D1FAC4E001EDC89 /* ViewController.m in Sources */,
 				A4E5DF581D4F18C7008AABE4 /* MMPDeepSleepPreventer.m in Sources */,
 				4CE52FA31D28CB12009576C6 /* WMUserDefault.m in Sources */,
 				A42349B91D2CF1CA009A5ECC /* ShareView.m in Sources */,
-				4CAE50921D368FC5009FE262 /* MptTableHeadCell.m in Sources */,
-				4CAE50971D369057009FE262 /* MptPageControl.m in Sources */,
 				4CA0C7271D1FAC4E001EDC89 /* AppDelegate.m in Sources */,
 				4CA0C7241D1FAC4E001EDC89 /* main.m in Sources */,
 				4C60581F1D424E9E0003EAF3 /* TouchAnimationView.m in Sources */,
 				4CE52FA61D29057C009576C6 /* LeftViewController.m in Sources */,
+				4C202D501D72EA8100E150D3 /* EditMusicView.m in Sources */,
 				4C5ADED91D44BAB5004713D0 /* TouchInsideAnimationView.m in Sources */,
 				A4FEA1401D2B990200FB7FE0 /* NoiseViewController.m in Sources */,
 				4CE52FA21D28CB12009576C6 /* Utility.m in Sources */,

@@ -12,11 +12,9 @@
 
 #import "TFLargerHitButton.h"
 
-#import "MptTableHeadView.h"
-
-#import "CartoonHeadView.h"
 #import "TouchAnimationView.h"
 #import "TouchInsideAnimationView.h"
+#import "EditMusicView.h"
 
 #import "AudioTask.h"
 
@@ -24,14 +22,14 @@
 
 #import <AVFoundation/AVFoundation.h>
 
-@interface ViewController ()<HeadViewDelegate,HeadViewDataSource>
+@interface ViewController ()
 {
     AVAudioPlayer *player;
 }
 
-@property (nonatomic , strong) UIButton *playBtn;
+@property (nonatomic , strong) EditMusicView *editMusicView;
 
-@property (nonatomic , strong) MptTableHeadView *tableheadView;
+@property (nonatomic , strong) UIButton *recordBtn;
 
 @property (nonatomic , strong) UIView *progressView;
 
@@ -93,6 +91,14 @@
         scrollViewY = 157;
     }
     
+    self.editMusicView = [[EditMusicView alloc] initWithFrame:CGRectMake(0, SCREENHEIGHT - 52, SCREENWIDTH, 52)];
+    [self.view addSubview:self.editMusicView];
+    
+    self.recordBtn = [[UIButton alloc] initWithFrame:CGRectMake(SCREENWIDTH * 0.5 - 26, CGRectGetMinY(self.editMusicView.frame) - 26, 52, 52)];
+    [self.recordBtn setImage:[UIImage imageNamed:@"home_record"] forState:UIControlStateNormal];
+    [self.recordBtn setAdjustsImageWhenHighlighted:NO];
+    [self.view addSubview:self.recordBtn];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playBtnAction:) name:@"pauseMusic" object:nil];
 }
 
@@ -112,7 +118,7 @@
     BOOL fromNotification = NO;
     
     if (![btn isKindOfClass:[UIButton class]]) {
-        btn = self.playBtn;
+//        btn = self.playBtn;
         fromNotification = YES;
     }
     
@@ -129,21 +135,9 @@
             [self playMusicWithIndex:self.musicIndex];
         }
         
-        [self playMusicInstall];
     }
     
     btn.selected = !btn.selected;
-}
-
--(void)jumpBtnAction:(id)sender
-{
-    UIButton *button = (UIButton *)sender;
-    
-    [self touchAnimationWithBtn:button];
-    
-    UIButton *btn = (UIButton *)sender;
-    
-    [self.tableheadView scrollWithType:btn.tag - TABLEVIEW_BEGIN_TAG];
 }
 
 - (void)touchAnimationWithBtn:(UIButton *)button
@@ -156,55 +150,6 @@
     
     [view disappearAnimation];
     [insideView disappearAnimation];
-}
-
-#pragma mark
-#pragma mark headview datasource delegate
-- (NSUInteger)numberOfItemFor:(MptTableHeadView *)scrollView {
-    return [self.picArray count];
-}
-
-- (MptTableHeadCell *)cellViewForScrollView:(MptTableHeadView *)scrollView frame:(CGRect)frame AtIndex:(NSUInteger)index {
-    static NSString *indentif = @"headCell";
-    CartoonHeadView *cell = (CartoonHeadView *)[scrollView dequeueCellWithIdentifier:indentif];
-    if (!cell) {
-        cell = [[CartoonHeadView alloc] initWithFrame:frame withIdentifier:indentif];
-    }
-    id objc = nil;
-    if (self.picArray.count > index) {
-        objc = [self.picArray objectAtIndex:index];
-    } else {
-        return cell;
-    }
-    
-    if ([objc isKindOfClass:[NSString class]]) {
-        NSString *imgUrl = (NSString *)objc;
-        cell.imageView.image = [UIImage imageNamed:imgUrl];
-        cell.titleView.image = [UIImage imageNamed:self.titleImgArray[index]];
-    }
-    
-    return cell;
-}
-
-- (void)tableHeadView:(MptTableHeadView *)headView didSelectIndex:(NSUInteger)index {
-    return;
-}
-
-- (void)tableHeadView:(MptTableHeadView *)headView didScrollToIndex:(NSUInteger)index
-{
-    NSLog(@"page ==== %ld",(unsigned long)index);
-    
-    self.musicIndex = index;
-    
-    [self stopMusic];
-    
-    self.currentPlayTime = 0;
-
-    [self playMusicWithIndex:index];
-
-    [self playMusicInstall];
-    
-    self.playBtn.selected = YES;
 }
 
 - (void)playMusicWithIndex:(NSInteger)index
@@ -236,64 +181,14 @@
 //    [player play];
 }
 
-- (void)playMusicInstall
-{
-    self.totalTime.text = [self timeStringWith:self.playTime];
-    
-    [self updateProgressView];
-    
-    [self performSelector:@selector(playMusicTimer) withObject:nil afterDelay:1.0];
-}
-
--(void)playMusicTimer
-{
-    self.currentPlayTime ++;
-    
-    if (self.currentPlayTime >= self.playTime) {
-        [self stopMusic];
-        
-        self.currentPlayTime = 0;
-    }else{
-        
-        [self performSelector:@selector(playMusicTimer) withObject:nil afterDelay:1.0];
-    }
-    
-    [self updateProgressView];
-}
-
 - (void)stopMusic
 {
     [[AudioTask shareAudioTask] stopTaskWithType:backgroundTask];
-
-//    [player stop];
-//    player = nil;
-    
-    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(playMusicTimer) object:nil];
 }
 
 - (void)pauseMusic
 {
     [[AudioTask shareAudioTask] stopTaskWithType:backgroundTask];
-
-//    [player pause];
-    
-    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(playMusicTimer) object:nil];
-}
-
-- (void)updateProgressView
-{
-    CGFloat percent = self.currentPlayTime * 1.0 / self.playTime;
-    
-    CGRect frame = self.progressView.frame;
-    frame.size.width = percent * SCREENWIDTH;
-    self.progressView.frame = frame;
-    
-    self.currentTime.text = [self timeStringWith:self.currentPlayTime];
-}
-
-- (NSString *)timeStringWith:(NSInteger)time
-{
-    return [NSString stringWithFormat:@"%@%ld:%@%ld",time/60 > 9 ? @"" : @"0",time/60,time%60 > 9 ? @"" : @"0",time%60];
 }
 
 - (void)didReceiveMemoryWarning {
