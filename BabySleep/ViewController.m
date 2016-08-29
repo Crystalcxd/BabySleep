@@ -15,6 +15,7 @@
 #import "TouchAnimationView.h"
 #import "TouchInsideAnimationView.h"
 #import "EditMusicView.h"
+#import "RecordView.h"
 
 #import "AudioTask.h"
 
@@ -28,6 +29,8 @@
 }
 
 @property (nonatomic , strong) EditMusicView *editMusicView;
+
+@property (nonatomic , strong) RecordView *recordView;
 
 @property (nonatomic , strong) UIButton *recordBtn;
 
@@ -94,12 +97,48 @@
     self.editMusicView = [[EditMusicView alloc] initWithFrame:CGRectMake(0, SCREENHEIGHT - 52, SCREENWIDTH, 52)];
     [self.view addSubview:self.editMusicView];
     
+    self.recordView = [[RecordView alloc] initWithFrame:self.view.bounds];
+    
     self.recordBtn = [[UIButton alloc] initWithFrame:CGRectMake(SCREENWIDTH * 0.5 - 26, CGRectGetMinY(self.editMusicView.frame) - 26, 52, 52)];
     [self.recordBtn setImage:[UIImage imageNamed:@"home_record"] forState:UIControlStateNormal];
     [self.recordBtn setAdjustsImageWhenHighlighted:NO];
+    [self.recordBtn addTarget:self action:@selector(showRecordView:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.recordBtn];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playBtnAction:) name:@"pauseMusic" object:nil];
+}
+
+#pragma mark - ButtonAction
+
+- (void)showRecordView:(id)sender
+{
+    UIButton *btn = (UIButton *)sender;
+    
+    btn.enabled = NO;
+    
+    if (btn.selected) {
+        [self.recordView fadeRecordView];
+        
+        [self performSelector:@selector(enableRecordView) withObject:nil afterDelay:1.0];
+    }else{
+        [self.view addSubview:self.recordView];
+        [self.view bringSubviewToFront:self.recordBtn];
+        
+        [self.recordView showRecordView];
+        
+        [self performSelector:@selector(enableRecordView) withObject:nil afterDelay:1.0];
+    }
+}
+
+- (void)enableRecordView
+{
+    if (self.recordBtn.selected) {
+        [self.recordBtn setImage:[UIImage imageNamed:@"home_record"] forState:UIControlStateNormal];
+    }else{
+        [self.recordBtn setImage:[UIImage imageNamed:@"record_stop"] forState:UIControlStateNormal];
+    }
+    self.recordBtn.selected = !self.recordBtn.selected;
+    self.recordBtn.enabled = YES;
 }
 
 -(void)goMenuView:(id)sender
@@ -134,7 +173,6 @@
             self.currentPlayTime = 0;
             [self playMusicWithIndex:self.musicIndex];
         }
-        
     }
     
     btn.selected = !btn.selected;

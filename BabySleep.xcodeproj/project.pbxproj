@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4C202D501D72EA8100E150D3 /* EditMusicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C202D4F1D72EA8100E150D3 /* EditMusicView.m */; };
+		4C202D531D747AFA00E150D3 /* RecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C202D521D747AFA00E150D3 /* RecordView.m */; };
 		4C3DA1F21D3B5B5F0003B5FD /* ShareAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DA1F11D3B5B5F0003B5FD /* ShareAlertView.m */; };
 		4C3DA1F41D3B62650003B5FD /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3DA1F31D3B62650003B5FD /* icon120.png */; };
 		4C3DA1FA1D3B6E3E0003B5FD /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3DA1F61D3B6E3E0003B5FD /* libWeChatSDK.a */; };
+		4C4F36D91D7491C200171C7A /* RecordListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4F36D81D7491C200171C7A /* RecordListCell.m */; };
 		4C5ADED91D44BAB5004713D0 /* TouchInsideAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5ADED81D44BAB5004713D0 /* TouchInsideAnimationView.m */; };
 		4C60581F1D424E9E0003EAF3 /* TouchAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C60581E1D424E9E0003EAF3 /* TouchAnimationView.m */; };
 		4CA0C7241D1FAC4E001EDC89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C7231D1FAC4E001EDC89 /* main.m */; };
@@ -79,6 +81,8 @@
 /* Begin PBXFileReference section */
 		4C202D4E1D72EA8100E150D3 /* EditMusicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditMusicView.h; sourceTree = "<group>"; };
 		4C202D4F1D72EA8100E150D3 /* EditMusicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditMusicView.m; sourceTree = "<group>"; };
+		4C202D511D747AFA00E150D3 /* RecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordView.h; sourceTree = "<group>"; };
+		4C202D521D747AFA00E150D3 /* RecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordView.m; sourceTree = "<group>"; };
 		4C3DA1F01D3B5B5F0003B5FD /* ShareAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareAlertView.h; sourceTree = "<group>"; };
 		4C3DA1F11D3B5B5F0003B5FD /* ShareAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareAlertView.m; sourceTree = "<group>"; };
 		4C3DA1F31D3B62650003B5FD /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 		4C3DA1F71D3B6E3E0003B5FD /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
 		4C3DA1F81D3B6E3E0003B5FD /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		4C3DA1F91D3B6E3E0003B5FD /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		4C4F36D71D7491C200171C7A /* RecordListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordListCell.h; sourceTree = "<group>"; };
+		4C4F36D81D7491C200171C7A /* RecordListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordListCell.m; sourceTree = "<group>"; };
 		4C5ADED71D44BAB5004713D0 /* TouchInsideAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchInsideAnimationView.h; sourceTree = "<group>"; };
 		4C5ADED81D44BAB5004713D0 /* TouchInsideAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchInsideAnimationView.m; sourceTree = "<group>"; };
 		4C60581D1D424E9E0003EAF3 /* TouchAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchAnimationView.h; sourceTree = "<group>"; };
@@ -236,6 +242,8 @@
 				4CA0C7291D1FAC4E001EDC89 /* ViewController.m */,
 				4C202D4E1D72EA8100E150D3 /* EditMusicView.h */,
 				4C202D4F1D72EA8100E150D3 /* EditMusicView.m */,
+				4C4F36D71D7491C200171C7A /* RecordListCell.h */,
+				4C4F36D81D7491C200171C7A /* RecordListCell.m */,
 				4CE52FA41D29057C009576C6 /* LeftViewController.h */,
 				4CE52FA51D29057C009576C6 /* LeftViewController.m */,
 				A4FEA13E1D2B990200FB7FE0 /* NoiseViewController.h */,
@@ -244,6 +252,8 @@
 				A42349B51D2CAD9E009A5ECC /* ShareViewController.m */,
 				A42349B11D2C9F46009A5ECC /* TFLargerHitButton.h */,
 				A42349B21D2C9F46009A5ECC /* TFLargerHitButton.m */,
+				4C202D511D747AFA00E150D3 /* RecordView.h */,
+				4C202D521D747AFA00E150D3 /* RecordView.m */,
 				A42349B71D2CF1CA009A5ECC /* ShareView.h */,
 				A42349B81D2CF1CA009A5ECC /* ShareView.m */,
 				4C3DA1F01D3B5B5F0003B5FD /* ShareAlertView.h */,
@@ -545,12 +555,14 @@
 				4C60581F1D424E9E0003EAF3 /* TouchAnimationView.m in Sources */,
 				4CE52FA61D29057C009576C6 /* LeftViewController.m in Sources */,
 				4C202D501D72EA8100E150D3 /* EditMusicView.m in Sources */,
+				4C202D531D747AFA00E150D3 /* RecordView.m in Sources */,
 				4C5ADED91D44BAB5004713D0 /* TouchInsideAnimationView.m in Sources */,
 				A4FEA1401D2B990200FB7FE0 /* NoiseViewController.m in Sources */,
 				4CE52FA21D28CB12009576C6 /* Utility.m in Sources */,
 				A42349B61D2CAD9E009A5ECC /* ShareViewController.m in Sources */,
 				4CE52F991D28CAD9009576C6 /* SliderViewController.m in Sources */,
 				A4E5DF5D1D4F29DE008AABE4 /* AudioTask.m in Sources */,
+				4C4F36D91D7491C200171C7A /* RecordListCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
