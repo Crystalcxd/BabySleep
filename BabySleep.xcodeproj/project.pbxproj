@@ -13,6 +13,8 @@
 		4C3DA1F41D3B62650003B5FD /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3DA1F31D3B62650003B5FD /* icon120.png */; };
 		4C3DA1FA1D3B6E3E0003B5FD /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3DA1F61D3B6E3E0003B5FD /* libWeChatSDK.a */; };
 		4C4F36D91D7491C200171C7A /* RecordListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4F36D81D7491C200171C7A /* RecordListCell.m */; };
+		4C4F36DC1D749DAB00171C7A /* slide_disable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4F36DA1D749DAB00171C7A /* slide_disable@2x.png */; };
+		4C4F36DD1D749DAB00171C7A /* slide_enable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4F36DB1D749DAB00171C7A /* slide_enable@2x.png */; };
 		4C5ADED91D44BAB5004713D0 /* TouchInsideAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5ADED81D44BAB5004713D0 /* TouchInsideAnimationView.m */; };
 		4C60581F1D424E9E0003EAF3 /* TouchAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C60581E1D424E9E0003EAF3 /* TouchAnimationView.m */; };
 		4CA0C7241D1FAC4E001EDC89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C7231D1FAC4E001EDC89 /* main.m */; };
@@ -48,16 +50,6 @@
 		A4E5DF581D4F18C7008AABE4 /* MMPDeepSleepPreventer.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E5DF561D4F18C7008AABE4 /* MMPDeepSleepPreventer.m */; };
 		A4E5DF591D4F18C7008AABE4 /* MMPSilence.wav in Resources */ = {isa = PBXBuildFile; fileRef = A4E5DF571D4F18C7008AABE4 /* MMPSilence.wav */; };
 		A4E5DF5D1D4F29DE008AABE4 /* AudioTask.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E5DF5C1D4F29DE008AABE4 /* AudioTask.m */; };
-		A4FEA1341D2B559900FB7FE0 /* audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4FEA1291D2B559900FB7FE0 /* audio.mp3 */; };
-		A4FEA1351D2B559900FB7FE0 /* cleaner.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4FEA12A1D2B559900FB7FE0 /* cleaner.mp3 */; };
-		A4FEA1361D2B559900FB7FE0 /* girl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4FEA12B1D2B559900FB7FE0 /* girl.mp3 */; };
-		A4FEA1371D2B559900FB7FE0 /* hairdryer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4FEA12C1D2B559900FB7FE0 /* hairdryer.mp3 */; };
-		A4FEA1381D2B559900FB7FE0 /* whitenoise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4FEA12D1D2B559900FB7FE0 /* whitenoise.mp3 */; };
-		A4FEA1391D2B559900FB7FE0 /* baby@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4FEA12F1D2B559900FB7FE0 /* baby@2x.png */; };
-		A4FEA13A1D2B559900FB7FE0 /* cleaner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4FEA1301D2B559900FB7FE0 /* cleaner@2x.png */; };
-		A4FEA13B1D2B559900FB7FE0 /* girl@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4FEA1311D2B559900FB7FE0 /* girl@2x.png */; };
-		A4FEA13C1D2B559900FB7FE0 /* hairdryer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4FEA1321D2B559900FB7FE0 /* hairdryer@2x.png */; };
-		A4FEA13D1D2B559900FB7FE0 /* radio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4FEA1331D2B559900FB7FE0 /* radio@2x.png */; };
 		A4FEA1401D2B990200FB7FE0 /* NoiseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FEA13F1D2B990200FB7FE0 /* NoiseViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +84,8 @@
 		4C3DA1F91D3B6E3E0003B5FD /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		4C4F36D71D7491C200171C7A /* RecordListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordListCell.h; sourceTree = "<group>"; };
 		4C4F36D81D7491C200171C7A /* RecordListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordListCell.m; sourceTree = "<group>"; };
+		4C4F36DA1D749DAB00171C7A /* slide_disable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slide_disable@2x.png"; sourceTree = "<group>"; };
+		4C4F36DB1D749DAB00171C7A /* slide_enable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slide_enable@2x.png"; sourceTree = "<group>"; };
 		4C5ADED71D44BAB5004713D0 /* TouchInsideAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchInsideAnimationView.h; sourceTree = "<group>"; };
 		4C5ADED81D44BAB5004713D0 /* TouchInsideAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchInsideAnimationView.m; sourceTree = "<group>"; };
 		4C60581D1D424E9E0003EAF3 /* TouchAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchAnimationView.h; sourceTree = "<group>"; };
@@ -147,16 +141,6 @@
 		A4E5DF571D4F18C7008AABE4 /* MMPSilence.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MMPSilence.wav; sourceTree = "<group>"; };
 		A4E5DF5B1D4F29DE008AABE4 /* AudioTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioTask.h; sourceTree = "<group>"; };
 		A4E5DF5C1D4F29DE008AABE4 /* AudioTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioTask.m; sourceTree = "<group>"; };
-		A4FEA1291D2B559900FB7FE0 /* audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio.mp3; sourceTree = "<group>"; };
-		A4FEA12A1D2B559900FB7FE0 /* cleaner.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cleaner.mp3; sourceTree = "<group>"; };
-		A4FEA12B1D2B559900FB7FE0 /* girl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = girl.mp3; sourceTree = "<group>"; };
-		A4FEA12C1D2B559900FB7FE0 /* hairdryer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hairdryer.mp3; sourceTree = "<group>"; };
-		A4FEA12D1D2B559900FB7FE0 /* whitenoise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whitenoise.mp3; sourceTree = "<group>"; };
-		A4FEA12F1D2B559900FB7FE0 /* baby@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baby@2x.png"; sourceTree = "<group>"; };
-		A4FEA1301D2B559900FB7FE0 /* cleaner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cleaner@2x.png"; sourceTree = "<group>"; };
-		A4FEA1311D2B559900FB7FE0 /* girl@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "girl@2x.png"; sourceTree = "<group>"; };
-		A4FEA1321D2B559900FB7FE0 /* hairdryer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hairdryer@2x.png"; sourceTree = "<group>"; };
-		A4FEA1331D2B559900FB7FE0 /* radio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio@2x.png"; sourceTree = "<group>"; };
 		A4FEA13E1D2B990200FB7FE0 /* NoiseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoiseViewController.h; sourceTree = "<group>"; };
 		A4FEA13F1D2B990200FB7FE0 /* NoiseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoiseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -362,11 +346,6 @@
 				4CDEA4731D604542006E3AA8 /* 1.m4a */,
 				4CDEA4741D604542006E3AA8 /* 2.m4a */,
 				4CDEA4751D604542006E3AA8 /* 3.m4a */,
-				A4FEA1291D2B559900FB7FE0 /* audio.mp3 */,
-				A4FEA12A1D2B559900FB7FE0 /* cleaner.mp3 */,
-				A4FEA12B1D2B559900FB7FE0 /* girl.mp3 */,
-				A4FEA12C1D2B559900FB7FE0 /* hairdryer.mp3 */,
-				A4FEA12D1D2B559900FB7FE0 /* whitenoise.mp3 */,
 			);
 			path = music;
 			sourceTree = "<group>";
@@ -374,6 +353,8 @@
 		A4FEA12E1D2B559900FB7FE0 /* pic */ = {
 			isa = PBXGroup;
 			children = (
+				4C4F36DA1D749DAB00171C7A /* slide_disable@2x.png */,
+				4C4F36DB1D749DAB00171C7A /* slide_enable@2x.png */,
 				4CDEA4691D604531006E3AA8 /* home_head.png */,
 				4CDEA46A1D604531006E3AA8 /* home_m4a_1.png */,
 				4CDEA46B1D604531006E3AA8 /* home_m4a_2.png */,
@@ -381,11 +362,6 @@
 				4CDEA46D1D604531006E3AA8 /* record_save_head.png */,
 				4C3DA1F31D3B62650003B5FD /* icon120.png */,
 				4CAE508A1D3552AB009FE262 /* adx2@2x.png */,
-				A4FEA12F1D2B559900FB7FE0 /* baby@2x.png */,
-				A4FEA1301D2B559900FB7FE0 /* cleaner@2x.png */,
-				A4FEA1311D2B559900FB7FE0 /* girl@2x.png */,
-				A4FEA1321D2B559900FB7FE0 /* hairdryer@2x.png */,
-				A4FEA1331D2B559900FB7FE0 /* radio@2x.png */,
 			);
 			path = pic;
 			sourceTree = "<group>";
@@ -498,26 +474,18 @@
 				4CDEA4781D604542006E3AA8 /* 3.m4a in Resources */,
 				4CDEA46F1D604531006E3AA8 /* home_m4a_1.png in Resources */,
 				4CDEA4701D604531006E3AA8 /* home_m4a_2.png in Resources */,
-				A4FEA1341D2B559900FB7FE0 /* audio.mp3 in Resources */,
 				A4E5DF591D4F18C7008AABE4 /* MMPSilence.wav in Resources */,
+				4C4F36DC1D749DAB00171C7A /* slide_disable@2x.png in Resources */,
 				4CDEA4721D604531006E3AA8 /* record_save_head.png in Resources */,
-				A4FEA13C1D2B559900FB7FE0 /* hairdryer@2x.png in Resources */,
 				4CDEA4761D604542006E3AA8 /* 1.m4a in Resources */,
-				A4FEA13D1D2B559900FB7FE0 /* radio@2x.png in Resources */,
-				A4FEA1391D2B559900FB7FE0 /* baby@2x.png in Resources */,
-				A4FEA1361D2B559900FB7FE0 /* girl.mp3 in Resources */,
 				4CDEA4711D604531006E3AA8 /* home_m4a_3.png in Resources */,
-				A4FEA1381D2B559900FB7FE0 /* whitenoise.mp3 in Resources */,
 				4CA0C72F1D1FAC4E001EDC89 /* Assets.xcassets in Resources */,
-				A4FEA13B1D2B559900FB7FE0 /* girl@2x.png in Resources */,
 				A4E3FB341D3F6E7C00EEEF94 /* 华康圆体W3.otf in Resources */,
+				4C4F36DD1D749DAB00171C7A /* slide_enable@2x.png in Resources */,
 				4CAE50891D3550A4009FE262 /* Images.xcassets in Resources */,
 				4C3DA1F41D3B62650003B5FD /* icon120.png in Resources */,
 				4CAE508B1D3552AB009FE262 /* adx2@2x.png in Resources */,
-				A4FEA1351D2B559900FB7FE0 /* cleaner.mp3 in Resources */,
 				A4E3FB351D3F6E7C00EEEF94 /* 华康圆体W5.TTF in Resources */,
-				A4FEA1371D2B559900FB7FE0 /* hairdryer.mp3 in Resources */,
-				A4FEA13A1D2B559900FB7FE0 /* cleaner@2x.png in Resources */,
 				4CDEA46E1D604531006E3AA8 /* home_head.png in Resources */,
 				4CDEA4771D604542006E3AA8 /* 2.m4a in Resources */,
 			);
