@@ -17,13 +17,15 @@
 #import "EditMusicView.h"
 #import "RecordView.h"
 
+#import "RecordListCell.h"
+
 #import "AudioTask.h"
 
 #import "WMUserDefault.h"
 
 #import <AVFoundation/AVFoundation.h>
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     AVAudioPlayer *player;
 }
@@ -32,27 +34,23 @@
 
 @property (nonatomic , strong) RecordView *recordView;
 
+@property (nonatomic , strong) UITableView *tableView;
+
 @property (nonatomic , strong) UIButton *recordBtn;
 
 @property (nonatomic , strong) UIView *progressView;
 
-@property (nonatomic , strong) NSMutableArray *picArray;
+@property (nonatomic , strong) NSMutableArray *defaultArr;
 
-@property (nonatomic , strong) NSMutableArray *titleImgArray;
-
-@property (nonatomic , strong) NSMutableArray *musicArray;
-
-@property (nonatomic , assign) NSInteger playTime;
-
-@property (nonatomic , assign) NSInteger currentPlayTime;
-
-@property (nonatomic , strong) UILabel *currentTime;
-
-@property (nonatomic , strong) UILabel *totalTime;
+@property (nonatomic , strong) NSMutableArray *userArr;
 
 @property (nonatomic , assign) NSInteger musicIndex;
 
+@property (nonatomic , strong) NSIndexPath *selectIndexPath;
+
 @end
+
+static NSString * const musicIdentifier = @"music";
 
 @implementation ViewController
 
@@ -68,9 +66,15 @@
     topView.layer.borderWidth = 1.5;
     [self.view addSubview:topView];
 
-    self.picArray = [NSMutableArray arrayWithObjects:@"baby",@"cleaner",@"girl",@"hairdryer",@"radio", nil];
-    self.titleImgArray = [NSMutableArray arrayWithObjects:@"whitenoisetitle",@"cleanertitle",@"canontitle",@"hairdryertitle",@"radiotitle", nil];
-    self.musicArray = [NSMutableArray arrayWithObjects:@"audio",@"cleaner",@"girl",@"hairdryer",@"whitenoise", nil];
+    self.defaultArr = [NSMutableArray new];
+    if ([WMUserDefault arrayForKey:@"DefaultData"]) {
+        [self.defaultArr addObjectsFromArray:[WMUserDefault arrayForKey:@"DefaultData"]];
+    }
+
+    self.userArr = [NSMutableArray new];
+    if ([WMUserDefault arrayForKey:@"UserData"]) {
+        [self.userArr addObjectsFromArray:[WMUserDefault arrayForKey:@"UserData"]];
+    }
 
     TFLargerHitButton *leftBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(16, 37, 15, 14)];
     [leftBtn setImage:[UIImage imageNamed:@"menu"] forState:UIControlStateNormal];
@@ -82,17 +86,11 @@
     titleView.image = [UIImage imageNamed:@"babysleep"];
     [self.view addSubview:titleView];
     
-    CGFloat scrollViewY = 98;
-    if (SCREENWIDTH == 414) {
-        scrollViewY = 123;
-    }
-    
-    scrollViewY = 84;
-    if (SCREENWIDTH == 375) {
-        scrollViewY = 118;
-    }else if (SCREENWIDTH == 414) {
-        scrollViewY = 157;
-    }
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(topView.frame), SCREENWIDTH, SCREENHEIGHT - CGRectGetMaxY(topView.frame) - 52)];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.tableView.tableFooterView = [[UIView alloc] init];
+    [self.view addSubview:self.tableView];
     
     self.editMusicView = [[EditMusicView alloc] initWithFrame:CGRectMake(0, SCREENHEIGHT - 52, SCREENWIDTH, 52)];
     [self.view addSubview:self.editMusicView];
@@ -106,6 +104,65 @@
     [self.view addSubview:self.recordBtn];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playBtnAction:) name:@"pauseMusic" object:nil];
+}
+
+#pragma mark - UITableViewDelegate
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 2;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    if (section == 0) {
+        return self.defaultArr.count;
+    }else{
+        return self.userArr.count;
+    }
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 115;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    RecordListCell *cell = (RecordListCell *)[tableView dequeueReusableCellWithIdentifier:musicIdentifier];
+    if (cell == nil) {
+        cell = [[RecordListCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:musicIdentifier];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
+    
+    cell.indexPath = indexPath;
+//    cell.delegate = self;
+    
+    if (indexPath.section == 1) {
+        if (indexPath.row < self.userArr.count) {
+            MusicData *musicData = [self.userArr objectAtIndex:indexPath.row];
+            
+            [cell configureWithMusic:musicData volum:@"0.5" selected:self.selectIndexPath == indexPath ? YES : NO];
+        }
+    }else{
+        if (indexPath.row < self.defaultArr.count) {
+            MusicData *musicData = [self.defaultArr objectAtIndex:indexPath.row];
+            
+            [cell configureWithMusic:musicData volum:@"0.5" selected:self.selectIndexPath == indexPath ? YES : NO];
+        }
+    }
+    
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    self.selectIndexPath = indexPath;
+    
+    [self.tableView reloadData];
+    
+    if (indexPath.section == 0) {
+        
+    }
 }
 
 #pragma mark - ButtonAction
@@ -170,7 +227,6 @@
         if (player) {
             [player play];
         }else{
-            self.currentPlayTime = 0;
             [self playMusicWithIndex:self.musicIndex];
         }
     }
@@ -192,20 +248,16 @@
 
 - (void)playMusicWithIndex:(NSInteger)index
 {
-    NSString *musicName = self.musicArray[index];
-    
-    //1.音频文件的url路径
-    NSString *musicFilePath= [[NSBundle mainBundle] pathForResource:musicName ofType:@"mp3"];
-    
-    [self audioPlayWithPath:[[NSURL alloc] initFileURLWithPath:musicFilePath]];
+//    NSString *musicName = self.musicArray[index];
+//    
+//    //1.音频文件的url路径
+//    NSString *musicFilePath= [[NSBundle mainBundle] pathForResource:musicName ofType:@"mp3"];
+//    
+//    [self audioPlayWithPath:[[NSURL alloc] initFileURLWithPath:musicFilePath]];
 }
 
 -(void)audioPlayWithPath:(NSURL *)url
 {
-    NSString *playMins = [WMUserDefault objectValueForKey:@"playtime"];
-    
-    self.playTime = playMins.integerValue * 60;
-    
     [[AudioTask shareAudioTask] setUrl:url];
     [[AudioTask shareAudioTask] startTaskWithTyep:backgroundTask];
     

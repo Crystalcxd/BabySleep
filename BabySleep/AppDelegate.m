@@ -16,6 +16,8 @@
 
 #import "MMPDeepSleepPreventer.h"
 
+#import "MusicData.h"
+
 @interface AppDelegate ()
 
 @property (nonatomic, unsafe_unretained) UIBackgroundTaskIdentifier backgroundIdentifier;
@@ -69,6 +71,34 @@ static void displayStatusChanged(CFNotificationCenterRef center,
     //增强后台运行
     MMPDeepSleepPreventer *niceSleep = [[MMPDeepSleepPreventer alloc] init];
     [niceSleep startPreventSleep];
+
+    
+    if (![WMUserDefault arrayForKey:@"DefaultData"]) {
+        NSMutableArray *array = [NSMutableArray array];
+        
+        MusicData *musicData = [[MusicData alloc] init];
+        musicData.musicName = @"故事1";
+        musicData.indexName = @"1";
+        musicData.imageName = @"home_m4a_1.png";
+        
+        [array addObject:musicData];
+        
+        MusicData *musicDataTwo = [[MusicData alloc] init];
+        musicDataTwo.musicName = @"故事2";
+        musicDataTwo.indexName = @"2";
+        musicDataTwo.imageName = @"home_m4a_2.png";
+        
+        [array addObject:musicDataTwo];
+        
+        MusicData *musicDataThree = [[MusicData alloc] init];
+        musicDataThree.musicName = @"故事3";
+        musicDataThree.indexName = @"3";
+        musicDataThree.imageName = @"home_m4a_3.png";
+        
+        [array addObject:musicDataThree];
+
+        [WMUserDefault setArray:array forKey:@"DefaultData"];
+    }
 
     return YES;
 }

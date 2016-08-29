@@ -15,6 +15,7 @@
 		4C4F36D91D7491C200171C7A /* RecordListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4F36D81D7491C200171C7A /* RecordListCell.m */; };
 		4C4F36DC1D749DAB00171C7A /* slide_disable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4F36DA1D749DAB00171C7A /* slide_disable@2x.png */; };
 		4C4F36DD1D749DAB00171C7A /* slide_enable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4F36DB1D749DAB00171C7A /* slide_enable@2x.png */; };
+		4C4F36E11D74A0E700171C7A /* MusicData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4F36E01D74A0E700171C7A /* MusicData.m */; };
 		4C5ADED91D44BAB5004713D0 /* TouchInsideAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5ADED81D44BAB5004713D0 /* TouchInsideAnimationView.m */; };
 		4C60581F1D424E9E0003EAF3 /* TouchAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C60581E1D424E9E0003EAF3 /* TouchAnimationView.m */; };
 		4CA0C7241D1FAC4E001EDC89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C7231D1FAC4E001EDC89 /* main.m */; };
@@ -86,6 +87,8 @@
 		4C4F36D81D7491C200171C7A /* RecordListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordListCell.m; sourceTree = "<group>"; };
 		4C4F36DA1D749DAB00171C7A /* slide_disable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slide_disable@2x.png"; sourceTree = "<group>"; };
 		4C4F36DB1D749DAB00171C7A /* slide_enable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slide_enable@2x.png"; sourceTree = "<group>"; };
+		4C4F36DF1D74A0E700171C7A /* MusicData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicData.h; sourceTree = "<group>"; };
+		4C4F36E01D74A0E700171C7A /* MusicData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicData.m; sourceTree = "<group>"; };
 		4C5ADED71D44BAB5004713D0 /* TouchInsideAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchInsideAnimationView.h; sourceTree = "<group>"; };
 		4C5ADED81D44BAB5004713D0 /* TouchInsideAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchInsideAnimationView.m; sourceTree = "<group>"; };
 		4C60581D1D424E9E0003EAF3 /* TouchAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchAnimationView.h; sourceTree = "<group>"; };
@@ -187,6 +190,15 @@
 			path = opensource;
 			sourceTree = "<group>";
 		};
+		4C4F36DE1D74A0E700171C7A /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				4C4F36DF1D74A0E700171C7A /* MusicData.h */,
+				4C4F36E01D74A0E700171C7A /* MusicData.m */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
 		4CA0C7161D1FAC4E001EDC89 = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +227,7 @@
 		4CA0C7211D1FAC4E001EDC89 /* BabySleep */ = {
 			isa = PBXGroup;
 			children = (
+				4C4F36DE1D74A0E700171C7A /* DataModel */,
 				A4E5DF5A1D4F29DE008AABE4 /* MusicHelper */,
 				A4E5DF541D4F18C7008AABE4 /* MMPDeepSleepPreventer */,
 				4C3DA1F51D3B6E3E0003B5FD /* opensource */,
@@ -513,6 +526,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C3DA1F21D3B5B5F0003B5FD /* ShareAlertView.m in Sources */,
+				4C4F36E11D74A0E700171C7A /* MusicData.m in Sources */,
 				A42349B31D2C9F46009A5ECC /* TFLargerHitButton.m in Sources */,
 				4CA0C72A1D1FAC4E001EDC89 /* ViewController.m in Sources */,
 				A4E5DF581D4F18C7008AABE4 /* MMPDeepSleepPreventer.m in Sources */,
