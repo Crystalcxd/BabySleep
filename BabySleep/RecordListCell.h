@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^volumValueChange)(CGFloat);
+
 @interface RecordListCell : UITableViewCell
+
+@property (nonatomic , copy) volumValueChange VolumValueChange;
 
 @end

@@ -22,6 +22,8 @@
 
 @property (nonatomic , strong) UIButton *shareBtn;
 
+@property (nonatomic , strong) UISlider *slider;
+
 @end
 
 @implementation RecordListCell
@@ -48,6 +50,14 @@
         self.titleName.font = [UIFont fontWithName:@"DFPYuanW5" size:16];
         [self.recordContentView addSubview:self.titleName];
         
+        self.slider = [[UISlider alloc] initWithFrame:CGRectMake(68, 58, SCREENWIDTH - 20 - 68 - 57, 30)];
+        [self.slider setMinimumTrackTintColor:HexRGB(0xE3E3E3)];
+        [self.slider setMaximumTrackTintColor:HexRGB(0xE3E3E3)];
+        [self.slider setThumbImage:[UIImage imageNamed:@"slide_enable"] forState:UIControlStateNormal];
+        [self.slider setThumbImage:[UIImage imageNamed:@"slide_disable"] forState:UIControlStateDisabled];
+        [self.slider addTarget:self action:@selector(slideValueChange:) forControlEvents:UIControlEventValueChanged];
+        [self addSubview:self.slider];
+
         self.shareBtn = [TFLargerHitButton buttonWithType:UIButtonTypeCustom];
         self.shareBtn.frame = CGRectMake(SCREENWIDTH - 20 - 40, 40, 16, 25);
         [self.shareBtn setImage:[UIImage imageNamed:@"home_shareoff"] forState:UIControlStateNormal];
@@ -59,6 +69,13 @@
     }
     
     return self;
+}
+
+- (void)slideValueChange:(id)sender
+{
+    UISlider *slider = (UISlider *)sender;
+    
+    self.VolumValueChange(slider.value);
 }
 
 - (void)awakeFromNib {
