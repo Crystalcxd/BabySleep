@@ -161,7 +161,7 @@ static NSString * const musicIdentifier = @"music";
     [self.tableView reloadData];
     
     if (indexPath.section == 0) {
-        
+        [self playDefaultMusicWithIndex:indexPath.row];
     }
 }
 
@@ -227,7 +227,7 @@ static NSString * const musicIdentifier = @"music";
         if (player) {
             [player play];
         }else{
-            [self playMusicWithIndex:self.musicIndex];
+//            [self playMusicWithIndex:self.musicIndex];
         }
     }
     
@@ -246,14 +246,14 @@ static NSString * const musicIdentifier = @"music";
     [insideView disappearAnimation];
 }
 
-- (void)playMusicWithIndex:(NSInteger)index
+- (void)playDefaultMusicWithIndex:(NSInteger)index
 {
-//    NSString *musicName = self.musicArray[index];
-//    
-//    //1.音频文件的url路径
-//    NSString *musicFilePath= [[NSBundle mainBundle] pathForResource:musicName ofType:@"mp3"];
-//    
-//    [self audioPlayWithPath:[[NSURL alloc] initFileURLWithPath:musicFilePath]];
+    MusicData *music = self.defaultArr[index];
+    
+    //1.音频文件的url路径
+    NSString *musicFilePath= [[NSBundle mainBundle] pathForResource:music.indexName ofType:@"m4a"];
+    
+    [self audioPlayWithPath:[[NSURL alloc] initFileURLWithPath:musicFilePath]];
 }
 
 -(void)audioPlayWithPath:(NSURL *)url
