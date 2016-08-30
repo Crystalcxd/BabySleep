@@ -216,6 +216,7 @@ static AudioTask *audioTask;
         int numberOfLoops = -1;
         player.delegate = self;
         player.numberOfLoops = numberOfLoops; //Infinite
+        player.volume = self.volum;
         [player prepareToPlay];
         [player play];
         
@@ -239,6 +240,10 @@ static AudioTask *audioTask;
     }
 }
 
+- (void)setPlayVolume:(CGFloat)volume
+{
+    player.volume = volume;
+}
 
 -(void) stopAudio
 {

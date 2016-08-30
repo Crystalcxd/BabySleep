@@ -23,6 +23,8 @@
 
 @property (nonatomic , assign) BOOL selected;
 
+@property (nonatomic , assign) CGFloat volum;
+
 /** 是否播放过 */
 @property (nonatomic , assign) BOOL hasPlay;
 @end

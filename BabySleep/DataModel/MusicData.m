@@ -19,6 +19,7 @@
     [aCoder encodeBool:self.hasPlay forKey:@"hasPlay"];
     [aCoder encodeBool:self.selected forKey:@"selected"];
     [aCoder encodeObject:self.imageName forKey:@"imageName"];
+    [aCoder encodeFloat:self.volum forKey:@"volum"];
 };
 
 - (id)initWithCoder:(NSCoder *)aDecoder
@@ -32,6 +33,7 @@
         self.hasPlay = [aDecoder decodeBoolForKey:@"hasPlay"];
         self.selected = [aDecoder decodeBoolForKey:@"selected"];
         self.imageName = [aDecoder decodeObjectForKey:@"imageName"];
+        self.volum = [aDecoder decodeFloatForKey:@"volum"];
     }
     
     return self;

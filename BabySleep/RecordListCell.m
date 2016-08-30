@@ -28,6 +28,8 @@
 
 @property (nonatomic , strong) UIImageView *deleteSelectImage;
 
+@property (nonatomic , strong) MusicData *data;
+
 @end
 
 @implementation RecordListCell
@@ -84,6 +86,8 @@
 {
     UISlider *slider = (UISlider *)sender;
     
+    self.data.volum = slider.value;
+    
     self.VolumValueChange(slider.value);
 }
 
@@ -102,11 +106,13 @@
 {
     self.titleName.text = music.musicName;
     
+    self.data = music;
+    
     if (self.indexPath.section == 0) {
         self.iconImageView.image = [UIImage imageNamed:music.imageName];
     }
     
-    self.slider.value = volum.floatValue;
+    self.slider.value = music.volum;
     
     if (editMode) {
         self.deleteSelectImage.hidden = NO;

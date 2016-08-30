@@ -10,6 +10,8 @@
 
 typedef void(^startEdit)();
 typedef void(^endEdit)();
+typedef void(^clearMusicData)();
+typedef void(^deleteMusicData)();
 
 typedef enum : NSUInteger {
     EditMusicViewTypeNormal = 0,
@@ -20,6 +22,8 @@ typedef enum : NSUInteger {
 
 @property (nonatomic , copy) startEdit StartEdit;
 @property (nonatomic , copy) endEdit EndEdit;
+@property (nonatomic , copy) clearMusicData ClearMusicData;
+@property (nonatomic , copy) deleteMusicData DeleteMusicData;
 
 - (void)configureWithType:(EditMusicViewType)type;
 

@@ -80,6 +80,7 @@ static void displayStatusChanged(CFNotificationCenterRef center,
         musicData.musicName = @"故事1";
         musicData.indexName = @"1";
         musicData.imageName = @"home_m4a_1.png";
+        musicData.volum = 0.5;
         
         [array addObject:musicData];
         
@@ -87,14 +88,16 @@ static void displayStatusChanged(CFNotificationCenterRef center,
         musicDataTwo.musicName = @"故事2";
         musicDataTwo.indexName = @"2";
         musicDataTwo.imageName = @"home_m4a_2.png";
-        
+        musicDataTwo.volum = 0.5;
+
         [array addObject:musicDataTwo];
         
         MusicData *musicDataThree = [[MusicData alloc] init];
         musicDataThree.musicName = @"故事3";
         musicDataThree.indexName = @"3";
         musicDataThree.imageName = @"home_m4a_3.png";
-        
+        musicDataThree.volum = 0.5;
+
         [array addObject:musicDataThree];
 
         [WMUserDefault setArray:array forKey:@"DefaultData"];

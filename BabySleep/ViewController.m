@@ -25,7 +25,7 @@
 
 #import <AVFoundation/AVFoundation.h>
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate>
 {
     AVAudioPlayer *player;
 }
@@ -116,6 +116,14 @@ static NSString * const musicIdentifier = @"music";
         [weakSelf.tableView reloadData];
     };
     
+    self.editMusicView.ClearMusicData = ^{
+        [weakSelf showClearAllMusicAlert];
+    };
+
+    self.editMusicView.DeleteMusicData = ^{
+        [weakSelf showClearSeleteMusicAlert];
+    };
+
     [self.view addSubview:self.editMusicView];
     
     self.recordView = [[RecordView alloc] initWithFrame:self.view.bounds];
@@ -193,9 +201,8 @@ static NSString * const musicIdentifier = @"music";
     cell.indexPath = indexPath;
 //    cell.delegate = self;
     
-    __weak typeof(self) weakSelf = self;
     cell.VolumValueChange = ^(CGFloat volume){
-        
+        [[AudioTask shareAudioTask] setPlayVolume:volume];
     };
 
     if (indexPath.section == 1) {
@@ -246,13 +253,50 @@ static NSString * const musicIdentifier = @"music";
         
         [self.tableView reloadData];
         
+        [[AudioTask shareAudioTask] setVolum:data.volum];
+
         if (indexPath.section == 0) {
             [self playDefaultMusicWithIndex:indexPath.row];
         }
     }
 }
 
+#pragma mark - UIAlertViewDelegate
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (alertView.tag == 100) {
+        if (buttonIndex == 0) {
+            
+        }
+    }else if (alertView.tag == 101) {
+        if (buttonIndex == 0) {
+            
+        }
+    }
+}
+
 #pragma mark - ButtonAction
+
+- (void)showClearAllMusicAlert
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"确定清空所有音乐？" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:@"取消", nil];
+    alert.tag = 100;
+    [alert show];
+}
+
+- (void)showClearSeleteMusicAlert
+{
+    if (self.deleteArr.count == 0) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"请至少选择一首歌" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alert show];
+        return;
+    }
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"确定删除所选音乐？" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:@"取消", nil];
+    alert.tag = 101;
+    [alert show];
+}
 
 - (void)showRecordView:(id)sender
 {

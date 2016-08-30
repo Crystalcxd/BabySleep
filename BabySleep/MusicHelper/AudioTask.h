@@ -37,6 +37,8 @@ typedef enum
     __block AVAudioPlayer *player;
 }
 
+@property (nonatomic,assign)CGFloat volum;
+
 @property (nonatomic,assign)BOOL isNeedSound;
 @property (nonatomic,assign)taskType currentTaskType;
 
@@ -78,6 +80,7 @@ typedef enum
  */
 - (void)setSystemVolume:(CGFloat)volume;
 
+- (void)setPlayVolume:(CGFloat)volume;
 
 /**
  *  获取系统音量

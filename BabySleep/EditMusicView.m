@@ -74,12 +74,14 @@
         [clearBtn setTitleColor:HexRGB(0xFF564F) forState:UIControlStateNormal];
         [clearBtn setTitleColor:HexRGB(0xCDA09E) forState:UIControlStateHighlighted];
         [clearBtn.titleLabel setFont:[UIFont fontWithName:@"DFPYuanW5" size:17]];
+        [clearBtn addTarget:self action:@selector(clearBtnAction:) forControlEvents:UIControlEventTouchUpInside];
         [self.contentView addSubview:clearBtn];
 
         UIButton *deleteBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         deleteBtn.frame = CGRectMake(SCREENWIDTH / 3.0 * 2, 0, SCREENWIDTH / 3.0, CGRectGetHeight(self.frame));
         [deleteBtn setImage:[UIImage imageNamed:@"edit_garbage"] forState:UIControlStateNormal];
         [deleteBtn setImage:[UIImage imageNamed:@"edit_garbage_down"] forState:UIControlStateHighlighted];
+        [deleteBtn addTarget:self action:@selector(deleteBtnAction:) forControlEvents:UIControlEventTouchUpInside];
         [self.contentView addSubview:deleteBtn];
     }
 }
@@ -96,6 +98,16 @@
     [self configureWithType:EditMusicViewTypeNormal];
     
     self.EndEdit();
+}
+
+- (void)clearBtnAction:(id)sender
+{
+    self.ClearMusicData();
+}
+
+- (void)deleteBtnAction:(id)sender
+{
+    self.DeleteMusicData();
 }
 
 /*
