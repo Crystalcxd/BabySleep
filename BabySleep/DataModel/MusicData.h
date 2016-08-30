@@ -21,6 +21,8 @@
 @property (nonatomic , assign) NSInteger duration;
 @property (nonatomic , strong) NSMutableArray *musicTag;
 
+@property (nonatomic , assign) BOOL selected;
+
 /** 是否播放过 */
 @property (nonatomic , assign) BOOL hasPlay;
 @end

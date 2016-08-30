@@ -17,6 +17,7 @@
     [aCoder encodeObject:self.musicTag forKey:@"musicTag"];
     [aCoder encodeInteger:self.duration forKey:@"duration"];
     [aCoder encodeBool:self.hasPlay forKey:@"hasPlay"];
+    [aCoder encodeBool:self.selected forKey:@"selected"];
     [aCoder encodeObject:self.imageName forKey:@"imageName"];
 };
 
@@ -29,6 +30,7 @@
         self.indexName = [aDecoder decodeObjectForKey:@"indexName"];
         self.musicTag = [aDecoder decodeObjectForKey:@"musicTag"];
         self.hasPlay = [aDecoder decodeBoolForKey:@"hasPlay"];
+        self.selected = [aDecoder decodeBoolForKey:@"selected"];
         self.imageName = [aDecoder decodeObjectForKey:@"imageName"];
     }
     

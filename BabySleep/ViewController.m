@@ -44,9 +44,13 @@
 
 @property (nonatomic , strong) NSMutableArray *userArr;
 
+@property (nonatomic , strong) NSMutableArray *deleteArr;
+
 @property (nonatomic , assign) NSInteger musicIndex;
 
 @property (nonatomic , strong) NSIndexPath *selectIndexPath;
+
+@property (nonatomic , assign) BOOL editMode;
 
 @end
 
@@ -66,6 +70,8 @@ static NSString * const musicIdentifier = @"music";
     topView.layer.borderWidth = 1.5;
     [self.view addSubview:topView];
 
+    self.deleteArr = [NSMutableArray array];
+    
     self.defaultArr = [NSMutableArray new];
     if ([WMUserDefault arrayForKey:@"DefaultData"]) {
         [self.defaultArr addObjectsFromArray:[WMUserDefault arrayForKey:@"DefaultData"]];
@@ -90,14 +96,26 @@ static NSString * const musicIdentifier = @"music";
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.tableFooterView = [[UIView alloc] init];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:self.tableView];
     
     self.editMusicView = [[EditMusicView alloc] initWithFrame:CGRectMake(0, SCREENHEIGHT - 52, SCREENWIDTH, 52)];
+    
     __weak typeof(self) weakSelf = self;
     self.editMusicView.StartEdit = ^{
+        weakSelf.editMode = YES;
         weakSelf.recordBtn.hidden = YES;
-//        [self removeCommonPanGestureRecognizer];
+        weakSelf.recordBtn.enabled = NO;
+        [weakSelf.tableView reloadData];
     };
+    
+    self.editMusicView.EndEdit = ^{
+        weakSelf.editMode = NO;
+        weakSelf.recordBtn.hidden = NO;
+        weakSelf.recordBtn.enabled = YES;
+        [weakSelf.tableView reloadData];
+    };
+    
     [self.view addSubview:self.editMusicView];
     
     self.recordView = [[RecordView alloc] initWithFrame:self.view.bounds];
@@ -109,6 +127,39 @@ static NSString * const musicIdentifier = @"music";
     [self.view addSubview:self.recordBtn];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playBtnAction:) name:@"pauseMusic" object:nil];
+}
+
+- (MusicData *)currentMusicDataWith:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0) {
+        return self.defaultArr[indexPath.row];
+    }else{
+        return self.userArr[indexPath.row];
+    }
+}
+
+- (BOOL)deleteStatusWith:(NSIndexPath *)indexPath
+{
+    for (NSIndexPath *index in self.deleteArr) {
+        if (index == indexPath) {
+            return YES;
+        }
+    }
+    
+    return NO;
+}
+
+- (BOOL)deleteWith:(NSIndexPath *)indexPath
+{
+    for (NSIndexPath *index in self.deleteArr) {
+        if (index == indexPath) {
+            [self.deleteArr removeObject:index];
+            return NO;
+        }
+    }
+    
+    [self.deleteArr addObject:indexPath];
+    return YES;
 }
 
 #pragma mark - UITableViewDelegate
@@ -142,17 +193,30 @@ static NSString * const musicIdentifier = @"music";
     cell.indexPath = indexPath;
 //    cell.delegate = self;
     
+    __weak typeof(self) weakSelf = self;
+    cell.VolumValueChange = ^(CGFloat volume){
+        
+    };
+
     if (indexPath.section == 1) {
         if (indexPath.row < self.userArr.count) {
             MusicData *musicData = [self.userArr objectAtIndex:indexPath.row];
             
-            [cell configureWithMusic:musicData volum:@"0.5" selected:self.selectIndexPath == indexPath ? YES : NO];
+            [cell configureWithMusic:musicData volum:@"0.5" selected:musicData.selected editMode:self.editMode];
+            
+            if (self.editMode) {
+                [cell deleteSelect:[self deleteStatusWith:indexPath]];
+            }
         }
     }else{
         if (indexPath.row < self.defaultArr.count) {
             MusicData *musicData = [self.defaultArr objectAtIndex:indexPath.row];
             
-            [cell configureWithMusic:musicData volum:@"0.5" selected:self.selectIndexPath == indexPath ? YES : NO];
+            [cell configureWithMusic:musicData volum:@"0.5" selected:musicData.selected editMode:self.editMode];
+            
+            if (self.editMode) {
+                [cell deleteSelect:[self deleteStatusWith:indexPath]];
+            }
         }
     }
     
@@ -161,12 +225,30 @@ static NSString * const musicIdentifier = @"music";
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    self.selectIndexPath = indexPath;
-    
-    [self.tableView reloadData];
-    
-    if (indexPath.section == 0) {
-        [self playDefaultMusicWithIndex:indexPath.row];
+    if (self.editMode) {
+        BOOL select = [self deleteWith:indexPath];
+        
+        RecordListCell *cell = (RecordListCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+        
+        [cell deleteSelect:select];
+    }else{
+        if (self.selectIndexPath == indexPath) {
+            return;
+        }
+        
+        MusicData *data = [self currentMusicDataWith:self.selectIndexPath];
+        data.selected = NO;
+        
+        MusicData *currentData = [self currentMusicDataWith:indexPath];
+        currentData.selected = YES;
+        
+        self.selectIndexPath = indexPath;
+        
+        [self.tableView reloadData];
+        
+        if (indexPath.section == 0) {
+            [self playDefaultMusicWithIndex:indexPath.row];
+        }
     }
 }
 

@@ -18,6 +18,8 @@ typedef void(^volumValueChange)(CGFloat);
 
 @property (nonatomic , copy) volumValueChange VolumValueChange;
 
-- (void)configureWithMusic:(MusicData *)music volum:(NSString *)volum selected:(BOOL)selected;
+- (void)configureWithMusic:(MusicData *)music volum:(NSString *)volum selected:(BOOL)selected editMode:(BOOL)editMode;
+
+- (void)deleteSelect:(BOOL)select;
 
 @end

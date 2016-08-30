@@ -26,6 +26,8 @@
 
 @property (nonatomic , strong) UIView *iconBG;
 
+@property (nonatomic , strong) UIImageView *deleteSelectImage;
+
 @end
 
 @implementation RecordListCell
@@ -36,6 +38,11 @@
     if (self) {
         self.recordContentView = [[UIView alloc] initWithFrame:CGRectMake(20, 0, SCREENWIDTH - 20, 115)];
         [self addSubview:self.recordContentView];
+        
+        self.deleteSelectImage = [[UIImageView alloc] initWithFrame:CGRectMake(15, 48, 20, 20)];
+        self.deleteSelectImage.image = [UIImage imageNamed:@"delete_normal"];
+        self.deleteSelectImage.hidden = YES;
+        [self addSubview:self.deleteSelectImage];
         
         self.iconBG = [[UIView alloc] initWithFrame:CGRectMake(0, 33, 45, 45)];
         self.iconBG.layer.cornerRadius = 45 * 0.5;
@@ -91,7 +98,7 @@
     // Configure the view for the selected state
 }
 
-- (void)configureWithMusic:(MusicData *)music volum:(NSString *)volum selected:(BOOL)selected
+- (void)configureWithMusic:(MusicData *)music volum:(NSString *)volum selected:(BOOL)selected editMode:(BOOL)editMode
 {
     self.titleName.text = music.musicName;
     
@@ -100,6 +107,16 @@
     }
     
     self.slider.value = volum.floatValue;
+    
+    if (editMode) {
+        self.deleteSelectImage.hidden = NO;
+        
+        self.recordContentView.frame = CGRectMake(58, 0, SCREENWIDTH - 20, 115);
+    }else{
+        self.deleteSelectImage.hidden = YES;
+        
+        self.recordContentView.frame = CGRectMake(20, 0, SCREENWIDTH - 20, 115);
+    }
     
     if (selected) {
         self.slider.enabled = YES;
@@ -115,6 +132,15 @@
         [self.shareBtn setImage:[UIImage imageNamed:@"home_shareoff"] forState:UIControlStateNormal];
         self.shareBtn.enabled = NO;
         self.iconBG.layer.borderColor = HexRGB(0xE3E3E3).CGColor;
+    }
+}
+
+- (void)deleteSelect:(BOOL)select
+{
+    if (select) {
+        [self.deleteSelectImage setImage:[UIImage imageNamed:@"edit_choose"]];
+    }else{
+        [self.deleteSelectImage setImage:[UIImage imageNamed:@"delete_normal"]];
     }
 }
 

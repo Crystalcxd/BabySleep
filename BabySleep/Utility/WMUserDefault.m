@@ -10,7 +10,7 @@
 
 @implementation WMUserDefault
 
-+(int)intValueForKey:(NSString *)key{
++(NSInteger)intValueForKey:(NSString *)key{
     return [[NSUserDefaults standardUserDefaults] integerForKey:key];
 }
 +(void)setIntValue:(int)value forKey:(NSString *)key{

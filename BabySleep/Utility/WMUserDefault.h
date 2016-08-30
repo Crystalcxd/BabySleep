@@ -55,7 +55,7 @@
 
 @interface WMUserDefault : NSObject
 
-+(int)intValueForKey:(NSString *)key;
++(NSInteger)intValueForKey:(NSString *)key;
 +(void)setIntValue:(int)value forKey:(NSString *)key;
 
 +(CGFloat)floatValueForKey:(NSString *)key;

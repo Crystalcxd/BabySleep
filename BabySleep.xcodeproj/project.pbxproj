@@ -16,6 +16,7 @@
 		4C4F36DC1D749DAB00171C7A /* slide_disable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4F36DA1D749DAB00171C7A /* slide_disable@2x.png */; };
 		4C4F36DD1D749DAB00171C7A /* slide_enable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4F36DB1D749DAB00171C7A /* slide_enable@2x.png */; };
 		4C4F36E11D74A0E700171C7A /* MusicData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4F36E01D74A0E700171C7A /* MusicData.m */; };
+		4C4F36E31D75D48700171C7A /* delete_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4F36E21D75D48700171C7A /* delete_normal@2x.png */; };
 		4C5ADED91D44BAB5004713D0 /* TouchInsideAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5ADED81D44BAB5004713D0 /* TouchInsideAnimationView.m */; };
 		4C60581F1D424E9E0003EAF3 /* TouchAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C60581E1D424E9E0003EAF3 /* TouchAnimationView.m */; };
 		4CA0C7241D1FAC4E001EDC89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C7231D1FAC4E001EDC89 /* main.m */; };
@@ -89,6 +90,7 @@
 		4C4F36DB1D749DAB00171C7A /* slide_enable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slide_enable@2x.png"; sourceTree = "<group>"; };
 		4C4F36DF1D74A0E700171C7A /* MusicData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicData.h; sourceTree = "<group>"; };
 		4C4F36E01D74A0E700171C7A /* MusicData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicData.m; sourceTree = "<group>"; };
+		4C4F36E21D75D48700171C7A /* delete_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete_normal@2x.png"; sourceTree = "<group>"; };
 		4C5ADED71D44BAB5004713D0 /* TouchInsideAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchInsideAnimationView.h; sourceTree = "<group>"; };
 		4C5ADED81D44BAB5004713D0 /* TouchInsideAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchInsideAnimationView.m; sourceTree = "<group>"; };
 		4C60581D1D424E9E0003EAF3 /* TouchAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchAnimationView.h; sourceTree = "<group>"; };
@@ -366,6 +368,7 @@
 		A4FEA12E1D2B559900FB7FE0 /* pic */ = {
 			isa = PBXGroup;
 			children = (
+				4C4F36E21D75D48700171C7A /* delete_normal@2x.png */,
 				4C4F36DA1D749DAB00171C7A /* slide_disable@2x.png */,
 				4C4F36DB1D749DAB00171C7A /* slide_enable@2x.png */,
 				4CDEA4691D604531006E3AA8 /* home_head.png */,
@@ -486,6 +489,7 @@
 			files = (
 				4CDEA4781D604542006E3AA8 /* 3.m4a in Resources */,
 				4CDEA46F1D604531006E3AA8 /* home_m4a_1.png in Resources */,
+				4C4F36E31D75D48700171C7A /* delete_normal@2x.png in Resources */,
 				4CDEA4701D604531006E3AA8 /* home_m4a_2.png in Resources */,
 				A4E5DF591D4F18C7008AABE4 /* MMPSilence.wav in Resources */,
 				4C4F36DC1D749DAB00171C7A /* slide_disable@2x.png in Resources */,
