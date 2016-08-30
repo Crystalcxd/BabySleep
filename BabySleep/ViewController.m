@@ -93,6 +93,11 @@ static NSString * const musicIdentifier = @"music";
     [self.view addSubview:self.tableView];
     
     self.editMusicView = [[EditMusicView alloc] initWithFrame:CGRectMake(0, SCREENHEIGHT - 52, SCREENWIDTH, 52)];
+    __weak typeof(self) weakSelf = self;
+    self.editMusicView.StartEdit = ^{
+        weakSelf.recordBtn.hidden = YES;
+//        [self removeCommonPanGestureRecognizer];
+    };
     [self.view addSubview:self.editMusicView];
     
     self.recordView = [[RecordView alloc] initWithFrame:self.view.bounds];
