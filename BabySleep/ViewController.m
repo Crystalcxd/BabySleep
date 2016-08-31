@@ -127,6 +127,7 @@ static NSString * const musicIdentifier = @"music";
     [self.view addSubview:self.editMusicView];
     
     self.recordView = [[RecordView alloc] initWithFrame:self.view.bounds];
+    self.recordView.fatherVC = self;
     
     self.recordBtn = [[UIButton alloc] initWithFrame:CGRectMake(SCREENWIDTH * 0.5 - 26, CGRectGetMinY(self.editMusicView.frame) - 26, 52, 52)];
     [self.recordBtn setImage:[UIImage imageNamed:@"home_record"] forState:UIControlStateNormal];
@@ -135,6 +136,7 @@ static NSString * const musicIdentifier = @"music";
     [self.view addSubview:self.recordBtn];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playBtnAction:) name:@"pauseMusic" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enableRecordView) name:@"enableRecordView" object:nil];
 }
 
 - (MusicData *)currentMusicDataWith:(NSIndexPath *)indexPath
@@ -305,9 +307,8 @@ static NSString * const musicIdentifier = @"music";
     btn.enabled = NO;
     
     if (btn.selected) {
-        [self.recordView fadeRecordView];
+//        [self.recordView fadeRecordView];
         
-        [self performSelector:@selector(enableRecordView) withObject:nil afterDelay:1.0];
     }else{
         [self.view addSubview:self.recordView];
         [self.view bringSubviewToFront:self.recordBtn];

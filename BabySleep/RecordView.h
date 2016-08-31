@@ -10,8 +10,12 @@
 
 @interface RecordView : UIView
 
+@property (nonatomic , assign) UIViewController *fatherVC;
+
 - (void)showRecordView;
 
 - (void)fadeRecordView;
+
+- (void)pauseRecord;
 
 @end

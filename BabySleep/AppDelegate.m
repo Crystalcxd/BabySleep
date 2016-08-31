@@ -103,7 +103,39 @@ static void displayStatusChanged(CFNotificationCenterRef center,
         [WMUserDefault setArray:array forKey:@"DefaultData"];
     }
 
+    //调用方法
+    if (![self isFileExistWith:@"record_save_head.png"]) {
+        UIImage *savedImage = [UIImage imageNamed:@"record_save_head.png"];
+        NSArray *paths =NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+        NSString *filePath = [[paths objectAtIndex:0]stringByAppendingPathComponent:[NSString stringWithFormat:@"record_save_head.png"]];  // 保存文件的名称
+        BOOL result =[UIImagePNGRepresentation(savedImage) writeToFile:filePath atomically:YES]; // 保存成功会返回YES
+        
+        NSString *msg = nil ;
+        if(result){
+            msg = @"保存图片成功" ;
+        }else{
+            msg = @"保存图片失败" ;
+        }
+        
+        NSLog(@"%@",msg);
+    }
+
     return YES;
+}
+
+- (BOOL)isFileExistWith:(NSString *)str
+{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    //Get documents directory
+    NSArray *directoryPaths = NSSearchPathForDirectoriesInDomains
+    (NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectoryPath = [directoryPaths objectAtIndex:0];
+    if ([fileManager fileExistsAtPath:[NSString stringWithFormat:@"%@/%@",documentsDirectoryPath,str]]==YES) {
+        NSLog(@"File exists");
+        return YES;
+    }
+    
+    return NO;
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
@@ -237,5 +269,27 @@ static void displayStatusChanged(CFNotificationCenterRef center,
                                           otherButtonTitles:nil];
     [alert show];
 }
+
+//实现该方法
+- (void)saveImageToPhotos:(UIImage*)savedImage
+{
+    UIImageWriteToSavedPhotosAlbum(savedImage, self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
+    //因为需要知道该操作的完成情况，即保存成功与否，所以此处需要一个回调方法image:didFinishSavingWithError:contextInfo:
+}
+
+//回调方法
+- (void)image: (UIImage *) image didFinishSavingWithError: (NSError *) error contextInfo: (void *) contextInfo
+{
+    NSString *msg = nil ;
+    if(error != NULL){
+        msg = @"保存图片失败" ;
+    }else{
+        msg = @"保存图片成功" ;
+    }
+    
+    NSLog(@"%@",msg);
+}
+
+
 
 @end
