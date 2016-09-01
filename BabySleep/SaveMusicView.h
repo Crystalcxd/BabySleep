@@ -10,10 +10,14 @@
 
 #import "MusicData.h"
 
+typedef void(^endSaveMusic)();
+
 @interface SaveMusicView : UIView
 
 @property (nonatomic , assign) UIViewController *fatherVC;
 
 @property (nonatomic , strong) MusicData *musicData;
+
+@property (nonatomic , copy) endSaveMusic EndSaveMusic;
 
 @end

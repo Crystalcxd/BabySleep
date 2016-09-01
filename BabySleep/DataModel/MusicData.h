@@ -21,6 +21,8 @@
 @property (nonatomic , assign) NSInteger duration;
 @property (nonatomic , strong) NSMutableArray *musicTag;
 
+@property (nonatomic , assign) BOOL userData;
+
 @property (nonatomic , assign) BOOL selected;
 
 @property (nonatomic , assign) CGFloat volum;

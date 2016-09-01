@@ -9,6 +9,7 @@
 #import <AVFoundation/AVFoundation.h>
 
 #import "RecordView.h"
+#import "SaveMusicView.h"
 #import "TFLargerHitButton.h"
 
 #import "MusicData.h"
@@ -65,12 +66,14 @@
         cancelbtn.frame = CGRectMake(56, SCREENHEIGHT - 52 - 9, 18, 18);
         [cancelbtn setImage:[UIImage imageNamed:@"cancel"] forState:UIControlStateNormal];
         [cancelbtn setAdjustsImageWhenHighlighted:NO];
+        [cancelbtn addTarget:self action:@selector(cancelAction:) forControlEvents:UIControlEventTouchUpInside];
         [self.contentView addSubview:cancelbtn];
         
         TFLargerHitButton *saveBtn = [TFLargerHitButton buttonWithType:UIButtonTypeCustom];
         saveBtn.frame = CGRectMake(SCREENWIDTH - 56 - 20, SCREENHEIGHT - 52 - 9, 20, 18);
         [saveBtn setImage:[UIImage imageNamed:@"record_ok"] forState:UIControlStateNormal];
         [saveBtn setAdjustsImageWhenHighlighted:NO];
+        [saveBtn addTarget:self action:@selector(confirmAction:) forControlEvents:UIControlEventTouchUpInside];
         [self.contentView addSubview:saveBtn];
         
         self.contentView.alpha = 0;
@@ -109,7 +112,16 @@
     [_audioRecorder stop];
     [NSObject cancelPreviousPerformRequestsWithTarget:self];
 
+    SaveMusicView *saveMusicView = [[SaveMusicView alloc] initWithFrame:self.bounds];
     
+    __weak typeof(self) weakSelf = self;
+ 
+    saveMusicView.EndSaveMusic = ^{
+        [weakSelf.fatherVC reloadUserData];
+//        [weakSelf showClearAllMusicAlert];
+    };
+
+    [self addSubview:saveMusicView];
 }
 
 - (void)deleteRecord

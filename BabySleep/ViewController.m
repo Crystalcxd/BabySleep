@@ -172,6 +172,16 @@ static NSString * const musicIdentifier = @"music";
     return YES;
 }
 
+- (void)reloadUserData
+{
+    self.userArr = [NSMutableArray new];
+    if ([WMUserDefault arrayForKey:@"UserData"]) {
+        [self.userArr addObjectsFromArray:[WMUserDefault arrayForKey:@"UserData"]];
+    }
+    
+    [self.tableView reloadData];
+}
+
 #pragma mark - UITableViewDelegate
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -259,6 +269,8 @@ static NSString * const musicIdentifier = @"music";
 
         if (indexPath.section == 0) {
             [self playDefaultMusicWithIndex:indexPath.row];
+        }else{
+            [self playUserMusicWithIndex:indexPath.row];
         }
     }
 }
@@ -386,6 +398,17 @@ static NSString * const musicIdentifier = @"music";
     NSString *musicFilePath= [[NSBundle mainBundle] pathForResource:music.indexName ofType:@"m4a"];
     
     [self audioPlayWithPath:[[NSURL alloc] initFileURLWithPath:musicFilePath]];
+}
+
+- (void)playUserMusicWithIndex:(NSInteger)index
+{
+    MusicData *music = self.userArr[index];
+    
+    //1.音频文件的url路径
+    NSString *urlStr=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    urlStr=[urlStr stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.caf",music.indexName]];
+    
+    [self audioPlayWithPath:[[NSURL alloc] initFileURLWithPath:urlStr]];
 }
 
 -(void)audioPlayWithPath:(NSURL *)url

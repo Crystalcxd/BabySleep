@@ -109,7 +109,14 @@
     self.data = music;
     
     if (self.indexPath.section == 0) {
-        self.iconImageView.image = [UIImage imageNamed:music.imageName];
+        if (music.userData) {
+            NSString *filePath = [[NSString alloc]initWithFormat:@"%@/Documents/%@",NSHomeDirectory(),music.imageName];
+            if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+                self.iconImageView.image=[UIImage imageWithContentsOfFile:filePath];
+            }
+        }else{
+            self.iconImageView.image = [UIImage imageNamed:music.imageName];
+        }
     }
     
     self.slider.value = music.volum;

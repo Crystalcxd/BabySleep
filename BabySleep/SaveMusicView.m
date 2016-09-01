@@ -12,12 +12,15 @@
 #import "ELCImagePickerController.h"
 
 #import "Utility.h"
+#import "WMUserDefault.h"
 
 @interface SaveMusicView ()<UIActionSheetDelegate,ELCImagePickerControllerDelegate,UIImagePickerControllerDelegate>
 
 @property (nonatomic , strong) UITextField *textField;
 
 @property (nonatomic , strong) UIImageView *musicImageView;
+
+@property (nonatomic , assign) BOOL imageChange;
 
 @end
 
@@ -61,6 +64,8 @@
         self.textField.text = self.musicData.musicName;
         [boardBG addSubview:self.textField];
         
+        self.musicData.imageName = @"record_save_head.png";
+
         UILabel *iconTitle = [[UILabel alloc] initWithFrame:CGRectMake(22, 141, 100, 18)];
         iconTitle.textColor = HexRGB(0x9E9E9E);
         iconTitle.font = [UIFont fontWithName:@"DFPYuanW5" size:18];
@@ -87,6 +92,50 @@
     }
     
     return self;
+}
+
+- (void)cancelAction:(id)sender
+{
+    [self removeFromSuperview];
+}
+
+- (void)saveAction:(id)sender
+{
+    if (self.textField.text.length == 0) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"请输入名称" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alert show];
+        return;
+    }
+    
+    self.musicData.musicName = self.textField.text;
+    self.musicData.userData = YES;
+    
+    [self saveImage];
+    [self saveData];
+    
+    self.EndSaveMusic();
+}
+
+- (void)saveData
+{
+    NSMutableArray *array = [NSMutableArray new];
+    if ([WMUserDefault arrayForKey:@"UserData"]) {
+        [array addObjectsFromArray:[WMUserDefault arrayForKey:@"UserData"]];
+    }
+    
+    [array addObject:self.musicData];
+    
+    [WMUserDefault setArray:array forKey:@"UserData"];
+}
+
+- (void)saveImage
+{
+    if (self.imageChange) {
+        NSString  *pngPath = [NSHomeDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"Documents/%@",self.musicData.musicName]];
+        [UIImagePNGRepresentation(self.musicImageView.image) writeToFile:pngPath atomically:YES];
+        
+        self.musicData.imageName = [NSString stringWithFormat:@"%@.png",self.musicData.musicName];
+    }
 }
 
 - (void)selectImage:(id)sender
@@ -168,6 +217,7 @@
     NSMutableArray *images = [NSMutableArray arrayWithCapacity:[info count]];
     
     for (NSDictionary *dict in info) {
+        self.imageChange = YES;
         
         UIImage *image = [dict objectForKey:UIImagePickerControllerOriginalImage];
         [images addObject:image];
@@ -177,8 +227,15 @@
     }
 }
 
+- (void)elcImagePickerControllerDidCancel:(ELCImagePickerController *)picker
+{
+    
+}
+
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
 {
+    self.imageChange = YES;
+    
     UIImage *image= [info objectForKey:@"UIImagePickerControllerOriginalImage"];
     
     self.musicImageView.image = image;

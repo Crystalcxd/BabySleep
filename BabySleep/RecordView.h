@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#import "ViewController.h"
+
 @interface RecordView : UIView
 
-@property (nonatomic , assign) UIViewController *fatherVC;
+@property (nonatomic , assign) ViewController *fatherVC;
 
 - (void)showRecordView;
 
