@@ -12,6 +12,8 @@
 
 #import "Utility.h"
 
+#import "WXApi.h"
+
 @interface RecordListCell ()
 
 @property (nonatomic , strong) UIView *recordContentView;
@@ -72,6 +74,7 @@
         self.shareBtn = [TFLargerHitButton buttonWithType:UIButtonTypeCustom];
         self.shareBtn.frame = CGRectMake(SCREENWIDTH - 20 - 40, 40, 16, 25);
         [self.shareBtn setImage:[UIImage imageNamed:@"home_shareoff"] forState:UIControlStateNormal];
+        [self.shareBtn addTarget:self action:@selector(shareMusic:) forControlEvents:UIControlEventTouchUpInside];
         [self.recordContentView addSubview:self.shareBtn];
         
         UIView *bottomLine = [[UIView alloc] initWithFrame:CGRectMake(0, 113, SCREENWIDTH - 20, 1.5)];
@@ -108,7 +111,7 @@
     
     self.data = music;
     
-    if (self.indexPath.section == 0) {
+    if (self.indexPath.section == 1) {
         if (music.userData) {
             NSString *filePath = [[NSString alloc]initWithFormat:@"%@/Documents/%@",NSHomeDirectory(),music.imageName];
             if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
@@ -117,6 +120,8 @@
         }else{
             self.iconImageView.image = [UIImage imageNamed:music.imageName];
         }
+    }else{
+        self.iconImageView.image = [UIImage imageNamed:music.imageName];
     }
     
     self.slider.value = music.volum;
@@ -148,12 +153,76 @@
     }
 }
 
+- (void)shareMusic:(id)sender
+{
+    WXMediaMessage *message = [self wxShareSiglMessageScene:[UIImage imageNamed:@"icon120.png"]];
+    message.title = self.data.musicName;
+    message.description = self.data.musicName;
+    
+    [self ShareWeixinLinkContent:message WXType:0];
+}
+
 - (void)deleteSelect:(BOOL)select
 {
     if (select) {
         [self.deleteSelectImage setImage:[UIImage imageNamed:@"edit_choose"]];
     }else{
         [self.deleteSelectImage setImage:[UIImage imageNamed:@"delete_normal"]];
+    }
+}
+
+#pragma mark - 微信分享
+- (WXMediaMessage *)wxShareSiglMessageScene:(UIImage *)image
+{
+    WXMediaMessage *message = [WXMediaMessage message];
+    
+    WXFileObject *object = [WXFileObject object];
+    object.fileExtension = @"caf";
+    
+    //1.音频文件的url路径
+    NSString *urlStr=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    urlStr=[urlStr stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.caf",self.data.indexName]];
+    NSData* data= [NSData dataWithContentsOfFile:urlStr];
+    
+    object.fileData = data;
+    
+    message.mediaObject = object;
+    
+    [message setThumbData:UIImageJPEGRepresentation(image,1)];
+    
+    return message;
+}
+
+- (void)ShareWeixinLinkContent:(WXMediaMessage *)message WXType:(NSInteger)scene {
+    if ([WXApi isWXAppInstalled]) {
+        SendMessageToWXReq *wxRequest = [[SendMessageToWXReq alloc] init];
+        
+        if ([message.mediaObject isKindOfClass:[WXWebpageObject class]]) {
+            WXWebpageObject *webpageObject = message.mediaObject;
+            if (webpageObject.webpageUrl.length == 0) {
+                wxRequest.text = message.title;
+                wxRequest.bText = YES;
+            } else {
+                wxRequest.message = message;
+            }
+        } else if ([message.mediaObject isKindOfClass:[WXImageObject class]]) {
+            wxRequest.bText = NO;
+            wxRequest.message = message;
+        } else if ([message.mediaObject isKindOfClass:[WXVideoObject class]]) {
+            wxRequest.bText = NO;
+            wxRequest.message = message;
+        } else if ([message.mediaObject isKindOfClass:[WXFileObject class]]) {
+            wxRequest.bText = NO;
+            wxRequest.message = message;
+        }
+        
+        wxRequest.bText = NO;
+        wxRequest.scene = (int)scene;
+        
+        [WXApi sendReq:wxRequest];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"分享失败" message:@"请使用其它分享途径。" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alert show];
     }
 }
 

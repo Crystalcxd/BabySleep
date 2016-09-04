@@ -87,7 +87,7 @@
     NSDateFormatter *defaultMatter = nil;
     
     defaultMatter = [[NSDateFormatter alloc] init];
-    [defaultMatter setDateFormat:@"yyyy-MMdd_HH点mm分ss秒"];
+    [defaultMatter setDateFormat:@"yyyy_MMdd_HH点mm分ss秒"];
     
     NSDate *timeDate = [NSDate date];
     
@@ -96,12 +96,21 @@
     return timeString;
 }
 
+- (void)startRecoder
+{
+    if (![self.audioRecorder isRecording]) {
+        [self.audioRecorder record];//首次使用应用时如果调用record方法会询问用户是否允许使用麦克风
+        self.timer.fireDate=[NSDate distantPast];
+    }
+}
+
 #pragma mark - ButtonAction
 
 - (void)cancelAction:(id)sender
 {
     [_audioRecorder stop];
-    [NSObject cancelPreviousPerformRequestsWithTarget:self];
+    [self.timer invalidate];
+    self.timer = nil;
     
     [self deleteRecord];
     [self fadeRecordView];
@@ -110,14 +119,20 @@
 - (void)confirmAction:(id)sender
 {
     [_audioRecorder stop];
-    [NSObject cancelPreviousPerformRequestsWithTarget:self];
+    [self.timer invalidate];
+    self.timer = nil;
 
     SaveMusicView *saveMusicView = [[SaveMusicView alloc] initWithFrame:self.bounds];
+    
+    saveMusicView.fatherVC = self.fatherVC;
+    
+    [saveMusicView configureWith:self.data];
     
     __weak typeof(self) weakSelf = self;
  
     saveMusicView.EndSaveMusic = ^{
         [weakSelf.fatherVC reloadUserData];
+        [weakSelf performSelector:@selector(fadeRecordView) withObject:nil afterDelay:0.5];
 //        [weakSelf showClearAllMusicAlert];
     };
 
@@ -170,7 +185,8 @@
 
 - (void)pauseRecord
 {
-    [NSObject cancelPreviousPerformRequestsWithTarget:self];
+    [self.timer invalidate];
+    self.timer = nil;
     [_audioRecorder pause];
 }
 

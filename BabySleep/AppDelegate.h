@@ -10,7 +10,7 @@
 
 #import "WXApi.h"
 
-#define WXAppId @"wxd8553922d3b91b66"
+#define WXAppId @"wxd1a58dbebec2a73a"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate,WXApiDelegate>
 

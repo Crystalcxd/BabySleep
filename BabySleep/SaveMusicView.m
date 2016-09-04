@@ -46,6 +46,7 @@
         TFLargerHitButton *cancelBtn = [TFLargerHitButton buttonWithType:UIButtonTypeCustom];
         [cancelBtn setImage:[UIImage imageNamed:@"cancel"] forState:UIControlStateNormal];
         cancelBtn.frame = CGRectMake(255, 15, 18, 18);
+        [cancelBtn addTarget:self action:@selector(cancelAction:) forControlEvents:UIControlEventTouchUpInside];
         [boardBG addSubview:cancelBtn];
         
         UILabel *nameTitle = [[UILabel alloc] initWithFrame:CGRectMake(22, 33, 100, 18)];
@@ -56,12 +57,12 @@
         
         UIView *textFieldBG = [[UIView alloc] initWithFrame:CGRectMake(26, 66, 236, 34)];
         textFieldBG.layer.borderColor = HexRGB(0xFF756F).CGColor;
+        textFieldBG.layer.borderWidth = 1.0;
         [boardBG addSubview:textFieldBG];
         
         self.textField = [[UITextField alloc] initWithFrame:CGRectMake(36, 66, 226, 34)];
         self.textField.font = [UIFont fontWithName:@"DFPYuanW5" size:18];
         self.textField.textColor = HexRGB(0xD0D0D0);
-        self.textField.text = self.musicData.musicName;
         [boardBG addSubview:self.textField];
         
         self.musicData.imageName = @"record_save_head.png";
@@ -72,14 +73,18 @@
         iconTitle.text = @"头像";
         [boardBG addSubview:iconTitle];
         
-        self.musicImageView = [[UIImageView alloc] initWithFrame:CGRectMake(94, 171, 90, 90)];
+        UIView *imageBG = [[UIView alloc]initWithFrame:CGRectMake(94, 171, 90, 90)];
+        imageBG.layer.cornerRadius = 45;
+        imageBG.clipsToBounds = YES;
+        [boardBG addSubview:imageBG];
+        
+        self.musicImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 90, 90)];
         self.musicImageView.layer.cornerRadius = 45;
-        self.musicImageView.image = [UIImage imageNamed:self.musicData.imageName];
-        [boardBG addSubview:self.musicImageView];
+        [imageBG addSubview:self.musicImageView];
         
         UIButton *selectImageBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        selectImageBtn.frame = self.musicImageView.frame;
-        [selectImageBtn addTarget:selectImageBtn action:@selector(selectImage:) forControlEvents:UIControlEventTouchUpInside];
+        selectImageBtn.frame = imageBG.frame;
+        [selectImageBtn addTarget:self action:@selector(selectImage:) forControlEvents:UIControlEventTouchUpInside];
         [boardBG addSubview:selectImageBtn];
         
         UIButton *saveBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -88,10 +93,19 @@
         [saveBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [saveBtn.titleLabel setFont:[UIFont fontWithName:@"DFPYuanW5" size:20]];
         saveBtn.backgroundColor = HexRGB(0xFF918C);
+        [saveBtn addTarget:self action:@selector(saveAction:) forControlEvents:UIControlEventTouchUpInside];
         [boardBG addSubview:saveBtn];
     }
     
     return self;
+}
+
+- (void)configureWith:(MusicData *)data
+{
+    self.musicData = data;
+    
+    self.textField.text = self.musicData.musicName;
+    self.musicImageView.image = [UIImage imageNamed:self.musicData.imageName];
 }
 
 - (void)cancelAction:(id)sender
@@ -114,6 +128,8 @@
     [self saveData];
     
     self.EndSaveMusic();
+    
+    [self removeFromSuperview];
 }
 
 - (void)saveData
@@ -131,7 +147,7 @@
 - (void)saveImage
 {
     if (self.imageChange) {
-        NSString  *pngPath = [NSHomeDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"Documents/%@",self.musicData.musicName]];
+        NSString  *pngPath = [NSHomeDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"Documents/%@.png",self.musicData.musicName]];
         [UIImagePNGRepresentation(self.musicImageView.image) writeToFile:pngPath atomically:YES];
         
         self.musicData.imageName = [NSString stringWithFormat:@"%@.png",self.musicData.musicName];
@@ -214,6 +230,10 @@
 
 - (void)elcImagePickerController:(ELCImagePickerController *)picker didFinishPickingMediaWithInfo:(NSArray *)info
 {
+    [picker dismissViewControllerAnimated:YES completion:^{
+        [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationPortrait animated:YES];
+    }];
+
     NSMutableArray *images = [NSMutableArray arrayWithCapacity:[info count]];
     
     for (NSDictionary *dict in info) {
@@ -221,9 +241,9 @@
         
         UIImage *image = [dict objectForKey:UIImagePickerControllerOriginalImage];
         [images addObject:image];
-        NSData *data = UIImagePNGRepresentation(image);
         
         self.musicImageView.image = image;
+        self.musicImageView.layer.cornerRadius = 45;
     }
 }
 
@@ -234,11 +254,16 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
 {
+    [picker dismissViewControllerAnimated:YES completion:^{
+        [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationPortrait animated:YES];
+    }];
+
     self.imageChange = YES;
     
     UIImage *image= [info objectForKey:@"UIImagePickerControllerOriginalImage"];
     
     self.musicImageView.image = image;
+    self.musicImageView.layer.cornerRadius = 45;
 }
 
 /*

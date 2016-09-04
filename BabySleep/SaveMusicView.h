@@ -20,4 +20,6 @@ typedef void(^endSaveMusic)();
 
 @property (nonatomic , copy) endSaveMusic EndSaveMusic;
 
+- (void)configureWith:(MusicData *)data;
+
 @end

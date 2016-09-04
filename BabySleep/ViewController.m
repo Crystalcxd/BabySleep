@@ -176,7 +176,7 @@ static NSString * const musicIdentifier = @"music";
 {
     self.defaultArr = [NSMutableArray new];
     if ([WMUserDefault arrayForKey:@"DefaultData"]) {
-        [self.userArr addObjectsFromArray:[WMUserDefault arrayForKey:@"DefaultData"]];
+        [self.defaultArr addObjectsFromArray:[WMUserDefault arrayForKey:@"DefaultData"]];
     }
     
     [self.tableView reloadData];
@@ -292,11 +292,66 @@ static NSString * const musicIdentifier = @"music";
     if (alertView.tag == 100) {
         if (buttonIndex == 0) {
             [WMUserDefault setArray:[NSMutableArray array] forKey:@"DefaultData"];
+            
+            for (MusicData *music in self.userArr) {
+                [self removeDocumentFileWith:music];
+            }
+            [WMUserDefault setArray:[NSMutableArray array] forKey:@"UserData"];
+            
             [self reloadDefaultData];
+            
+            [self reloadUserData];
         }
     }else if (alertView.tag == 101) {
         if (buttonIndex == 0) {
+            NSMutableArray *currentDefaultArr = [NSMutableArray arrayWithArray:self.defaultArr];
+            NSMutableArray *currentUserArr = [NSMutableArray arrayWithArray:self.userArr];
             
+            for (NSIndexPath *indexPath in self.deleteArr) {
+                if (indexPath.section == 0) {
+                    MusicData *music = [self.defaultArr objectAtIndex:indexPath.row];
+                    [currentDefaultArr removeObject:music];
+                    
+                    
+                }
+                if (indexPath.section == 1) {
+                    MusicData *music = [self.userArr objectAtIndex:indexPath.row];
+                    [self removeDocumentFileWith:music];
+                    
+                    [currentUserArr removeObject:music];
+                }
+            }
+            [WMUserDefault setArray:currentDefaultArr forKey:@"DefaultData"];
+            [WMUserDefault setArray:currentUserArr forKey:@"UserData"];
+            
+            [self reloadDefaultData];
+            
+            [self reloadUserData];
+        }
+    }
+}
+
+- (void)removeDocumentFileWith:(MusicData *)musicData
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    NSFileManager *fileMgr = [NSFileManager defaultManager];
+    NSString *MapLayerDataPath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.caf",musicData.indexName]];
+    BOOL bRet = [fileMgr fileExistsAtPath:MapLayerDataPath];
+    if (bRet) {
+        //
+        NSError *err;
+        [fileMgr removeItemAtPath:MapLayerDataPath error:&err];
+    }
+    
+    if (![musicData.imageName isEqualToString:@"record_save_head.png"]) {
+        NSString *imageDataPath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png",musicData.indexName]];
+        BOOL bRet = [fileMgr fileExistsAtPath:imageDataPath];
+        if (bRet) {
+            //
+            NSError *err;
+            [fileMgr removeItemAtPath:imageDataPath error:&err];
         }
     }
 }
@@ -330,8 +385,7 @@ static NSString * const musicIdentifier = @"music";
     btn.enabled = NO;
     
     if (btn.selected) {
-//        [self.recordView fadeRecordView];
-        
+        [self.recordView pauseRecord];        
     }else{
         [self.view addSubview:self.recordView];
         [self.view bringSubviewToFront:self.recordBtn];
