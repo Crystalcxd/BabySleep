@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import <AVOSCloud/AVOSCloud.h>
+
 #import "WXApi.h"
 
 #define WXAppId @"wxd8553922d3b91b66"

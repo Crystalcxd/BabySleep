@@ -31,6 +31,11 @@
 		4CAE50931D368FC5009FE262 /* MptTableHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE50911D368FC5009FE262 /* MptTableHeadView.m */; };
 		4CAE50971D369057009FE262 /* MptPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE50961D369057009FE262 /* MptPageControl.m */; };
 		4CAE509A1D369419009FE262 /* CartoonHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE50991D369419009FE262 /* CartoonHeadView.m */; };
+		4CC874BC1D7C3DD30090E8C7 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC874BB1D7C3DD30090E8C7 /* AVOSCloud.framework */; };
+		4CC874BE1D7C3E490090E8C7 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC874BD1D7C3E490090E8C7 /* libicucore.tbd */; };
+		4CC874C01D7C3E5F0090E8C7 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC874BF1D7C3E5F0090E8C7 /* libsqlite3.tbd */; };
+		4CC874C21D7C3E6F0090E8C7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC874C11D7C3E6F0090E8C7 /* MobileCoreServices.framework */; };
+		4CC874C41D7C3E8A0090E8C7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC874C31D7C3E8A0090E8C7 /* CoreLocation.framework */; };
 		4CE52F991D28CAD9009576C6 /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52F981D28CAD9009576C6 /* SliderViewController.m */; };
 		4CE52FA21D28CB12009576C6 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52F9E1D28CB12009576C6 /* Utility.m */; };
 		4CE52FA31D28CB12009576C6 /* WMUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52FA01D28CB12009576C6 /* WMUserDefault.m */; };
@@ -117,6 +122,11 @@
 		4CAE50961D369057009FE262 /* MptPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MptPageControl.m; sourceTree = "<group>"; };
 		4CAE50981D369419009FE262 /* CartoonHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartoonHeadView.h; sourceTree = "<group>"; };
 		4CAE50991D369419009FE262 /* CartoonHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartoonHeadView.m; sourceTree = "<group>"; };
+		4CC874BB1D7C3DD30090E8C7 /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AVOSCloud.framework; sourceTree = "<group>"; };
+		4CC874BD1D7C3E490090E8C7 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		4CC874BF1D7C3E5F0090E8C7 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		4CC874C11D7C3E6F0090E8C7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		4CC874C31D7C3E8A0090E8C7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		4CE52F971D28CAD9009576C6 /* SliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderViewController.h; sourceTree = "<group>"; };
 		4CE52F981D28CAD9009576C6 /* SliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderViewController.m; sourceTree = "<group>"; };
 		4CE52F9D1D28CB12009576C6 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
@@ -157,11 +167,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CC874C41D7C3E8A0090E8C7 /* CoreLocation.framework in Frameworks */,
 				4CA834551D30DDC0007543B5 /* CoreTelephony.framework in Frameworks */,
+				4CC874C21D7C3E6F0090E8C7 /* MobileCoreServices.framework in Frameworks */,
+				4CC874C01D7C3E5F0090E8C7 /* libsqlite3.tbd in Frameworks */,
+				4CC874BE1D7C3E490090E8C7 /* libicucore.tbd in Frameworks */,
 				4CA834531D30DBAB007543B5 /* libc++.tbd in Frameworks */,
 				4C3DA1FA1D3B6E3E0003B5FD /* libWeChatSDK.a in Frameworks */,
 				4CA834511D30DB9B007543B5 /* libsqlite3.0.tbd in Frameworks */,
 				4CA8344F1D30DB86007543B5 /* libz.tbd in Frameworks */,
+				4CC874BC1D7C3DD30090E8C7 /* AVOSCloud.framework in Frameworks */,
 				4CA8344D1D30DB78007543B5 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +212,11 @@
 		4CA0C7161D1FAC4E001EDC89 = {
 			isa = PBXGroup;
 			children = (
+				4CC874C31D7C3E8A0090E8C7 /* CoreLocation.framework */,
+				4CC874C11D7C3E6F0090E8C7 /* MobileCoreServices.framework */,
+				4CC874BF1D7C3E5F0090E8C7 /* libsqlite3.tbd */,
+				4CC874BD1D7C3E490090E8C7 /* libicucore.tbd */,
+				4CC874BB1D7C3DD30090E8C7 /* AVOSCloud.framework */,
 				4CA834541D30DDC0007543B5 /* CoreTelephony.framework */,
 				4CA834521D30DBAB007543B5 /* libc++.tbd */,
 				4CA834501D30DB9B007543B5 /* libsqlite3.0.tbd */,
@@ -688,6 +708,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Xiaodong Cui (PLUE6QWNG3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BabySleep/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -709,6 +733,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Xiaodong Cui (TGV2ER7UVL)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BabySleep/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

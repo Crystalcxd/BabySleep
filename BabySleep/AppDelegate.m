@@ -66,6 +66,9 @@ static void displayStatusChanged(CFNotificationCenterRef center,
 
     [WXApi registerApp:WXAppId];
 
+    [AVOSCloud setApplicationId:@"xMtWiXNQ4SU2hAKgChuWspnb-gzGzoHsz" clientKey:@"P8mgUQGm7OxYgkyY5ndBuQgX"];
+    [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+
     //增强后台运行
     MMPDeepSleepPreventer *niceSleep = [[MMPDeepSleepPreventer alloc] init];
     [niceSleep startPreventSleep];
