@@ -172,6 +172,16 @@ static NSString * const musicIdentifier = @"music";
     return YES;
 }
 
+- (void)reloadDefaultData
+{
+    self.defaultArr = [NSMutableArray new];
+    if ([WMUserDefault arrayForKey:@"DefaultData"]) {
+        [self.userArr addObjectsFromArray:[WMUserDefault arrayForKey:@"DefaultData"]];
+    }
+    
+    [self.tableView reloadData];
+}
+
 - (void)reloadUserData
 {
     self.userArr = [NSMutableArray new];
@@ -281,7 +291,8 @@ static NSString * const musicIdentifier = @"music";
 {
     if (alertView.tag == 100) {
         if (buttonIndex == 0) {
-            
+            [WMUserDefault setArray:[NSMutableArray array] forKey:@"DefaultData"];
+            [self reloadDefaultData];
         }
     }else if (alertView.tag == 101) {
         if (buttonIndex == 0) {
