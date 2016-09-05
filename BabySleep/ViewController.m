@@ -76,12 +76,16 @@
     [leftBtn setAdjustsImageWhenHighlighted:NO];
     [self.view addSubview:leftBtn];
     
-    TFLargerHitButton *rightBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(SCREENWIDTH - 23 - 15, 39, 20, 21)];
-    [rightBtn setImage:[UIImage imageNamed:@"strawberry"] forState:UIControlStateNormal];
-    [rightBtn addTarget:self action:@selector(share:) forControlEvents:UIControlEventTouchUpInside];
-    [rightBtn setAdjustsImageWhenHighlighted:NO];
-    rightBtn.tag = TABLEVIEW_BEGIN_TAG * 10;
-    [self.view addSubview:rightBtn];
+    NSString *playMins = [WMUserDefault objectValueForKey:@"playtime"];
+
+    if (playMins.integerValue != 60) {
+        TFLargerHitButton *rightBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(SCREENWIDTH - 23 - 15, 39, 20, 21)];
+        [rightBtn setImage:[UIImage imageNamed:@"strawberry"] forState:UIControlStateNormal];
+        [rightBtn addTarget:self action:@selector(share:) forControlEvents:UIControlEventTouchUpInside];
+        [rightBtn setAdjustsImageWhenHighlighted:NO];
+        rightBtn.tag = TABLEVIEW_BEGIN_TAG * 10;
+        [self.view addSubview:rightBtn];
+    }
 
     UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake((SCREENWIDTH - 71.35) * 0.5, 40, 71.35, 19.39)];
     titleView.image = [UIImage imageNamed:@"babysleep"];

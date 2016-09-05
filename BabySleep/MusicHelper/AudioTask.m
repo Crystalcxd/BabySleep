@@ -387,7 +387,7 @@ static AudioTask *audioTask;
     }
     else
     {
-        [self initBackgroudTask];
+//        [self initBackgroudTask];
     }
     NSLog(@">>>>>BeginInterruption");
 }
@@ -405,7 +405,7 @@ static AudioTask *audioTask;
     }
     else
     {
-        [self initBackgroudTask];
+//        [self initBackgroudTask];
     }
     NSLog(@">>>>>endInterruptionWithFlags");
 }
