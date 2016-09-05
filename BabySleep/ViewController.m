@@ -80,6 +80,7 @@
     [rightBtn setImage:[UIImage imageNamed:@"strawberry"] forState:UIControlStateNormal];
     [rightBtn addTarget:self action:@selector(share:) forControlEvents:UIControlEventTouchUpInside];
     [rightBtn setAdjustsImageWhenHighlighted:NO];
+    rightBtn.tag = TABLEVIEW_BEGIN_TAG * 10;
     [self.view addSubview:rightBtn];
 
     UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake((SCREENWIDTH - 71.35) * 0.5, 40, 71.35, 19.39)];
@@ -182,6 +183,16 @@
     [self.view addSubview:adBtn];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playBtnAction:) name:@"pauseMusic" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fadeShareBtn) name:@"fadeShareBtn" object:nil];
+}
+
+-(void)fadeShareBtn
+{
+    UIButton *btn = (UIButton *)[self.view viewWithTag:TABLEVIEW_BEGIN_TAG * 10];
+    
+    if (btn) {
+        btn.hidden = YES;
+    }
 }
 
 -(void)goMenuView:(id)sender

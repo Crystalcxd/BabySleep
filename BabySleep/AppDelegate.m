@@ -194,6 +194,8 @@ static void displayStatusChanged(CFNotificationCenterRef center,
         
         if (resp.errCode == 0) {
             [WMUserDefault setObjectValue:@"60" forKey:@"playtime"];
+            
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"fadeShareBtn" object:nil];
         }
     }
 }
