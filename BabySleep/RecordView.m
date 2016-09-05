@@ -50,14 +50,14 @@
         
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 215, SCREENWIDTH, 24)];
         label.textAlignment = NSTextAlignmentCenter;
-        label.font = [UIFont fontWithName:@"DFPYuanW5" size:24];
+        label.font = [UIFont fontWithName:@"DFPYuanW3" size:24];
         label.textColor = HexRGB(0x9E9E9E);
         label.text = @"时间";
         [self.contentView addSubview:label];
         
-        self.timeLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 224, SCREENWIDTH, 95)];
+        self.timeLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 234, SCREENWIDTH, 95)];
         self.timeLabel.textAlignment = NSTextAlignmentCenter;
-        self.timeLabel.font = [UIFont fontWithName:@"DFPYuanW3" size:68];
+        self.timeLabel.font = [UIFont fontWithName:@"PingFangSC-Thin" size:68];
         self.timeLabel.textColor = HexRGB(0xFF756F);
         self.timeLabel.text = @"00:00:00";
         [self.contentView addSubview:self.timeLabel];
