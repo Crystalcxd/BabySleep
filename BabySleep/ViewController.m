@@ -188,8 +188,57 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playBtnAction:) name:@"pauseMusic" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fadeShareBtn) name:@"fadeShareBtn" object:nil];
+    
+    [[AVAudioSession sharedInstance] setActive:YES error:nil];//创建单例对象并且使其设置为活跃状态.
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(audioRouteChangeListenerCallback:)   name:AVAudioSessionRouteChangeNotification object:nil];//设置通知
 }
 
+//通知方法的实现
+- (void)audioRouteChangeListenerCallback:(NSNotification*)notification
+{
+    
+    NSDictionary *interuptionDict = notification.userInfo;
+    NSInteger routeChangeReason = [[interuptionDict valueForKey:AVAudioSessionRouteChangeReasonKey] integerValue];
+    switch (routeChangeReason) {
+        case AVAudioSessionRouteChangeReasonNewDeviceAvailable:
+            NSLog(@"AVAudioSessionRouteChangeReasonNewDeviceAvailable");
+//            tipWithMessage(@"耳机插入");
+            break;
+        case AVAudioSessionRouteChangeReasonOldDeviceUnavailable:
+            NSLog(@"AVAudioSessionRouteChangeReasonOldDeviceUnavailable");
+            [self playBtnAction:nil];
+//            tipWithMessage(@"耳机拔出，停止播放操作");
+            break;
+        case AVAudioSessionRouteChangeReasonCategoryChange:
+            // called at start - also when other audio wants to play
+//            tipWithMessage(@"AVAudioSessionRouteChangeReasonCategoryChange");
+            break;
+    }
+}
+
+//不管何时,只要有通知中心的出现,在dealloc的方法中都要移除所有观察者.
+-(void)dealloc{
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
+    
+}
+
+//自定提醒窗口
+NS_INLINE void tipWithMessage(NSString *message){
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        UIAlertView *alerView = [[UIAlertView alloc] initWithTitle:@"提示" message:message delegate:nil cancelButtonTitle:nil otherButtonTitles:nil, nil];
+        
+        [alerView show];
+        
+        [alerView performSelector:@selector(dismissWithClickedButtonIndex:animated:) withObject:@[@0, @1] afterDelay:0.9];
+        
+    });
+    
+}
 -(void)fadeShareBtn
 {
     UIButton *btn = (UIButton *)[self.view viewWithTag:TABLEVIEW_BEGIN_TAG * 10];
@@ -238,6 +287,7 @@
     }
     
     if (btn.selected) {
+        btn.selected = !btn.selected;
         [self pauseMusic];
     }else{
         if (fromNotification) {
@@ -251,9 +301,8 @@
         }
         
         [self playMusicInstall];
+        btn.selected = !btn.selected;
     }
-    
-    btn.selected = !btn.selected;
 }
 
 -(void)jumpBtnAction:(id)sender
@@ -359,6 +408,10 @@
 
 -(void)playMusicTimer
 {
+    if (self.playBtn.selected == NO) {
+        return;
+    }
+    
     self.currentPlayTime ++;
     
     if (self.currentPlayTime >= self.playTime) {
@@ -377,14 +430,14 @@
 {
     [[AudioTask shareAudioTask] stopTaskWithType:backgroundTask];
     
-    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(playMusicTimer) object:nil];
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
 }
 
 - (void)pauseMusic
 {
     [[AudioTask shareAudioTask] stopTaskWithType:backgroundTask];
     
-    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(playMusicTimer) object:nil];
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
 }
 
 - (void)updateProgressView
