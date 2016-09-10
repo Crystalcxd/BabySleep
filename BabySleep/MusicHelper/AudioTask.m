@@ -378,7 +378,7 @@ static AudioTask *audioTask;
     //区分前台后台,否则总有一种情况调不起音频,原因未知
     if([UIApplication sharedApplication].applicationState == UIApplicationStateBackground)
     {
-        [self jhh_setUpAudioSession];
+//        [self jhh_setUpAudioSession];
         //后台
         
         if (isPlaying){
@@ -397,7 +397,7 @@ static AudioTask *audioTask;
     
     if([UIApplication sharedApplication].applicationState == UIApplicationStateBackground)
     {
-        [self jhh_setUpAudioSession];
+//        [self jhh_setUpAudioSession];
         //后台
         if (isPlaying){
 //            [player play];

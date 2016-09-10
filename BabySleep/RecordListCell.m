@@ -179,10 +179,16 @@
     WXFileObject *object = [WXFileObject object];
     object.fileExtension = @"caf";
     
-    //1.音频文件的url路径
-    NSString *urlStr=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-    urlStr=[urlStr stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.caf",self.data.indexName]];
-    NSData* data= [NSData dataWithContentsOfFile:urlStr];
+    NSData* data = nil;
+    if (self.indexPath.section == 0) {
+        NSString *musicFilePath= [[NSBundle mainBundle] pathForResource:self.data.indexName ofType:@"m4a"];
+        data = [NSData dataWithContentsOfFile:musicFilePath];
+    }else{
+        //1.音频文件的url路径
+        NSString *urlStr=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+        urlStr=[urlStr stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.caf",self.data.indexName]];
+        data = [NSData dataWithContentsOfFile:urlStr];
+    }
     
     object.fileData = data;
     

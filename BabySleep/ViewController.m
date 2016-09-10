@@ -135,8 +135,40 @@ static NSString * const musicIdentifier = @"music";
     [self.recordBtn addTarget:self action:@selector(showRecordView:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.recordBtn];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playBtnAction:) name:@"pauseMusic" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enableRecordView) name:@"enableRecordView" object:nil];
+    
+    [[AVAudioSession sharedInstance] setActive:YES error:nil];//创建单例对象并且使其设置为活跃状态.
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(audioRouteChangeListenerCallback:)   name:AVAudioSessionRouteChangeNotification object:nil];//设置通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(audioRouteChangeListenerCallback:)   name:AVAudioSessionInterruptionNotification object:nil];//设置通知
+}
+
+//通知方法的实现
+- (void)audioRouteChangeListenerCallback:(NSNotification*)notification
+{
+    
+    NSDictionary *interuptionDict = notification.userInfo;
+    NSInteger routeChangeReason = [[interuptionDict valueForKey:AVAudioSessionRouteChangeReasonKey] integerValue];
+    switch (routeChangeReason) {
+        case AVAudioSessionRouteChangeReasonNewDeviceAvailable:
+            NSLog(@"AVAudioSessionRouteChangeReasonNewDeviceAvailable");
+            //            tipWithMessage(@"耳机插入");
+            break;
+        case AVAudioSessionRouteChangeReasonOldDeviceUnavailable:{
+            NSLog(@"AVAudioSessionRouteChangeReasonOldDeviceUnavailable");
+            [self stopMusic];
+            MusicData *data = [self currentMusicDataWith:self.selectIndexPath];
+            data.selected = NO;
+            self.selectIndexPath = nil;
+            [self.tableView reloadData];
+        }
+            //            tipWithMessage(@"耳机拔出，停止播放操作");
+            break;
+        case AVAudioSessionRouteChangeReasonCategoryChange:
+            // called at start - also when other audio wants to play
+            //            tipWithMessage(@"AVAudioSessionRouteChangeReasonCategoryChange");
+            break;
+    }
 }
 
 - (MusicData *)currentMusicDataWith:(NSIndexPath *)indexPath
@@ -410,37 +442,6 @@ static NSString * const musicIdentifier = @"music";
 -(void)goMenuView:(id)sender
 {
     [[SliderViewController sharedSliderController] leftItemClick];
-}
-
--(void)playBtnAction:(id)sender
-{
-    UIButton *btn = (UIButton *)sender;
-    
-    if ([btn isKindOfClass:[UIButton class]]) {
-        [self touchAnimationWithBtn:btn];
-    }
-    
-    BOOL fromNotification = NO;
-    
-    if (![btn isKindOfClass:[UIButton class]]) {
-//        btn = self.playBtn;
-        fromNotification = YES;
-    }
-    
-    if (btn.selected) {
-        [self pauseMusic];
-    }else{
-        if (fromNotification) {
-            return;
-        }
-        if (player) {
-            [player play];
-        }else{
-//            [self playMusicWithIndex:self.musicIndex];
-        }
-    }
-    
-    btn.selected = !btn.selected;
 }
 
 - (void)touchAnimationWithBtn:(UIButton *)button

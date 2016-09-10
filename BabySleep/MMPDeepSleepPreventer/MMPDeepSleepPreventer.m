@@ -70,7 +70,7 @@
 	if ( !(self = [super init]) )
 		return nil;
 	
-	[self mmp_setUpAudioSession];
+//	[self mmp_setUpAudioSession];
 	
 	// Set up path to sound file
 	NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:@"MMPSilence"
