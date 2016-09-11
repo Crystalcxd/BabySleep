@@ -146,7 +146,6 @@ static NSString * const musicIdentifier = @"music";
 //通知方法的实现
 - (void)audioRouteChangeListenerCallback:(NSNotification*)notification
 {
-    
     NSDictionary *interuptionDict = notification.userInfo;
     NSInteger routeChangeReason = [[interuptionDict valueForKey:AVAudioSessionRouteChangeReasonKey] integerValue];
     switch (routeChangeReason) {
@@ -294,6 +293,15 @@ static NSString * const musicIdentifier = @"music";
         [cell deleteSelect:select];
     }else{
         if (self.selectIndexPath == indexPath) {
+            MusicData *data = [self currentMusicDataWith:self.selectIndexPath];
+            data.selected = NO;
+            
+            self.selectIndexPath = nil;
+            
+            [self.tableView reloadData];
+            
+            [self stopMusic];
+            
             return;
         }
         
