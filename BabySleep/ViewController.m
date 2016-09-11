@@ -207,7 +207,7 @@
             break;
         case AVAudioSessionRouteChangeReasonOldDeviceUnavailable:
             NSLog(@"AVAudioSessionRouteChangeReasonOldDeviceUnavailable");
-            [self playBtnAction:nil];
+//            [self playBtnAction:nil];
 //            tipWithMessage(@"耳机拔出，停止播放操作");
             break;
         case AVAudioSessionRouteChangeReasonCategoryChange:
