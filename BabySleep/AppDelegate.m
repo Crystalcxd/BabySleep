@@ -69,7 +69,7 @@ static void displayStatusChanged(CFNotificationCenterRef center,
     [WXApi registerApp:WXAppId];
 
     //增强后台运行
-    MMPDeepSleepPreventer *niceSleep = [[MMPDeepSleepPreventer alloc] init];
+    MMPDeepSleepPreventer *niceSleep = [MMPDeepSleepPreventer sharedSingleton];
     [niceSleep startPreventSleep];
 
     
