@@ -65,6 +65,17 @@
 #pragma mark -
 #pragma mark Creation and Destruction
 
++ (MMPDeepSleepPreventer *)sharedSingleton
+{
+    static MMPDeepSleepPreventer * _sharedSingleton = nil;
+    @synchronized([MMPDeepSleepPreventer class]){
+        if (_sharedSingleton == nil) {
+            _sharedSingleton = [[MMPDeepSleepPreventer alloc] init];
+        }
+    }
+    return _sharedSingleton;
+}
+
 - (id)init
 {
 	if ( !(self = [super init]) )
