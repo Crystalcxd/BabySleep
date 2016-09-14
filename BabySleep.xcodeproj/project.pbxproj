@@ -55,6 +55,7 @@
 		4CE52FA21D28CB12009576C6 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52F9E1D28CB12009576C6 /* Utility.m */; };
 		4CE52FA31D28CB12009576C6 /* WMUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52FA01D28CB12009576C6 /* WMUserDefault.m */; };
 		4CE52FA61D29057C009576C6 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52FA51D29057C009576C6 /* LeftViewController.m */; };
+		A42128931D894B9400120B49 /* SystemVolumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42128921D894B9400120B49 /* SystemVolumeViewController.m */; };
 		A42349B31D2C9F46009A5ECC /* TFLargerHitButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A42349B21D2C9F46009A5ECC /* TFLargerHitButton.m */; };
 		A42349B61D2CAD9E009A5ECC /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42349B51D2CAD9E009A5ECC /* ShareViewController.m */; };
 		A42349B91D2CF1CA009A5ECC /* ShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = A42349B81D2CF1CA009A5ECC /* ShareView.m */; };
@@ -163,6 +164,8 @@
 		4CE52FA01D28CB12009576C6 /* WMUserDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMUserDefault.m; sourceTree = "<group>"; };
 		4CE52FA41D29057C009576C6 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
 		4CE52FA51D29057C009576C6 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		A42128911D894B9400120B49 /* SystemVolumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemVolumeViewController.h; sourceTree = "<group>"; };
+		A42128921D894B9400120B49 /* SystemVolumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemVolumeViewController.m; sourceTree = "<group>"; };
 		A42349B11D2C9F46009A5ECC /* TFLargerHitButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFLargerHitButton.h; sourceTree = "<group>"; };
 		A42349B21D2C9F46009A5ECC /* TFLargerHitButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFLargerHitButton.m; sourceTree = "<group>"; };
 		A42349B41D2CAD9E009A5ECC /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
@@ -311,6 +314,8 @@
 				4CE52FA51D29057C009576C6 /* LeftViewController.m */,
 				A4FEA13E1D2B990200FB7FE0 /* NoiseViewController.h */,
 				A4FEA13F1D2B990200FB7FE0 /* NoiseViewController.m */,
+				A42128911D894B9400120B49 /* SystemVolumeViewController.h */,
+				A42128921D894B9400120B49 /* SystemVolumeViewController.m */,
 				A42349B41D2CAD9E009A5ECC /* ShareViewController.h */,
 				A42349B51D2CAD9E009A5ECC /* ShareViewController.m */,
 				A42349B11D2C9F46009A5ECC /* TFLargerHitButton.h */,
@@ -609,6 +614,7 @@
 				4CA0C72A1D1FAC4E001EDC89 /* ViewController.m in Sources */,
 				A4E5DF581D4F18C7008AABE4 /* MMPDeepSleepPreventer.m in Sources */,
 				4C4A76A21D774CEC005588D0 /* ELCImagePickerController.m in Sources */,
+				A42128931D894B9400120B49 /* SystemVolumeViewController.m in Sources */,
 				4CE52FA31D28CB12009576C6 /* WMUserDefault.m in Sources */,
 				A42349B91D2CF1CA009A5ECC /* ShareView.m in Sources */,
 				4CA0C7271D1FAC4E001EDC89 /* AppDelegate.m in Sources */,

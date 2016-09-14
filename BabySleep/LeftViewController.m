@@ -7,7 +7,6 @@
 //
 
 #import "LeftViewController.h"
-//#import "LeadViewController.h"
 #import "SliderViewController.h"
 
 #import "NoiseViewController.h"
