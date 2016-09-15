@@ -11,18 +11,7 @@
 		4C202D531D747AFA00E150D3 /* RecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C202D521D747AFA00E150D3 /* RecordView.m */; };
 		4C3DA1F21D3B5B5F0003B5FD /* ShareAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DA1F11D3B5B5F0003B5FD /* ShareAlertView.m */; };
 		4C3DA1F41D3B62650003B5FD /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3DA1F31D3B62650003B5FD /* icon120.png */; };
-		4C3DA1FA1D3B6E3E0003B5FD /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3DA1F61D3B6E3E0003B5FD /* libWeChatSDK.a */; };
 		4C4A768A1D773764005588D0 /* SaveMusicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A76891D773764005588D0 /* SaveMusicView.m */; };
-		4C4A769E1D774CEC005588D0 /* ELCAlbumPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A768D1D774CEC005588D0 /* ELCAlbumPickerController.m */; };
-		4C4A769F1D774CEC005588D0 /* ELCAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A768F1D774CEC005588D0 /* ELCAsset.m */; };
-		4C4A76A01D774CEC005588D0 /* ELCAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A76911D774CEC005588D0 /* ELCAssetCell.m */; };
-		4C4A76A11D774CEC005588D0 /* ELCAssetTablePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A76951D774CEC005588D0 /* ELCAssetTablePicker.m */; };
-		4C4A76A21D774CEC005588D0 /* ELCImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A76971D774CEC005588D0 /* ELCImagePickerController.m */; };
-		4C4A76A31D774CEC005588D0 /* ELCAlbumPickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A76991D774CEC005588D0 /* ELCAlbumPickerController.xib */; };
-		4C4A76A41D774CEC005588D0 /* ELCAssetPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A769A1D774CEC005588D0 /* ELCAssetPicker.xib */; };
-		4C4A76A51D774CEC005588D0 /* ELCAssetTablePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A769B1D774CEC005588D0 /* ELCAssetTablePicker.xib */; };
-		4C4A76A61D774CEC005588D0 /* Overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A769C1D774CEC005588D0 /* Overlay.png */; };
-		4C4A76A71D774CEC005588D0 /* Overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A769D1D774CEC005588D0 /* Overlay@2x.png */; };
 		4C4F36D91D7491C200171C7A /* RecordListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4F36D81D7491C200171C7A /* RecordListCell.m */; };
 		4C4F36DC1D749DAB00171C7A /* slide_disable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4F36DA1D749DAB00171C7A /* slide_disable@2x.png */; };
 		4C4F36DD1D749DAB00171C7A /* slide_enable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4F36DB1D749DAB00171C7A /* slide_enable@2x.png */; };
@@ -55,6 +44,7 @@
 		4CE52FA21D28CB12009576C6 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52F9E1D28CB12009576C6 /* Utility.m */; };
 		4CE52FA31D28CB12009576C6 /* WMUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52FA01D28CB12009576C6 /* WMUserDefault.m */; };
 		4CE52FA61D29057C009576C6 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52FA51D29057C009576C6 /* LeftViewController.m */; };
+		98A7710DA41AEF688C8BD8A0 /* libPods-BabySleep.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8388166B00A305B456CA2633 /* libPods-BabySleep.a */; };
 		A42128931D894B9400120B49 /* SystemVolumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42128921D894B9400120B49 /* SystemVolumeViewController.m */; };
 		A42349B31D2C9F46009A5ECC /* TFLargerHitButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A42349B21D2C9F46009A5ECC /* TFLargerHitButton.m */; };
 		A42349B61D2CAD9E009A5ECC /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42349B51D2CAD9E009A5ECC /* ShareViewController.m */; };
@@ -85,6 +75,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C85BCABA432B8DCDBE98160 /* Pods-BabySleep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySleep.release.xcconfig"; path = "Pods/Target Support Files/Pods-BabySleep/Pods-BabySleep.release.xcconfig"; sourceTree = "<group>"; };
 		4C202D4E1D72EA8100E150D3 /* EditMusicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditMusicView.h; sourceTree = "<group>"; };
 		4C202D4F1D72EA8100E150D3 /* EditMusicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditMusicView.m; sourceTree = "<group>"; };
 		4C202D511D747AFA00E150D3 /* RecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordView.h; sourceTree = "<group>"; };
@@ -92,29 +83,8 @@
 		4C3DA1F01D3B5B5F0003B5FD /* ShareAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareAlertView.h; sourceTree = "<group>"; };
 		4C3DA1F11D3B5B5F0003B5FD /* ShareAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareAlertView.m; sourceTree = "<group>"; };
 		4C3DA1F31D3B62650003B5FD /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
-		4C3DA1F61D3B6E3E0003B5FD /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		4C3DA1F71D3B6E3E0003B5FD /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
-		4C3DA1F81D3B6E3E0003B5FD /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		4C3DA1F91D3B6E3E0003B5FD /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		4C4A76881D773764005588D0 /* SaveMusicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveMusicView.h; sourceTree = "<group>"; };
 		4C4A76891D773764005588D0 /* SaveMusicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveMusicView.m; sourceTree = "<group>"; };
-		4C4A768C1D774CEC005588D0 /* ELCAlbumPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAlbumPickerController.h; sourceTree = "<group>"; };
-		4C4A768D1D774CEC005588D0 /* ELCAlbumPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCAlbumPickerController.m; sourceTree = "<group>"; };
-		4C4A768E1D774CEC005588D0 /* ELCAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAsset.h; sourceTree = "<group>"; };
-		4C4A768F1D774CEC005588D0 /* ELCAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCAsset.m; sourceTree = "<group>"; };
-		4C4A76901D774CEC005588D0 /* ELCAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAssetCell.h; sourceTree = "<group>"; };
-		4C4A76911D774CEC005588D0 /* ELCAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCAssetCell.m; sourceTree = "<group>"; };
-		4C4A76921D774CEC005588D0 /* ELCAssetPickerFilterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAssetPickerFilterDelegate.h; sourceTree = "<group>"; };
-		4C4A76931D774CEC005588D0 /* ELCAssetSelectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAssetSelectionDelegate.h; sourceTree = "<group>"; };
-		4C4A76941D774CEC005588D0 /* ELCAssetTablePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAssetTablePicker.h; sourceTree = "<group>"; };
-		4C4A76951D774CEC005588D0 /* ELCAssetTablePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCAssetTablePicker.m; sourceTree = "<group>"; };
-		4C4A76961D774CEC005588D0 /* ELCImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCImagePickerController.h; sourceTree = "<group>"; };
-		4C4A76971D774CEC005588D0 /* ELCImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCImagePickerController.m; sourceTree = "<group>"; };
-		4C4A76991D774CEC005588D0 /* ELCAlbumPickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ELCAlbumPickerController.xib; sourceTree = "<group>"; };
-		4C4A769A1D774CEC005588D0 /* ELCAssetPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ELCAssetPicker.xib; sourceTree = "<group>"; };
-		4C4A769B1D774CEC005588D0 /* ELCAssetTablePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ELCAssetTablePicker.xib; sourceTree = "<group>"; };
-		4C4A769C1D774CEC005588D0 /* Overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Overlay.png; sourceTree = "<group>"; };
-		4C4A769D1D774CEC005588D0 /* Overlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Overlay@2x.png"; sourceTree = "<group>"; };
 		4C4F36D71D7491C200171C7A /* RecordListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordListCell.h; sourceTree = "<group>"; };
 		4C4F36D81D7491C200171C7A /* RecordListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordListCell.m; sourceTree = "<group>"; };
 		4C4F36DA1D749DAB00171C7A /* slide_disable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slide_disable@2x.png"; sourceTree = "<group>"; };
@@ -164,6 +134,7 @@
 		4CE52FA01D28CB12009576C6 /* WMUserDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMUserDefault.m; sourceTree = "<group>"; };
 		4CE52FA41D29057C009576C6 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
 		4CE52FA51D29057C009576C6 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		8388166B00A305B456CA2633 /* libPods-BabySleep.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BabySleep.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A42128911D894B9400120B49 /* SystemVolumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemVolumeViewController.h; sourceTree = "<group>"; };
 		A42128921D894B9400120B49 /* SystemVolumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemVolumeViewController.m; sourceTree = "<group>"; };
 		A42349B11D2C9F46009A5ECC /* TFLargerHitButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFLargerHitButton.h; sourceTree = "<group>"; };
@@ -181,6 +152,7 @@
 		A4E5DF5C1D4F29DE008AABE4 /* AudioTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioTask.m; sourceTree = "<group>"; };
 		A4FEA13E1D2B990200FB7FE0 /* NoiseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoiseViewController.h; sourceTree = "<group>"; };
 		A4FEA13F1D2B990200FB7FE0 /* NoiseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoiseViewController.m; sourceTree = "<group>"; };
+		C898D8CBDE833750ABC5359E /* Pods-BabySleep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySleep.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BabySleep/Pods-BabySleep.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,10 +162,10 @@
 			files = (
 				4CA834551D30DDC0007543B5 /* CoreTelephony.framework in Frameworks */,
 				4CA834531D30DBAB007543B5 /* libc++.tbd in Frameworks */,
-				4C3DA1FA1D3B6E3E0003B5FD /* libWeChatSDK.a in Frameworks */,
 				4CA834511D30DB9B007543B5 /* libsqlite3.0.tbd in Frameworks */,
 				4CA8344F1D30DB86007543B5 /* libz.tbd in Frameworks */,
 				4CA8344D1D30DB78007543B5 /* SystemConfiguration.framework in Frameworks */,
+				98A7710DA41AEF688C8BD8A0 /* libPods-BabySleep.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,48 +186,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C4CC9449C94092D0DF3BE3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C898D8CBDE833750ABC5359E /* Pods-BabySleep.debug.xcconfig */,
+				3C85BCABA432B8DCDBE98160 /* Pods-BabySleep.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		42FDDCFA331C98D6CF84F184 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8388166B00A305B456CA2633 /* libPods-BabySleep.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4C3DA1F51D3B6E3E0003B5FD /* opensource */ = {
 			isa = PBXGroup;
 			children = (
-				4C3DA1F61D3B6E3E0003B5FD /* libWeChatSDK.a */,
-				4C3DA1F71D3B6E3E0003B5FD /* WechatAuthSDK.h */,
-				4C3DA1F81D3B6E3E0003B5FD /* WXApi.h */,
-				4C3DA1F91D3B6E3E0003B5FD /* WXApiObject.h */,
 			);
 			path = opensource;
-			sourceTree = "<group>";
-		};
-		4C4A768B1D774CEC005588D0 /* ELCImagePicker */ = {
-			isa = PBXGroup;
-			children = (
-				4C4A768C1D774CEC005588D0 /* ELCAlbumPickerController.h */,
-				4C4A768D1D774CEC005588D0 /* ELCAlbumPickerController.m */,
-				4C4A768E1D774CEC005588D0 /* ELCAsset.h */,
-				4C4A768F1D774CEC005588D0 /* ELCAsset.m */,
-				4C4A76901D774CEC005588D0 /* ELCAssetCell.h */,
-				4C4A76911D774CEC005588D0 /* ELCAssetCell.m */,
-				4C4A76921D774CEC005588D0 /* ELCAssetPickerFilterDelegate.h */,
-				4C4A76931D774CEC005588D0 /* ELCAssetSelectionDelegate.h */,
-				4C4A76941D774CEC005588D0 /* ELCAssetTablePicker.h */,
-				4C4A76951D774CEC005588D0 /* ELCAssetTablePicker.m */,
-				4C4A76961D774CEC005588D0 /* ELCImagePickerController.h */,
-				4C4A76971D774CEC005588D0 /* ELCImagePickerController.m */,
-				4C4A76981D774CEC005588D0 /* Resources */,
-			);
-			name = ELCImagePicker;
-			path = MMPDeepSleepPreventer/ELCImagePicker;
-			sourceTree = "<group>";
-		};
-		4C4A76981D774CEC005588D0 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				4C4A76991D774CEC005588D0 /* ELCAlbumPickerController.xib */,
-				4C4A769A1D774CEC005588D0 /* ELCAssetPicker.xib */,
-				4C4A769B1D774CEC005588D0 /* ELCAssetTablePicker.xib */,
-				4C4A769C1D774CEC005588D0 /* Overlay.png */,
-				4C4A769D1D774CEC005588D0 /* Overlay@2x.png */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		4C4F36DE1D74A0E700171C7A /* DataModel */ = {
@@ -279,6 +231,8 @@
 				4CA0C73B1D1FAC4F001EDC89 /* BabySleepTests */,
 				4CA0C7461D1FAC4F001EDC89 /* BabySleepUITests */,
 				4CA0C7201D1FAC4E001EDC89 /* Products */,
+				3C4CC9449C94092D0DF3BE3C /* Pods */,
+				42FDDCFA331C98D6CF84F184 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -297,7 +251,6 @@
 			children = (
 				4C4F36DE1D74A0E700171C7A /* DataModel */,
 				A4E5DF5A1D4F29DE008AABE4 /* MusicHelper */,
-				4C4A768B1D774CEC005588D0 /* ELCImagePicker */,
 				A4E5DF541D4F18C7008AABE4 /* MMPDeepSleepPreventer */,
 				4C3DA1F51D3B6E3E0003B5FD /* opensource */,
 				4CE52F9A1D28CB12009576C6 /* Utility */,
@@ -460,9 +413,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CA0C74C1D1FAC4F001EDC89 /* Build configuration list for PBXNativeTarget "BabySleep" */;
 			buildPhases = (
+				D29EE8741C4DC0EEF5A28374 /* [CP] Check Pods Manifest.lock */,
 				4CA0C71B1D1FAC4E001EDC89 /* Sources */,
 				4CA0C71C1D1FAC4E001EDC89 /* Frameworks */,
 				4CA0C71D1D1FAC4E001EDC89 /* Resources */,
+				609B04CCFE98B342E20622C3 /* [CP] Embed Pods Frameworks */,
+				E033BEC507B3C1A53E78B1BF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -515,7 +471,7 @@
 		4CA0C7171D1FAC4E001EDC89 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Michael;
 				TargetAttributes = {
 					4CA0C71E1D1FAC4E001EDC89 = {
@@ -562,23 +518,18 @@
 				4CDEA46F1D604531006E3AA8 /* home_m4a_1.png in Resources */,
 				4C4F36E31D75D48700171C7A /* delete_normal@2x.png in Resources */,
 				4CDEA4701D604531006E3AA8 /* home_m4a_2.png in Resources */,
-				4C4A76A61D774CEC005588D0 /* Overlay.png in Resources */,
-				4C4A76A31D774CEC005588D0 /* ELCAlbumPickerController.xib in Resources */,
 				A4E5DF591D4F18C7008AABE4 /* MMPSilence.wav in Resources */,
 				4C4F36DC1D749DAB00171C7A /* slide_disable@2x.png in Resources */,
 				4CDEA4721D604531006E3AA8 /* record_save_head.png in Resources */,
 				4CDEA4761D604542006E3AA8 /* 1.m4a in Resources */,
-				4C4A76A41D774CEC005588D0 /* ELCAssetPicker.xib in Resources */,
 				4CDEA4711D604531006E3AA8 /* home_m4a_3.png in Resources */,
 				4CA0C72F1D1FAC4E001EDC89 /* Assets.xcassets in Resources */,
 				A4E3FB341D3F6E7C00EEEF94 /* 华康圆体W3.otf in Resources */,
 				4C4F36DD1D749DAB00171C7A /* slide_enable@2x.png in Resources */,
 				4CAE50891D3550A4009FE262 /* Images.xcassets in Resources */,
-				4C4A76A71D774CEC005588D0 /* Overlay@2x.png in Resources */,
 				4C3DA1F41D3B62650003B5FD /* icon120.png in Resources */,
 				4CAE508B1D3552AB009FE262 /* adx2@2x.png in Resources */,
 				A4E3FB351D3F6E7C00EEEF94 /* 华康圆体W5.TTF in Resources */,
-				4C4A76A51D774CEC005588D0 /* ELCAssetTablePicker.xib in Resources */,
 				4CDEA46E1D604531006E3AA8 /* home_head.png in Resources */,
 				4CDEA4771D604542006E3AA8 /* 2.m4a in Resources */,
 			);
@@ -600,20 +551,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		609B04CCFE98B342E20622C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BabySleep/Pods-BabySleep-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D29EE8741C4DC0EEF5A28374 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E033BEC507B3C1A53E78B1BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BabySleep/Pods-BabySleep-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4CA0C71B1D1FAC4E001EDC89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C4A769E1D774CEC005588D0 /* ELCAlbumPickerController.m in Sources */,
 				4C3DA1F21D3B5B5F0003B5FD /* ShareAlertView.m in Sources */,
 				4C4F36E11D74A0E700171C7A /* MusicData.m in Sources */,
 				A42349B31D2C9F46009A5ECC /* TFLargerHitButton.m in Sources */,
 				4C4A768A1D773764005588D0 /* SaveMusicView.m in Sources */,
-				4C4A76A01D774CEC005588D0 /* ELCAssetCell.m in Sources */,
 				4CA0C72A1D1FAC4E001EDC89 /* ViewController.m in Sources */,
 				A4E5DF581D4F18C7008AABE4 /* MMPDeepSleepPreventer.m in Sources */,
-				4C4A76A21D774CEC005588D0 /* ELCImagePickerController.m in Sources */,
 				A42128931D894B9400120B49 /* SystemVolumeViewController.m in Sources */,
 				4CE52FA31D28CB12009576C6 /* WMUserDefault.m in Sources */,
 				A42349B91D2CF1CA009A5ECC /* ShareView.m in Sources */,
@@ -621,7 +617,6 @@
 				4CA0C7241D1FAC4E001EDC89 /* main.m in Sources */,
 				4C60581F1D424E9E0003EAF3 /* TouchAnimationView.m in Sources */,
 				4CE52FA61D29057C009576C6 /* LeftViewController.m in Sources */,
-				4C4A769F1D774CEC005588D0 /* ELCAsset.m in Sources */,
 				4C202D501D72EA8100E150D3 /* EditMusicView.m in Sources */,
 				4C202D531D747AFA00E150D3 /* RecordView.m in Sources */,
 				4C5ADED91D44BAB5004713D0 /* TouchInsideAnimationView.m in Sources */,
@@ -631,7 +626,6 @@
 				4CE52F991D28CAD9009576C6 /* SliderViewController.m in Sources */,
 				A4E5DF5D1D4F29DE008AABE4 /* AudioTask.m in Sources */,
 				4C4F36D91D7491C200171C7A /* RecordListCell.m in Sources */,
-				4C4A76A11D774CEC005588D0 /* ELCAssetTablePicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,8 +675,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -725,8 +721,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -751,6 +749,7 @@
 		};
 		4CA0C74D1D1FAC4F001EDC89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C898D8CBDE833750ABC5359E /* Pods-BabySleep.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -772,6 +771,7 @@
 		};
 		4CA0C74E1D1FAC4F001EDC89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C85BCABA432B8DCDBE98160 /* Pods-BabySleep.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";

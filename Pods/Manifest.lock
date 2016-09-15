@@ -1,0 +1,23 @@
+PODS:
+  - AVOSCloud (3.4.0)
+  - ELCImagePickerController (0.2.0)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - WeChat_SDK (1.7.2.1)
+
+DEPENDENCIES:
+  - AVOSCloud (~> 3.4.0)
+  - ELCImagePickerController (~> 0.2.0)
+  - SDWebImage
+  - WeChat_SDK (~> 1.7.2.1)
+
+SPEC CHECKSUMS:
+  AVOSCloud: 771c8d77bc9b9f2cc8ac2eb4b58eaf368337ac95
+  ELCImagePickerController: b1b7084434a7d49f2cfc916bde1f3ba353d38de9
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  WeChat_SDK: ecf5879b5cabcc953c9acc2d759ade18adbff39a
+
+PODFILE CHECKSUM: 3ebe50f9b14b2fad26a3a44cdbf927c2467913ca
+
+COCOAPODS: 1.0.1

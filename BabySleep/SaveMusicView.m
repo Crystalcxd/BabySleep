@@ -211,9 +211,8 @@
             
         }];
     }else if (buttonIndex == 1){
-        ELCImagePickerController *elcPicker = [[ELCImagePickerController alloc] initImagePicker];
+        ELCImagePickerController *elcPicker = [[ELCImagePickerController alloc] init];
         elcPicker.maximumImagesCount = 1;
-        elcPicker.returnsOriginalImage = NO; //Only return the fullScreenImage, not the fullResolutionImage
         elcPicker.imagePickerDelegate = self;
         
         [self.fatherVC presentViewController:elcPicker animated:YES completion:^{
