@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>AVOSCloud.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,17 +37,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>30B358501A7F72F5FC20540B64DC25F8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5491E773F68ED2682C4C25D210FE8434</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>859BCFC6B3FF26CF5B1CB32BAC63C183</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8C7D7E7819214028EC6663E404E87DF8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>928353533005A4198EBDA5B700D37B64</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9E32FFA74EFC97A53559EA2BF89A5465</key>
 		<dict>
 			<key>primary</key>
 			<true/>

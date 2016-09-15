@@ -203,13 +203,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4C3DA1F51D3B6E3E0003B5FD /* opensource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = opensource;
-			sourceTree = "<group>";
-		};
 		4C4F36DE1D74A0E700171C7A /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,7 +245,6 @@
 				4C4F36DE1D74A0E700171C7A /* DataModel */,
 				A4E5DF5A1D4F29DE008AABE4 /* MusicHelper */,
 				A4E5DF541D4F18C7008AABE4 /* MMPDeepSleepPreventer */,
-				4C3DA1F51D3B6E3E0003B5FD /* opensource */,
 				4CE52F9A1D28CB12009576C6 /* Utility */,
 				4CE52F961D28CAD9009576C6 /* SliderViewController */,
 				4CA0C7251D1FAC4E001EDC89 /* AppDelegate.h */,
