@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09D623EBC080E5DA5627513B /* libPods-BabySleep.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0013C8E3A9272D2522F34C1 /* libPods-BabySleep.a */; };
 		4C3DA1F21D3B5B5F0003B5FD /* ShareAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DA1F11D3B5B5F0003B5FD /* ShareAlertView.m */; };
 		4C3DA1F41D3B62650003B5FD /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3DA1F31D3B62650003B5FD /* icon120.png */; };
-		4C3DA1FA1D3B6E3E0003B5FD /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3DA1F61D3B6E3E0003B5FD /* libWeChatSDK.a */; };
 		4C5ADED91D44BAB5004713D0 /* TouchInsideAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5ADED81D44BAB5004713D0 /* TouchInsideAnimationView.m */; };
 		4C60581F1D424E9E0003EAF3 /* TouchAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C60581E1D424E9E0003EAF3 /* TouchAnimationView.m */; };
 		4CA0C7241D1FAC4E001EDC89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C7231D1FAC4E001EDC89 /* main.m */; };
@@ -31,7 +31,6 @@
 		4CAE50931D368FC5009FE262 /* MptTableHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE50911D368FC5009FE262 /* MptTableHeadView.m */; };
 		4CAE50971D369057009FE262 /* MptPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE50961D369057009FE262 /* MptPageControl.m */; };
 		4CAE509A1D369419009FE262 /* CartoonHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE50991D369419009FE262 /* CartoonHeadView.m */; };
-		4CC874BC1D7C3DD30090E8C7 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC874BB1D7C3DD30090E8C7 /* AVOSCloud.framework */; };
 		4CC874BE1D7C3E490090E8C7 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC874BD1D7C3E490090E8C7 /* libicucore.tbd */; };
 		4CC874C01D7C3E5F0090E8C7 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC874BF1D7C3E5F0090E8C7 /* libsqlite3.tbd */; };
 		4CC874C21D7C3E6F0090E8C7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC874C11D7C3E6F0090E8C7 /* MobileCoreServices.framework */; };
@@ -82,10 +81,6 @@
 		4C3DA1F01D3B5B5F0003B5FD /* ShareAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareAlertView.h; sourceTree = "<group>"; };
 		4C3DA1F11D3B5B5F0003B5FD /* ShareAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareAlertView.m; sourceTree = "<group>"; };
 		4C3DA1F31D3B62650003B5FD /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
-		4C3DA1F61D3B6E3E0003B5FD /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		4C3DA1F71D3B6E3E0003B5FD /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
-		4C3DA1F81D3B6E3E0003B5FD /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		4C3DA1F91D3B6E3E0003B5FD /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		4C5ADED71D44BAB5004713D0 /* TouchInsideAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchInsideAnimationView.h; sourceTree = "<group>"; };
 		4C5ADED81D44BAB5004713D0 /* TouchInsideAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchInsideAnimationView.m; sourceTree = "<group>"; };
 		4C60581D1D424E9E0003EAF3 /* TouchAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchAnimationView.h; sourceTree = "<group>"; };
@@ -122,7 +117,6 @@
 		4CAE50961D369057009FE262 /* MptPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MptPageControl.m; sourceTree = "<group>"; };
 		4CAE50981D369419009FE262 /* CartoonHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartoonHeadView.h; sourceTree = "<group>"; };
 		4CAE50991D369419009FE262 /* CartoonHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartoonHeadView.m; sourceTree = "<group>"; };
-		4CC874BB1D7C3DD30090E8C7 /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AVOSCloud.framework; sourceTree = "<group>"; };
 		4CC874BD1D7C3E490090E8C7 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		4CC874BF1D7C3E5F0090E8C7 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		4CC874C11D7C3E6F0090E8C7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -135,6 +129,8 @@
 		4CE52FA01D28CB12009576C6 /* WMUserDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMUserDefault.m; sourceTree = "<group>"; };
 		4CE52FA41D29057C009576C6 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
 		4CE52FA51D29057C009576C6 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		660D8FB022291A445619D421 /* Pods-BabySleep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySleep.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BabySleep/Pods-BabySleep.debug.xcconfig"; sourceTree = "<group>"; };
+		8A4FEDD7B765E24B83469452 /* Pods-BabySleep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySleep.release.xcconfig"; path = "Pods/Target Support Files/Pods-BabySleep/Pods-BabySleep.release.xcconfig"; sourceTree = "<group>"; };
 		A42349B11D2C9F46009A5ECC /* TFLargerHitButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFLargerHitButton.h; sourceTree = "<group>"; };
 		A42349B21D2C9F46009A5ECC /* TFLargerHitButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFLargerHitButton.m; sourceTree = "<group>"; };
 		A42349B41D2CAD9E009A5ECC /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
@@ -160,6 +156,7 @@
 		A4FEA1331D2B559900FB7FE0 /* radio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio@2x.png"; sourceTree = "<group>"; };
 		A4FEA13E1D2B990200FB7FE0 /* NoiseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoiseViewController.h; sourceTree = "<group>"; };
 		A4FEA13F1D2B990200FB7FE0 /* NoiseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoiseViewController.m; sourceTree = "<group>"; };
+		D0013C8E3A9272D2522F34C1 /* libPods-BabySleep.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BabySleep.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,11 +170,10 @@
 				4CC874C01D7C3E5F0090E8C7 /* libsqlite3.tbd in Frameworks */,
 				4CC874BE1D7C3E490090E8C7 /* libicucore.tbd in Frameworks */,
 				4CA834531D30DBAB007543B5 /* libc++.tbd in Frameworks */,
-				4C3DA1FA1D3B6E3E0003B5FD /* libWeChatSDK.a in Frameworks */,
 				4CA834511D30DB9B007543B5 /* libsqlite3.0.tbd in Frameworks */,
 				4CA8344F1D30DB86007543B5 /* libz.tbd in Frameworks */,
-				4CC874BC1D7C3DD30090E8C7 /* AVOSCloud.framework in Frameworks */,
 				4CA8344D1D30DB78007543B5 /* SystemConfiguration.framework in Frameworks */,
+				09D623EBC080E5DA5627513B /* libPods-BabySleep.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,17 +194,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4C3DA1F51D3B6E3E0003B5FD /* opensource */ = {
-			isa = PBXGroup;
-			children = (
-				4C3DA1F61D3B6E3E0003B5FD /* libWeChatSDK.a */,
-				4C3DA1F71D3B6E3E0003B5FD /* WechatAuthSDK.h */,
-				4C3DA1F81D3B6E3E0003B5FD /* WXApi.h */,
-				4C3DA1F91D3B6E3E0003B5FD /* WXApiObject.h */,
-			);
-			path = opensource;
-			sourceTree = "<group>";
-		};
 		4CA0C7161D1FAC4E001EDC89 = {
 			isa = PBXGroup;
 			children = (
@@ -216,7 +201,6 @@
 				4CC874C11D7C3E6F0090E8C7 /* MobileCoreServices.framework */,
 				4CC874BF1D7C3E5F0090E8C7 /* libsqlite3.tbd */,
 				4CC874BD1D7C3E490090E8C7 /* libicucore.tbd */,
-				4CC874BB1D7C3DD30090E8C7 /* AVOSCloud.framework */,
 				4CA834541D30DDC0007543B5 /* CoreTelephony.framework */,
 				4CA834521D30DBAB007543B5 /* libc++.tbd */,
 				4CA834501D30DB9B007543B5 /* libsqlite3.0.tbd */,
@@ -226,6 +210,8 @@
 				4CA0C73B1D1FAC4F001EDC89 /* BabySleepTests */,
 				4CA0C7461D1FAC4F001EDC89 /* BabySleepUITests */,
 				4CA0C7201D1FAC4E001EDC89 /* Products */,
+				DAEDB47025A18FC98897265C /* Pods */,
+				66D3601EB856B0A9B5EE7A88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -244,7 +230,6 @@
 			children = (
 				A4E5DF5A1D4F29DE008AABE4 /* MusicHelper */,
 				A4E5DF541D4F18C7008AABE4 /* MMPDeepSleepPreventer */,
-				4C3DA1F51D3B6E3E0003B5FD /* opensource */,
 				4CE52F9A1D28CB12009576C6 /* Utility */,
 				4CE52F961D28CAD9009576C6 /* SliderViewController */,
 				4CA0C7251D1FAC4E001EDC89 /* AppDelegate.h */,
@@ -333,6 +318,14 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		66D3601EB856B0A9B5EE7A88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0013C8E3A9272D2522F34C1 /* libPods-BabySleep.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A4E3FB311D3F6E7B00EEEF94 /* font */ = {
 			isa = PBXGroup;
 			children = (
@@ -397,6 +390,15 @@
 			path = pic;
 			sourceTree = "<group>";
 		};
+		DAEDB47025A18FC98897265C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				660D8FB022291A445619D421 /* Pods-BabySleep.debug.xcconfig */,
+				8A4FEDD7B765E24B83469452 /* Pods-BabySleep.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -404,9 +406,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CA0C74C1D1FAC4F001EDC89 /* Build configuration list for PBXNativeTarget "BabySleep" */;
 			buildPhases = (
+				AC38BC8F08B09A17989DEDB8 /* [CP] Check Pods Manifest.lock */,
 				4CA0C71B1D1FAC4E001EDC89 /* Sources */,
 				4CA0C71C1D1FAC4E001EDC89 /* Frameworks */,
 				4CA0C71D1D1FAC4E001EDC89 /* Resources */,
+				AB730EF6C94412F4F6630D09 /* [CP] Embed Pods Frameworks */,
+				9C9BC948EA8097346DE373EC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -539,6 +544,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C9BC948EA8097346DE373EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BabySleep/Pods-BabySleep-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB730EF6C94412F4F6630D09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BabySleep/Pods-BabySleep-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC38BC8F08B09A17989DEDB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4CA0C71B1D1FAC4E001EDC89 /* Sources */ = {
@@ -703,6 +756,7 @@
 		};
 		4CA0C74D1D1FAC4F001EDC89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 660D8FB022291A445619D421 /* Pods-BabySleep.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -729,6 +783,7 @@
 		};
 		4CA0C74E1D1FAC4F001EDC89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A4FEDD7B765E24B83469452 /* Pods-BabySleep.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
