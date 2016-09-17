@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>AVOSCloud.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>ELCImagePickerController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,27 +57,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>225EDBDC2CC798AC4A9C4524DEDC1D7B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>24EA3ACD1D2270F03575C18A2AA8FE40</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>2AB49797D14D57FA43A345254AFB9F18</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3835A06E0D4D18F19E3B8AD0C8A05DC7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4044E2A32264F711C617122E6C23EC4F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,7 +67,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>6F734767266D70FE6386E02C26303B1F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>859BCFC6B3FF26CF5B1CB32BAC63C183</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>88B288CDEE20A3C1C385B30AEAEA1AB2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -103,6 +88,11 @@
 			<true/>
 		</dict>
 		<key>928353533005A4198EBDA5B700D37B64</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B1E1B3AE812C27DA2371D2ADDD5ABFF5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
