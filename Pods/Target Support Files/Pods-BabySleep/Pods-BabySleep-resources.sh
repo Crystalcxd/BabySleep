@@ -80,20 +80,22 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "AVOSCloud/AVOS/AVOSCloud/AVOSCloud_Art.inc"
   install_resource "ELCImagePickerController/Classes/ELCImagePicker/Resources/ELCAlbumPickerController.xib"
   install_resource "ELCImagePickerController/Classes/ELCImagePicker/Resources/ELCAssetPicker.xib"
   install_resource "ELCImagePickerController/Classes/ELCImagePicker/Resources/ELCAssetTablePicker.xib"
   install_resource "ELCImagePickerController/Classes/ELCImagePicker/Resources/Overlay.png"
   install_resource "ELCImagePickerController/Classes/ELCImagePicker/Resources/Overlay@2x.png"
+  install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "WeiboSDK/libWeiboSDK/WeiboSDK.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "AVOSCloud/AVOS/AVOSCloud/AVOSCloud_Art.inc"
   install_resource "ELCImagePickerController/Classes/ELCImagePicker/Resources/ELCAlbumPickerController.xib"
   install_resource "ELCImagePickerController/Classes/ELCImagePicker/Resources/ELCAssetPicker.xib"
   install_resource "ELCImagePickerController/Classes/ELCImagePicker/Resources/ELCAssetTablePicker.xib"
   install_resource "ELCImagePickerController/Classes/ELCImagePicker/Resources/Overlay.png"
   install_resource "ELCImagePickerController/Classes/ELCImagePicker/Resources/Overlay@2x.png"
+  install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "WeiboSDK/libWeiboSDK/WeiboSDK.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
