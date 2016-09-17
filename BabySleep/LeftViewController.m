@@ -11,6 +11,7 @@
 
 #import "NoiseViewController.h"
 #import "ShareViewController.h"
+#import "SystemVolumeViewController.h"
 
 #import "Utility.h"
 #import "WMUserDefault.h"

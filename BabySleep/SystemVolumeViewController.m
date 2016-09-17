@@ -32,7 +32,7 @@
     UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 29, SCREENWIDTH, 25)];
     title.textColor = HexRGB(0xFF756F);
     title.textAlignment = NSTextAlignmentCenter;
-    title.text = @"妈咪说故事";
+    title.text = @"初始音量";
     title.font = [UIFont fontWithName:@"DFPYuanW5" size:18];
     [self.view addSubview:title];
     
@@ -42,6 +42,28 @@
     
     [self.view addSubview:backBtn];
 
+    UILabel *subTitle = [[UILabel alloc] initWithFrame:CGRectMake(31, 64, 200, 72)];
+    subTitle.textColor = HexRGB(0x9E9E9E);
+    subTitle.text = @"初始音量";
+    subTitle.font = [UIFont fontWithName:@"DFPYuanW5" size:18];
+    [self.view addSubview:subTitle];
+    
+    UISlider *slider = [[UISlider alloc] initWithFrame:CGRectMake(149, 92, SCREENWIDTH - 42 - 149, 30)];
+    [slider setMinimumTrackTintColor:HexRGB(0xE3E3E3)];
+    [slider setMaximumTrackTintColor:HexRGB(0xE3E3E3)];
+    [slider setThumbImage:[UIImage imageNamed:@"slide_enable"] forState:UIControlStateNormal];
+    [slider setThumbImage:[UIImage imageNamed:@"slide_disable"] forState:UIControlStateDisabled];
+    [slider addTarget:self action:@selector(slideValueChange:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:slider];
+    
+    UIView *line = [[UIView alloc] initWithFrame:CGRectMake(0, 136, SCREENWIDTH, 1)];
+    line.backgroundColor = HexRGB(0xF1F1F1);
+    [self.view addSubview:line];
+}
+
+- (void)slideValueChange:(id)sender
+{
+    
 }
 
 - (void)goBack
