@@ -78,7 +78,9 @@
     
     NSString *playMins = [WMUserDefault objectValueForKey:@"playtime"];
 
-    if (playMins.integerValue != 60) {
+    BOOL wxInstalled = [WMUserDefault BoolValueForKey:@"WXInstalled"];
+
+    if (wxInstalled && playMins.integerValue != 60) {
         TFLargerHitButton *rightBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(SCREENWIDTH - 23 - 15, 39, 20, 21)];
         [rightBtn setImage:[UIImage imageNamed:@"strawberry"] forState:UIControlStateNormal];
         [rightBtn addTarget:self action:@selector(share:) forControlEvents:UIControlEventTouchUpInside];

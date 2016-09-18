@@ -66,6 +66,8 @@ static void displayStatusChanged(CFNotificationCenterRef center,
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 
+    [WMUserDefault setBoolVaule:[WXApi isWXAppInstalled] forKey:@"WXInstalled"];
+
     [WXApi registerApp:WXAppId];
 
     UMConfigInstance.appKey = @"57dd6072e0f55adf01002535";
