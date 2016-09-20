@@ -49,7 +49,7 @@
     [self.view addSubview:subTitle];
     
     UISlider *slider = [[UISlider alloc] initWithFrame:CGRectMake(149, 92, SCREENWIDTH - 42 - 149, 30)];
-    [slider setMinimumTrackTintColor:HexRGB(0xE3E3E3)];
+    [slider setMinimumTrackTintColor:HexRGB(0xFF756F)];
     [slider setMaximumTrackTintColor:HexRGB(0xE3E3E3)];
     [slider setThumbImage:[UIImage imageNamed:@"slide_enable"] forState:UIControlStateNormal];
     [slider setThumbImage:[UIImage imageNamed:@"slide_disable"] forState:UIControlStateDisabled];

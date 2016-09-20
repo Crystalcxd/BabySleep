@@ -40,8 +40,8 @@
     titleBG.backgroundColor = HexRGB(0xFF918C);
     [self.view addSubview:titleBG];
     
-    UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake(39 + leftPadding, 38, 71.35, 18.39)];
-    titleView.image = [UIImage imageNamed:@"babysleep_white"];
+    UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake(30 + leftPadding, 29, 161, 36)];
+    titleView.image = [UIImage imageNamed:@"menu_momstory"];
     [self.view addSubview:titleView];
         
     NSArray *imageArr = [NSArray arrayWithObjects:@"noise",@"share",@"volume",@"advice", nil];
@@ -96,7 +96,7 @@
     }else if (btn.tag == TABLEVIEW_BEGIN_TAG + 1){
         [self goShareView];
     }else if (btn.tag == TABLEVIEW_BEGIN_TAG + 2){
-        
+        [self goSystemVolumnView];
     }else
         [self sendMail];
 }
@@ -113,6 +113,14 @@
 {
     ShareViewController *shareVC = [[ShareViewController alloc] initWithNibName:nil bundle:nil];
     [self presentViewController:shareVC animated:YES completion:^{
+        
+    }];
+}
+
+- (void)goSystemVolumnView
+{
+    SystemVolumeViewController *volumnVC = [[SystemVolumeViewController alloc] initWithNibName:nil bundle:nil];
+    [self presentViewController:volumnVC animated:YES completion:^{
         
     }];
 }
