@@ -28,6 +28,7 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - TTTAttributedLabel (2.0.0)
   - UMengAnalytics-NO-IDFA (4.1.1)
   - WeChat_SDK (1.7.2.1)
   - WeiboSDK (3.1.3)
@@ -41,6 +42,7 @@ DEPENDENCIES:
   - MJRefresh (~> 2.0)
   - Qiniu
   - SDWebImage
+  - TTTAttributedLabel (~> 2.0.0)
   - UMengAnalytics-NO-IDFA
   - WeChat_SDK (~> 1.7.2.1)
   - WeiboSDK
@@ -55,10 +57,11 @@ SPEC CHECKSUMS:
   MJRefresh: 4bce3b592ae052ff89473b2907278bf8a80abdd3
   Qiniu: 5e5d7d759d22393bb4b87cdfacf8fab951260f3e
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   UMengAnalytics-NO-IDFA: 1064992c1b7aaa22823179c0b33a664813fd7a85
   WeChat_SDK: ecf5879b5cabcc953c9acc2d759ade18adbff39a
   WeiboSDK: acb067053668102cf07d01aa7604350162c2e466
 
-PODFILE CHECKSUM: eeb4f1ef459c48eb2a2583801050b5b84c5f4e7d
+PODFILE CHECKSUM: 3d91833209ace0c46bf478b2139962cd0c6d57fe
 
 COCOAPODS: 1.0.1

@@ -16,6 +16,7 @@ pod 'ELCImagePickerController', '~> 0.2.0'
 pod 'MBProgressHUD'
 pod 'MJRefresh', '~> 2.0' # 下拉刷新
 pod 'HMSegmentedControl'
+pod 'TTTAttributedLabel', '~> 2.0.0'
 
 # Vendor
 pod 'WeChat_SDK', '~> 1.7.2.1'
