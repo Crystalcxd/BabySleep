@@ -253,6 +253,10 @@ THE SOFTWARE.
 
 
 
+## ShareSDK3
+
+Copyright © 2012-2015 mob
+
 ## UMengAnalytics-NO-IDFA
 
 Copyright 2011 - 2015 UMeng.com. All rights reserved.
