@@ -8,6 +8,7 @@ pod 'SDWebImage'
 
 # Model
 pod 'Mantle', '~> 1.5.0'
+pod 'YYModel', '~> 1.0.4'
 
 # View Controller
 pod 'ELCImagePickerController', '~> 0.2.0'
