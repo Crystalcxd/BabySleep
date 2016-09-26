@@ -12,6 +12,8 @@
 
 #import "TFLargerHitButton.h"
 
+#import <MediaPlayer/MediaPlayer.h>
+
 @interface SystemVolumeViewController ()
 
 @end
@@ -59,6 +61,19 @@
     UIView *line = [[UIView alloc] initWithFrame:CGRectMake(0, 136, SCREENWIDTH, 1)];
     line.backgroundColor = HexRGB(0xF1F1F1);
     [self.view addSubview:line];
+    
+    // 获取当前手机音量
+    MPVolumeView *slide = [MPVolumeView new];
+    UISlider *volumeViewSlider;
+    for(UIView *view in[slide subviews])
+    {
+        if([[[view class] description] isEqualToString:@"MPVolumeSlider"]){
+            volumeViewSlider = (UISlider *)view;
+        }
+    }
+    float volume = volumeViewSlider.value;
+    
+    slider.value = volume;
 }
 
 - (void)slideValueChange:(id)sender

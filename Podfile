@@ -12,6 +12,7 @@ pod 'YYModel', '~> 1.0.4'
 
 # View Controller
 pod 'ELCImagePickerController', '~> 0.2.0'
+pod 'RDVTabBarController', '~> 1.1.9'
 
 # View
 pod 'MBProgressHUD'
@@ -24,5 +25,10 @@ pod 'WeChat_SDK', '~> 1.7.2.1'
 pod 'WeiboSDK'# 新浪
 pod 'UMengAnalytics-NO-IDFA' # 友盟 SDK（无 IDFA）
 pod 'Qiniu' # 七牛
+pod 'RegexKitLite', '~> 4.0' #正则
+pod 'Masonry', '~> 1.0.2'   #代码布局
+pod 'WebViewJavascriptBridge', '~> 5.0.5'
+pod 'GVUserDefaults', '~> 1.0.2'
+pod 'DateTools', '~> 1.7.0'
 
 end
