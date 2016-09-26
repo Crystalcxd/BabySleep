@@ -34,7 +34,7 @@
         BG.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.49];
         [self addSubview:BG];
         
-        UIView *boardBG = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 288, 365)];
+        UIView *boardBG = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 288, 490)];
         boardBG.center = CGPointMake(CGRectGetWidth(frame) * 0.5, CGRectGetHeight(frame) * 0.5);
         boardBG.backgroundColor = [UIColor whiteColor];
         boardBG.layer.borderWidth = 3.0;
@@ -63,6 +63,8 @@
         self.textField = [[UITextField alloc] initWithFrame:CGRectMake(36, 66, 226, 34)];
         self.textField.font = [UIFont fontWithName:@"DFPYuanW5" size:18];
         self.textField.textColor = HexRGB(0xD0D0D0);
+        self.textField.placeholder = @"不超过10个字符";
+        [self.textField setValue:HexRGB(0xD0D0D0) forKeyPath:@"_placeholderLabel.textColor"];
         [boardBG addSubview:self.textField];
         
         self.musicData.imageName = @"record_save_head.png";
@@ -77,6 +79,11 @@
         imageBG.layer.cornerRadius = 45;
         imageBG.clipsToBounds = YES;
         [boardBG addSubview:imageBG];
+        
+        UIImageView *defaultImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 90, 90)];
+        defaultImage.layer.cornerRadius = 45;
+        defaultImage.image = [UIImage imageNamed:@"record_save_camera"];
+        [imageBG addSubview:defaultImage];
         
         self.musicImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 90, 90)];
         self.musicImageView.layer.cornerRadius = 45;
@@ -104,7 +111,6 @@
 {
     self.musicData = data;
     
-    self.textField.text = self.musicData.musicName;
     self.musicImageView.image = [UIImage imageNamed:self.musicData.imageName];
 }
 
@@ -115,13 +121,10 @@
 
 - (void)saveAction:(id)sender
 {
-    if (self.textField.text.length == 0) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"请输入名称" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-        [alert show];
-        return;
+    if (self.textField.text.length != 0) {
+        self.musicData.musicName = self.textField.text;
     }
     
-    self.musicData.musicName = self.textField.text;
     self.musicData.userData = YES;
     
     [self saveImage];

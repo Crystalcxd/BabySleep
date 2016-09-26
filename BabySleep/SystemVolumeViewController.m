@@ -12,6 +12,7 @@
 
 #import "TFLargerHitButton.h"
 
+#import <AVFoundation/AVFoundation.h>
 #import <MediaPlayer/MediaPlayer.h>
 
 @interface SystemVolumeViewController ()
@@ -63,22 +64,24 @@
     [self.view addSubview:line];
     
     // 获取当前手机音量
-    MPVolumeView *slide = [MPVolumeView new];
-    UISlider *volumeViewSlider;
-    for(UIView *view in[slide subviews])
-    {
-        if([[[view class] description] isEqualToString:@"MPVolumeSlider"]){
-            volumeViewSlider = (UISlider *)view;
-        }
-    }
-    float volume = volumeViewSlider.value;
+    float volume = [[AVAudioSession sharedInstance] outputVolume];
     
+    NSLog(@"%f",volume);
+
     slider.value = volume;
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    
 }
 
 - (void)slideValueChange:(id)sender
 {
+    UISlider *slider = (UISlider *)sender;
     
+    MPMusicPlayerController *mpc = [MPMusicPlayerController applicationMusicPlayer];
+    mpc.volume = slider.value;
 }
 
 - (void)goBack
