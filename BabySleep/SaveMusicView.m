@@ -67,25 +67,32 @@
         [self.textField setValue:HexRGB(0xD0D0D0) forKeyPath:@"_placeholderLabel.textColor"];
         [boardBG addSubview:self.textField];
         
+        UILabel *tipTitle = [[UILabel alloc] initWithFrame:CGRectMake(0, 108, 288, 17)];
+        tipTitle.textAlignment = NSTextAlignmentCenter;
+        tipTitle.textColor = HexRGB(0xD04CFF);
+        tipTitle.font = [UIFont fontWithName:@"DFPYuanW5" size:12];
+        tipTitle.text = @"提示：文件大于10M，无法使用微信分享。";
+        [boardBG addSubview:tipTitle];
+        
         self.musicData.imageName = @"record_save_head.png";
 
-        UILabel *iconTitle = [[UILabel alloc] initWithFrame:CGRectMake(22, 141, 100, 18)];
+        UILabel *iconTitle = [[UILabel alloc] initWithFrame:CGRectMake(22, 175, 100, 18)];
         iconTitle.textColor = HexRGB(0x9E9E9E);
         iconTitle.font = [UIFont fontWithName:@"DFPYuanW5" size:18];
         iconTitle.text = @"头像";
         [boardBG addSubview:iconTitle];
         
-        UIView *imageBG = [[UIView alloc]initWithFrame:CGRectMake(94, 171, 90, 90)];
+        UIView *imageBG = [[UIView alloc]initWithFrame:CGRectMake(148, 198, 80, 80)];
         imageBG.layer.cornerRadius = 45;
         imageBG.clipsToBounds = YES;
         [boardBG addSubview:imageBG];
         
-        UIImageView *defaultImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 90, 90)];
+        UIImageView *defaultImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 80, 80)];
         defaultImage.layer.cornerRadius = 45;
         defaultImage.image = [UIImage imageNamed:@"record_save_camera"];
         [imageBG addSubview:defaultImage];
         
-        self.musicImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 90, 90)];
+        self.musicImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 80, 80)];
         self.musicImageView.layer.cornerRadius = 45;
         [imageBG addSubview:self.musicImageView];
         
@@ -95,7 +102,7 @@
         [boardBG addSubview:selectImageBtn];
         
         UIButton *saveBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        saveBtn.frame = CGRectMake(0, 300, 288, 64);
+        saveBtn.frame = CGRectMake(0, 426, 288, 64);
         [saveBtn setTitle:@"保 存" forState:UIControlStateNormal];
         [saveBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [saveBtn.titleLabel setFont:[UIFont fontWithName:@"DFPYuanW5" size:20]];
