@@ -13,12 +13,19 @@ pod 'YYModel', '~> 1.0.4'
 # View Controller
 pod 'ELCImagePickerController', '~> 0.2.0'
 pod 'RDVTabBarController', '~> 1.1.9'
+pod 'SlackTextViewController'
 
 # View
 pod 'MBProgressHUD'
 pod 'MJRefresh', '~> 2.0' # 下拉刷新
 pod 'HMSegmentedControl'
 pod 'TTTAttributedLabel', '~> 2.0.0'
+pod 'UITableView+FDTemplateLayoutCell', '1.3' # cell 布局高度
+pod 'DACircularProgress'
+pod 'UIActivityIndicator-for-SDWebImage'
+
+# Helper/Tool
+pod 'GBDeviceInfo' # 设备信息
 
 # Vendor
 pod 'WeChat_SDK', '~> 1.7.2.1'

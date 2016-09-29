@@ -14,8 +14,12 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - DACircularProgress (2.3.1)
   - DateTools (1.7.0)
   - ELCImagePickerController (0.2.0)
+  - GBDeviceInfo (4.2.1):
+    - GBDeviceInfo/Core (= 4.2.1)
+  - GBDeviceInfo/Core (4.2.1)
   - GVUserDefaults (1.0.2)
   - HappyDNS (0.3.10)
   - HMSegmentedControl (1.5.3)
@@ -33,7 +37,11 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - SlackTextViewController (1.9.4)
   - TTTAttributedLabel (2.0.0)
+  - UIActivityIndicator-for-SDWebImage (1.2):
+    - SDWebImage (~> 3.7)
+  - UITableView+FDTemplateLayoutCell (1.3)
   - UMengAnalytics-NO-IDFA (4.1.1)
   - WebViewJavascriptBridge (5.0.5)
   - WeChat_SDK (1.7.2.1)
@@ -42,8 +50,10 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - DACircularProgress
   - DateTools (~> 1.7.0)
   - ELCImagePickerController (~> 0.2.0)
+  - GBDeviceInfo
   - GVUserDefaults (~> 1.0.2)
   - HMSegmentedControl
   - Mantle (~> 1.5.0)
@@ -54,7 +64,10 @@ DEPENDENCIES:
   - RDVTabBarController (~> 1.1.9)
   - RegexKitLite (~> 4.0)
   - SDWebImage
+  - SlackTextViewController
   - TTTAttributedLabel (~> 2.0.0)
+  - UIActivityIndicator-for-SDWebImage
+  - UITableView+FDTemplateLayoutCell (= 1.3)
   - UMengAnalytics-NO-IDFA
   - WebViewJavascriptBridge (~> 5.0.5)
   - WeChat_SDK (~> 1.7.2.1)
@@ -63,8 +76,10 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
   ELCImagePickerController: b1b7084434a7d49f2cfc916bde1f3ba353d38de9
+  GBDeviceInfo: 5c684ecebeab575968f2e6db52034413cfab7688
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   HappyDNS: 06a9fed2796663fd87626dbf02552933265bf059
   HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
@@ -76,13 +91,16 @@ SPEC CHECKSUMS:
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SlackTextViewController: d490f354dba963bc469a6b9ce3213978eaed67a5
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
+  UITableView+FDTemplateLayoutCell: d5be6056b5060313f5955a2590ecd33142ad713d
   UMengAnalytics-NO-IDFA: 1064992c1b7aaa22823179c0b33a664813fd7a85
   WebViewJavascriptBridge: a4d502315f1b8d9a51cd6a9174147ed567ec3bc5
   WeChat_SDK: ecf5879b5cabcc953c9acc2d759ade18adbff39a
   WeiboSDK: acb067053668102cf07d01aa7604350162c2e466
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 516a7cf9bb44680bf82b00fa568f6249bb59064a
+PODFILE CHECKSUM: fa861e1fed930876e1448bc0b75f63344cb00cd7
 
-COCOAPODS: 1.1.0.beta.2
+COCOAPODS: 1.0.1
