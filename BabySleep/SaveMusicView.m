@@ -101,6 +101,8 @@
         [selectImageBtn addTarget:self action:@selector(selectImage:) forControlEvents:UIControlEventTouchUpInside];
         [boardBG addSubview:selectImageBtn];
         
+        
+        
         UIButton *saveBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         saveBtn.frame = CGRectMake(0, 426, 288, 64);
         [saveBtn setTitle:@"保 存" forState:UIControlStateNormal];
