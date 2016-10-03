@@ -17,9 +17,9 @@ PODS:
   - DACircularProgress (2.3.1)
   - DateTools (1.7.0)
   - ELCImagePickerController (0.2.0)
-  - GBDeviceInfo (4.2.1):
-    - GBDeviceInfo/Core (= 4.2.1)
-  - GBDeviceInfo/Core (4.2.1)
+  - GBDeviceInfo (4.2.2):
+    - GBDeviceInfo/Core (= 4.2.2)
+  - GBDeviceInfo/Core (4.2.2)
   - GVUserDefaults (1.0.2)
   - HappyDNS (0.3.10)
   - HMSegmentedControl (1.5.3)
@@ -79,7 +79,7 @@ SPEC CHECKSUMS:
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
   ELCImagePickerController: b1b7084434a7d49f2cfc916bde1f3ba353d38de9
-  GBDeviceInfo: 5c684ecebeab575968f2e6db52034413cfab7688
+  GBDeviceInfo: 0a6e2fc04989ce248572bb988f1a764102eb0e5d
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   HappyDNS: 06a9fed2796663fd87626dbf02552933265bf059
   HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
