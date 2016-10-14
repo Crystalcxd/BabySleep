@@ -101,6 +101,13 @@
         [selectImageBtn addTarget:self action:@selector(selectImage:) forControlEvents:UIControlEventTouchUpInside];
         [boardBG addSubview:selectImageBtn];
         
+        UILabel *selectTitle = [[UILabel alloc] initWithFrame:CGRectMake(0, 310, 288, 17)];
+        selectTitle.textAlignment = NSTextAlignmentCenter;
+        selectTitle.textColor = HexRGB(0xB1B1B1);
+        selectTitle.font = [UIFont fontWithName:@"DFPYuanW5" size:12];
+        selectTitle.text = @"选择默认";
+        [boardBG addSubview:selectTitle];
+        
         
         
         UIButton *saveBtn = [UIButton buttonWithType:UIButtonTypeCustom];
