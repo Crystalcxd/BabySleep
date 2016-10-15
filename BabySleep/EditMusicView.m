@@ -7,7 +7,7 @@
 //
 
 #import "EditMusicView.h"
-
+#import "AudioTask.h"
 #import "Utility.h"
 
 @interface EditMusicView ()
@@ -91,6 +91,12 @@
     [self configureWithType:EditMusicViewTypeEdit];
     
     self.StartEdit();
+}
+
+- (void)loopStatusAction:(id)sender
+{
+    BOOL isPlayCircle = [[AudioTask shareAudioTask] isPlayCircle];
+    [[AudioTask shareAudioTask] setIsPlayCircle:!isPlayCircle];
 }
 
 - (void)cancelBtnAction:(id)sender

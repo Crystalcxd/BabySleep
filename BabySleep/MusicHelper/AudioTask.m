@@ -215,7 +215,7 @@ static AudioTask *audioTask;
         player = [[AVAudioPlayer alloc] initWithContentsOfURL:self.url error:&error];
         int numberOfLoops = -1;
         player.delegate = self;
-        player.numberOfLoops = numberOfLoops; //Infinite
+        player.numberOfLoops = self.isPlayCircle ? numberOfLoops : 1; //Infinite
         player.volume = self.volum;
         [player prepareToPlay];
         [player play];

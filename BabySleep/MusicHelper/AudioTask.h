@@ -40,6 +40,7 @@ typedef enum
 @property (nonatomic,assign)CGFloat volum;
 
 @property (nonatomic,assign)BOOL isNeedSound;
+@property (nonatomic,assign)BOOL isPlayCircle;
 @property (nonatomic,assign)taskType currentTaskType;
 
 @property (nonatomic,strong)NSURL *url;

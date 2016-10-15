@@ -101,7 +101,24 @@
         [selectImageBtn addTarget:self action:@selector(selectImage:) forControlEvents:UIControlEventTouchUpInside];
         [boardBG addSubview:selectImageBtn];
         
+        UILabel *selectTitle = [[UILabel alloc] initWithFrame:CGRectMake(0, 310, 288, 17)];
+        selectTitle.textAlignment = NSTextAlignmentCenter;
+        selectTitle.textColor = HexRGB(0xB1B1B1);
+        selectTitle.font = [UIFont fontWithName:@"DFPYuanW5" size:12];
+        selectTitle.text = @"选择默认";
+        [boardBG addSubview:selectTitle];
         
+        for (int i = 0; i < 3; i++) {
+            UIButton *selectImageBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+            selectImageBtn.frame = CGRectMake(45 + i * 77, 341, 45, 45);
+            [selectImageBtn setImage:[UIImage imageNamed:[NSString stringWithFormat:@"record_save_head%d.png",i+1]] forState:UIControlStateNormal];
+            selectImageBtn.layer.cornerRadius = 45 * 0.5;
+            selectImageBtn.clipsToBounds = YES;
+            selectImageBtn.layer.borderWidth = 1;
+            selectImageBtn.tag = TABLEVIEW_BEGIN_TAG + i;
+            [selectImageBtn addTarget:selectImageBtn action:@selector(selectAction:) forControlEvents:UIControlEventTouchUpInside];
+            [boardBG addSubview:selectImageBtn];
+        }
         
         UIButton *saveBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         saveBtn.frame = CGRectMake(0, 426, 288, 64);
@@ -121,6 +138,28 @@
     self.musicData = data;
     
     self.musicImageView.image = [UIImage imageNamed:self.musicData.imageName];
+}
+
+#pragma mark - ButtonAction
+
+- (void)selectAction:(id)sender
+{
+    UIButton *btn = (UIButton *)sender;
+    NSInteger index = btn.tag - TABLEVIEW_BEGIN_TAG;
+    
+    UIView *boardBG = btn.superview;
+    
+    for (int i = 0; i < 3; i++) {
+        UIButton *btn = [boardBG viewWithTag:TABLEVIEW_BEGIN_TAG + i];
+        if (i == index) {
+            btn.layer.borderColor = HexRGB(0xFF564F).CGColor;
+        }else{
+            btn.layer.borderColor = [UIColor clearColor].CGColor;
+        }
+    }
+    
+    self.musicImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"record_save_head%ld.png",index+1]];
+    self.musicImageView.layer.cornerRadius = 40;
 }
 
 - (void)cancelAction:(id)sender
@@ -254,7 +293,7 @@
         [images addObject:image];
         
         self.musicImageView.image = image;
-        self.musicImageView.layer.cornerRadius = 45;
+        self.musicImageView.layer.cornerRadius = 40;
     }
 }
 
@@ -274,7 +313,7 @@
     UIImage *image= [info objectForKey:@"UIImagePickerControllerOriginalImage"];
     
     self.musicImageView.image = image;
-    self.musicImageView.layer.cornerRadius = 45;
+    self.musicImageView.layer.cornerRadius = 40;
 }
 
 /*
