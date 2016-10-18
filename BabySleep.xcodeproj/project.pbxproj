@@ -35,6 +35,7 @@
 		4CA834551D30DDC0007543B5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA834541D30DDC0007543B5 /* CoreTelephony.framework */; };
 		4CAE50891D3550A4009FE262 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE50881D3550A4009FE262 /* Images.xcassets */; };
 		4CAE508B1D3552AB009FE262 /* adx2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE508A1D3552AB009FE262 /* adx2@2x.png */; };
+		4CB2D6AB1DB36BD100297B61 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CB2D6AD1DB36BD100297B61 /* Localizable.strings */; };
 		4CDEA46F1D604531006E3AA8 /* home_m4a_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CDEA46A1D604531006E3AA8 /* home_m4a_1.png */; };
 		4CDEA4701D604531006E3AA8 /* home_m4a_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CDEA46B1D604531006E3AA8 /* home_m4a_2.png */; };
 		4CDEA4711D604531006E3AA8 /* home_m4a_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CDEA46C1D604531006E3AA8 /* home_m4a_3.png */; };
@@ -122,6 +123,8 @@
 		4CAE50881D3550A4009FE262 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4CAE508A1D3552AB009FE262 /* adx2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adx2@2x.png"; sourceTree = "<group>"; };
 		4CAE50941D36901E009FE262 /* WMMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMacro.h; sourceTree = "<group>"; };
+		4CB2D6AC1DB36BD100297B61 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4CB2D6AE1DB36BE700297B61 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		4CDEA46A1D604531006E3AA8 /* home_m4a_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_m4a_1.png; sourceTree = "<group>"; };
 		4CDEA46B1D604531006E3AA8 /* home_m4a_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_m4a_2.png; sourceTree = "<group>"; };
 		4CDEA46C1D604531006E3AA8 /* home_m4a_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_m4a_3.png; sourceTree = "<group>"; };
@@ -292,6 +295,7 @@
 			children = (
 				A4FEA1271D2B559900FB7FE0 /* Resource */,
 				4CA0C7231D1FAC4E001EDC89 /* main.m */,
+				4CB2D6AD1DB36BD100297B61 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -491,6 +495,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 4CA0C7161D1FAC4E001EDC89;
 			productRefGroup = 4CA0C7201D1FAC4E001EDC89 /* Products */;
@@ -514,6 +519,7 @@
 				4C4F36E31D75D48700171C7A /* delete_normal@2x.png in Resources */,
 				4CDEA4701D604531006E3AA8 /* home_m4a_2.png in Resources */,
 				4C5DEB581D9981EA0010E147 /* record_save_head2.png in Resources */,
+				4CB2D6AB1DB36BD100297B61 /* Localizable.strings in Resources */,
 				4C5DEB571D9981EA0010E147 /* record_save_head1.png in Resources */,
 				A4E5DF591D4F18C7008AABE4 /* MMPSilence.wav in Resources */,
 				4C4F36DC1D749DAB00171C7A /* slide_disable@2x.png in Resources */,
@@ -656,11 +662,24 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		4CB2D6AD1DB36BD100297B61 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CB2D6AC1DB36BD100297B61 /* en */,
+				4CB2D6AE1DB36BE700297B61 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		4CA0C74A1D1FAC4F001EDC89 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -707,6 +726,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
