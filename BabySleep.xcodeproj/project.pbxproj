@@ -15,9 +15,7 @@
 		4CA0C7241D1FAC4E001EDC89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C7231D1FAC4E001EDC89 /* main.m */; };
 		4CA0C7271D1FAC4E001EDC89 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C7261D1FAC4E001EDC89 /* AppDelegate.m */; };
 		4CA0C72A1D1FAC4E001EDC89 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C7291D1FAC4E001EDC89 /* ViewController.m */; };
-		4CA0C72D1D1FAC4E001EDC89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA0C72B1D1FAC4E001EDC89 /* Main.storyboard */; };
 		4CA0C72F1D1FAC4E001EDC89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA0C72E1D1FAC4E001EDC89 /* Assets.xcassets */; };
-		4CA0C7321D1FAC4E001EDC89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA0C7301D1FAC4E001EDC89 /* LaunchScreen.storyboard */; };
 		4CA0C73D1D1FAC4F001EDC89 /* BabySleepTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C73C1D1FAC4F001EDC89 /* BabySleepTests.m */; };
 		4CA0C7481D1FAC4F001EDC89 /* BabySleepUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C7471D1FAC4F001EDC89 /* BabySleepUITests.m */; };
 		4CA8344D1D30DB78007543B5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA8344C1D30DB78007543B5 /* SystemConfiguration.framework */; };
@@ -39,6 +37,7 @@
 		4CE52FA21D28CB12009576C6 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52F9E1D28CB12009576C6 /* Utility.m */; };
 		4CE52FA31D28CB12009576C6 /* WMUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52FA01D28CB12009576C6 /* WMUserDefault.m */; };
 		4CE52FA61D29057C009576C6 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52FA51D29057C009576C6 /* LeftViewController.m */; };
+		A40003F11DB7681000934F38 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A40003F31DB7681000934F38 /* Localizable.strings */; };
 		A42349B31D2C9F46009A5ECC /* TFLargerHitButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A42349B21D2C9F46009A5ECC /* TFLargerHitButton.m */; };
 		A42349B61D2CAD9E009A5ECC /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42349B51D2CAD9E009A5ECC /* ShareViewController.m */; };
 		A42349B91D2CF1CA009A5ECC /* ShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = A42349B81D2CF1CA009A5ECC /* ShareView.m */; };
@@ -91,9 +90,7 @@
 		4CA0C7261D1FAC4E001EDC89 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4CA0C7281D1FAC4E001EDC89 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4CA0C7291D1FAC4E001EDC89 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4CA0C72C1D1FAC4E001EDC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CA0C72E1D1FAC4E001EDC89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4CA0C7311D1FAC4E001EDC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CA0C7331D1FAC4E001EDC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CA0C7381D1FAC4F001EDC89 /* BabySleepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabySleepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA0C73C1D1FAC4F001EDC89 /* BabySleepTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BabySleepTests.m; sourceTree = "<group>"; };
@@ -117,8 +114,6 @@
 		4CAE50961D369057009FE262 /* MptPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MptPageControl.m; sourceTree = "<group>"; };
 		4CAE50981D369419009FE262 /* CartoonHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartoonHeadView.h; sourceTree = "<group>"; };
 		4CAE50991D369419009FE262 /* CartoonHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartoonHeadView.m; sourceTree = "<group>"; };
-		4CB2D6A71DB36B2A00297B61 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
-		4CB2D6A81DB36B2A00297B61 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		4CC874BD1D7C3E490090E8C7 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		4CC874BF1D7C3E5F0090E8C7 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		4CC874C11D7C3E6F0090E8C7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -133,6 +128,8 @@
 		4CE52FA51D29057C009576C6 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		660D8FB022291A445619D421 /* Pods-BabySleep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySleep.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BabySleep/Pods-BabySleep.debug.xcconfig"; sourceTree = "<group>"; };
 		8A4FEDD7B765E24B83469452 /* Pods-BabySleep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySleep.release.xcconfig"; path = "Pods/Target Support Files/Pods-BabySleep/Pods-BabySleep.release.xcconfig"; sourceTree = "<group>"; };
+		A40003F41DB7681400934F38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A40003F51DB7681500934F38 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		A42349B11D2C9F46009A5ECC /* TFLargerHitButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFLargerHitButton.h; sourceTree = "<group>"; };
 		A42349B21D2C9F46009A5ECC /* TFLargerHitButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFLargerHitButton.m; sourceTree = "<group>"; };
 		A42349B41D2CAD9E009A5ECC /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
@@ -262,9 +259,7 @@
 				4C60581E1D424E9E0003EAF3 /* TouchAnimationView.m */,
 				4C5ADED71D44BAB5004713D0 /* TouchInsideAnimationView.h */,
 				4C5ADED81D44BAB5004713D0 /* TouchInsideAnimationView.m */,
-				4CA0C72B1D1FAC4E001EDC89 /* Main.storyboard */,
 				4CA0C72E1D1FAC4E001EDC89 /* Assets.xcassets */,
-				4CA0C7301D1FAC4E001EDC89 /* LaunchScreen.storyboard */,
 				4CA0C7331D1FAC4E001EDC89 /* Info.plist */,
 				4CAE50881D3550A4009FE262 /* Images.xcassets */,
 				4CA0C7221D1FAC4E001EDC89 /* Supporting Files */,
@@ -362,6 +357,7 @@
 				A4E3FB311D3F6E7B00EEEF94 /* font */,
 				A4FEA1281D2B559900FB7FE0 /* music */,
 				A4FEA12E1D2B559900FB7FE0 /* pic */,
+				A40003F31DB7681000934F38 /* Localizable.strings */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -491,6 +487,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 4CA0C7161D1FAC4E001EDC89;
 			productRefGroup = 4CA0C7201D1FAC4E001EDC89 /* Products */;
@@ -509,11 +506,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CA0C7321D1FAC4E001EDC89 /* LaunchScreen.storyboard in Resources */,
 				A4FEA1341D2B559900FB7FE0 /* audio.mp3 in Resources */,
 				A4E5DF591D4F18C7008AABE4 /* MMPSilence.wav in Resources */,
 				A4FEA13C1D2B559900FB7FE0 /* hairdryer@2x.png in Resources */,
 				A4FEA13D1D2B559900FB7FE0 /* radio@2x.png in Resources */,
+				A40003F11DB7681000934F38 /* Localizable.strings in Resources */,
 				A4FEA1391D2B559900FB7FE0 /* baby@2x.png in Resources */,
 				A4FEA1361D2B559900FB7FE0 /* girl.mp3 in Resources */,
 				A4FEA1381D2B559900FB7FE0 /* whitenoise.mp3 in Resources */,
@@ -527,7 +524,6 @@
 				A4E3FB351D3F6E7C00EEEF94 /* 华康圆体W5.TTF in Resources */,
 				A4FEA1371D2B559900FB7FE0 /* hairdryer.mp3 in Resources */,
 				A4FEA13A1D2B559900FB7FE0 /* cleaner@2x.png in Resources */,
-				4CA0C72D1D1FAC4E001EDC89 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,22 +651,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4CA0C72B1D1FAC4E001EDC89 /* Main.storyboard */ = {
+		A40003F31DB7681000934F38 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4CA0C72C1D1FAC4E001EDC89 /* Base */,
-				4CB2D6A71DB36B2A00297B61 /* zh-Hans */,
+				A40003F41DB7681400934F38 /* en */,
+				A40003F51DB7681500934F38 /* zh-Hans */,
 			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4CA0C7301D1FAC4E001EDC89 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4CA0C7311D1FAC4E001EDC89 /* Base */,
-				4CB2D6A81DB36B2A00297B61 /* zh-Hans */,
-			);
-			name = LaunchScreen.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
