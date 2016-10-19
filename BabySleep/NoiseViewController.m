@@ -48,7 +48,7 @@
     textView.showsHorizontalScrollIndicator = NO;
     textView.textColor = HexRGB(0x5B7B90);
     textView.font = [UIFont fontWithName:@"DFPYuanW5" size:14];
-    textView.text = @"宝宝刚刚离开妈妈的子宫，来到一个陌生的环境，这对他们来说是一个需要适应的过程。而人世中的一些陌生声音会时常另他们感到不安、烦躁，他们更喜欢子宫里的嘈杂声。\n\n神奇的“白噪音”有令人惊叹的特性，它们听上去像下雨的声音，或者像海浪拍打岩石的声音，再或者像是风吹过树叶的沙沙声。这些声音与宝宝熟悉的子宫环境音有着类似之处。因此，在很多宝宝感到不安的时候，听到这种声音都会安静下来，安心入睡。这里精选数首白噪音为新生儿父母提供一个科学，高效的方法来引导小宝宝的睡眠，亦可作为安抚小宝宝情绪之辅助工具。";
+    textView.text = NSLocalizedString(@"noisetip", nil);
     
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     paragraphStyle.lineSpacing = 14;// 字体的行间距

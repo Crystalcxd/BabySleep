@@ -41,7 +41,7 @@
         
     NSMutableArray *imageArr = [NSMutableArray arrayWithObjects:@"noise",@"share",@"advice", nil];
     NSMutableArray *selectImageArr = [NSMutableArray arrayWithObjects:@"whitenoise_touch" ,@"share_touch",@"suggest_touch",nil];
-    NSMutableArray *titleArr = [NSMutableArray arrayWithObjects:@"白噪音",@"分享给好友",@"您的建议", nil];
+    NSMutableArray *titleArr = [NSMutableArray arrayWithObjects:NSLocalizedString(@"whitenoise", nil),NSLocalizedString(@"Share",nil),NSLocalizedString(@"YourAdvice",nil), nil];
     
     BOOL wxInstalled = [WMUserDefault BoolValueForKey:@"WXInstalled"];
     if (!wxInstalled) {
@@ -82,7 +82,7 @@
     }
     
     TFLargerHitButton *btn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(37 + leftPadding, SCREENHEIGHT - 42, 56, 20)];
-    [btn setTitle:@"其他应用" forState:UIControlStateNormal];
+    [btn setTitle:NSLocalizedString(@"OtherApplications", nil) forState:UIControlStateNormal];
     [btn setTitleColor:HexRGB(0x1688D2) forState:UIControlStateNormal];
     [btn.titleLabel setFont:[UIFont fontWithName:@"DFPYuanW5" size:14]];
     [btn addTarget:self action:@selector(goOtherAppDownload) forControlEvents:UIControlEventTouchUpInside];

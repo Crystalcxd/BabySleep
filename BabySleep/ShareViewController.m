@@ -35,7 +35,7 @@
     UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 29, SCREENWIDTH, 25)];
     title.textColor = HexRGB(0x1688D2);
     title.textAlignment = NSTextAlignmentCenter;
-    title.text = @"分享给好友";
+    title.text = NSLocalizedString(@"YourAdvice",nil);
     title.font = [UIFont fontWithName:@"DFPYuanW5" size:18];
     [self.view addSubview:title];
     
