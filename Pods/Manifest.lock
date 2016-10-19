@@ -33,7 +33,7 @@ PODS:
   - Pingpp/Network (2.2.8)
   - Pingpp/UnionPay (2.2.8):
     - Pingpp/Core
-  - Qiniu (7.1.1):
+  - Qiniu (7.1.2):
     - AFNetworking (~> 3)
     - HappyDNS (~> 0.3)
   - SDWebImage (3.8.2):
@@ -42,7 +42,7 @@ PODS:
   - ShareSDK3 (3.4.2):
     - ShareSDK3/ShareSDK (= 3.4.2)
   - ShareSDK3/ShareSDK (3.4.2)
-  - UMengAnalytics-NO-IDFA (4.1.1)
+  - UMengAnalytics-NO-IDFA (4.1.3)
   - WeChat_SDK (1.7.2.1)
   - WeiboSDK (3.1.3)
 
@@ -70,10 +70,10 @@ SPEC CHECKSUMS:
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: 4bce3b592ae052ff89473b2907278bf8a80abdd3
   Pingpp: b5ad287bd6969d69cff1f2438ea63147976711c9
-  Qiniu: 5e5d7d759d22393bb4b87cdfacf8fab951260f3e
+  Qiniu: d57cb922b5c31f0d1cfe2c8fea3cf83997cdcf62
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   ShareSDK3: 2fa975dd22937fc7de3f6b5d0c41a18ba0dd1661
-  UMengAnalytics-NO-IDFA: 1064992c1b7aaa22823179c0b33a664813fd7a85
+  UMengAnalytics-NO-IDFA: b26a7003458204d4549b6bd132c2f07dd5942b86
   WeChat_SDK: ecf5879b5cabcc953c9acc2d759ade18adbff39a
   WeiboSDK: acb067053668102cf07d01aa7604350162c2e466
 

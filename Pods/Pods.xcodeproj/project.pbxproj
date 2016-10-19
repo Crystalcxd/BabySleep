@@ -392,6 +392,7 @@
 		1AE5BA6AD583E2C2DC53E50473A93D17 /* WBSDKBasicButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBSDKBasicButton.h; path = libWeiboSDK/WBSDKBasicButton.h; sourceTree = "<group>"; };
 		1B439AFD29239B936B3F185954287E72 /* Pingpp.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Pingpp.bundle; path = lib/Pingpp.bundle; sourceTree = "<group>"; };
 		1C7069F05F9E6B1797AB10856FD5742A /* WBHttpRequest+WeiboUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBHttpRequest+WeiboUser.h"; path = "libWeiboSDK/WBHttpRequest+WeiboUser.h"; sourceTree = "<group>"; };
+		1CFF852FD43F16DC52D896D7D90F28E7 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMMobClick.framework; path = "umsdk_IOS_analyics_no-idfa_v4.1.3/UMMobClick.framework"; sourceTree = "<group>"; };
 		1E106AB513C15A8A75B09498D6D49579 /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
 		1EB8D8C6CF18CFB578EB6AC70CC7B4D5 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
 		1F3D356C1F26A5C4E767D99A7506E2D7 /* Qiniu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Qiniu-dummy.m"; sourceTree = "<group>"; };
@@ -582,7 +583,6 @@
 		A775CAF3D42548F23C0685F4EB553F9B /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
 		A935F3490A3A012F2B35FAF0E084539A /* libPods-BabySleep.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BabySleep.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4A7DA024094C54FF796392EF0FE062 /* MJRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoNormalFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
-		AB7E761EAB6E5ADD09C70608F30366F5 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMMobClick.framework; path = "umsdk_IOS_analyics_no-idfa_v4.1.1/UMMobClick.framework"; sourceTree = "<group>"; };
 		ABE5851B62BFB126807C6D6519E40794 /* Qiniu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Qiniu-prefix.pch"; sourceTree = "<group>"; };
 		AC006C9760D36DD4C4683167970CADC2 /* QNDnspodEnterprise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNDnspodEnterprise.m; path = HappyDNS/Http/QNDnspodEnterprise.m; sourceTree = "<group>"; };
 		AF5CB852DEFEE63B53080F4AF6CE05AB /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMJRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -934,7 +934,7 @@
 		261680961533CD2D43D43A518CEBEB36 /* UMengAnalytics-NO-IDFA */ = {
 			isa = PBXGroup;
 			children = (
-				408812D865C7A85E012B59CF29622DFC /* Frameworks */,
+				AD09292C7A1E5218BAC027CAF76271E3 /* Frameworks */,
 			);
 			path = "UMengAnalytics-NO-IDFA";
 			sourceTree = "<group>";
@@ -981,14 +981,6 @@
 				AC9CCDA1BD3E1688AC180D57F90F8169 /* Support Files */,
 			);
 			path = MBProgressHUD;
-			sourceTree = "<group>";
-		};
-		408812D865C7A85E012B59CF29622DFC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AB7E761EAB6E5ADD09C70608F30366F5 /* UMMobClick.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		46C346FEDE8F2B9FDE0C1FC5E5CC8D24 /* Support Files */ = {
@@ -1334,6 +1326,14 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		AD09292C7A1E5218BAC027CAF76271E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CFF852FD43F16DC52D896D7D90F28E7 /* UMMobClick.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		AF2EBCE4B107869481185FA1A6A0750A /* Frameworks */ = {
