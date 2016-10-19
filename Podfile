@@ -25,4 +25,11 @@ pod 'Qiniu' # 七牛
 pod 'ShareSDK3', '~> 3.4.2'
 pod 'Pingpp', '~> 2.2.8'
 
+# Helper/Tool
+pod 'UITableView+FDTemplateLayoutCell', '1.3' # cell 布局高度
+pod 'DateTools' # 日期时间工具
+pod 'GBDeviceInfo' # 设备信息
+pod 'Valet' # keychain
+pod 'pop'
+
 end
