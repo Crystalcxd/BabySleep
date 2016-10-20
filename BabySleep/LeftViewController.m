@@ -39,9 +39,9 @@
     titleView.image = [UIImage imageNamed:@"babysleep_white"];
     [self.view addSubview:titleView];
         
-    NSMutableArray *imageArr = [NSMutableArray arrayWithObjects:@"noise",@"share",@"advice", nil];
-    NSMutableArray *selectImageArr = [NSMutableArray arrayWithObjects:@"whitenoise_touch" ,@"share_touch",@"suggest_touch",nil];
-    NSMutableArray *titleArr = [NSMutableArray arrayWithObjects:NSLocalizedString(@"whitenoise", nil),NSLocalizedString(@"Share",nil),NSLocalizedString(@"YourAdvice",nil), nil];
+    NSMutableArray *imageArr = [NSMutableArray arrayWithObjects:@"noise",@"advice", nil];
+    NSMutableArray *selectImageArr = [NSMutableArray arrayWithObjects:@"whitenoise_touch" ,@"suggest_touch",nil];
+    NSMutableArray *titleArr = [NSMutableArray arrayWithObjects:NSLocalizedString(@"whitenoise", nil),NSLocalizedString(@"YourAdvice",nil), nil];
     
     BOOL wxInstalled = [WMUserDefault BoolValueForKey:@"WXInstalled"];
     if (!wxInstalled) {
@@ -93,16 +93,12 @@
 {
     UIButton *btn = (UIButton *)sender;
     
-    BOOL wxInstalled = [WMUserDefault BoolValueForKey:@"WXInstalled"];
+//    BOOL wxInstalled = [WMUserDefault BoolValueForKey:@"WXInstalled"];
 
     if (btn.tag == TABLEVIEW_BEGIN_TAG) {
         [self goNoiseView];
     }else if (btn.tag == TABLEVIEW_BEGIN_TAG + 1){
-        if (wxInstalled) {
-            [self goShareView];
-        }else{
-            [self sendMail];
-        }
+        [self sendMail];
     }else{
         [self sendMail];
     }

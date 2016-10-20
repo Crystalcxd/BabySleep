@@ -40,9 +40,7 @@ static void displayStatusChanged(CFNotificationCenterRef center,
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    if (![WMUserDefault objectValueForKey:@"playtime"]) {
-        [WMUserDefault setObjectValue:@"5" forKey:@"playtime"];
-    }
+    [WMUserDefault setObjectValue:@"60" forKey:@"playtime"];
     
     CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(),
                                     NULL,

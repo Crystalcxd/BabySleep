@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4108CC9AC9668BC138E14971F9A5B94B'
-               BlueprintName = 'Qiniu'
+               BlueprintIdentifier = '31FF44B5E2FF8CF00090950A8B67AFF6'
+               BlueprintName = 'DateTools'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libQiniu.a'>
+               BuildableName = 'libDateTools.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
