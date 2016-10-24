@@ -22,7 +22,6 @@ pod 'WeChat_SDK', '~> 1.7.2.1'
 pod 'WeiboSDK'# 新浪
 pod 'UMengAnalytics-NO-IDFA' # 友盟 SDK（无 IDFA）
 pod 'Qiniu' # 七牛
-pod 'ShareSDK3', '~> 3.4.2'
 pod 'Pingpp', '~> 2.2.8'
 pod 'JPush', '~> 2.1.9'
 

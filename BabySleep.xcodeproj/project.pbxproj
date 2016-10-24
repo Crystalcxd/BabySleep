@@ -11,6 +11,7 @@
 		4C3DA1F21D3B5B5F0003B5FD /* ShareAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DA1F11D3B5B5F0003B5FD /* ShareAlertView.m */; };
 		4C3DA1F41D3B62650003B5FD /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3DA1F31D3B62650003B5FD /* icon120.png */; };
 		4C5ADED91D44BAB5004713D0 /* TouchInsideAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5ADED81D44BAB5004713D0 /* TouchInsideAnimationView.m */; };
+		4C5CFA781DBE466A00048A5A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C5CFA7A1DBE466A00048A5A /* InfoPlist.strings */; };
 		4C60581F1D424E9E0003EAF3 /* TouchAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C60581E1D424E9E0003EAF3 /* TouchAnimationView.m */; };
 		4CA0C7241D1FAC4E001EDC89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C7231D1FAC4E001EDC89 /* main.m */; };
 		4CA0C7271D1FAC4E001EDC89 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C7261D1FAC4E001EDC89 /* AppDelegate.m */; };
@@ -23,6 +24,7 @@
 		4CA834511D30DB9B007543B5 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA834501D30DB9B007543B5 /* libsqlite3.0.tbd */; };
 		4CA834531D30DBAB007543B5 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA834521D30DBAB007543B5 /* libc++.tbd */; };
 		4CA834551D30DDC0007543B5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA834541D30DDC0007543B5 /* CoreTelephony.framework */; };
+		4CABD0B11DBE48AB00FF62C2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CABD0B01DBE48AB00FF62C2 /* Info.plist */; };
 		4CAE50891D3550A4009FE262 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE50881D3550A4009FE262 /* Images.xcassets */; };
 		4CAE508B1D3552AB009FE262 /* adx2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE508A1D3552AB009FE262 /* adx2@2x.png */; };
 		4CAE50921D368FC5009FE262 /* MptTableHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE508F1D368FC5009FE262 /* MptTableHeadCell.m */; };
@@ -82,6 +84,8 @@
 		4C3DA1F31D3B62650003B5FD /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
 		4C5ADED71D44BAB5004713D0 /* TouchInsideAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchInsideAnimationView.h; sourceTree = "<group>"; };
 		4C5ADED81D44BAB5004713D0 /* TouchInsideAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchInsideAnimationView.m; sourceTree = "<group>"; };
+		4C5CFA791DBE466A00048A5A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C5CFA7B1DBE466D00048A5A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		4C60581D1D424E9E0003EAF3 /* TouchAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchAnimationView.h; sourceTree = "<group>"; };
 		4C60581E1D424E9E0003EAF3 /* TouchAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchAnimationView.m; sourceTree = "<group>"; };
 		4CA0C71F1D1FAC4E001EDC89 /* BabySleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabySleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +106,7 @@
 		4CA834501D30DB9B007543B5 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		4CA834521D30DBAB007543B5 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		4CA834541D30DDC0007543B5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		4CABD0B01DBE48AB00FF62C2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CAE50881D3550A4009FE262 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4CAE508A1D3552AB009FE262 /* adx2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adx2@2x.png"; sourceTree = "<group>"; };
 		4CAE508E1D368FC5009FE262 /* MptTableHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MptTableHeadCell.h; sourceTree = "<group>"; };
@@ -113,8 +118,6 @@
 		4CAE50961D369057009FE262 /* MptPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MptPageControl.m; sourceTree = "<group>"; };
 		4CAE50981D369419009FE262 /* CartoonHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartoonHeadView.h; sourceTree = "<group>"; };
 		4CAE50991D369419009FE262 /* CartoonHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartoonHeadView.m; sourceTree = "<group>"; };
-		4CB2D6AF1DB7C77E00297B61 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Info.plist; sourceTree = "<group>"; };
-		4CB2D6B11DB7C78000297B61 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hans"; path = "zh-Hans.lproj/Info.plist"; sourceTree = "<group>"; };
 		4CC874BD1D7C3E490090E8C7 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		4CC874BF1D7C3E5F0090E8C7 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		4CC874C11D7C3E6F0090E8C7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -260,8 +263,8 @@
 				4C60581E1D424E9E0003EAF3 /* TouchAnimationView.m */,
 				4C5ADED71D44BAB5004713D0 /* TouchInsideAnimationView.h */,
 				4C5ADED81D44BAB5004713D0 /* TouchInsideAnimationView.m */,
+				4CABD0B01DBE48AB00FF62C2 /* Info.plist */,
 				4CA0C72E1D1FAC4E001EDC89 /* Assets.xcassets */,
-				4CB2D6B01DB7C77E00297B61 /* Info.plist */,
 				4CAE50881D3550A4009FE262 /* Images.xcassets */,
 				4CA0C7221D1FAC4E001EDC89 /* Supporting Files */,
 			);
@@ -359,6 +362,7 @@
 				A4FEA1281D2B559900FB7FE0 /* music */,
 				A4FEA12E1D2B559900FB7FE0 /* pic */,
 				A40003F31DB7681000934F38 /* Localizable.strings */,
+				4C5CFA7A1DBE466A00048A5A /* InfoPlist.strings */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -515,8 +519,10 @@
 				A4FEA1391D2B559900FB7FE0 /* baby@2x.png in Resources */,
 				A4FEA1361D2B559900FB7FE0 /* girl.mp3 in Resources */,
 				A4FEA1381D2B559900FB7FE0 /* whitenoise.mp3 in Resources */,
+				4CABD0B11DBE48AB00FF62C2 /* Info.plist in Resources */,
 				4CA0C72F1D1FAC4E001EDC89 /* Assets.xcassets in Resources */,
 				A4FEA13B1D2B559900FB7FE0 /* girl@2x.png in Resources */,
+				4C5CFA781DBE466A00048A5A /* InfoPlist.strings in Resources */,
 				A4E3FB341D3F6E7C00EEEF94 /* 华康圆体W3.otf in Resources */,
 				4CAE50891D3550A4009FE262 /* Images.xcassets in Resources */,
 				4C3DA1F41D3B62650003B5FD /* icon120.png in Resources */,
@@ -652,13 +658,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4CB2D6B01DB7C77E00297B61 /* Info.plist */ = {
+		4C5CFA7A1DBE466A00048A5A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4CB2D6AF1DB7C77E00297B61 /* en */,
-				4CB2D6B11DB7C78000297B61 /* zh-Hans */,
+				4C5CFA791DBE466A00048A5A /* en */,
+				4C5CFA7B1DBE466D00048A5A /* zh-Hans */,
 			);
-			name = Info.plist;
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		A40003F31DB7681000934F38 /* Localizable.strings */ = {
@@ -777,10 +783,7 @@
 				INFOPLIST_FILE = BabySleep/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/BabySleep/opensource",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.michael.babysleep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -804,10 +807,7 @@
 				INFOPLIST_FILE = BabySleep/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/BabySleep/opensource",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.michael.babysleep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

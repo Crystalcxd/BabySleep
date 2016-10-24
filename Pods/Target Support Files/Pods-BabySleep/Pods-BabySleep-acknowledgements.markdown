@@ -485,10 +485,6 @@ THE SOFTWARE.
 
 
 
-## ShareSDK3
-
-Copyright © 2012-2015 mob
-
 ## UITableView+FDTemplateLayoutCell
 
 The MIT License (MIT)

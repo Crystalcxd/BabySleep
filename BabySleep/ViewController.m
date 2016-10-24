@@ -182,11 +182,11 @@
         scrollViewY = 674;
     }
 
-    UIButton *adBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [adBtn setImage:[UIImage imageNamed:@"adx2"] forState:UIControlStateNormal];
-    adBtn.frame = CGRectMake(SCREENWIDTH * 0.5 - 139, scrollViewY, 278, 62);
-    [adBtn addTarget:self action:@selector(goOtherAppDownload) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:adBtn];
+//    UIButton *adBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [adBtn setImage:[UIImage imageNamed:@"adx2"] forState:UIControlStateNormal];
+//    adBtn.frame = CGRectMake(SCREENWIDTH * 0.5 - 139, scrollViewY, 278, 62);
+//    [adBtn addTarget:self action:@selector(goOtherAppDownload) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:adBtn];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playBtnAction:) name:@"pauseMusic" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fadeShareBtn) name:@"fadeShareBtn" object:nil];

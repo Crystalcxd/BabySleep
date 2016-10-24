@@ -43,12 +43,12 @@
     NSMutableArray *selectImageArr = [NSMutableArray arrayWithObjects:@"whitenoise_touch" ,@"suggest_touch",nil];
     NSMutableArray *titleArr = [NSMutableArray arrayWithObjects:NSLocalizedString(@"whitenoise", nil),NSLocalizedString(@"YourAdvice",nil), nil];
     
-    BOOL wxInstalled = [WMUserDefault BoolValueForKey:@"WXInstalled"];
-    if (!wxInstalled) {
-        [imageArr removeObjectAtIndex:1];
-        [selectImageArr removeObjectAtIndex:1];
-        [titleArr removeObjectAtIndex:1];
-    }
+//    BOOL wxInstalled = [WMUserDefault BoolValueForKey:@"WXInstalled"];
+//    if (!wxInstalled) {
+//        [imageArr removeObjectAtIndex:1];
+//        [selectImageArr removeObjectAtIndex:1];
+//        [titleArr removeObjectAtIndex:1];
+//    }
 
     for (int i = 0; i < imageArr.count; i++) {
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(39, 159 + i * 93, 15, 15)];
@@ -81,7 +81,13 @@
         [self.view addSubview:clickBtn];
     }
     
-    TFLargerHitButton *btn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(37 + leftPadding, SCREENHEIGHT - 42, 56, 20)];
+    NSString *str = NSLocalizedString(@"OtherApplications", nil);
+    
+    NSDictionary *attributes = @{ NSFontAttributeName : [UIFont fontWithName:@"DFPYuanW5" size:14]};
+
+    CGSize size = [str boundingRectWithSize:CGSizeMake(SCREENWIDTH, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil].size;
+    
+    TFLargerHitButton *btn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(37 + leftPadding, SCREENHEIGHT - 42, size.width, 20)];
     [btn setTitle:NSLocalizedString(@"OtherApplications", nil) forState:UIControlStateNormal];
     [btn setTitleColor:HexRGB(0x1688D2) forState:UIControlStateNormal];
     [btn.titleLabel setFont:[UIFont fontWithName:@"DFPYuanW5" size:14]];
