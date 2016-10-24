@@ -24,6 +24,7 @@ pod 'UMengAnalytics-NO-IDFA' # 友盟 SDK（无 IDFA）
 pod 'Qiniu' # 七牛
 pod 'ShareSDK3', '~> 3.4.2'
 pod 'Pingpp', '~> 2.2.8'
+pod 'JPush', '~> 2.1.9'
 
 # Helper/Tool
 pod 'UITableView+FDTemplateLayoutCell', '1.3' # cell 布局高度
