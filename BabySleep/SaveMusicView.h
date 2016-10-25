@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "ViewController.h"
+
 #import "MusicData.h"
 
 typedef void(^endSaveMusic)();

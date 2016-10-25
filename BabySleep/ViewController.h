@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+- (void)showRecordBtnWith:(BOOL)show;
+
 - (void)reloadUserData;
 
 @end

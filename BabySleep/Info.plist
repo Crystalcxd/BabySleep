@@ -35,7 +35,9 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
-	<key>LSApplicationQueriesSchemes</key>
+    <key>NSMicrophoneUsageDescription</key>
+    <string> </string>
+    <key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>mqqbrowser</string>
 		<string>mqq</string>

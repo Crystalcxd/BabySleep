@@ -213,6 +213,11 @@ static NSString * const musicIdentifier = @"music";
     [self.tableView reloadData];
 }
 
+- (void)showRecordBtnWith:(BOOL)show
+{
+    self.recordBtn.hidden = !show;
+}
+
 - (void)reloadUserData
 {
     self.userArr = [NSMutableArray new];
@@ -420,6 +425,15 @@ static NSString * const musicIdentifier = @"music";
 
 - (void)showRecordView:(id)sender
 {
+    MusicData *data = [self currentMusicDataWith:self.selectIndexPath];
+    data.selected = NO;
+    
+    self.selectIndexPath = nil;
+    
+    [self.tableView reloadData];
+    
+    [self stopMusic];
+
     UIButton *btn = (UIButton *)sender;
     
     btn.enabled = NO;

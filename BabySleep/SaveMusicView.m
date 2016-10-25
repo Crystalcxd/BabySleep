@@ -82,7 +82,7 @@
         iconTitle.text = @"头像";
         [boardBG addSubview:iconTitle];
         
-        UIView *imageBG = [[UIView alloc]initWithFrame:CGRectMake(148, 198, 80, 80)];
+        UIView *imageBG = [[UIView alloc]initWithFrame:CGRectMake(104, 198, 80, 80)];
         imageBG.layer.cornerRadius = 45;
         imageBG.clipsToBounds = YES;
         [boardBG addSubview:imageBG];
@@ -115,8 +115,9 @@
             selectImageBtn.layer.cornerRadius = 45 * 0.5;
             selectImageBtn.clipsToBounds = YES;
             selectImageBtn.layer.borderWidth = 1;
+            selectImageBtn.layer.borderColor = [UIColor clearColor].CGColor;
             selectImageBtn.tag = TABLEVIEW_BEGIN_TAG + i;
-            [selectImageBtn addTarget:selectImageBtn action:@selector(selectAction:) forControlEvents:UIControlEventTouchUpInside];
+            [selectImageBtn addTarget:self action:@selector(selectAction:) forControlEvents:UIControlEventTouchUpInside];
             [boardBG addSubview:selectImageBtn];
         }
         
@@ -165,6 +166,9 @@
 - (void)cancelAction:(id)sender
 {
     [self removeFromSuperview];
+    
+    ViewController *VC = (ViewController *)self.fatherVC;
+    [VC showRecordBtnWith:YES];
 }
 
 - (void)saveAction:(id)sender

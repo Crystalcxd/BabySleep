@@ -131,12 +131,15 @@
     __weak typeof(self) weakSelf = self;
  
     saveMusicView.EndSaveMusic = ^{
+        [weakSelf.fatherVC showRecordBtnWith:YES];
         [weakSelf.fatherVC reloadUserData];
         [weakSelf performSelector:@selector(fadeRecordView) withObject:nil afterDelay:0.5];
 //        [weakSelf showClearAllMusicAlert];
     };
 
     [self addSubview:saveMusicView];
+    
+    [self.fatherVC showRecordBtnWith:NO];
 }
 
 - (void)deleteRecord
