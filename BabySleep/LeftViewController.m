@@ -36,13 +36,21 @@
     CGFloat leftPadding = SCREENWIDTH - width;
     
     UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake(39 + leftPadding, 38, 71.35, 18.39)];
-    titleView.image = [UIImage imageNamed:@"babysleep_white"];
+    titleView.image = [UIImage imageNamed:NSLocalizedString(@"babysleep_white", nil)];
     [self.view addSubview:titleView];
         
-    NSMutableArray *imageArr = [NSMutableArray arrayWithObjects:@"noise",@"advice", nil];
-    NSMutableArray *selectImageArr = [NSMutableArray arrayWithObjects:@"whitenoise_touch" ,@"suggest_touch",nil];
-    NSMutableArray *titleArr = [NSMutableArray arrayWithObjects:NSLocalizedString(@"whitenoise", nil),NSLocalizedString(@"YourAdvice",nil), nil];
+    NSMutableArray *imageArr = [NSMutableArray arrayWithObjects:@"noise",@"share",@"advice", nil];
+    NSMutableArray *selectImageArr = [NSMutableArray arrayWithObjects:@"whitenoise_touch" ,@"share_touch",@"suggest_touch",nil];
+    NSMutableArray *titleArr = [NSMutableArray arrayWithObjects:NSLocalizedString(@"whitenoise", nil),NSLocalizedString(@"Share", nil),NSLocalizedString(@"YourAdvice",nil), nil];
     
+    NSArray *languages = [NSLocale preferredLanguages];
+    NSString *currentLanguage = [languages objectAtIndex:0];
+    
+    if (![currentLanguage containsString:@"zh"]) {
+        [imageArr removeObjectAtIndex:1];
+        [selectImageArr removeObjectAtIndex:1];
+        [titleArr removeObjectAtIndex:1];
+    }
 //    BOOL wxInstalled = [WMUserDefault BoolValueForKey:@"WXInstalled"];
 //    if (!wxInstalled) {
 //        [imageArr removeObjectAtIndex:1];
@@ -104,7 +112,14 @@
     if (btn.tag == TABLEVIEW_BEGIN_TAG) {
         [self goNoiseView];
     }else if (btn.tag == TABLEVIEW_BEGIN_TAG + 1){
-        [self sendMail];
+        NSArray *languages = [NSLocale preferredLanguages];
+        NSString *currentLanguage = [languages objectAtIndex:0];
+        
+        if (![currentLanguage containsString:@"zh"]) {
+            [self sendMail];
+        }else{
+            [self goShareView];
+        }
     }else{
         [self sendMail];
     }

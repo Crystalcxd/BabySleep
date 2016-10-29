@@ -67,7 +67,7 @@
     [self.view addSubview:bgView];
     
     self.picArray = [NSMutableArray arrayWithObjects:@"baby",@"cleaner",@"girl",@"hairdryer",@"radio", nil];
-    self.titleImgArray = [NSMutableArray arrayWithObjects:@"whitenoisetitle",@"cleanertitle",@"canontitle",@"hairdryertitle",@"radiotitle", nil];
+    self.titleImgArray = [NSMutableArray arrayWithObjects:NSLocalizedString(@"whitenoisetitle", nil),NSLocalizedString(@"cleanertitle", nil),NSLocalizedString(@"canontitle", nil),NSLocalizedString(@"hairdryertitle", nil),NSLocalizedString(@"radiotitle", nil), nil];
     self.musicArray = [NSMutableArray arrayWithObjects:@"audio",@"cleaner",@"girl",@"hairdryer",@"whitenoise", nil];
 
     TFLargerHitButton *leftBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(22, 43, 15, 14)];
@@ -90,7 +90,7 @@
     }
 
     UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake((SCREENWIDTH - 71.35) * 0.5, 40, 71.35, 19.39)];
-    titleView.image = [UIImage imageNamed:@"babysleep"];
+    titleView.image = [UIImage imageNamed:NSLocalizedString(@"babysleep", nil)];
     [self.view addSubview:titleView];
     
     CGFloat scrollViewY = 98;

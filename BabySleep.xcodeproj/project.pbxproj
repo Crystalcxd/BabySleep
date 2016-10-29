@@ -24,7 +24,6 @@
 		4CA834511D30DB9B007543B5 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA834501D30DB9B007543B5 /* libsqlite3.0.tbd */; };
 		4CA834531D30DBAB007543B5 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA834521D30DBAB007543B5 /* libc++.tbd */; };
 		4CA834551D30DDC0007543B5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA834541D30DDC0007543B5 /* CoreTelephony.framework */; };
-		4CABD0B11DBE48AB00FF62C2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CABD0B01DBE48AB00FF62C2 /* Info.plist */; };
 		4CAE50891D3550A4009FE262 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE50881D3550A4009FE262 /* Images.xcassets */; };
 		4CAE508B1D3552AB009FE262 /* adx2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAE508A1D3552AB009FE262 /* adx2@2x.png */; };
 		4CAE50921D368FC5009FE262 /* MptTableHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE508F1D368FC5009FE262 /* MptTableHeadCell.m */; };
@@ -35,6 +34,9 @@
 		4CC874C01D7C3E5F0090E8C7 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC874BF1D7C3E5F0090E8C7 /* libsqlite3.tbd */; };
 		4CC874C21D7C3E6F0090E8C7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC874C11D7C3E6F0090E8C7 /* MobileCoreServices.framework */; };
 		4CC874C41D7C3E8A0090E8C7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC874C31D7C3E8A0090E8C7 /* CoreLocation.framework */; };
+		4CC8F21A1DC458FB0024DA80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8F2181DC458FB0024DA80 /* LaunchScreen.storyboard */; };
+		4CC8F21F1DC45C2B0024DA80 /* iPhone6Plus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8F21E1DC45C2B0024DA80 /* iPhone6Plus@2x.png */; };
+		4CC8F2211DC467C50024DA80 /* iPhone6Plus_en@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8F2201DC467C50024DA80 /* iPhone6Plus_en@2x.png */; };
 		4CE52F991D28CAD9009576C6 /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52F981D28CAD9009576C6 /* SliderViewController.m */; };
 		4CE52FA21D28CB12009576C6 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52F9E1D28CB12009576C6 /* Utility.m */; };
 		4CE52FA31D28CB12009576C6 /* WMUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52FA01D28CB12009576C6 /* WMUserDefault.m */; };
@@ -85,7 +87,6 @@
 		4C5ADED71D44BAB5004713D0 /* TouchInsideAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchInsideAnimationView.h; sourceTree = "<group>"; };
 		4C5ADED81D44BAB5004713D0 /* TouchInsideAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchInsideAnimationView.m; sourceTree = "<group>"; };
 		4C5CFA791DBE466A00048A5A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4C5CFA7B1DBE466D00048A5A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		4C60581D1D424E9E0003EAF3 /* TouchAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchAnimationView.h; sourceTree = "<group>"; };
 		4C60581E1D424E9E0003EAF3 /* TouchAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchAnimationView.m; sourceTree = "<group>"; };
 		4CA0C71F1D1FAC4E001EDC89 /* BabySleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabySleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +123,12 @@
 		4CC874BF1D7C3E5F0090E8C7 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		4CC874C11D7C3E6F0090E8C7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		4CC874C31D7C3E8A0090E8C7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4CC8F2191DC458FB0024DA80 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4CC8F21B1DC459830024DA80 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		4CC8F21C1DC459830024DA80 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		4CC8F21D1DC459830024DA80 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		4CC8F21E1DC45C2B0024DA80 /* iPhone6Plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6Plus@2x.png"; sourceTree = "<group>"; };
+		4CC8F2201DC467C50024DA80 /* iPhone6Plus_en@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6Plus_en@2x.png"; sourceTree = "<group>"; };
 		4CE52F971D28CAD9009576C6 /* SliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderViewController.h; sourceTree = "<group>"; };
 		4CE52F981D28CAD9009576C6 /* SliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderViewController.m; sourceTree = "<group>"; };
 		4CE52F9D1D28CB12009576C6 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
@@ -133,7 +140,6 @@
 		660D8FB022291A445619D421 /* Pods-BabySleep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySleep.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BabySleep/Pods-BabySleep.debug.xcconfig"; sourceTree = "<group>"; };
 		8A4FEDD7B765E24B83469452 /* Pods-BabySleep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySleep.release.xcconfig"; path = "Pods/Target Support Files/Pods-BabySleep/Pods-BabySleep.release.xcconfig"; sourceTree = "<group>"; };
 		A40003F41DB7681400934F38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		A40003F51DB7681500934F38 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		A42349B11D2C9F46009A5ECC /* TFLargerHitButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFLargerHitButton.h; sourceTree = "<group>"; };
 		A42349B21D2C9F46009A5ECC /* TFLargerHitButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFLargerHitButton.m; sourceTree = "<group>"; };
 		A42349B41D2CAD9E009A5ECC /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
@@ -358,6 +364,9 @@
 		A4FEA1271D2B559900FB7FE0 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				4CC8F2201DC467C50024DA80 /* iPhone6Plus_en@2x.png */,
+				4CC8F21E1DC45C2B0024DA80 /* iPhone6Plus@2x.png */,
+				4CC8F2181DC458FB0024DA80 /* LaunchScreen.storyboard */,
 				A4E3FB311D3F6E7B00EEEF94 /* font */,
 				A4FEA1281D2B559900FB7FE0 /* music */,
 				A4FEA12E1D2B559900FB7FE0 /* pic */,
@@ -467,7 +476,7 @@
 		4CA0C7171D1FAC4E001EDC89 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Michael;
 				TargetAttributes = {
 					4CA0C71E1D1FAC4E001EDC89 = {
@@ -517,9 +526,9 @@
 				A4FEA13D1D2B559900FB7FE0 /* radio@2x.png in Resources */,
 				A40003F11DB7681000934F38 /* Localizable.strings in Resources */,
 				A4FEA1391D2B559900FB7FE0 /* baby@2x.png in Resources */,
+				4CC8F21F1DC45C2B0024DA80 /* iPhone6Plus@2x.png in Resources */,
 				A4FEA1361D2B559900FB7FE0 /* girl.mp3 in Resources */,
 				A4FEA1381D2B559900FB7FE0 /* whitenoise.mp3 in Resources */,
-				4CABD0B11DBE48AB00FF62C2 /* Info.plist in Resources */,
 				4CA0C72F1D1FAC4E001EDC89 /* Assets.xcassets in Resources */,
 				A4FEA13B1D2B559900FB7FE0 /* girl@2x.png in Resources */,
 				4C5CFA781DBE466A00048A5A /* InfoPlist.strings in Resources */,
@@ -528,7 +537,9 @@
 				4C3DA1F41D3B62650003B5FD /* icon120.png in Resources */,
 				4CAE508B1D3552AB009FE262 /* adx2@2x.png in Resources */,
 				A4FEA1351D2B559900FB7FE0 /* cleaner.mp3 in Resources */,
+				4CC8F2211DC467C50024DA80 /* iPhone6Plus_en@2x.png in Resources */,
 				A4E3FB351D3F6E7C00EEEF94 /* 华康圆体W5.TTF in Resources */,
+				4CC8F21A1DC458FB0024DA80 /* LaunchScreen.storyboard in Resources */,
 				A4FEA1371D2B559900FB7FE0 /* hairdryer.mp3 in Resources */,
 				A4FEA13A1D2B559900FB7FE0 /* cleaner@2x.png in Resources */,
 			);
@@ -662,16 +673,25 @@
 			isa = PBXVariantGroup;
 			children = (
 				4C5CFA791DBE466A00048A5A /* en */,
-				4C5CFA7B1DBE466D00048A5A /* zh-Hans */,
+				4CC8F21D1DC459830024DA80 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4CC8F2181DC458FB0024DA80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CC8F2191DC458FB0024DA80 /* en */,
+				4CC8F21B1DC459830024DA80 /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 		A40003F31DB7681000934F38 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A40003F41DB7681400934F38 /* en */,
-				A40003F51DB7681500934F38 /* zh-Hans */,
+				4CC8F21C1DC459830024DA80 /* zh-Hans */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
