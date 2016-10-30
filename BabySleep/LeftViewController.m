@@ -35,6 +35,10 @@
     
     CGFloat leftPadding = SCREENWIDTH - width;
     
+    UIView *topView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 109)];
+    topView.backgroundColor = HexRGB(0x4AB5FA);
+    [self.view addSubview:topView];
+
     UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake(39 + leftPadding, 38, 71.35, 18.39)];
     titleView.image = [UIImage imageNamed:NSLocalizedString(@"babysleep_white", nil)];
     [self.view addSubview:titleView];
