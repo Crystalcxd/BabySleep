@@ -37,6 +37,7 @@
 		4CC8F21A1DC458FB0024DA80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8F2181DC458FB0024DA80 /* LaunchScreen.storyboard */; };
 		4CC8F21F1DC45C2B0024DA80 /* iPhone6Plus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8F21E1DC45C2B0024DA80 /* iPhone6Plus@2x.png */; };
 		4CC8F2211DC467C50024DA80 /* iPhone6Plus_en@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8F2201DC467C50024DA80 /* iPhone6Plus_en@2x.png */; };
+		4CC8F2311DC5EB930024DA80 /* adx2_en@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8F2301DC5EB930024DA80 /* adx2_en@2x.png */; };
 		4CE52F991D28CAD9009576C6 /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52F981D28CAD9009576C6 /* SliderViewController.m */; };
 		4CE52FA21D28CB12009576C6 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52F9E1D28CB12009576C6 /* Utility.m */; };
 		4CE52FA31D28CB12009576C6 /* WMUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE52FA01D28CB12009576C6 /* WMUserDefault.m */; };
@@ -129,6 +130,7 @@
 		4CC8F21D1DC459830024DA80 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		4CC8F21E1DC45C2B0024DA80 /* iPhone6Plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6Plus@2x.png"; sourceTree = "<group>"; };
 		4CC8F2201DC467C50024DA80 /* iPhone6Plus_en@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6Plus_en@2x.png"; sourceTree = "<group>"; };
+		4CC8F2301DC5EB930024DA80 /* adx2_en@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adx2_en@2x.png"; sourceTree = "<group>"; };
 		4CE52F971D28CAD9009576C6 /* SliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderViewController.h; sourceTree = "<group>"; };
 		4CE52F981D28CAD9009576C6 /* SliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderViewController.m; sourceTree = "<group>"; };
 		4CE52F9D1D28CB12009576C6 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
@@ -393,6 +395,7 @@
 			children = (
 				4C3DA1F31D3B62650003B5FD /* icon120.png */,
 				4CAE508A1D3552AB009FE262 /* adx2@2x.png */,
+				4CC8F2301DC5EB930024DA80 /* adx2_en@2x.png */,
 				A4FEA12F1D2B559900FB7FE0 /* baby@2x.png */,
 				A4FEA1301D2B559900FB7FE0 /* cleaner@2x.png */,
 				A4FEA1311D2B559900FB7FE0 /* girl@2x.png */,
@@ -542,6 +545,7 @@
 				4CC8F21A1DC458FB0024DA80 /* LaunchScreen.storyboard in Resources */,
 				A4FEA1371D2B559900FB7FE0 /* hairdryer.mp3 in Resources */,
 				A4FEA13A1D2B559900FB7FE0 /* cleaner@2x.png in Resources */,
+				4CC8F2311DC5EB930024DA80 /* adx2_en@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

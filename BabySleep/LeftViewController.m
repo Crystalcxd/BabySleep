@@ -39,7 +39,7 @@
     topView.backgroundColor = HexRGB(0x4AB5FA);
     [self.view addSubview:topView];
 
-    UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake(39 + leftPadding, 38, 71.35, 18.39)];
+    UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake(39 + leftPadding, 33, 98, 47)];
     titleView.image = [UIImage imageNamed:NSLocalizedString(@"babysleep_white", nil)];
     [self.view addSubview:titleView];
         
@@ -104,7 +104,7 @@
     [btn setTitleColor:HexRGB(0x1688D2) forState:UIControlStateNormal];
     [btn.titleLabel setFont:[UIFont fontWithName:@"DFPYuanW5" size:14]];
     [btn addTarget:self action:@selector(goOtherAppDownload) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
+//    [self.view addSubview:btn];
 }
 
 - (void)btnAction:(id)sender
