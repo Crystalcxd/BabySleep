@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8729B0E4D7CAD2B461CCB417EB0DD7BF'
-               BlueprintName = 'UITableView+FDTemplateLayoutCell'
+               BlueprintIdentifier = '9AAC956B74174765805416BDDFDCFF18'
+               BlueprintName = 'RDVTabBarController'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libUITableView+FDTemplateLayoutCell.a'>
+               BuildableName = 'libRDVTabBarController.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

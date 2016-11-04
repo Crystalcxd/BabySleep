@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8729B0E4D7CAD2B461CCB417EB0DD7BF'
-               BlueprintName = 'UITableView+FDTemplateLayoutCell'
+               BlueprintIdentifier = 'D570103AC7E79544314D70BD5AB190A5'
+               BlueprintName = 'WebViewJavascriptBridge'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libUITableView+FDTemplateLayoutCell.a'>
+               BuildableName = 'libWebViewJavascriptBridge.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

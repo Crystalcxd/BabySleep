@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8729B0E4D7CAD2B461CCB417EB0DD7BF'
-               BlueprintName = 'UITableView+FDTemplateLayoutCell'
+               BlueprintIdentifier = '64594F48E7C45EA90DD1729DFE6C650C'
+               BlueprintName = 'UIActivityIndicator-for-SDWebImage'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libUITableView+FDTemplateLayoutCell.a'>
+               BuildableName = 'libUIActivityIndicator-for-SDWebImage.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

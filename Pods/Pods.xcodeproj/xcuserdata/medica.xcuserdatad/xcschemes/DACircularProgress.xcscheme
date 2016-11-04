@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8729B0E4D7CAD2B461CCB417EB0DD7BF'
-               BlueprintName = 'UITableView+FDTemplateLayoutCell'
+               BlueprintIdentifier = 'C791F0A928C1A8FE97074DFC9ACF4E75'
+               BlueprintName = 'DACircularProgress'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libUITableView+FDTemplateLayoutCell.a'>
+               BuildableName = 'libDACircularProgress.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
