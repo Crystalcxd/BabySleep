@@ -40,7 +40,7 @@ PODS:
   - Pingpp/UnionPay (2.2.9):
     - Pingpp/Core
   - pop (1.0.9)
-  - Qiniu (7.1.2):
+  - Qiniu (7.1.4):
     - AFNetworking (~> 3)
     - HappyDNS (~> 0.3)
   - RDVTabBarController (1.1.9)
@@ -106,7 +106,7 @@ SPEC CHECKSUMS:
   MJRefresh: 4bce3b592ae052ff89473b2907278bf8a80abdd3
   Pingpp: e069eec830970aa41640a6eeceb86ac6917e98b4
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
-  Qiniu: d57cb922b5c31f0d1cfe2c8fea3cf83997cdcf62
+  Qiniu: a4c962782035ee25b9da3e195181d8c384bb75be
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
@@ -123,4 +123,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 13e52de8e696985726e0c70a5f53b782436b5c77
 
-COCOAPODS: 1.2.0.beta.1
+COCOAPODS: 1.1.1
