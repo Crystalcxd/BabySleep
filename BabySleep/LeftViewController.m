@@ -54,6 +54,8 @@
         [imageArr removeObjectAtIndex:1];
         [selectImageArr removeObjectAtIndex:1];
         [titleArr removeObjectAtIndex:1];
+        
+        titleView.frame = CGRectMake(39 + leftPadding, 33, 103, 42);
     }
 //    BOOL wxInstalled = [WMUserDefault BoolValueForKey:@"WXInstalled"];
 //    if (!wxInstalled) {

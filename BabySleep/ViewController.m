@@ -90,6 +90,9 @@
     }
 
     UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake((SCREENWIDTH - 71.35) * 0.5, 40, 71.35, 19.39)];
+    if (![Utility ifChinese]) {
+        titleView.frame = CGRectMake((SCREENWIDTH - 98.6) * 0.5, 43, 98.6, 14.32);
+    }
     titleView.image = [UIImage imageNamed:NSLocalizedString(@"babysleep", nil)];
     [self.view addSubview:titleView];
     

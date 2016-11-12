@@ -180,4 +180,12 @@ NSUInteger DeviceSystemMajorVersion(){
     
     return FALSE;
 }
+
++(BOOL)ifChinese
+{
+    NSArray *languages = [NSLocale preferredLanguages];
+    NSString *currentLanguage = [languages objectAtIndex:0];
+    
+    return [currentLanguage containsString:@"zh"];
+}
 @end
