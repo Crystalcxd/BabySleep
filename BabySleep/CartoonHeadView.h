@@ -14,4 +14,6 @@
 
 @property (nonatomic , strong) UIImageView *titleView;
 
+- (void)setTitleImage:(NSString *)imageStr;
+
 @end

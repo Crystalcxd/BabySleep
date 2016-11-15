@@ -31,7 +31,7 @@
     UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 29, SCREENWIDTH, 25)];
     title.textColor = HexRGB(0x1688D2);
     title.textAlignment = NSTextAlignmentCenter;
-    title.text = NSLocalizedString(@"noise", nil);
+    title.text = NSLocalizedString(@"whitenoise", nil);
     title.font = [UIFont fontWithName:@"DFPYuanW5" size:18];
     [self.view addSubview:title];
     

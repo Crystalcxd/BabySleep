@@ -355,7 +355,8 @@ NS_INLINE void tipWithMessage(NSString *message){
     if ([objc isKindOfClass:[NSString class]]) {
         NSString *imgUrl = (NSString *)objc;
         cell.imageView.image = [UIImage imageNamed:imgUrl];
-        cell.titleView.image = [UIImage imageNamed:self.titleImgArray[index]];
+//        cell.titleView.image = [UIImage imageNamed:self.titleImgArray[index]];
+        [cell setTitleImage:self.titleImgArray[index]];
     }
     
     return cell;
