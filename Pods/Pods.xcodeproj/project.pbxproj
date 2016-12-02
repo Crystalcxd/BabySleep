@@ -922,6 +922,7 @@
 		BB6A27DF8849E443178DD56ABFC0EC55 /* SLKTextViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLKTextViewController.h; path = Source/SLKTextViewController.h; sourceTree = "<group>"; };
 		BBE00C67AE7937EF656C4742A25156A3 /* MJRefreshConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshConst.m; path = MJRefresh/MJRefreshConst.m; sourceTree = "<group>"; };
 		BC1225BCA592A66DCC47461E53B96A81 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		BD611B85314F98A7616894A9C04E923D /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMMobClick.framework; path = "umsdk_IOS_analyics_no-idfa_v4.1.5/UMMobClick.framework"; sourceTree = "<group>"; };
 		BE1AD57034A6B2D81059F71DEF8E27C7 /* RegexKitLite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		BE9C444A6535EDBD1BF01AD37F57FA09 /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackGifFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
 		BEE0650D40C4D9DFC5FAF645F91F781A /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
@@ -941,7 +942,6 @@
 		C8420EBA1FE0FDBE6084B7B4982D5AE9 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
 		C8B398ECC252DA2130BE1623A2E6414B /* QiniuSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QiniuSDK.h; path = QiniuSDK/QiniuSDK.h; sourceTree = "<group>"; };
 		C8D7EA7A1A091694D66160F22895E208 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C92784EC32C6F55376B2DF1799466FFD /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMMobClick.framework; path = "umsdk_IOS_analyics_no-idfa_v4.1.3/UMMobClick.framework"; sourceTree = "<group>"; };
 		C9D9DD98AF42A6C8FD249F5D482C58C3 /* QNSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNSessionManager.h; path = QiniuSDK/Http/QNSessionManager.h; sourceTree = "<group>"; };
 		CA24F0DB1E6ACB04F1CCB2495E33A61C /* NSDictionary+MTLManipulationAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MTLManipulationAdditions.h"; path = "Mantle/NSDictionary+MTLManipulationAdditions.h"; sourceTree = "<group>"; };
 		CAAF6C807F99107AEE8CCA5F9AB5BDF3 /* QNALAssetFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNALAssetFile.h; path = QiniuSDK/Common/QNALAssetFile.h; sourceTree = "<group>"; };
@@ -1528,14 +1528,6 @@
 			path = "../Target Support Files/WebViewJavascriptBridge";
 			sourceTree = "<group>";
 		};
-		4413B49B5B727A6BD3F6DE494E5F0A92 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C92784EC32C6F55376B2DF1799466FFD /* UMMobClick.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		469816F7DABE649AC727E9450E7893AF /* UITableView+FDTemplateLayoutCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1884,6 +1876,14 @@
 			path = "../Target Support Files/UIActivityIndicator-for-SDWebImage";
 			sourceTree = "<group>";
 		};
+		9907B78137B2CBCC05467A3976F7CF05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD611B85314F98A7616894A9C04E923D /* UMMobClick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9BB97488117FB112566B3C599E7F6DA0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -2175,7 +2175,7 @@
 		E03E27BEF8433285579648C841273C6A /* UMengAnalytics-NO-IDFA */ = {
 			isa = PBXGroup;
 			children = (
-				4413B49B5B727A6BD3F6DE494E5F0A92 /* Frameworks */,
+				9907B78137B2CBCC05467A3976F7CF05 /* Frameworks */,
 			);
 			name = "UMengAnalytics-NO-IDFA";
 			path = "UMengAnalytics-NO-IDFA";
