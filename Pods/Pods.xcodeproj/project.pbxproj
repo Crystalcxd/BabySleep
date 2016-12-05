@@ -673,6 +673,7 @@
 		00A37D1B2EF07D3AE5870AF0A34F7A69 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
 		00D3528D25EEF40F4555104BDB0C840A /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
 		00E1DF39809C6B4DA454B2B0AC549DBE /* QNIpModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNIpModel.m; path = HappyDNS/Assessment/QNIpModel.m; sourceTree = "<group>"; };
+		01714B23722CEF8808E43FB492998FB4 /* QQConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QQConnector.framework; path = ShareSDK/Support/PlatformConnector/QQConnector.framework; sourceTree = "<group>"; };
 		017326D089FBB08DFA6B22360E7FE8DB /* NSDate+DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+DateTools.h"; path = "DateTools/NSDate+DateTools.h"; sourceTree = "<group>"; };
 		01C0E3027867F440BA35A3BD36CB2060 /* QNAsyncRun.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNAsyncRun.m; path = QiniuSDK/Common/QNAsyncRun.m; sourceTree = "<group>"; };
 		0255E7BF6D3A48B803888071FCAFD920 /* Valet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Valet.xcconfig; sourceTree = "<group>"; };
@@ -704,7 +705,6 @@
 		0A155343544B359D818AEDA20C25310E /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		0B56FA7F59B865407D6C83A6D49DD1D2 /* POPBasicAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPBasicAnimation.h; path = pop/POPBasicAnimation.h; sourceTree = "<group>"; };
 		0C19DA78F4C182D95195FBC8CF5F2C26 /* NSError+MTLModelException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+MTLModelException.h"; path = "Mantle/NSError+MTLModelException.h"; sourceTree = "<group>"; };
-		0C1BF62D8CABB475209743065F351DA3 /* FacebookConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookConnector.framework; path = ShareSDK/Support/PlatformConnector/FacebookConnector.framework; sourceTree = "<group>"; };
 		0C88D2FFD95EF24CD77029C2D8195456 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
 		0ED4F615F261BB59C4ECE4068BA80A55 /* WBHttpRequest+WeiboUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBHttpRequest+WeiboUser.h"; path = "libWeiboSDK/WBHttpRequest+WeiboUser.h"; sourceTree = "<group>"; };
 		0F5D0C341E3F99AF1748A231C5F016D9 /* GVUserDefaults-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GVUserDefaults-prefix.pch"; sourceTree = "<group>"; };
@@ -875,6 +875,7 @@
 		5EAB36E5954EE5DD54A036A8909CBC04 /* QNHttpDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNHttpDelegate.h; path = QiniuSDK/Http/QNHttpDelegate.h; sourceTree = "<group>"; };
 		5FBB6C8C374F2BD257660D8A2FFB963B /* QNSystem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNSystem.h; path = QiniuSDK/Common/QNSystem.h; sourceTree = "<group>"; };
 		60B7BBA03917748A1876F19D4606AF17 /* WebViewJavascriptBridge_JS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WebViewJavascriptBridge_JS.m; path = WebViewJavascriptBridge/WebViewJavascriptBridge_JS.m; sourceTree = "<group>"; };
+		60F8C3F58FA86F173F455D198BEEFD49 /* ShareSDKConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShareSDKConnector.framework; path = ShareSDK/Support/Required/ShareSDKConnector.framework; sourceTree = "<group>"; };
 		6304A29E44BEEAEEA30F0D470677B927 /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = openSDK1.7.2/WXApi.h; sourceTree = "<group>"; };
 		632992516CF0656FA6F38029D7CEF38D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		638913E89A473E6CE5CA502CEAB43B5F /* QNNetworkInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNNetworkInfo.h; path = HappyDNS/Common/QNNetworkInfo.h; sourceTree = "<group>"; };
@@ -916,6 +917,8 @@
 		743440D350C50623C9838B67C16519CE /* libWebViewJavascriptBridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libWebViewJavascriptBridge.a; path = libWebViewJavascriptBridge.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		74904B57522AEF2CC177730E77301619 /* GVUserDefaults.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GVUserDefaults.xcconfig; sourceTree = "<group>"; };
 		76267022A400100224494E3A6E34AA17 /* MTLEXTScope.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLEXTScope.h; path = Mantle/extobjc/MTLEXTScope.h; sourceTree = "<group>"; };
+		76ABA5C43BF73D88E5F60B30B5516D6B /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TencentOpenApi_IOS_Bundle.bundle; path = ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		76D042270ECB68ED1B4996F695E74131 /* FacebookConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookConnector.framework; path = ShareSDK/Support/PlatformConnector/FacebookConnector.framework; sourceTree = "<group>"; };
 		7767F0F883BB8D39505CC0FCE1654C37 /* HMSegmentedControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HMSegmentedControl.h; path = HMSegmentedControl/HMSegmentedControl.h; sourceTree = "<group>"; };
 		786E7594A2BAD623FD0FA0CDF239BD09 /* MTLModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLModel.m; path = Mantle/MTLModel.m; sourceTree = "<group>"; };
 		790E131C93D59771BDC6438BF6E19B1A /* QNDnsManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNDnsManager.m; path = HappyDNS/Common/QNDnsManager.m; sourceTree = "<group>"; };
@@ -968,7 +971,6 @@
 		8D2B45558DA545251572594663853188 /* UIResponder+SLKAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIResponder+SLKAdditions.h"; path = "Source/UIResponder+SLKAdditions.h"; sourceTree = "<group>"; };
 		8DBD4E4B8ABA215C0FDEEC196D7793DC /* Mantle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Mantle.h; path = Mantle/Mantle.h; sourceTree = "<group>"; };
 		8DCBE6555781B2D9361C13E109807804 /* FloatConversion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FloatConversion.h; path = pop/WebCore/FloatConversion.h; sourceTree = "<group>"; };
-		8E2C23D8CFA0BDD3655FEE6AEAB6C251 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = ShareSDK/Support/PlatformSDK/FacebookMessengerSDK/FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
 		8E301046FFC2E56A12268B11D0887434 /* RDVTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RDVTabBarController.m; path = RDVTabBarController/RDVTabBarController.m; sourceTree = "<group>"; };
 		8EA737C9080BFDA495B65B3A1138527E /* DateTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DateTools-dummy.m"; sourceTree = "<group>"; };
 		8EC2D629074986159F6D66FAE0604F1A /* RDVTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RDVTabBarController.xcconfig; sourceTree = "<group>"; };
@@ -1020,6 +1022,7 @@
 		A174E42CD4F18D5F5860DBACD4C7C125 /* ELCAssetPicker.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ELCAssetPicker.xib; path = Classes/ELCImagePicker/Resources/ELCAssetPicker.xib; sourceTree = "<group>"; };
 		A1DEA3986C0B8767F1CB44F79AA68F2C /* WebViewJavascriptBridgeBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebViewJavascriptBridgeBase.h; path = WebViewJavascriptBridge/WebViewJavascriptBridgeBase.h; sourceTree = "<group>"; };
 		A201CE8CF08B347BDE292DD33F785774 /* libGBDeviceInfo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libGBDeviceInfo.a; path = libGBDeviceInfo.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3839916ADD9DBB8141EE6574909C0CA /* ShareSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShareSDK.framework; path = ShareSDK/ShareSDK.framework; sourceTree = "<group>"; };
 		A416B5ADA151A0DED3E4B19AEFBE74FE /* POPAnimationEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationEvent.h; path = pop/POPAnimationEvent.h; sourceTree = "<group>"; };
 		A46D554ACB336F33E1A2B1102B8F9976 /* SLKTextInputbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLKTextInputbar.m; path = Source/SLKTextInputbar.m; sourceTree = "<group>"; };
 		A4E3E10F34C224F454E107EC66361172 /* MTLManagedObjectAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLManagedObjectAdapter.h; path = Mantle/MTLManagedObjectAdapter.h; sourceTree = "<group>"; };
@@ -1042,6 +1045,7 @@
 		AC89662D8195BFC8196A5CD789EA3E36 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAFNetworking.a; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA06D67A359A9ABF25CCFAD355FEB38 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
 		AE30451B56D18EA338246124D49557E1 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		AE9700E63D86D543743E43BB4BAF67AA /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TencentOpenAPI.framework; path = ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenAPI.framework; sourceTree = "<group>"; };
 		AEB75567C5799AE9839885A57296B282 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
 		AFAAF451B2BD34EC693EC0DAAA59C7F4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		AFD7F18893CE78B77817D1BBE28CC579 /* RegexKitLite-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RegexKitLite-prefix.pch"; sourceTree = "<group>"; };
@@ -1062,7 +1066,6 @@
 		B82ACBF674B8DCB29448BD5EC8F6B4A0 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTTAttributedLabel.h; path = TTTAttributedLabel/TTTAttributedLabel.h; sourceTree = "<group>"; };
 		B97D71D5FD7E15B0A859B51CE3CDBEC3 /* libDACircularProgress.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libDACircularProgress.a; path = libDACircularProgress.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6CB403E846AD6845AC8A7C53910D68 /* WBSDKBasicButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBSDKBasicButton.h; path = libWeiboSDK/WBSDKBasicButton.h; sourceTree = "<group>"; };
-		BA771BD68D2D9B280F9433B845168652 /* ShareSDKConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShareSDKConnector.framework; path = ShareSDK/Support/Required/ShareSDKConnector.framework; sourceTree = "<group>"; };
 		BB7F5EC448C661FE78F5391505DDF9A5 /* POPAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationInternal.h; path = pop/POPAnimationInternal.h; sourceTree = "<group>"; };
 		BBA5C6E98EEDBE2B7841CED2A0EE19F6 /* POPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDefines.h; path = pop/POPDefines.h; sourceTree = "<group>"; };
 		BBBB1127A43A1B64BF68279021E3E0FA /* POP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POP.h; path = pop/POP.h; sourceTree = "<group>"; };
@@ -1118,7 +1121,6 @@
 		D0D8B1341DD6A21CA4ADEB3D89D3F352 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
 		D0DD5AA953AD852F9E4967E2302D22D5 /* Pingpp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Pingpp.h; path = lib/Pingpp.h; sourceTree = "<group>"; };
 		D13333E7DC151E71ECCC90737238E90F /* MJRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoNormalFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
-		D1AF230C7B5D8561AACD1EE0E8ED1927 /* ShareSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShareSDK.framework; path = ShareSDK/ShareSDK.framework; sourceTree = "<group>"; };
 		D30F1833DDBE94B8937B7F95834FA2C4 /* Overlay@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "Overlay@2x.png"; path = "Classes/ELCImagePicker/Resources/Overlay@2x.png"; sourceTree = "<group>"; };
 		D3609BA2A65B1573247AC1CDA7A1FC84 /* Valet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Valet.h; path = Valet/Valet.h; sourceTree = "<group>"; };
 		D3D2339E7026F972ACD3FB6D2EC91176 /* QNConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNConfiguration.m; path = QiniuSDK/Storage/QNConfiguration.m; sourceTree = "<group>"; };
@@ -1129,8 +1131,8 @@
 		D4E6DFF6851CA5737C4F71CA138150F7 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
 		D54E95F9449B9DE9B5B0F361961292A2 /* QNDomain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNDomain.m; path = HappyDNS/Common/QNDomain.m; sourceTree = "<group>"; };
 		D561DCCC63AFB27B1CE586067650AF93 /* UITableView+FDTemplateLayoutCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell-dummy.m"; sourceTree = "<group>"; };
+		D57F44C6662C9C549C1C2D01A9E37432 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = ShareSDK/Support/PlatformSDK/FacebookMessengerSDK/FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
 		D587CEF31E281A9E46732936BBD20869 /* JPUSHService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JPUSHService.h; path = lib/JPUSHService.h; sourceTree = "<group>"; };
-		D5CA04CBDD73B47452D26E79C68AB5D9 /* ShareSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = ShareSDK.bundle; path = ShareSDK/Support/Required/ShareSDK.bundle; sourceTree = "<group>"; };
 		D64113E901A8806E8A24293E80121EDD /* VALSynchronizableValet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VALSynchronizableValet.h; path = Valet/VALSynchronizableValet.h; sourceTree = "<group>"; };
 		D642043E4F01D29B96AB057E07805C7B /* ELCImagePickerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ELCImagePickerController.xcconfig; sourceTree = "<group>"; };
 		D6DE149E1A0E7DE716B7B7DACE2B90E9 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
@@ -1143,6 +1145,7 @@
 		DAF53ADAA2E6B9D5FC511A7AD9DBC10F /* libjpush-ios-2.1.9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libjpush-ios-2.1.9.a"; path = "lib/libjpush-ios-2.1.9.a"; sourceTree = "<group>"; };
 		DB3719785DA97692E5B498993ED6E084 /* DTError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTError.m; path = DateTools/DTError.m; sourceTree = "<group>"; };
 		DB647B721C74812BDF697D77D0686FE5 /* QNResolver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNResolver.m; path = HappyDNS/Local/QNResolver.m; sourceTree = "<group>"; };
+		DC222B15F573CB46AA34D5207A5CC7A5 /* ShareSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = ShareSDK.bundle; path = ShareSDK/Support/Required/ShareSDK.bundle; sourceTree = "<group>"; };
 		DC6F12D753A443D8FA040AFA85492263 /* libUITableView+FDTemplateLayoutCell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libUITableView+FDTemplateLayoutCell.a"; path = "libUITableView+FDTemplateLayoutCell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC9A517E33563CB2661B2F4854C874DA /* MTLManagedObjectAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLManagedObjectAdapter.m; path = Mantle/MTLManagedObjectAdapter.m; sourceTree = "<group>"; };
 		DD065957CC68E7B9D00858CD045D62BB /* QNHijackingDetectWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNHijackingDetectWrapper.h; path = HappyDNS/Local/QNHijackingDetectWrapper.h; sourceTree = "<group>"; };
@@ -1537,6 +1540,14 @@
 			path = WebViewJavascriptBridge;
 			sourceTree = "<group>";
 		};
+		0CE511CC815C2F9E455CB1EEFCC707BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3839916ADD9DBB8141EE6574909C0CA /* ShareSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0E89EAC072CB1912D2B95CE57AB672F3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1548,6 +1559,14 @@
 			path = "../Target Support Files/HappyDNS";
 			sourceTree = "<group>";
 		};
+		0E8AA3BDD8F76153CB2D5F0925B68AFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60F8C3F58FA86F173F455D198BEEFD49 /* ShareSDKConnector.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0FDFC431BB3649A740A18F53C6CE863B /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
@@ -1555,6 +1574,23 @@
 				A8206415421C5764529B6DFD3A518CE6 /* AFNetworkReachabilityManager.m */,
 			);
 			name = Reachability;
+			sourceTree = "<group>";
+		};
+		1083D504F020BB6645CDEAA3AB44B317 /* ShareSDK */ = {
+			isa = PBXGroup;
+			children = (
+				0E8AA3BDD8F76153CB2D5F0925B68AFF /* Frameworks */,
+				F251D1C2A848CCC8EDF04F9C7215E0E9 /* Resources */,
+			);
+			name = ShareSDK;
+			sourceTree = "<group>";
+		};
+		1114552B349268E057FADD7B2F2B9BCA /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				D29BED5A743087E941ECDDF769397DCA /* Frameworks */,
+			);
+			name = Facebook;
 			sourceTree = "<group>";
 		};
 		1184C75859AB3CD606A7A8ACD31170D5 /* JPush */ = {
@@ -1817,6 +1853,14 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		4893DD28FE67831C39DF70D9D258915D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				76ABA5C43BF73D88E5F60B30B5516D6B /* TencentOpenApi_IOS_Bundle.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		54209D5D3BC132879AC2B0819527FFFC /* UMengAnalytics-NO-IDFA */ = {
 			isa = PBXGroup;
 			children = (
@@ -1835,14 +1879,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SlackTextViewController";
-			sourceTree = "<group>";
-		};
-		5A7EC7ED1696A517502CC792B487C7CE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D1AF230C7B5D8561AACD1EE0E8ED1927 /* ShareSDK.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		5DE1D49CADF68F2C5CFAA406C226914C /* Pods */ = {
@@ -1868,7 +1904,7 @@
 				E99117CD4772795682C531C7551B8A3D /* RDVTabBarController */,
 				63B9015608E4950DCCBF41183E8BA0CA /* RegexKitLite */,
 				464361A4C8A90035CAD07F9BA33942AA /* SDWebImage */,
-				86A012BED7047ACB229C76B98CE9CC8A /* ShareSDK3 */,
+				AFE994F62622C47BA5BE58E79BB33CF9 /* ShareSDK3 */,
 				2409153CA59F22541B9DACAE246A9E8B /* SlackTextViewController */,
 				DE2312BB4714EA6128FB65AB7AA1C1A3 /* TTTAttributedLabel */,
 				A8E37BD3838033786A711D55730251AD /* UIActivityIndicator-for-SDWebImage */,
@@ -1881,14 +1917,6 @@
 				1DA71A278A302E883E906FBED36B426A /* YYModel */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		5DFB516BA852B20FB64BD4CDB7318D5C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BA771BD68D2D9B280F9433B845168652 /* ShareSDKConnector.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		5FD1AE99E300663AF811C9C687BA5A92 /* Frameworks */ = {
@@ -1953,14 +1981,6 @@
 				2BC4755766AC4DBF395B3A0F596C0907 /* UIView+WebCacheOperation.m */,
 			);
 			name = Core;
-			sourceTree = "<group>";
-		};
-		700DEC9AED525ADEF108F7F23E937424 /* ShareSDKPlatforms */ = {
-			isa = PBXGroup;
-			children = (
-				AFA5A231DBAF64C5514EEBF40B660093 /* Facebook */,
-			);
-			name = ShareSDKPlatforms;
 			sourceTree = "<group>";
 		};
 		72C1680BAAE1CAA7882B5B6FA3A61AEE /* WeChat_SDK */ = {
@@ -2098,15 +2118,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		86A012BED7047ACB229C76B98CE9CC8A /* ShareSDK3 */ = {
+		9080B7F62E3C371FAAB714820DE584D5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5A7EC7ED1696A517502CC792B487C7CE /* Frameworks */,
-				E407DC897DDED9C1E7B308BEE13654D7 /* ShareSDK */,
-				700DEC9AED525ADEF108F7F23E937424 /* ShareSDKPlatforms */,
+				01714B23722CEF8808E43FB492998FB4 /* QQConnector.framework */,
+				AE9700E63D86D543743E43BB4BAF67AA /* TencentOpenAPI.framework */,
 			);
-			name = ShareSDK3;
-			path = ShareSDK3;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		9101DA7563D4CD3946E3B741AEAE5620 /* Pods-BabySleep */ = {
@@ -2247,12 +2265,15 @@
 			path = "../Target Support Files/Masonry";
 			sourceTree = "<group>";
 		};
-		AFA5A231DBAF64C5514EEBF40B660093 /* Facebook */ = {
+		AFE994F62622C47BA5BE58E79BB33CF9 /* ShareSDK3 */ = {
 			isa = PBXGroup;
 			children = (
-				D3E9FDFA457273F4CED829F75AFF5E02 /* Frameworks */,
+				0CE511CC815C2F9E455CB1EEFCC707BB /* Frameworks */,
+				1083D504F020BB6645CDEAA3AB44B317 /* ShareSDK */,
+				FE9AC68C2508BB84C5F66F6AD007B6BC /* ShareSDKPlatforms */,
 			);
-			name = Facebook;
+			name = ShareSDK3;
+			path = ShareSDK3;
 			sourceTree = "<group>";
 		};
 		B717B8C2BF7F9B6B95C7858CA58E942C /* Support Files */ = {
@@ -2388,6 +2409,15 @@
 			path = "../Target Support Files/pop";
 			sourceTree = "<group>";
 		};
+		BEAFF2AE31797EB8446B8FB62A6D239C /* QQ */ = {
+			isa = PBXGroup;
+			children = (
+				9080B7F62E3C371FAAB714820DE584D5 /* Frameworks */,
+				4893DD28FE67831C39DF70D9D258915D /* Resources */,
+			);
+			name = QQ;
+			sourceTree = "<group>";
+		};
 		BF9EAB58E77E9D0D8E5C59DAA7BD45B3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -2432,19 +2462,11 @@
 			path = "../Target Support Files/MJRefresh";
 			sourceTree = "<group>";
 		};
-		C76A4E75EBBAC636C229284DC08F076B /* Resources */ = {
+		D29BED5A743087E941ECDDF769397DCA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D5CA04CBDD73B47452D26E79C68AB5D9 /* ShareSDK.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		D3E9FDFA457273F4CED829F75AFF5E02 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0C1BF62D8CABB475209743065F351DA3 /* FacebookConnector.framework */,
-				8E2C23D8CFA0BDD3655FEE6AEAB6C251 /* FBSDKMessengerShareKit.framework */,
+				76D042270ECB68ED1B4996F695E74131 /* FacebookConnector.framework */,
+				D57F44C6662C9C549C1C2D01A9E37432 /* FBSDKMessengerShareKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2545,15 +2567,6 @@
 			);
 			name = AFNetworking;
 			path = AFNetworking;
-			sourceTree = "<group>";
-		};
-		E407DC897DDED9C1E7B308BEE13654D7 /* ShareSDK */ = {
-			isa = PBXGroup;
-			children = (
-				5DFB516BA852B20FB64BD4CDB7318D5C /* Frameworks */,
-				C76A4E75EBBAC636C229284DC08F076B /* Resources */,
-			);
-			name = ShareSDK;
 			sourceTree = "<group>";
 		};
 		E441FCC889737BEC3E6F5C61076C3EC4 /* Pingpp */ = {
@@ -2670,6 +2683,14 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/RegexKitLite";
+			sourceTree = "<group>";
+		};
+		F251D1C2A848CCC8EDF04F9C7215E0E9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC222B15F573CB46AA34D5207A5CC7A5 /* ShareSDK.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		F45676C74D6238D8F2C44F5689D93CB4 /* Support Files */ = {
@@ -2814,6 +2835,15 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Mantle";
+			sourceTree = "<group>";
+		};
+		FE9AC68C2508BB84C5F66F6AD007B6BC /* ShareSDKPlatforms */ = {
+			isa = PBXGroup;
+			children = (
+				1114552B349268E057FADD7B2F2B9BCA /* Facebook */,
+				BEAFF2AE31797EB8446B8FB62A6D239C /* QQ */,
+			);
+			name = ShareSDKPlatforms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

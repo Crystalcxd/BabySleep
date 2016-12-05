@@ -53,6 +53,7 @@ PODS:
     - ShareSDK3/ShareSDK (= 3.5.2)
   - ShareSDK3/ShareSDK (3.5.2)
   - ShareSDK3/ShareSDKPlatforms/Facebook (3.5.2)
+  - ShareSDK3/ShareSDKPlatforms/QQ (3.5.2)
   - SlackTextViewController (1.9.5)
   - TTTAttributedLabel (2.0.0)
   - UIActivityIndicator-for-SDWebImage (1.2):
@@ -87,6 +88,7 @@ DEPENDENCIES:
   - SDWebImage
   - ShareSDK3 (~> 3.5.2)
   - ShareSDK3/ShareSDKPlatforms/Facebook
+  - ShareSDK3/ShareSDKPlatforms/QQ
   - SlackTextViewController
   - TTTAttributedLabel (~> 2.0.0)
   - UIActivityIndicator-for-SDWebImage
@@ -131,6 +133,6 @@ SPEC CHECKSUMS:
   WeiboSDK: acb067053668102cf07d01aa7604350162c2e466
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: a8be59cef79170b2619ac105c35863862f9b1e2f
+PODFILE CHECKSUM: 1d4d45016b77c3f04905315bd05a1a54a1b9ea8e
 
 COCOAPODS: 1.2.0.beta.1
