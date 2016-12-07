@@ -25,7 +25,6 @@ pod 'DACircularProgress'
 pod 'UIActivityIndicator-for-SDWebImage'
 
 # Vendor
-pod 'WeChat_SDK', '~> 1.7.2.1'
 pod 'UMengAnalytics-NO-IDFA' # 友盟 SDK（无 IDFA）
 pod 'Qiniu' # 七牛
 pod 'Pingpp', '~> 2.2.8'
@@ -38,6 +37,7 @@ pod 'ShareSDK3', '~> 3.5.2'
 pod 'ShareSDK3/ShareSDKPlatforms/Facebook'
 pod 'ShareSDK3/ShareSDKPlatforms/QQ'
 pod 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
+pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
 pod 'MOBFoundation', '~> 2.2.3'
 
 # Helper/Tool

@@ -55,6 +55,7 @@ PODS:
   - ShareSDK3/ShareSDKPlatforms/Facebook (3.5.2)
   - ShareSDK3/ShareSDKPlatforms/QQ (3.5.2)
   - ShareSDK3/ShareSDKPlatforms/SinaWeibo (3.5.2)
+  - ShareSDK3/ShareSDKPlatforms/WeChat (3.5.2)
   - SlackTextViewController (1.9.5)
   - TTTAttributedLabel (2.0.0)
   - UIActivityIndicator-for-SDWebImage (1.2):
@@ -63,7 +64,6 @@ PODS:
   - UMengAnalytics-NO-IDFA (4.1.5)
   - Valet (2.2.3)
   - WebViewJavascriptBridge (5.0.5)
-  - WeChat_SDK (1.7.2.1)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
@@ -90,6 +90,7 @@ DEPENDENCIES:
   - ShareSDK3/ShareSDKPlatforms/Facebook
   - ShareSDK3/ShareSDKPlatforms/QQ
   - ShareSDK3/ShareSDKPlatforms/SinaWeibo
+  - ShareSDK3/ShareSDKPlatforms/WeChat
   - SlackTextViewController
   - TTTAttributedLabel (~> 2.0.0)
   - UIActivityIndicator-for-SDWebImage
@@ -97,7 +98,6 @@ DEPENDENCIES:
   - UMengAnalytics-NO-IDFA
   - Valet
   - WebViewJavascriptBridge (~> 5.0.5)
-  - WeChat_SDK (~> 1.7.2.1)
   - YYModel (~> 1.0.4)
 
 SPEC CHECKSUMS:
@@ -129,9 +129,8 @@ SPEC CHECKSUMS:
   UMengAnalytics-NO-IDFA: f1b08b540eba6ebad044a574cae6d988cf40cfda
   Valet: c78c7d2e4b2d104d29b9bc62c8f9aa38fbc901eb
   WebViewJavascriptBridge: a4d502315f1b8d9a51cd6a9174147ed567ec3bc5
-  WeChat_SDK: ecf5879b5cabcc953c9acc2d759ade18adbff39a
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 76531267d8c49abf7631dc0a6731175383c0c055
+PODFILE CHECKSUM: ae54bbd2771568af545c19aa231f7a3ee6212b9d
 
 COCOAPODS: 1.2.0.beta.1
