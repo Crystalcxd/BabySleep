@@ -16,6 +16,8 @@
 
 #import "WXApi.h"
 
+#import <ShareSDK/ShareSDK.h>
+
 @interface ShareViewController ()<ShareViewDelegate>
 
 @end
@@ -58,6 +60,16 @@
 
 - (void)clickAction:(NSInteger)tag
 {
+    NSMutableDictionary *shareParams = [NSMutableDictionary dictionary];
+
+    [shareParams SSDKSetupFacebookParamsByText:NSLocalizedString(@"BabySleepAds", nil) image:nil url:[NSURL URLWithString:@"https://itunes.apple.com/cn/app/id1128178648?mt=8"] urlTitle:NSLocalizedString(@"Baby's fast sleep", nil) urlName:NSLocalizedString(@"Baby's fast sleep", nil) attachementUrl:nil type:SSDKContentTypeWebPage];
+    
+    [ShareSDK share:SSDKPlatformTypeFacebook parameters:shareParams onStateChanged:^(SSDKResponseState state, NSDictionary *userData, SSDKContentEntity *contentEntity, NSError *error) {
+        NSLog(@"%@",error);
+    }];
+    
+    return;
+    
     switch (tag) {
         case TABLEVIEW_BEGIN_TAG:
             
@@ -67,8 +79,8 @@
             break;
     }
     WXMediaMessage *message = [self wxShareSiglMessageScene:[UIImage imageNamed:@"icon120.png"]];
-    message.title = @"宝贝快睡，婴儿睡眠好帮手";
-    message.description = @"宝贝快睡，婴儿睡眠好帮手";
+    message.title = NSLocalizedString(@"BabySleepAds", nil);
+    message.description = NSLocalizedString(@"BabySleepAds", nil);
     
     [self ShareWeixinLinkContent:message WXType:tag - TABLEVIEW_BEGIN_TAG];
 }

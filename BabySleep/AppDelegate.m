@@ -87,6 +87,7 @@ static void displayStatusChanged(CFNotificationCenterRef center,
      
           activePlatforms:@[
                             @(SSDKPlatformTypeFacebook),
+//                            @(SSDKPlatformTypeTwitter)
                             ]
                  onImport:^(SSDKPlatformType platformType)
      {
