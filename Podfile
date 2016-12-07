@@ -29,6 +29,7 @@ pod 'UMengAnalytics-NO-IDFA' # 友盟 SDK（无 IDFA）
 pod 'Qiniu' # 七牛
 pod 'Pingpp', '~> 2.2.8'
 pod 'JPush', '~> 2.1.9'
+pod 'MiPushSDK', '~> 2.2.4'
 pod 'RegexKitLite', '~> 4.0' #正则
 pod 'Masonry', '~> 1.0.2'   #代码布局
 pod 'WebViewJavascriptBridge', '~> 5.0.5'
