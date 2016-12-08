@@ -151,8 +151,8 @@ static AudioTask *audioTask;
 
 - (void) audioInterrupted:(NSNotification*)notification
 {
-    NSDictionary *interuptionDict = notification.userInfo;
-    NSNumber *interuptionType = [interuptionDict valueForKey:AVAudioSessionInterruptionTypeKey];
+//    NSDictionary *interuptionDict = notification.userInfo;
+//    NSNumber *interuptionType = [interuptionDict valueForKey:AVAudioSessionInterruptionTypeKey];
 //    if([interuptionType intValue] == 1)
 //    {
 ////        [self initBackgroudTask];

@@ -87,6 +87,7 @@ static void displayStatusChanged(CFNotificationCenterRef center,
      
           activePlatforms:@[
                             @(SSDKPlatformTypeFacebook),
+                            @(SSDKPlatformTypeWechat)
 //                            @(SSDKPlatformTypeTwitter)
                             ]
                  onImport:^(SSDKPlatformType platformType)
@@ -95,6 +96,9 @@ static void displayStatusChanged(CFNotificationCenterRef center,
          {
              case SSDKPlatformTypeFacebook:
                  [ShareSDKConnector connectFacebookMessenger:[FBSDKMessengerSharer class]];
+                 break;
+             case SSDKPlatformTypeWechat:
+                 [ShareSDKConnector connectWeChat:[WXApi class]];
                  break;
              default:
                  break;
@@ -117,6 +121,11 @@ static void displayStatusChanged(CFNotificationCenterRef center,
                                           appSecret:@"de99a30e3a35263c728a793f7b3e2a16"
                                            authType:SSDKAuthTypeBoth];
                  break;
+             case SSDKPlatformTypeWechat:
+                 [appInfo SSDKSetupWeChatByAppId:WXAppId
+                                       appSecret:WXAppSecret];
+                 break;
+
 //             case SSDKPlatformTypeQQ:
 //                 [appInfo SSDKSetupQQByAppId:@"100371282"
 //                                      appKey:@"aed9b0303e3ed1e27bae87c33761161d"
@@ -128,6 +137,7 @@ static void displayStatusChanged(CFNotificationCenterRef center,
 //                                              secretKey:@"f29df781abdd4f49beca5a2194676ca4"
 //                                               authType:SSDKAuthTypeBoth];
 //                 break;
+
              default:
                  break;
          }

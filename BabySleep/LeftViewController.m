@@ -47,22 +47,13 @@
     NSMutableArray *selectImageArr = [NSMutableArray arrayWithObjects:@"whitenoise_touch" ,@"share_touch",@"suggest_touch",nil];
     NSMutableArray *titleArr = [NSMutableArray arrayWithObjects:NSLocalizedString(@"whitenoise", nil),NSLocalizedString(@"Share", nil),NSLocalizedString(@"YourAdvice",nil), nil];
     
-    NSArray *languages = [NSLocale preferredLanguages];
-    NSString *currentLanguage = [languages objectAtIndex:0];
-    
-    if (![currentLanguage containsString:@"zh"]) {
+    if (![Utility ifChinese]) {
         [imageArr removeObjectAtIndex:1];
         [selectImageArr removeObjectAtIndex:1];
         [titleArr removeObjectAtIndex:1];
         
         titleView.frame = CGRectMake(39 + leftPadding, 33, 103, 42);
     }
-//    BOOL wxInstalled = [WMUserDefault BoolValueForKey:@"WXInstalled"];
-//    if (!wxInstalled) {
-//        [imageArr removeObjectAtIndex:1];
-//        [selectImageArr removeObjectAtIndex:1];
-//        [titleArr removeObjectAtIndex:1];
-//    }
 
     for (int i = 0; i < imageArr.count; i++) {
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(39, 159 + i * 93, 15, 15)];
@@ -118,10 +109,7 @@
     if (btn.tag == TABLEVIEW_BEGIN_TAG) {
         [self goNoiseView];
     }else if (btn.tag == TABLEVIEW_BEGIN_TAG + 1){
-        NSArray *languages = [NSLocale preferredLanguages];
-        NSString *currentLanguage = [languages objectAtIndex:0];
-        
-        if (![currentLanguage containsString:@"zh"]) {
+        if (![Utility ifChinese]) {
             [self sendMail];
         }else{
             [self goShareView];

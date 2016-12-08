@@ -47,42 +47,83 @@
     
     [self.view addSubview:backBtn];
 
-    ShareView *weixin = [[ShareView alloc] initWithFrame:CGRectMake(SCREENWIDTH * 0.5 - 70, 156, 140, 140) Name:@"微信" Color:HexRGB(0xC2EC7D) selectColor:HexRGB(0xD1EEA1)];
-    weixin.tag = TABLEVIEW_BEGIN_TAG;
-    weixin.delagate = self;
-    [self.view addSubview:weixin];
+    if ([Utility ifChinese]) {
+        ShareView *weixin = [[ShareView alloc] initWithFrame:CGRectMake(SCREENWIDTH * 0.5 - 70, 156, 140, 140) Name:@"微信" Color:HexRGB(0xC2EC7D) selectColor:HexRGB(0xD1EEA1)];
+        weixin.tag = TABLEVIEW_BEGIN_TAG;
+        weixin.delagate = self;
+        [self.view addSubview:weixin];
+        
+        ShareView *pengyouquan = [[ShareView alloc] initWithFrame:CGRectMake(SCREENWIDTH * 0.5 - 70, 350, 140, 140) Name:@"朋友圈" Color:HexRGB(0x9CD6F6) selectColor:HexRGB(0xB1DCF3)];
+        pengyouquan.tag = TABLEVIEW_BEGIN_TAG + 1;
+        pengyouquan.delagate = self;
+        [self.view addSubview:pengyouquan];
+    }else{
+        UIButton *facebook = [UIButton buttonWithType:UIButtonTypeCustom];
+        facebook.frame = CGRectMake(SCREENWIDTH * 0.5 - 70, 156, 140, 140);
+        facebook.tag = TABLEVIEW_BEGIN_TAG;
+        [facebook setImage:[UIImage imageNamed:@"facebook"] forState:UIControlStateNormal];
+        [facebook addTarget:self action:@selector(clickBtn:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:facebook];
+        
+        UIButton *twitter = [UIButton buttonWithType:UIButtonTypeCustom];
+        twitter.frame = CGRectMake(SCREENWIDTH * 0.5 - 70, 350, 140, 140);
+        twitter.tag = TABLEVIEW_BEGIN_TAG + 1;
+        [twitter setImage:[UIImage imageNamed:@"twitter"] forState:UIControlStateNormal];
+        [twitter addTarget:self action:@selector(clickBtn:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:twitter];
+    }
+}
+
+- (void)clickBtn:(id)sender
+{
+    UIButton *btn = (UIButton *)sender;
     
-    ShareView *pengyouquan = [[ShareView alloc] initWithFrame:CGRectMake(SCREENWIDTH * 0.5 - 70, 350, 140, 140) Name:@"朋友圈" Color:HexRGB(0x9CD6F6) selectColor:HexRGB(0xB1DCF3)];
-    pengyouquan.tag = TABLEVIEW_BEGIN_TAG + 1;
-    pengyouquan.delagate = self;
-    [self.view addSubview:pengyouquan];
+    [self clickAction:btn.tag];
 }
 
 - (void)clickAction:(NSInteger)tag
 {
-    NSMutableDictionary *shareParams = [NSMutableDictionary dictionary];
-
-    [shareParams SSDKSetupFacebookParamsByText:NSLocalizedString(@"BabySleepAds", nil) image:nil url:[NSURL URLWithString:@"https://itunes.apple.com/cn/app/id1128178648?mt=8"] urlTitle:NSLocalizedString(@"Baby's fast sleep", nil) urlName:NSLocalizedString(@"Baby's fast sleep", nil) attachementUrl:nil type:SSDKContentTypeWebPage];
-    
-    [ShareSDK share:SSDKPlatformTypeFacebook parameters:shareParams onStateChanged:^(SSDKResponseState state, NSDictionary *userData, SSDKContentEntity *contentEntity, NSError *error) {
-        NSLog(@"%@",error);
-    }];
-    
-    return;
-    
-    switch (tag) {
-        case TABLEVIEW_BEGIN_TAG:
-            
-            break;
-            
-        default:
-            break;
+    if ([Utility ifChinese]) {
+        NSString *title = NSLocalizedString(@"Baby's fast sleep", nil);
+        NSString *text = NSLocalizedString(@"BabySleepAds", nil);
+        NSString *icon = @"icon120.png";
+        NSString *shareUrl = @"https://itunes.apple.com/cn/app/id1128178648?mt=8";
+        
+        //1、创建分享参数（必要）
+        NSMutableDictionary *shareParams = [NSMutableDictionary dictionary];
+        
+        SSDKPlatformType type = 0;
+        
+        switch (tag - TABLEVIEW_BEGIN_TAG) {
+            case 0:
+                [shareParams SSDKSetupWeChatParamsByText:text title:title url:[NSURL URLWithString:shareUrl] thumbImage:[NSURL URLWithString:icon] image:[NSURL URLWithString:icon] musicFileURL:nil extInfo:nil fileData:nil emoticonData:nil type:SSDKContentTypeWebPage forPlatformSubType:SSDKPlatformSubTypeWechatSession];// 微信好友子平台
+                type = SSDKPlatformSubTypeWechatSession;
+                break;
+            case 1:
+                [shareParams SSDKSetupWeChatParamsByText:title title:title url:[NSURL URLWithString:shareUrl] thumbImage:[NSURL URLWithString:icon] image:[NSURL URLWithString:icon] musicFileURL:nil extInfo:nil fileData:nil emoticonData:nil type:SSDKContentTypeWebPage forPlatformSubType:SSDKPlatformSubTypeWechatTimeline];// 微信好友子平台
+                type = SSDKPlatformSubTypeWechatTimeline;
+                break;
+            default:
+                break;
+        }
+        
+        //2、分享
+        [ShareSDK share:type parameters:shareParams onStateChanged:^(SSDKResponseState state, NSDictionary *userData, SSDKContentEntity *contentEntity, NSError *error) {
+            if (state == SSDKResponseStateSuccess) {
+                
+            }else{
+                
+            }
+        }];
+    }else{
+        NSMutableDictionary *shareParams = [NSMutableDictionary dictionary];
+        
+        [shareParams SSDKSetupFacebookParamsByText:NSLocalizedString(@"BabySleepAds", nil) image:nil url:[NSURL URLWithString:@"https://itunes.apple.com/cn/app/id1128178648?mt=8"] urlTitle:NSLocalizedString(@"Baby's fast sleep", nil) urlName:NSLocalizedString(@"Baby's fast sleep", nil) attachementUrl:nil type:SSDKContentTypeWebPage];
+        
+        [ShareSDK share:SSDKPlatformTypeFacebook parameters:shareParams onStateChanged:^(SSDKResponseState state, NSDictionary *userData, SSDKContentEntity *contentEntity, NSError *error) {
+            NSLog(@"%@",error);
+        }];
     }
-    WXMediaMessage *message = [self wxShareSiglMessageScene:[UIImage imageNamed:@"icon120.png"]];
-    message.title = NSLocalizedString(@"BabySleepAds", nil);
-    message.description = NSLocalizedString(@"BabySleepAds", nil);
-    
-    [self ShareWeixinLinkContent:message WXType:tag - TABLEVIEW_BEGIN_TAG];
 }
 
 #pragma mark - 微信分享
