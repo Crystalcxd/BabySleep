@@ -96,11 +96,11 @@
         
         switch (tag - TABLEVIEW_BEGIN_TAG) {
             case 0:
-                [shareParams SSDKSetupWeChatParamsByText:text title:title url:[NSURL URLWithString:shareUrl] thumbImage:[NSURL URLWithString:icon] image:[NSURL URLWithString:icon] musicFileURL:nil extInfo:nil fileData:nil emoticonData:nil type:SSDKContentTypeWebPage forPlatformSubType:SSDKPlatformSubTypeWechatSession];// 微信好友子平台
+                [shareParams SSDKSetupWeChatParamsByText:text title:title url:[NSURL URLWithString:shareUrl] thumbImage:[UIImage imageNamed:icon] image:[UIImage imageNamed:icon] musicFileURL:nil extInfo:nil fileData:nil emoticonData:nil type:SSDKContentTypeWebPage forPlatformSubType:SSDKPlatformSubTypeWechatSession];// 微信好友子平台
                 type = SSDKPlatformSubTypeWechatSession;
                 break;
             case 1:
-                [shareParams SSDKSetupWeChatParamsByText:title title:title url:[NSURL URLWithString:shareUrl] thumbImage:[NSURL URLWithString:icon] image:[NSURL URLWithString:icon] musicFileURL:nil extInfo:nil fileData:nil emoticonData:nil type:SSDKContentTypeWebPage forPlatformSubType:SSDKPlatformSubTypeWechatTimeline];// 微信好友子平台
+                [shareParams SSDKSetupWeChatParamsByText:title title:title url:[NSURL URLWithString:shareUrl] thumbImage:[UIImage imageNamed:icon] image:[UIImage imageNamed:icon] musicFileURL:nil extInfo:nil fileData:nil emoticonData:nil type:SSDKContentTypeWebPage forPlatformSubType:SSDKPlatformSubTypeWechatTimeline];// 微信好友子平台
                 type = SSDKPlatformSubTypeWechatTimeline;
                 break;
             default:
