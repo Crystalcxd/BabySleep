@@ -47,6 +47,7 @@ PODS:
     - HappyDNS (~> 0.3)
   - RDVTabBarController (1.1.9)
   - RegexKitLite (4.0)
+  - SCLAlertView-Objective-C (1.1.0)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
@@ -87,6 +88,7 @@ DEPENDENCIES:
   - Qiniu
   - RDVTabBarController (~> 1.1.9)
   - RegexKitLite (~> 4.0)
+  - SCLAlertView-Objective-C
   - SDWebImage
   - ShareSDK3 (~> 3.5.2)
   - ShareSDK3/ShareSDKPlatforms/Facebook
@@ -123,6 +125,7 @@ SPEC CHECKSUMS:
   Qiniu: a4c962782035ee25b9da3e195181d8c384bb75be
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
+  SCLAlertView-Objective-C: 349a894d4e1d1dbf14d443da784c6ca1e92c78d2
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   ShareSDK3: 08ed714e2bbdcd97ab60f58cb398227341dfc20a
   SlackTextViewController: fbcdadbb8090673f604484ff5b6eb8d77baed42a
@@ -134,6 +137,6 @@ SPEC CHECKSUMS:
   WebViewJavascriptBridge: a4d502315f1b8d9a51cd6a9174147ed567ec3bc5
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: c80b1ee382f806de4e24cd769cbb6eca3ad72143
+PODFILE CHECKSUM: 52e4111b15998aa94971d370d30b43d1ad12ee59
 
 COCOAPODS: 1.2.0.beta.1

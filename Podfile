@@ -23,6 +23,7 @@ pod 'TTTAttributedLabel', '~> 2.0.0'
 pod 'UITableView+FDTemplateLayoutCell', '1.3' # cell 布局高度
 pod 'DACircularProgress'
 pod 'UIActivityIndicator-for-SDWebImage'
+pod 'SCLAlertView-Objective-C'
 
 # Vendor
 pod 'UMengAnalytics-NO-IDFA' # 友盟 SDK（无 IDFA）
