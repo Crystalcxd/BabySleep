@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09D623EBC080E5DA5627513B /* libPods-BabySleep.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0013C8E3A9272D2522F34C1 /* libPods-BabySleep.a */; };
+		1AC1563FD0C4DE7DE655E63D /* Pods_BabySleep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE2CE91D8040B2A42FE02601 /* Pods_BabySleep.framework */; };
 		4C3DA1F21D3B5B5F0003B5FD /* ShareAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DA1F11D3B5B5F0003B5FD /* ShareAlertView.m */; };
 		4C3DA1F41D3B62650003B5FD /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3DA1F31D3B62650003B5FD /* icon120.png */; };
 		4C5ADED91D44BAB5004713D0 /* TouchInsideAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5ADED81D44BAB5004713D0 /* TouchInsideAnimationView.m */; };
@@ -167,7 +167,7 @@
 		A4FEA1331D2B559900FB7FE0 /* radio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio@2x.png"; sourceTree = "<group>"; };
 		A4FEA13E1D2B990200FB7FE0 /* NoiseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoiseViewController.h; sourceTree = "<group>"; };
 		A4FEA13F1D2B990200FB7FE0 /* NoiseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoiseViewController.m; sourceTree = "<group>"; };
-		D0013C8E3A9272D2522F34C1 /* libPods-BabySleep.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BabySleep.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE2CE91D8040B2A42FE02601 /* Pods_BabySleep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabySleep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,7 +184,7 @@
 				4CA834511D30DB9B007543B5 /* libsqlite3.0.tbd in Frameworks */,
 				4CA8344F1D30DB86007543B5 /* libz.tbd in Frameworks */,
 				4CA8344D1D30DB78007543B5 /* SystemConfiguration.framework in Frameworks */,
-				09D623EBC080E5DA5627513B /* libPods-BabySleep.a in Frameworks */,
+				1AC1563FD0C4DE7DE655E63D /* Pods_BabySleep.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +330,7 @@
 		66D3601EB856B0A9B5EE7A88 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D0013C8E3A9272D2522F34C1 /* libPods-BabySleep.a */,
+				EE2CE91D8040B2A42FE02601 /* Pods_BabySleep.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -608,7 +608,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

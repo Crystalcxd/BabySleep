@@ -1,3 +1,4 @@
+use_frameworks!
 platform :ios, '8.0'
 
 target 'BabySleep' do
@@ -5,6 +6,7 @@ target 'BabySleep' do
 # 网络
 pod 'AFNetworking', '~> 3.1.0'
 pod 'SDWebImage'
+pod 'CocoaAsyncSocket', '~> 7.4.3'
 
 # Model
 pod 'Mantle', '~> 1.5.0'
@@ -24,11 +26,11 @@ pod 'UITableView+FDTemplateLayoutCell', '1.3' # cell 布局高度
 pod 'DACircularProgress'
 pod 'UIActivityIndicator-for-SDWebImage'
 pod 'SCLAlertView-Objective-C'
+pod 'FXBlurView', '~> 1.6.4' #毛玻璃效果
 
 # Vendor
 pod 'UMengAnalytics-NO-IDFA' # 友盟 SDK（无 IDFA）
 pod 'Qiniu' # 七牛
-pod 'Pingpp', '~> 2.2.8'
 pod 'JPush', '~> 2.1.9'
 pod 'MiPushSDK', '~> 2.2.4'
 pod 'RegexKitLite', '~> 4.0' #正则
@@ -41,6 +43,7 @@ pod 'ShareSDK3/ShareSDKPlatforms/QQ'
 pod 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
 pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
 pod 'MOBFoundation', '~> 2.2.3'
+pod 'ReactiveCocoa', '5.0.0-alpha.3'
 
 # Helper/Tool
 pod 'DateTools' # 日期时间工具
