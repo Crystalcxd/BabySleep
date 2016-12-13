@@ -43,7 +43,6 @@ pod 'ShareSDK3/ShareSDKPlatforms/QQ'
 pod 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
 pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
 pod 'MOBFoundation', '~> 2.2.3'
-pod 'ReactiveCocoa', '5.0.0-alpha.3'
 
 # Helper/Tool
 pod 'DateTools' # 日期时间工具

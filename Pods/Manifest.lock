@@ -39,18 +39,13 @@ PODS:
   - MBProgressHUD (1.0.0)
   - MiPushSDK (2.2.4)
   - MJRefresh (2.5.0)
-  - MOBFoundation (2.2.3)
+  - MOBFoundation (2.2.10)
   - pop (1.0.9)
   - Qiniu (7.1.4):
     - AFNetworking (~> 3)
     - HappyDNS (~> 0.3)
   - RDVTabBarController (1.1.9)
-  - ReactiveCocoa (5.0.0-alpha.3):
-    - ReactiveSwift (~> 1.0.0-alpha.3)
-  - ReactiveSwift (1.0.0-alpha.4):
-    - Result (~> 3.0)
   - RegexKitLite (4.0)
-  - Result (3.1.0)
   - SCLAlertView-Objective-C (1.1.0)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
@@ -92,7 +87,6 @@ DEPENDENCIES:
   - pop
   - Qiniu
   - RDVTabBarController (~> 1.1.9)
-  - ReactiveCocoa (= 5.0.0-alpha.3)
   - RegexKitLite (~> 4.0)
   - SCLAlertView-Objective-C
   - SDWebImage
@@ -127,14 +121,11 @@ SPEC CHECKSUMS:
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MiPushSDK: a00fd49376456a961991b947bc95ef714f7e9534
   MJRefresh: 4bce3b592ae052ff89473b2907278bf8a80abdd3
-  MOBFoundation: 2bc5cd7011a2db75cf2b3ceacb7f4227eec88f3e
+  MOBFoundation: 3cca6f267be8ea7643be0d27ec871b66b64e32fd
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   Qiniu: a4c962782035ee25b9da3e195181d8c384bb75be
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
-  ReactiveCocoa: d8a03d3deae0dd76410a30589946328d76ab9d2b
-  ReactiveSwift: 3fa49d2db97609ea700cd2b8f1bfbdd162024f97
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
-  Result: 4e3ed5995ed94d0cd6a09be9a431fce3f3624bbf
   SCLAlertView-Objective-C: 349a894d4e1d1dbf14d443da784c6ca1e92c78d2
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   ShareSDK3: 08ed714e2bbdcd97ab60f58cb398227341dfc20a
@@ -147,6 +138,6 @@ SPEC CHECKSUMS:
   WebViewJavascriptBridge: a4d502315f1b8d9a51cd6a9174147ed567ec3bc5
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: a3640f4318d6f787050650d85455fb20f624702a
+PODFILE CHECKSUM: c6042437536bc2a7d73a82753f66562fd01e18f1
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0.beta.1
