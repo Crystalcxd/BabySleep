@@ -47,13 +47,9 @@
     NSMutableArray *selectImageArr = [NSMutableArray arrayWithObjects:@"whitenoise_touch" ,@"share_touch",@"suggest_touch",nil];
     NSMutableArray *titleArr = [NSMutableArray arrayWithObjects:NSLocalizedString(@"whitenoise", nil),NSLocalizedString(@"Share", nil),NSLocalizedString(@"YourAdvice",nil), nil];
     
-//    if (![Utility ifChinese]) {
-//        [imageArr removeObjectAtIndex:1];
-//        [selectImageArr removeObjectAtIndex:1];
-//        [titleArr removeObjectAtIndex:1];
-//        
-//        titleView.frame = CGRectMake(39 + leftPadding, 33, 103, 42);
-//    }
+    if (![Utility ifChinese]) {
+        titleView.frame = CGRectMake(39 + leftPadding, 33, 103, 42);
+    }
 
     for (int i = 0; i < imageArr.count; i++) {
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(39, 159 + i * 93, 15, 15)];
