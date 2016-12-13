@@ -737,6 +737,7 @@
 		544BFCCB49A1A1A707EB1ADFECDE2C6D /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		544E30A74EF06D7A19D88ECD6E1F05D8 /* QNUploadOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNUploadOption.h; path = QiniuSDK/Storage/QNUploadOption.h; sourceTree = "<group>"; };
 		549F9B1941F0B8DDAA8325EC4B456C0D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		54FB44414AA5C11A320F037687D6375F /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMMobClick.framework; path = "umsdk_IOS_analyics_no-idfa_v4.1.9/UMMobClick.framework"; sourceTree = "<group>"; };
 		55068C2C9F6880DE2E1C4D64ABD690F7 /* HMSegmentedControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HMSegmentedControl.h; path = HMSegmentedControl/HMSegmentedControl.h; sourceTree = "<group>"; };
 		552B2E35D9EDE710603A2362BC53875B /* DTTimePeriodChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodChain.m; path = DateTools/DTTimePeriodChain.m; sourceTree = "<group>"; };
 		5538AC086C613E618CC3867F67CD58AF /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
@@ -922,7 +923,6 @@
 		BB6A27DF8849E443178DD56ABFC0EC55 /* SLKTextViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLKTextViewController.h; path = Source/SLKTextViewController.h; sourceTree = "<group>"; };
 		BBE00C67AE7937EF656C4742A25156A3 /* MJRefreshConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshConst.m; path = MJRefresh/MJRefreshConst.m; sourceTree = "<group>"; };
 		BC1225BCA592A66DCC47461E53B96A81 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
-		BD611B85314F98A7616894A9C04E923D /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMMobClick.framework; path = "umsdk_IOS_analyics_no-idfa_v4.1.5/UMMobClick.framework"; sourceTree = "<group>"; };
 		BE1AD57034A6B2D81059F71DEF8E27C7 /* RegexKitLite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		BE9C444A6535EDBD1BF01AD37F57FA09 /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackGifFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
 		BEE0650D40C4D9DFC5FAF645F91F781A /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
@@ -1876,14 +1876,6 @@
 			path = "../Target Support Files/UIActivityIndicator-for-SDWebImage";
 			sourceTree = "<group>";
 		};
-		9907B78137B2CBCC05467A3976F7CF05 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BD611B85314F98A7616894A9C04E923D /* UMMobClick.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		9BB97488117FB112566B3C599E7F6DA0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1930,6 +1922,14 @@
 			);
 			name = TTTAttributedLabel;
 			path = TTTAttributedLabel;
+			sourceTree = "<group>";
+		};
+		A4BDE758EEDB28222728CC8C63068660 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54FB44414AA5C11A320F037687D6375F /* UMMobClick.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A7C00D12134128A068556124F0A954C4 /* WeiboSDK */ = {
@@ -2175,7 +2175,7 @@
 		E03E27BEF8433285579648C841273C6A /* UMengAnalytics-NO-IDFA */ = {
 			isa = PBXGroup;
 			children = (
-				9907B78137B2CBCC05467A3976F7CF05 /* Frameworks */,
+				A4BDE758EEDB28222728CC8C63068660 /* Frameworks */,
 			);
 			name = "UMengAnalytics-NO-IDFA";
 			path = "UMengAnalytics-NO-IDFA";
