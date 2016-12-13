@@ -87,8 +87,8 @@ static void displayStatusChanged(CFNotificationCenterRef center,
      
           activePlatforms:@[
                             @(SSDKPlatformTypeFacebook),
-                            @(SSDKPlatformTypeWechat)
-//                            @(SSDKPlatformTypeTwitter)
+                            @(SSDKPlatformTypeWechat),
+                            @(SSDKPlatformTypeTwitter)
                             ]
                  onImport:^(SSDKPlatformType platformType)
      {
@@ -124,6 +124,10 @@ static void displayStatusChanged(CFNotificationCenterRef center,
              case SSDKPlatformTypeWechat:
                  [appInfo SSDKSetupWeChatByAppId:WXAppId
                                        appSecret:WXAppSecret];
+                 break;
+             case SSDKPlatformTypeTwitter:
+                 [appInfo SSDKSetupTwitterByConsumerKey:@"hRAIdIRQZmtZy7IgU7z6agxxK"
+                                         consumerSecret:@"0xicvJluw4XGrcKcDMZWKewdlbfvIQhlB0kQ50J6smVmTYq5FH" redirectUri:@"http://BabySleep"];
                  break;
 
 //             case SSDKPlatformTypeQQ:

@@ -17,8 +17,14 @@
 #import "WXApi.h"
 
 #import <ShareSDK/ShareSDK.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface ShareViewController ()<ShareViewDelegate>
+@interface ShareViewController ()<ShareViewDelegate,CLLocationManagerDelegate>
+{
+    CLLocationManager *locationManager;
+    double latitude;
+    double longitude;
+}
 
 @end
 
@@ -27,6 +33,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    if (![Utility ifChinese]) {
+        [self initializeLocationService];
+    }
     
     self.view.backgroundColor = HexRGB(0xDBF4FF);
     
@@ -74,6 +83,27 @@
     }
 }
 
+- (void)initializeLocationService {
+    // 初始化定位管理器
+    locationManager = [[CLLocationManager alloc] init];
+    // 设置代理
+    locationManager.delegate = self;
+    // 设置定位精确度到米
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    // 设置过滤器为无
+    locationManager.distanceFilter = kCLDistanceFilterNone;
+    // 判断的手机的定位功能是否开启
+    // 开启定位:设置 > 隐私 > 位置 > 定位服务
+    if ([CLLocationManager locationServicesEnabled]) {
+        // 启动位置更新
+        // 开启位置更新需要与服务器进行轮询所以会比较耗电，在不需要时用stopUpdatingLocation方法关闭;
+        [locationManager startUpdatingLocation];
+    }
+    else {
+        NSLog(@"请开启定位功能！");
+    }
+}
+
 - (void)clickBtn:(id)sender
 {
     UIButton *btn = (UIButton *)sender;
@@ -83,16 +113,17 @@
 
 - (void)clickAction:(NSInteger)tag
 {
+    SSDKPlatformType type = 0;
+    NSString *icon = @"icon120.png";
+    NSString *title = NSLocalizedString(@"Baby's fast sleep", nil);
+    NSString *text = NSLocalizedString(@"BabySleepAds", nil);
+    NSString *shareUrl = @"https://itunes.apple.com/cn/app/id1128178648?mt=8";
+
     if ([Utility ifChinese]) {
-        NSString *title = NSLocalizedString(@"Baby's fast sleep", nil);
-        NSString *text = NSLocalizedString(@"BabySleepAds", nil);
-        NSString *icon = @"icon120.png";
-        NSString *shareUrl = @"https://itunes.apple.com/cn/app/id1128178648?mt=8";
         
         //1、创建分享参数（必要）
         NSMutableDictionary *shareParams = [NSMutableDictionary dictionary];
         
-        SSDKPlatformType type = 0;
         
         switch (tag - TABLEVIEW_BEGIN_TAG) {
             case 0:
@@ -116,11 +147,23 @@
             }
         }];
     }else{
+        
         NSMutableDictionary *shareParams = [NSMutableDictionary dictionary];
         
-        [shareParams SSDKSetupFacebookParamsByText:NSLocalizedString(@"BabySleepAds", nil) image:nil url:[NSURL URLWithString:@"https://itunes.apple.com/cn/app/id1128178648?mt=8"] urlTitle:NSLocalizedString(@"Baby's fast sleep", nil) urlName:NSLocalizedString(@"Baby's fast sleep", nil) attachementUrl:nil type:SSDKContentTypeWebPage];
+        switch (tag - TABLEVIEW_BEGIN_TAG) {
+            case 0:
+                [shareParams SSDKSetupFacebookParamsByText:NSLocalizedString(@"BabySleepAds", nil) image:nil url:[NSURL URLWithString:@"https://itunes.apple.com/cn/app/id1128178648?mt=8"] urlTitle:NSLocalizedString(@"Baby's fast sleep", nil) urlName:NSLocalizedString(@"Baby's fast sleep", nil) attachementUrl:nil type:SSDKContentTypeWebPage];
+                type = SSDKPlatformTypeFacebook;
+                break;
+            case 1:
+                [shareParams SSDKSetupTwitterParamsByText:[NSString stringWithFormat:@"%@ %@",text,shareUrl] images:[UIImage imageNamed:icon] latitude:latitude longitude:longitude type:SSDKContentTypeText];
+                type = SSDKPlatformTypeTwitter;
+                break;
+            default:
+                break;
+        }
         
-        [ShareSDK share:SSDKPlatformTypeFacebook parameters:shareParams onStateChanged:^(SSDKResponseState state, NSDictionary *userData, SSDKContentEntity *contentEntity, NSError *error) {
+        [ShareSDK share:type parameters:shareParams onStateChanged:^(SSDKResponseState state, NSDictionary *userData, SSDKContentEntity *contentEntity, NSError *error) {
             NSLog(@"%@",error);
         }];
     }
@@ -194,6 +237,25 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - CLLocationManagerDelegate
+// 地理位置发生改变时触发
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
+{
+    // 获取经纬度
+    NSLog(@"纬度:%f",newLocation.coordinate.latitude);
+    latitude = newLocation.coordinate.latitude;
+    NSLog(@"经度:%f",newLocation.coordinate.longitude);
+    longitude = newLocation.coordinate.longitude;
+    // 停止位置更新
+    [manager stopUpdatingLocation];
+}
+
+// 定位失误时触发
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+    NSLog(@"error:%@",error);
 }
 
 /*
