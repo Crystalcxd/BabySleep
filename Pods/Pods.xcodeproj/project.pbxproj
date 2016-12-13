@@ -846,7 +846,6 @@
 		0D2BB751FC88CB7A2392CDA762C3100E /* GBDeviceInfoTypes_Common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBDeviceInfoTypes_Common.h; path = GBDeviceInfo/GBDeviceInfoTypes_Common.h; sourceTree = "<group>"; };
 		0D8C404078C4A7878AAFC4E770E7A782 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValueTransformer+MTLPredefinedTransformerAdditions.h"; path = "Mantle/NSValueTransformer+MTLPredefinedTransformerAdditions.h"; sourceTree = "<group>"; };
 		0F16872F50F1580248FE13DD7831850B /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/SDWebImageDownloader.h; sourceTree = "<group>"; };
-		0F45A8C461DB774BD5DBAFA0ECB513B7 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMMobClick.framework; path = "umsdk_IOS_analyics_no-idfa_v4.1.5/UMMobClick.framework"; sourceTree = "<group>"; };
 		0F7D399C6270318819F00E74AA1C5F56 /* Mantle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Mantle-dummy.m"; sourceTree = "<group>"; };
 		0F917A51CAA7D1B627CAEE638E8FFD7C /* ShareSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShareSDK.framework; path = ShareSDK/ShareSDK.framework; sourceTree = "<group>"; };
 		0FDA5A78D8A52C5075F9E5861A78F39C /* SLKTextInputbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLKTextInputbar.m; path = Source/SLKTextInputbar.m; sourceTree = "<group>"; };
@@ -1443,6 +1442,7 @@
 		EB325BA958D2CB212EAAF583C3C7DB52 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
 		EB3C4751354542A47C96692FE6783796 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB642EC9A6841AB947F2B7E21F8C79A6 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		EBE7E91BDBCFF698197BB211453D715C /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMMobClick.framework; path = "umsdk_IOS_analyics_no-idfa_v4.1.9/UMMobClick.framework"; sourceTree = "<group>"; };
 		ECCDA8E58B30050C5318880624953ECE /* QNRefresher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNRefresher.m; path = HappyDNS/QNRefresher.m; sourceTree = "<group>"; };
 		ECE971DD6AB005067A6EE5C78280A8DD /* POPAnimationTracer.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationTracer.mm; path = pop/POPAnimationTracer.mm; sourceTree = "<group>"; };
 		ECF60605495DBFFF2AF44998201C26EF /* RDVTabBarItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RDVTabBarItem.m; path = RDVTabBarController/RDVTabBarItem.m; sourceTree = "<group>"; };
@@ -2374,7 +2374,7 @@
 		6BD4F48D1A29E0418049C5065C986A09 /* UMengAnalytics-NO-IDFA */ = {
 			isa = PBXGroup;
 			children = (
-				AEB0508B37EB7842E09EDC465F9C3927 /* Frameworks */,
+				C27CAF5ACA20DA82AD427C0A8237450B /* Frameworks */,
 			);
 			name = "UMengAnalytics-NO-IDFA";
 			path = "UMengAnalytics-NO-IDFA";
@@ -2809,14 +2809,6 @@
 			name = RunLoop;
 			sourceTree = "<group>";
 		};
-		AEB0508B37EB7842E09EDC465F9C3927 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0F45A8C461DB774BD5DBAFA0ECB513B7 /* UMMobClick.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		AF22775D52A5831F969595742DE7A186 /* TTTAttributedLabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -2874,6 +2866,14 @@
 			);
 			name = GVUserDefaults;
 			path = GVUserDefaults;
+			sourceTree = "<group>";
+		};
+		C27CAF5ACA20DA82AD427C0A8237450B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBE7E91BDBCFF698197BB211453D715C /* UMMobClick.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C3E4B089A9B2DA10FF349A91F245968A /* Support Files */ = {
