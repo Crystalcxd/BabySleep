@@ -156,7 +156,7 @@
                 type = SSDKPlatformTypeFacebook;
                 break;
             case 1:
-                [shareParams SSDKSetupTwitterParamsByText:[NSString stringWithFormat:@"%@ %@",text,shareUrl] images:[UIImage imageNamed:icon] latitude:latitude longitude:longitude type:SSDKContentTypeText];
+                [shareParams SSDKSetupTwitterParamsByText:[NSString stringWithFormat:@"%@ %@ %@",text,shareUrl,[Utility chatTimeStringWith:[[NSDate date] timeIntervalSince1970]]] images:[UIImage imageNamed:icon] latitude:latitude longitude:longitude type:SSDKContentTypeText];
                 type = SSDKPlatformTypeTwitter;
                 break;
             default:
