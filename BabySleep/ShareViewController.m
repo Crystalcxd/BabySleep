@@ -14,8 +14,6 @@
 
 #import "ShareView.h"
 
-#import "WXApi.h"
-
 #import <ShareSDK/ShareSDK.h>
 #import <CoreLocation/CoreLocation.h>
 
