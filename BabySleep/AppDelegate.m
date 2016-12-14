@@ -80,7 +80,6 @@ static void displayStatusChanged(CFNotificationCenterRef center,
     //增强后台运行
     MMPDeepSleepPreventer *niceSleep = [MMPDeepSleepPreventer sharedSingleton];
     [niceSleep startPreventSleep];
-
     
     if (![WMUserDefault arrayForKey:@"DefaultData"]) {
         NSMutableArray *array = [NSMutableArray array];
