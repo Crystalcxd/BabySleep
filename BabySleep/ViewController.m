@@ -16,6 +16,8 @@
 #import "TouchInsideAnimationView.h"
 #import "EditMusicView.h"
 #import "RecordView.h"
+#import "MptTableHeadView.h"
+#import "HomeHeadView.h"
 
 #import "RecordListCell.h"
 
@@ -25,13 +27,13 @@
 
 #import <AVFoundation/AVFoundation.h>
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate>
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate,HeadViewDelegate,HeadViewDataSource>
 {
     AVAudioPlayer *player;
 }
 
 @property (nonatomic , strong) EditMusicView *editMusicView;
-
+@property (nonatomic , strong) MptTableHeadView *tableheadView;
 @property (nonatomic , strong) RecordView *recordView;
 
 @property (nonatomic , strong) UITableView *tableView;
@@ -39,6 +41,8 @@
 @property (nonatomic , strong) UIButton *recordBtn;
 
 @property (nonatomic , strong) UIView *progressView;
+
+@property (nonatomic , strong) NSMutableArray *urlArray;
 
 @property (nonatomic , strong) NSMutableArray *defaultArr;
 
@@ -72,6 +76,8 @@ static NSString * const musicIdentifier = @"music";
 
     self.deleteArr = [NSMutableArray array];
     
+    self.urlArray = [NSMutableArray arrayWithObjects:@"",@"https://itunes.apple.com/cn/app/id1141414335?mt=8",@"https://appsto.re/cn/kE9M4.i", nil];
+    
     self.defaultArr = [NSMutableArray new];
     if ([WMUserDefault arrayForKey:@"DefaultData"]) {
         [self.defaultArr addObjectsFromArray:[WMUserDefault arrayForKey:@"DefaultData"]];
@@ -82,22 +88,42 @@ static NSString * const musicIdentifier = @"music";
         [self.userArr addObjectsFromArray:[WMUserDefault arrayForKey:@"UserData"]];
     }
 
-    TFLargerHitButton *leftBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(16, 37, 15, 14)];
+    TFLargerHitButton *leftBtn = [[TFLargerHitButton alloc] initWithFrame:CGRectMake(13, 32, 15, 14)];
     [leftBtn setImage:[UIImage imageNamed:@"menu"] forState:UIControlStateNormal];
     [leftBtn addTarget:self action:@selector(goMenuView:) forControlEvents:UIControlEventTouchUpInside];
     [leftBtn setAdjustsImageWhenHighlighted:NO];
     [self.view addSubview:leftBtn];
     
-    UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake((SCREENWIDTH - 71.35) * 0.5, 40, 71.35, 19.39)];
-    titleView.image = [UIImage imageNamed:@"babysleep"];
+    UIImageView *titleView = [[UIImageView alloc] initWithFrame:CGRectMake((SCREENWIDTH - 58) * 0.5, 35, 58, 22)];
+    titleView.image = [UIImage imageNamed:@"home_Story"];
     [self.view addSubview:titleView];
     
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(topView.frame), SCREENWIDTH, SCREENHEIGHT - CGRectGetMaxY(topView.frame) - 52)];
+    UIImageView *homeBar = [[UIImageView alloc] initWithFrame:CGRectMake(0, 65, SCREENWIDTH, 13)];
+    homeBar.image = [UIImage imageNamed:@"home_bar"];
+    [self.view addSubview:homeBar];
+    
+    NSInteger scrollViewHeight = 0;
+    
+    if (SCREENWIDTH == 320) {
+        scrollViewHeight = 50;
+    }else if (SCREENWIDTH == 375) {
+        scrollViewHeight = 75;
+    }else{
+        scrollViewHeight = 80;
+    }
+    
+    self.tableheadView = [[MptTableHeadView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, scrollViewHeight) Type:MptTableHeadViewOther];
+    self.tableheadView.dataSource = self;
+    self.tableheadView.delegate = self;
+    
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(homeBar.frame), SCREENWIDTH, SCREENHEIGHT - CGRectGetMaxY(topView.frame) - 52)];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.tableFooterView = [[UIView alloc] init];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:self.tableView];
+    
+    self.tableView.tableHeaderView = self.tableheadView;
     
     self.editMusicView = [[EditMusicView alloc] initWithFrame:CGRectMake(0, SCREENHEIGHT - 52, SCREENWIDTH, 52)];
     
@@ -226,6 +252,36 @@ static NSString * const musicIdentifier = @"music";
     }
     
     [self.tableView reloadData];
+}
+#pragma mark headview datasource delegate
+- (NSUInteger)numberOfItemFor:(MptTableHeadView *)scrollView {
+    return 3;
+}
+
+- (MptTableHeadCell *)cellViewForScrollView:(MptTableHeadView *)scrollView frame:(CGRect)frame AtIndex:(NSUInteger)index {
+    static NSString *indentif = @"headCell";
+    HomeHeadView *cell = (HomeHeadView *)[scrollView dequeueCellWithIdentifier:indentif];
+    if (!cell) {
+        cell = [[HomeHeadView alloc] initWithFrame:frame withIdentifier:indentif];
+    }
+//    id objc = nil;
+    if (3 > index) {
+//        objc = [self.array objectAtIndex:index];
+    } else {
+        return cell;
+    }
+    
+    
+    
+    return cell;
+}
+
+- (void)tableHeadView:(MptTableHeadView *)headView didSelectIndex:(NSUInteger)index {
+    if (self.urlArray.count <= index) {
+        return;
+    }
+    
+    NSString *url = [self.urlArray objectAtIndex:index];
 }
 
 #pragma mark - UITableViewDelegate

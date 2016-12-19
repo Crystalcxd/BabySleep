@@ -72,7 +72,7 @@
         clearBtn.frame = CGRectMake(SCREENWIDTH / 3.0, 0, SCREENWIDTH / 3.0, CGRectGetHeight(self.frame));
         [clearBtn setTitle:@"清空" forState:UIControlStateNormal];
         [clearBtn setTitleColor:HexRGB(0xFF564F) forState:UIControlStateNormal];
-        [clearBtn setTitleColor:HexRGB(0xCDA09E) forState:UIControlStateHighlighted];
+        [clearBtn setTitleColor:HexRGB(0xcca09f) forState:UIControlStateHighlighted];
         [clearBtn.titleLabel setFont:[UIFont fontWithName:@"DFPYuanW5" size:17]];
         [clearBtn addTarget:self action:@selector(clearBtnAction:) forControlEvents:UIControlEventTouchUpInside];
         [self.contentView addSubview:clearBtn];
