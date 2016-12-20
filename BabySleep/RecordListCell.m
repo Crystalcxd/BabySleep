@@ -63,19 +63,23 @@
         self.titleName.font = [UIFont fontWithName:@"DFPYuanW5" size:16];
         [self.recordContentView addSubview:self.titleName];
         
-        self.slider = [[UISlider alloc] initWithFrame:CGRectMake(68, 58, SCREENWIDTH - 20 - 68 - 57, 30)];
+        NSInteger sliderLength = 0;
+        
+        if (SCREENWIDTH == 320) {
+            sliderLength = 160;
+        }else if (SCREENWIDTH == 375) {
+            sliderLength = 210;
+        }else{
+            sliderLength = 240;
+        }
+        
+        self.slider = [[UISlider alloc] initWithFrame:CGRectMake(68, 58, sliderLength, 30)];
         [self.slider setMinimumTrackTintColor:HexRGB(0xE3E3E3)];
         [self.slider setMaximumTrackTintColor:HexRGB(0xE3E3E3)];
         [self.slider setThumbImage:[UIImage imageNamed:@"slide_enable"] forState:UIControlStateNormal];
         [self.slider setThumbImage:[UIImage imageNamed:@"slide_disable"] forState:UIControlStateDisabled];
         [self.slider addTarget:self action:@selector(slideValueChange:) forControlEvents:UIControlEventValueChanged];
         [self.recordContentView addSubview:self.slider];
-
-        self.shareBtn = [TFLargerHitButton buttonWithType:UIButtonTypeCustom];
-        self.shareBtn.frame = CGRectMake(SCREENWIDTH - 20 - 40, 40, 16, 25);
-        [self.shareBtn setImage:[UIImage imageNamed:@"home_shareoff"] forState:UIControlStateNormal];
-        [self.shareBtn addTarget:self action:@selector(shareMusic:) forControlEvents:UIControlEventTouchUpInside];
-        [self.recordContentView addSubview:self.shareBtn];
         
         UIView *bottomLine = [[UIView alloc] initWithFrame:CGRectMake(0, 113, SCREENWIDTH - 20, 1.5)];
         bottomLine.backgroundColor = HexRGB(0xF1F1F1);
@@ -153,82 +157,12 @@
     }
 }
 
-- (void)shareMusic:(id)sender
-{
-    WXMediaMessage *message = [self wxShareSiglMessageScene:[UIImage imageNamed:@"icon120.png"]];
-    message.title = self.data.musicName;
-    message.description = self.data.musicName;
-    
-    [self ShareWeixinLinkContent:message WXType:0];
-}
-
 - (void)deleteSelect:(BOOL)select
 {
     if (select) {
         [self.deleteSelectImage setImage:[UIImage imageNamed:@"edit_choose"]];
     }else{
         [self.deleteSelectImage setImage:[UIImage imageNamed:@"delete_normal"]];
-    }
-}
-
-#pragma mark - 微信分享
-- (WXMediaMessage *)wxShareSiglMessageScene:(UIImage *)image
-{
-    WXMediaMessage *message = [WXMediaMessage message];
-    
-    WXFileObject *object = [WXFileObject object];
-    object.fileExtension = @"caf";
-    
-    NSData* data = nil;
-    if (self.indexPath.section == 0) {
-        NSString *musicFilePath= [[NSBundle mainBundle] pathForResource:self.data.indexName ofType:@"m4a"];
-        data = [NSData dataWithContentsOfFile:musicFilePath];
-    }else{
-        //1.音频文件的url路径
-        NSString *urlStr=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-        urlStr=[urlStr stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.caf",self.data.indexName]];
-        data = [NSData dataWithContentsOfFile:urlStr];
-    }
-    
-    object.fileData = data;
-    
-    message.mediaObject = object;
-    
-    [message setThumbData:UIImageJPEGRepresentation(image,1)];
-    
-    return message;
-}
-
-- (void)ShareWeixinLinkContent:(WXMediaMessage *)message WXType:(NSInteger)scene {
-    if ([WXApi isWXAppInstalled]) {
-        SendMessageToWXReq *wxRequest = [[SendMessageToWXReq alloc] init];
-        
-        if ([message.mediaObject isKindOfClass:[WXWebpageObject class]]) {
-            WXWebpageObject *webpageObject = message.mediaObject;
-            if (webpageObject.webpageUrl.length == 0) {
-                wxRequest.text = message.title;
-                wxRequest.bText = YES;
-            } else {
-                wxRequest.message = message;
-            }
-        } else if ([message.mediaObject isKindOfClass:[WXImageObject class]]) {
-            wxRequest.bText = NO;
-            wxRequest.message = message;
-        } else if ([message.mediaObject isKindOfClass:[WXVideoObject class]]) {
-            wxRequest.bText = NO;
-            wxRequest.message = message;
-        } else if ([message.mediaObject isKindOfClass:[WXFileObject class]]) {
-            wxRequest.bText = NO;
-            wxRequest.message = message;
-        }
-        
-        wxRequest.bText = NO;
-        wxRequest.scene = (int)scene;
-        
-        [WXApi sendReq:wxRequest];
-    } else {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"分享失败" message:@"请使用其它分享途径。" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-        [alert show];
     }
 }
 

@@ -76,7 +76,7 @@ static NSString * const musicIdentifier = @"music";
 
     self.deleteArr = [NSMutableArray array];
     
-    self.urlArray = [NSMutableArray arrayWithObjects:@"",@"https://itunes.apple.com/cn/app/id1141414335?mt=8",@"https://appsto.re/cn/kE9M4.i", nil];
+    self.urlArray = [NSMutableArray arrayWithObjects:@"https://itunes.apple.com/cn/app/id1141414335?mt=8",@"https://itunes.apple.com/cn/app/id1128178648?mt=8",@"https://itunes.apple.com/cn/app/id949737354?mt=8", nil];
     
     self.defaultArr = [NSMutableArray new];
     if ([WMUserDefault arrayForKey:@"DefaultData"]) {
@@ -111,6 +111,8 @@ static NSString * const musicIdentifier = @"music";
     }else{
         scrollViewHeight = 80;
     }
+    
+    scrollViewHeight ++;
     
     self.tableheadView = [[MptTableHeadView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, scrollViewHeight) Type:MptTableHeadViewOther];
     self.tableheadView.dataSource = self;
@@ -271,7 +273,9 @@ static NSString * const musicIdentifier = @"music";
         return cell;
     }
     
+    NSString *imageIcon = [NSString stringWithFormat:@"ad%ld_%ld.png",index + 1, (NSInteger)SCREENWIDTH * 2];
     
+    cell.imageView.image = [UIImage imageNamed:imageIcon];
     
     return cell;
 }
@@ -282,6 +286,8 @@ static NSString * const musicIdentifier = @"music";
     }
     
     NSString *url = [self.urlArray objectAtIndex:index];
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
 }
 
 #pragma mark - UITableViewDelegate

@@ -85,7 +85,7 @@ static void displayStatusChanged(CFNotificationCenterRef center,
         NSMutableArray *array = [NSMutableArray array];
         
         MusicData *musicData = [[MusicData alloc] init];
-        musicData.musicName = @"故事1";
+        musicData.musicName = @"小王子1";
         musicData.indexName = @"1";
         musicData.imageName = @"home_m4a_1.png";
         musicData.volum = 0.5;
@@ -93,7 +93,7 @@ static void displayStatusChanged(CFNotificationCenterRef center,
         [array addObject:musicData];
         
         MusicData *musicDataTwo = [[MusicData alloc] init];
-        musicDataTwo.musicName = @"故事2";
+        musicDataTwo.musicName = @"小王子2";
         musicDataTwo.indexName = @"2";
         musicDataTwo.imageName = @"home_m4a_2.png";
         musicDataTwo.volum = 0.5;
@@ -101,7 +101,7 @@ static void displayStatusChanged(CFNotificationCenterRef center,
         [array addObject:musicDataTwo];
         
         MusicData *musicDataThree = [[MusicData alloc] init];
-        musicDataThree.musicName = @"故事3";
+        musicDataThree.musicName = @"苏菲的世界";
         musicDataThree.indexName = @"3";
         musicDataThree.imageName = @"home_m4a_3.png";
         musicDataThree.volum = 0.5;

@@ -70,7 +70,10 @@
         self.onScreenCells = [NSMutableArray arrayWithCapacity:10];
         self.onsScreenTags = [NSMutableArray arrayWithCapacity:5];
         
-        self.scrollView = [[MptTouchScrollView alloc] initWithFrame:self.bounds];
+        CGRect scrollViewFrame = self.bounds;
+        scrollViewFrame.size.height --;
+        
+        self.scrollView = [[MptTouchScrollView alloc] initWithFrame:scrollViewFrame];
         self.scrollView.delegate = self;
         self.scrollView.backgroundColor = [UIColor clearColor];
         self.scrollView.pagingEnabled = YES;
@@ -88,6 +91,10 @@
             self.pageControl = [[MptPageControl alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(self.scrollView.frame)-kPageControl_H, SCREENWIDTH, kPageControl_H) Type:type];
         }
         [self addSubview:self.pageControl];
+        
+        UILabel *bottomLine = [[UILabel alloc] initWithFrame:CGRectMake(0, scrollViewFrame.size.height, SCREENWIDTH, 1)];
+        bottomLine.backgroundColor = HexRGB(0xE3E3E3);
+        [self addSubview:bottomLine];
     }
     return self;
 }
