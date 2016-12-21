@@ -50,13 +50,19 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
-  - ShareSDK3 (3.5.2):
-    - ShareSDK3/ShareSDK (= 3.5.2)
-  - ShareSDK3/ShareSDK (3.5.2)
-  - ShareSDK3/ShareSDKPlatforms/Facebook (3.5.2)
-  - ShareSDK3/ShareSDKPlatforms/QQ (3.5.2)
-  - ShareSDK3/ShareSDKPlatforms/SinaWeibo (3.5.2)
-  - ShareSDK3/ShareSDKPlatforms/WeChat (3.5.2)
+  - ShareSDK3 (3.5.4):
+    - MOBFoundation
+    - ShareSDK3/ShareSDK (= 3.5.4)
+  - ShareSDK3/ShareSDK (3.5.4):
+    - MOBFoundation
+  - ShareSDK3/ShareSDKPlatforms/Facebook (3.5.4):
+    - MOBFoundation
+  - ShareSDK3/ShareSDKPlatforms/QQ (3.5.4):
+    - MOBFoundation
+  - ShareSDK3/ShareSDKPlatforms/SinaWeibo (3.5.4):
+    - MOBFoundation
+  - ShareSDK3/ShareSDKPlatforms/WeChat (3.5.4):
+    - MOBFoundation
   - SlackTextViewController (1.9.5)
   - TTTAttributedLabel (2.0.0)
   - UIActivityIndicator-for-SDWebImage (1.2):
@@ -128,7 +134,7 @@ SPEC CHECKSUMS:
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
   SCLAlertView-Objective-C: 349a894d4e1d1dbf14d443da784c6ca1e92c78d2
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  ShareSDK3: 08ed714e2bbdcd97ab60f58cb398227341dfc20a
+  ShareSDK3: 80e4208c44b259781a17c411f6feec99b604fc25
   SlackTextViewController: fbcdadbb8090673f604484ff5b6eb8d77baed42a
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
