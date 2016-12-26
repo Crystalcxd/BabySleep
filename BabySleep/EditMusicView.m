@@ -45,7 +45,7 @@
     
     if (type == EditMusicViewTypeNormal) {
         UIButton *editBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        editBtn.frame = CGRectMake(0, 0, SCREENWIDTH * 0.5, CGRectGetHeight(self.frame));
+        editBtn.frame = CGRectMake(0, 0, SCREENWIDTH / 3.0, CGRectGetHeight(self.frame));
         [editBtn setTitle:@"编辑" forState:UIControlStateNormal];
         [editBtn setTitleColor:HexRGB(0xFF564F) forState:UIControlStateNormal];
         [editBtn setTitleColor:HexRGB(0xCDA09E) forState:UIControlStateHighlighted];
@@ -54,7 +54,7 @@
         [self.contentView addSubview:editBtn];
         
         UIButton *loopBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        loopBtn.frame = CGRectMake(SCREENWIDTH * 0.5, 0, SCREENWIDTH * 0.5, CGRectGetHeight(self.frame));
+        loopBtn.frame = CGRectMake(SCREENWIDTH / 3.0 * 2, 0, SCREENWIDTH / 3.0, CGRectGetHeight(self.frame));
         [loopBtn setImage:[UIImage imageNamed:@"home_loop"] forState:UIControlStateNormal];
         [loopBtn setImage:[UIImage imageNamed:@"home_loop_down"] forState:UIControlStateHighlighted];
         [self.contentView addSubview:loopBtn];
