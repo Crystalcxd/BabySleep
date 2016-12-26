@@ -4,9 +4,9 @@ platform :ios, '8.0'
 target 'BabySleep' do
 
 # 网络
-pod 'AFNetworking', '~> 3.1.0'
+pod 'AFNetworking'
 pod 'SDWebImage'
-pod 'CocoaAsyncSocket', '~> 7.4.3'
+pod 'CocoaAsyncSocket'
 
 # Model
 pod 'Mantle', '~> 1.5.0'
