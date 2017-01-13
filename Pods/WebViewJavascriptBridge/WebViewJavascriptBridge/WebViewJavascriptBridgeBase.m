@@ -123,6 +123,7 @@ static int logMaxLength = 500;
 }
 
 - (BOOL)isWebViewJavascriptBridgeURL:(NSURL*)url {
+<<<<<<< HEAD
     if (![self isSchemeMatch:url]) {
         return NO;
     }
@@ -132,6 +133,12 @@ static int logMaxLength = 500;
 - (BOOL)isSchemeMatch:(NSURL*)url {
     NSString* scheme = url.scheme.lowercaseString;
     return [scheme isEqualToString:kNewProtocolScheme] || [scheme isEqualToString:kOldProtocolScheme];
+=======
+    if (![[url scheme] isEqualToString:kCustomProtocolScheme]){
+        return NO;
+    }
+    return ([self isBridgeLoadedURL:url] || [self isQueueMessageURL:url]);
+>>>>>>> origin/MotherStory
 }
 
 - (BOOL)isQueueMessageURL:(NSURL*)url {
