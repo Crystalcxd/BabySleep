@@ -29,7 +29,7 @@ PODS:
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
   - MJRefresh (3.1.12)
-  - Qiniu (7.1.4):
+  - Qiniu (7.1.5):
     - AFNetworking (~> 3)
     - HappyDNS (~> 0.3)
   - RDVTabBarController (1.1.9)
@@ -43,7 +43,7 @@ PODS:
     - SDWebImage (~> 3.7)
   - UITableView+FDTemplateLayoutCell (1.3)
   - UMengAnalytics-NO-IDFA (4.1.9)
-  - WebViewJavascriptBridge (5.1.0)
+  - WebViewJavascriptBridge (6.0.2)
   - WeChat_SDK (1.7.5.1)
   - WeiboSDK (3.1.3)
   - YYModel (1.0.4)
@@ -87,7 +87,7 @@ SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
-  Qiniu: a4c962782035ee25b9da3e195181d8c384bb75be
+  Qiniu: 77a3dba411556a383d72d17e842345a9d4c83252
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
@@ -96,7 +96,7 @@ SPEC CHECKSUMS:
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
   UITableView+FDTemplateLayoutCell: d5be6056b5060313f5955a2590ecd33142ad713d
   UMengAnalytics-NO-IDFA: 985292af177111685325c90c321094172b95d2cb
-  WebViewJavascriptBridge: b75d0583e14c709eb5a614c563c977bb9855b7d3
+  WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
   WeChat_SDK: 235a2ae8967bcbe54c1e5668c187641c886b19af
   WeiboSDK: acb067053668102cf07d01aa7604350162c2e466
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30

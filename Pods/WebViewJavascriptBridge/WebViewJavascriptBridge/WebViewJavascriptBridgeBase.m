@@ -122,24 +122,26 @@ static int logMaxLength = 500;
     }
 }
 
-- (BOOL)isCorrectProcotocolScheme:(NSURL*)url {
-    if([[url scheme] isEqualToString:kCustomProtocolScheme]){
-        return YES;
-    } else {
+- (BOOL)isWebViewJavascriptBridgeURL:(NSURL*)url {
+    if (![self isSchemeMatch:url]) {
         return NO;
     }
+    return [self isBridgeLoadedURL:url] || [self isQueueMessageURL:url];
+}
+
+- (BOOL)isSchemeMatch:(NSURL*)url {
+    NSString* scheme = url.scheme.lowercaseString;
+    return [scheme isEqualToString:kNewProtocolScheme] || [scheme isEqualToString:kOldProtocolScheme];
 }
 
 - (BOOL)isQueueMessageURL:(NSURL*)url {
-    if([[url host] isEqualToString:kQueueHasMessage]){
-        return YES;
-    } else {
-        return NO;
-    }
+    NSString* host = url.host.lowercaseString;
+    return [self isSchemeMatch:url] && [host isEqualToString:kQueueHasMessage];
 }
 
 - (BOOL)isBridgeLoadedURL:(NSURL*)url {
-    return ([[url scheme] isEqualToString:kCustomProtocolScheme] && [[url host] isEqualToString:kBridgeLoaded]);
+    NSString* host = url.host.lowercaseString;
+    return [self isSchemeMatch:url] && [host isEqualToString:kBridgeLoaded];
 }
 
 - (void)logUnkownMessage:(NSURL*)url {

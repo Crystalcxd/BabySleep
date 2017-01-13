@@ -36,6 +36,9 @@
 }
 
 + (instancetype)bridgeForWebView:(id)webView {
+    return [self bridge:webView];
+}
++ (instancetype)bridge:(id)webView {
 #if defined supportsWKWebView
     if ([webView isKindOfClass:[WKWebView class]]) {
         return (WebViewJavascriptBridge*) [WKWebViewJavascriptBridge bridgeForWebView:webView];
@@ -78,6 +81,10 @@
     _base.messageHandlers[handlerName] = [handler copy];
 }
 
+- (void)removeHandler:(NSString *)handlerName {
+    [_base.messageHandlers removeObjectForKey:handlerName];
+}
+
 - (void)disableJavscriptAlertBoxSafetyTimeout {
     [_base disableJavscriptAlertBoxSafetyTimeout];
 }
@@ -97,9 +104,9 @@
     return [_webView stringByEvaluatingJavaScriptFromString:javascriptCommand];
 }
 
+#if defined WVJB_PLATFORM_OSX
 /* Platform specific internals: OSX
  **********************************/
-#if defined WVJB_PLATFORM_OSX
 
 - (void) _platformSpecificSetup:(WVJB_WEBVIEW_TYPE*)webView {
     _webView = webView;
@@ -116,7 +123,7 @@
     if (webView != _webView) { return; }
     
     NSURL *url = [request URL];
-    if ([_base isCorrectProcotocolScheme:url]) {
+    if ([_base isWebViewJavascriptBridgeURL:url]) {
         if ([_base isBridgeLoadedURL:url]) {
             [_base injectJavascriptFile];
         } else if ([_base isQueueMessageURL:url]) {
@@ -135,9 +142,9 @@
 
 
 
+#elif defined WVJB_PLATFORM_IOS
 /* Platform specific internals: iOS
  **********************************/
-#elif defined WVJB_PLATFORM_IOS
 
 - (void) _platformSpecificSetup:(WVJB_WEBVIEW_TYPE*)webView {
     _webView = webView;
@@ -173,7 +180,7 @@
     
     NSURL *url = [request URL];
     __strong WVJB_WEBVIEW_DELEGATE_TYPE* strongDelegate = _webViewDelegate;
-    if ([_base isCorrectProcotocolScheme:url]) {
+    if ([_base isWebViewJavascriptBridgeURL:url]) {
         if ([_base isBridgeLoadedURL:url]) {
             [_base injectJavascriptFile];
         } else if ([_base isQueueMessageURL:url]) {
