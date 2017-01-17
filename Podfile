@@ -32,10 +32,16 @@ pod 'WeChat_SDK'
 pod 'WeiboSDK'# 新浪
 pod 'UMengAnalytics-NO-IDFA' # 友盟 SDK（无 IDFA）
 pod 'Qiniu' # 七牛
+pod 'JPush'
+pod 'MiPushSDK'
 pod 'RegexKitLite' #正则
 pod 'Masonry'   #代码布局
 pod 'WebViewJavascriptBridge'
 pod 'GVUserDefaults'
 pod 'DateTools'
+pod 'Valet' # keychain
+pod 'pop'
+pod 'Fabric'
+pod 'Crashlytics'
 
 end
