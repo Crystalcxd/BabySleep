@@ -51,7 +51,7 @@ PODS:
     - SDWebImage (~> 3.7)
   - UITableView+FDTemplateLayoutCell (1.3)
   - UMengAnalytics-NO-IDFA (4.1.9)
-  - Valet (2.2.3)
+  - Valet (2.3.0)
   - WebViewJavascriptBridge (6.0.2)
   - WeChat_SDK (1.7.5.1)
   - WeiboSDK (3.1.3)
@@ -117,7 +117,7 @@ SPEC CHECKSUMS:
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
   UITableView+FDTemplateLayoutCell: d5be6056b5060313f5955a2590ecd33142ad713d
   UMengAnalytics-NO-IDFA: 985292af177111685325c90c321094172b95d2cb
-  Valet: c78c7d2e4b2d104d29b9bc62c8f9aa38fbc901eb
+  Valet: ef076e9bb47353c0d879c8febcd53af4f6e92313
   WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
   WeChat_SDK: 235a2ae8967bcbe54c1e5668c187641c886b19af
   WeiboSDK: acb067053668102cf07d01aa7604350162c2e466
@@ -125,4 +125,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 79e6034f14af7bcf6eb3cc504d59b7ae1f960756
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0.rc.1
