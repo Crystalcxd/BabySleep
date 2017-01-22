@@ -49,7 +49,7 @@ PODS:
   - TTTAttributedLabel (2.0.0)
   - UIActivityIndicator-for-SDWebImage (1.2):
     - SDWebImage (~> 3.7)
-  - UITableView+FDTemplateLayoutCell (1.3)
+  - UITableView+FDTemplateLayoutCell (1.4)
   - UMengAnalytics-NO-IDFA (4.1.9)
   - Valet (2.3.0)
   - WebViewJavascriptBridge (6.0.2)
@@ -81,7 +81,7 @@ DEPENDENCIES:
   - SlackTextViewController
   - TTTAttributedLabel
   - UIActivityIndicator-for-SDWebImage
-  - UITableView+FDTemplateLayoutCell (= 1.3)
+  - UITableView+FDTemplateLayoutCell
   - UMengAnalytics-NO-IDFA
   - Valet
   - WebViewJavascriptBridge
@@ -115,7 +115,7 @@ SPEC CHECKSUMS:
   SlackTextViewController: fbcdadbb8090673f604484ff5b6eb8d77baed42a
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
-  UITableView+FDTemplateLayoutCell: d5be6056b5060313f5955a2590ecd33142ad713d
+  UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
   UMengAnalytics-NO-IDFA: 985292af177111685325c90c321094172b95d2cb
   Valet: ef076e9bb47353c0d879c8febcd53af4f6e92313
   WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
@@ -123,6 +123,6 @@ SPEC CHECKSUMS:
   WeiboSDK: acb067053668102cf07d01aa7604350162c2e466
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 79e6034f14af7bcf6eb3cc504d59b7ae1f960756
+PODFILE CHECKSUM: 5e44e6c9381f311bef447f801386a7137157a182
 
 COCOAPODS: 1.2.0.rc.1

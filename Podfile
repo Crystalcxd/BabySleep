@@ -20,7 +20,7 @@ pod 'MBProgressHUD'
 pod 'MJRefresh' # 下拉刷新
 pod 'HMSegmentedControl'
 pod 'TTTAttributedLabel'
-pod 'UITableView+FDTemplateLayoutCell', '1.3' # cell 布局高度
+pod 'UITableView+FDTemplateLayoutCell' # cell 布局高度
 pod 'DACircularProgress'
 pod 'UIActivityIndicator-for-SDWebImage'
 
