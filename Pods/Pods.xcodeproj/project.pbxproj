@@ -843,6 +843,7 @@
 		4D36CB9359A10A9F3F81C516BFFEF178 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		4E89E79F91A3D44F1B4FF3BCAE3F570B /* UIView+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MJExtension.h"; path = "MJRefresh/UIView+MJExtension.h"; sourceTree = "<group>"; };
 		4FBB01737566B6DA34F77E36959BEFDF /* SDWebImageDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDecoder.m; path = SDWebImage/SDWebImageDecoder.m; sourceTree = "<group>"; };
+		4FBEEF22823395547231D66E1A608A08 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMMobClick.framework; path = "umsdk_IOS_analyics_no-idfa_v4.2.5/UMMobClick.framework"; sourceTree = "<group>"; };
 		5125B3CFD35F9BD44012610D312A06E1 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		521AE6913F1A00AA6124ED939DCC665F /* HMSegmentedControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HMSegmentedControl.h; path = HMSegmentedControl/HMSegmentedControl.h; sourceTree = "<group>"; };
 		52226F6F61D6F5786D11CB56185B16B1 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
@@ -1158,7 +1159,6 @@
 		D5F35E46776A1C7D826D5302813FB15B /* QNPHAssetFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNPHAssetFile.h; path = QiniuSDK/Common/QNPHAssetFile.h; sourceTree = "<group>"; };
 		D60EE4EA5C500C5B9460F6463E03AE95 /* Overlay@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "Overlay@2x.png"; path = "Classes/ELCImagePicker/Resources/Overlay@2x.png"; sourceTree = "<group>"; };
 		D6325FE2BDFF21BAF85AE44336BBA80E /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
-		D8487F075F802BEAE549400BAC6F06A4 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMMobClick.framework; path = "umsdk_IOS_analyics_no-idfa_v4.1.9/UMMobClick.framework"; sourceTree = "<group>"; };
 		D95C015D2592D07708B87A1F58420032 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
 		DBA01B7BADEB6D59F6A9FCAF18F90520 /* MJRefreshStateHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshStateHeader.m; path = MJRefresh/Custom/Header/MJRefreshStateHeader.m; sourceTree = "<group>"; };
 		DBA28DDD71043D43351641E24CE28C7D /* POPCustomAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCustomAnimation.h; path = pop/POPCustomAnimation.h; sourceTree = "<group>"; };
@@ -1481,7 +1481,7 @@
 		00D6D0D7E3415B945B8F533BF2111CD8 /* UMengAnalytics-NO-IDFA */ = {
 			isa = PBXGroup;
 			children = (
-				A2BB64E3E3A83D6F9C4DFFB89D883E88 /* Frameworks */,
+				3DDE6DCE72267B396D6773F68535B2B1 /* Frameworks */,
 			);
 			name = "UMengAnalytics-NO-IDFA";
 			path = "UMengAnalytics-NO-IDFA";
@@ -1758,6 +1758,14 @@
 			);
 			name = JCore;
 			path = JCore;
+			sourceTree = "<group>";
+		};
+		3DDE6DCE72267B396D6773F68535B2B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FBEEF22823395547231D66E1A608A08 /* UMMobClick.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		406F42D7DB674211DD52D2BB46496DF2 /* Support Files */ = {
@@ -2284,14 +2292,6 @@
 			);
 			name = RDVTabBarController;
 			path = RDVTabBarController;
-			sourceTree = "<group>";
-		};
-		A2BB64E3E3A83D6F9C4DFFB89D883E88 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D8487F075F802BEAE549400BAC6F06A4 /* UMMobClick.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A8508D38E4A1A6719E98582A7CE2DE36 /* Frameworks */ = {
