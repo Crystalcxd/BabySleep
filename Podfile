@@ -27,6 +27,8 @@ pod 'DACircularProgress'
 pod 'UIActivityIndicator-for-SDWebImage'
 pod 'SCLAlertView-Objective-C'
 pod 'FXBlurView' #毛玻璃效果
+pod 'RSKImageCropper'
+pod 'CircleProgressBar'
 
 # Vendor
 pod 'UMengAnalytics-NO-IDFA' # 友盟 SDK（无 IDFA）
@@ -49,5 +51,10 @@ pod 'DateTools' # 日期时间工具
 pod 'GBDeviceInfo' # 设备信息
 pod 'Valet' # keychain
 pod 'pop'
+pod 'GTMBase64'
+pod 'Fabric'
+pod 'Crashlytics'
+pod 'SDAutoLayout'
+pod 'FMDB'
 
 end
