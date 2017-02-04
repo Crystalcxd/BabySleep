@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '63586B75BCAFAB753A8EF8EE20558D9F'
-               BlueprintName = 'WebViewJavascriptBridge'
+               BlueprintIdentifier = '286E919513FE24DA9056011FC0FB63B2'
+               BlueprintName = 'RSKImageCropper'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'WebViewJavascriptBridge.framework'>
+               BuildableName = 'RSKImageCropper.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

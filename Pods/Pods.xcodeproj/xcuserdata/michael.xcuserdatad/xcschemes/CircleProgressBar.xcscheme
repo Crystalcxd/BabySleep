@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '63586B75BCAFAB753A8EF8EE20558D9F'
-               BlueprintName = 'WebViewJavascriptBridge'
+               BlueprintIdentifier = 'B545B48FA0CEE58E0B8D9309EE4CFF7C'
+               BlueprintName = 'CircleProgressBar'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'WebViewJavascriptBridge.framework'>
+               BuildableName = 'CircleProgressBar.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
