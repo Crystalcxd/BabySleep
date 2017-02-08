@@ -67,23 +67,36 @@
         [self.textField setValue:HexRGB(0xD0D0D0) forKeyPath:@"_placeholderLabel.textColor"];
         [boardBG addSubview:self.textField];
         
-        UILabel *tipTitle = [[UILabel alloc] initWithFrame:CGRectMake(0, 108, 288, 17)];
-        tipTitle.textAlignment = NSTextAlignmentCenter;
-        tipTitle.textColor = HexRGB(0xD04CFF);
-        tipTitle.font = [UIFont fontWithName:@"DFPYuanW5" size:12];
-        tipTitle.text = @"提示：文件大于10M，无法使用微信分享。";
-        [boardBG addSubview:tipTitle];
-        
         self.musicData.imageName = @"record_save_head.png";
 
-        UILabel *iconTitle = [[UILabel alloc] initWithFrame:CGRectMake(22, 175, 100, 18)];
+        UILabel *iconTitle = [[UILabel alloc] initWithFrame:CGRectMake(22, 155, 100, 18)];
         iconTitle.textColor = HexRGB(0x9E9E9E);
         iconTitle.font = [UIFont fontWithName:@"DFPYuanW5" size:18];
         iconTitle.text = @"头像";
         [boardBG addSubview:iconTitle];
         
-        UIView *imageBG = [[UIView alloc]initWithFrame:CGRectMake(104, 198, 80, 80)];
-        imageBG.layer.cornerRadius = 45;
+        for (int i = 0; i < 3; i++) {
+            UIButton *selectImageBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+            selectImageBtn.frame = CGRectMake(45 + i * 77, 188, 45, 45);
+            [selectImageBtn setImage:[UIImage imageNamed:[NSString stringWithFormat:@"record_save_head%d.png",i+1]] forState:UIControlStateNormal];
+            selectImageBtn.layer.cornerRadius = 45 * 0.5;
+            selectImageBtn.clipsToBounds = YES;
+            selectImageBtn.layer.borderWidth = 1;
+            selectImageBtn.layer.borderColor = [UIColor clearColor].CGColor;
+            selectImageBtn.tag = TABLEVIEW_BEGIN_TAG + i;
+            [selectImageBtn addTarget:self action:@selector(selectAction:) forControlEvents:UIControlEventTouchUpInside];
+            [boardBG addSubview:selectImageBtn];
+        }
+        
+        UILabel *selectTitle = [[UILabel alloc] initWithFrame:CGRectMake(0, 290, 288, 18)];
+        selectTitle.textAlignment = NSTextAlignmentCenter;
+        selectTitle.textColor = HexRGB(0xB1B1B1);
+        selectTitle.font = [UIFont fontWithName:@"DFPYuanW5" size:18];
+        selectTitle.text = @"自定义头像";
+        [boardBG addSubview:selectTitle];
+        
+        UIView *imageBG = [[UIView alloc]initWithFrame:CGRectMake(104, 331, 80, 80)];
+        imageBG.layer.cornerRadius = 40;
         imageBG.clipsToBounds = YES;
         [boardBG addSubview:imageBG];
         
@@ -100,27 +113,7 @@
         selectImageBtn.frame = imageBG.frame;
         [selectImageBtn addTarget:self action:@selector(selectImage:) forControlEvents:UIControlEventTouchUpInside];
         [boardBG addSubview:selectImageBtn];
-        
-        UILabel *selectTitle = [[UILabel alloc] initWithFrame:CGRectMake(0, 310, 288, 17)];
-        selectTitle.textAlignment = NSTextAlignmentCenter;
-        selectTitle.textColor = HexRGB(0xB1B1B1);
-        selectTitle.font = [UIFont fontWithName:@"DFPYuanW5" size:12];
-        selectTitle.text = @"选择默认";
-        [boardBG addSubview:selectTitle];
-        
-        for (int i = 0; i < 3; i++) {
-            UIButton *selectImageBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-            selectImageBtn.frame = CGRectMake(45 + i * 77, 341, 45, 45);
-            [selectImageBtn setImage:[UIImage imageNamed:[NSString stringWithFormat:@"record_save_head%d.png",i+1]] forState:UIControlStateNormal];
-            selectImageBtn.layer.cornerRadius = 45 * 0.5;
-            selectImageBtn.clipsToBounds = YES;
-            selectImageBtn.layer.borderWidth = 1;
-            selectImageBtn.layer.borderColor = [UIColor clearColor].CGColor;
-            selectImageBtn.tag = TABLEVIEW_BEGIN_TAG + i;
-            [selectImageBtn addTarget:self action:@selector(selectAction:) forControlEvents:UIControlEventTouchUpInside];
-            [boardBG addSubview:selectImageBtn];
-        }
-        
+
         UIButton *saveBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         saveBtn.frame = CGRectMake(0, 426, 288, 64);
         [saveBtn setTitle:@"保 存" forState:UIControlStateNormal];

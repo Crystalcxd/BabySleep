@@ -23,6 +23,7 @@ pod 'TTTAttributedLabel'
 pod 'UITableView+FDTemplateLayoutCell' # cell 布局高度
 pod 'DACircularProgress'
 pod 'UIActivityIndicator-for-SDWebImage'
+pod 'WebViewJavascriptBridge'
 
 # Helper/Tool
 pod 'GBDeviceInfo' # 设备信息
@@ -36,7 +37,6 @@ pod 'JPush'
 pod 'MiPushSDK'
 pod 'RegexKitLite' #正则
 pod 'Masonry'   #代码布局
-pod 'WebViewJavascriptBridge'
 pod 'GVUserDefaults'
 pod 'DateTools'
 pod 'Valet' # keychain
