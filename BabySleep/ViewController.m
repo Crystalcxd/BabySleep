@@ -132,6 +132,7 @@ static NSString * const musicIdentifier = @"music";
     __weak typeof(self) weakSelf = self;
     self.editMusicView.StartEdit = ^{
         weakSelf.editMode = YES;
+        weakSelf.recordBtn.alpha = 0.0;
         weakSelf.recordBtn.hidden = YES;
         weakSelf.recordBtn.enabled = NO;
         [weakSelf.tableView reloadData];
@@ -139,8 +140,12 @@ static NSString * const musicIdentifier = @"music";
     
     self.editMusicView.EndEdit = ^{
         weakSelf.editMode = NO;
-        weakSelf.recordBtn.hidden = NO;
-        weakSelf.recordBtn.enabled = YES;
+        [UIView animateWithDuration:0.5 delay:0.5 options:UIViewAnimationOptionLayoutSubviews animations:^{
+            weakSelf.recordBtn.alpha = 1.0;
+        } completion:^(BOOL finished) {
+            weakSelf.recordBtn.hidden = NO;
+            weakSelf.recordBtn.enabled = YES;
+        }];
         [weakSelf.tableView reloadData];
     };
     
