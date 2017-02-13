@@ -20,6 +20,9 @@
 
 #import "MusicData.h"
 
+#import <ShareSDK/ShareSDK.h>
+#import <ShareSDKConnector/ShareSDKConnector.h>
+
 @interface AppDelegate ()
 
 @property (nonatomic, unsafe_unretained) UIBackgroundTaskIdentifier backgroundIdentifier;
@@ -69,6 +72,66 @@ static void displayStatusChanged(CFNotificationCenterRef center,
     [self.window makeKeyAndVisible];
 
     [WXApi registerApp:WXAppId];
+
+    [ShareSDK registerApp:@"1b475336d78ac"
+     
+          activePlatforms:@[
+                            @(SSDKPlatformTypeWechat)
+                            ]
+                 onImport:^(SSDKPlatformType platformType)
+     {
+         switch (platformType)
+         {
+             case SSDKPlatformTypeWechat:
+                 [ShareSDKConnector connectWeChat:[WXApi class]];
+                 break;
+             default:
+                 break;
+         }
+     }
+          onConfiguration:^(SSDKPlatformType platformType, NSMutableDictionary *appInfo)
+     {
+         
+         switch (platformType)
+         {
+                 //             case SSDKPlatformTypeSinaWeibo:
+                 //                 //设置新浪微博应用信息,其中authType设置为使用SSO＋Web形式授权
+                 //                 [appInfo SSDKSetupSinaWeiboByAppKey:@"568898243"
+                 //                                           appSecret:@"38a4f8204cc784f81f9f0daaf31e02e3"
+                 //                                         redirectUri:@"http://www.sharesdk.cn"
+                 //                                            authType:SSDKAuthTypeBoth];
+                 //                 break;
+             case SSDKPlatformTypeFacebook:
+                 [appInfo SSDKSetupFacebookByApiKey:@"698594110304485"
+                                          appSecret:@"dbd4e6baa74d1e16b182bd3dfe964973"
+                                           authType:SSDKAuthTypeBoth];
+                 break;
+             case SSDKPlatformTypeWechat:
+                 [appInfo SSDKSetupWeChatByAppId:WXAppId
+                                       appSecret:WXAppSecret];
+                 break;
+             case SSDKPlatformTypeTwitter:
+                 [appInfo SSDKSetupTwitterByConsumerKey:@"4wpbNDXSN88ZTcuo4Ync288ce"
+                                         consumerSecret:@"XsyrVW5fPp8m5MB1qUNFj5D4jyoYoSsUSdsGKPa6p6h9Nce1za"
+                                            redirectUri:@"http://MotherSleep"];
+                 break;
+                 
+                 //             case SSDKPlatformTypeQQ:
+                 //                 [appInfo SSDKSetupQQByAppId:@"100371282"
+                 //                                      appKey:@"aed9b0303e3ed1e27bae87c33761161d"
+                 //                                    authType:SSDKAuthTypeBoth];
+                 //                 break;
+                 //             case SSDKPlatformTypeRenren:
+                 //                 [appInfo        SSDKSetupRenRenByAppId:@"226427"
+                 //                                                 appKey:@"fc5b8aed373c4c27a05b712acba0f8c3"
+                 //                                              secretKey:@"f29df781abdd4f49beca5a2194676ca4"
+                 //                                               authType:SSDKAuthTypeBoth];
+                 //                 break;
+                 
+             default:
+                 break;
+         }
+     }];
 
     UMConfigInstance.appKey = @"57dd6a32e0f55aca89005b97";
     UMConfigInstance.channelId = @"App Store";

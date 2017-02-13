@@ -31,8 +31,6 @@ pod 'RSKImageCropper'
 pod 'GBDeviceInfo' # 设备信息
 
 # Vendor
-pod 'WeChat_SDK'
-pod 'WeiboSDK'# 新浪
 pod 'UMengAnalytics-NO-IDFA' # 友盟 SDK（无 IDFA）
 pod 'Qiniu' # 七牛
 pod 'JPush'
@@ -48,5 +46,10 @@ pod 'Crashlytics'
 pod 'GTMBase64'
 pod 'SDAutoLayout'
 pod 'FMDB'
+pod 'ShareSDK3'
+pod 'ShareSDK3/ShareSDKPlatforms/Facebook'
+pod 'ShareSDK3/ShareSDKPlatforms/QQ'
+pod 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
+pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
 
 end

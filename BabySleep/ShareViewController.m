@@ -16,6 +16,8 @@
 
 #import "WXApi.h"
 
+#import <ShareSDK/ShareSDK.h>
+
 @interface ShareViewController ()<ShareViewDelegate>
 
 @end
