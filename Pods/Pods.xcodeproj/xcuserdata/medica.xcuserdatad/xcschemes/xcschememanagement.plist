@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CircleProgressBar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>DACircularProgress.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,7 +29,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FMDB.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>GBDeviceInfo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GTMBase64.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -79,7 +94,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RSKImageCropper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>RegexKitLite.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDAutoLayout.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -132,22 +157,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>00B0D97CB4469E189A4A602627EF55CB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>04CF549EBEEE7BC87AEAE35397184D94</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>197F84E6A7A53CE5220864E752D72FD9</key>
+		<key>0CB717A6578FD30DC3AFF0466EEE4642</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>22159A0C245E0F4322A703867F2D307B</key>
+		<key>11C377F5D8D36EF5074DC4F6348F9D6A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>27E97DBADDDE34B5DC3786C9D74A0796</key>
+		<key>25BCCE5E87D8EE8AAE34C5F854B50CCE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -157,7 +187,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>34DE4B7C7743CA519AA6EC137C4C0647</key>
+		<key>3E49EAC2834AC358E18C05D6AC14F8BA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -172,7 +202,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>64594F48E7C45EA90DD1729DFE6C650C</key>
+		<key>696464CC7A2BB11A44630085969308C0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -192,12 +222,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7E7948D60BDE5343D6062D00A5ABF731</key>
+		<key>82494E0BB11872284D86E8B7A25D8611</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8729B0E4D7CAD2B461CCB417EB0DD7BF</key>
+		<key>84EBD3BBAF846E620230364CE293CB82</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8642CC820CE8C5B88C113D7F47AF4BC3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>877E26F92D24C80D267373C325C910D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>893941B71A4E6451FF3F512EC17ECAF5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -207,12 +252,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9166F919BDC1D5B8499D7CA3767022B5</key>
+		<key>969A1E8FB312EA83DD4A509A32BDD0A1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9AAC956B74174765805416BDDFDCFF18</key>
+		<key>9CB8BA8F15FEDC130AE7969586E12F42</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -227,12 +272,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AB5619B641D277F9661BFAC261B4A55B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>ACE90065244803128D0BFABBB256AA54</key>
+		<key>ADE55DE1F1F5EC47FE03AF95180A19C0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -242,17 +282,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>B9003DE74FCF43E2C55B28B0D57B95CB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C791F0A928C1A8FE97074DFC9ACF4E75</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D570103AC7E79544314D70BD5AB190A5</key>
+		<key>CA56034F45481E265EAA0695B594BDD7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E2FE4A1149B4EB890364FD1AFABC9C12</key>
+		<key>E575D03E12464D1724F07410E5506D11</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F3859A4CE4AFDF6793722B14DAE0A780</key>
 		<dict>
 			<key>primary</key>
 			<true/>

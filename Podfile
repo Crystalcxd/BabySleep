@@ -24,6 +24,8 @@ pod 'UITableView+FDTemplateLayoutCell' # cell 布局高度
 pod 'DACircularProgress'
 pod 'UIActivityIndicator-for-SDWebImage'
 pod 'WebViewJavascriptBridge'
+pod 'CircleProgressBar'
+pod 'RSKImageCropper'
 
 # Helper/Tool
 pod 'GBDeviceInfo' # 设备信息
@@ -43,5 +45,8 @@ pod 'Valet' # keychain
 pod 'pop'
 pod 'Fabric'
 pod 'Crashlytics'
+pod 'GTMBase64'
+pod 'SDAutoLayout'
+pod 'FMDB'
 
 end

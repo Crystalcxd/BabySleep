@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E2FE4A1149B4EB890364FD1AFABC9C12'
+               BlueprintIdentifier = '9CB8BA8F15FEDC130AE7969586E12F42'
                BlueprintName = 'Valet'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libValet.a'>
