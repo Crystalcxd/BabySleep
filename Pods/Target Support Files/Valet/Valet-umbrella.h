@@ -12,6 +12,7 @@
 
 #import "Valet.h"
 #import "VALSecureEnclaveValet.h"
+#import "VALSinglePromptSecureEnclaveValet.h"
 #import "VALSynchronizableValet.h"
 #import "VALValet.h"
 
