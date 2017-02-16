@@ -34,6 +34,7 @@ PODS:
   - JCore (1.1.1)
   - JPush (3.0.2):
     - JCore (= 1.1.1)
+  - JSONKit (1.4)
   - Mantle (2.1.0):
     - Mantle/extobjc (= 2.1.0)
   - Mantle/extobjc (2.1.0)
@@ -90,6 +91,7 @@ DEPENDENCIES:
   - GVUserDefaults
   - HMSegmentedControl
   - JPush
+  - JSONKit
   - Mantle
   - Masonry
   - MBProgressHUD
@@ -132,6 +134,7 @@ SPEC CHECKSUMS:
   HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
   JCore: 2210a789c8efb7dc2a46b1c24d2209b995b18ad2
   JPush: 5d53c88e32e48b559edc3adb20ade30903a5b9e1
+  JSONKit: 5b69e804ea54d99293eed0fd2ce596c5703fefb0
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
@@ -155,6 +158,6 @@ SPEC CHECKSUMS:
   WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: f48c53d5bcbcd6c80dca3d9c36b4f530efb1ef09
+PODFILE CHECKSUM: 9c50e98c79fef072474d62606b6d23635fbcd35a
 
 COCOAPODS: 1.2.0
