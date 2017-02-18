@@ -52,5 +52,5 @@ pod 'ShareSDK3/ShareSDKPlatforms/QQ'
 pod 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
 pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
 pod 'JSONKit'
-
+pod 'NerdyUI'
 end
