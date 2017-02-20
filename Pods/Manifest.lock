@@ -67,6 +67,8 @@ PODS:
     - MOBFoundation
   - ShareSDK3/ShareSDKPlatforms/QQ (3.6.1):
     - MOBFoundation
+  - ShareSDK3/ShareSDKPlatforms/RenRen (3.6.1):
+    - MOBFoundation
   - ShareSDK3/ShareSDKPlatforms/SinaWeibo (3.6.1):
     - MOBFoundation
   - ShareSDK3/ShareSDKPlatforms/WeChat (3.6.1):
@@ -114,6 +116,7 @@ DEPENDENCIES:
   - ShareSDK3
   - ShareSDK3/ShareSDKPlatforms/Facebook
   - ShareSDK3/ShareSDKPlatforms/QQ
+  - ShareSDK3/ShareSDKPlatforms/RenRen
   - ShareSDK3/ShareSDKPlatforms/SinaWeibo
   - ShareSDK3/ShareSDKPlatforms/WeChat
   - SlackTextViewController
@@ -167,6 +170,6 @@ SPEC CHECKSUMS:
   WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: c7a9c272ad0f1846a1adfcca0e8166f1d62e2386
+PODFILE CHECKSUM: 3ec7ded6eb1a1c5c1c236b5e5be05566e30fa276
 
 COCOAPODS: 1.2.0
