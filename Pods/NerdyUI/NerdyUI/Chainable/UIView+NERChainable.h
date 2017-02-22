@@ -131,6 +131,13 @@ NER_VIEW_PROPS(UIView);
 
 //Usages: .clip.touchDisable.invisible
 
+
+/*
+ * Use to suppress getter side effects warning. Optional.
+ * Usages: someButton.str(@"hello").fitSize.End();
+ */
+- (void(^)())End;
+
 @end
 
 
@@ -441,7 +448,7 @@ NER_ALL_VIEW_PROPS(NERStaticTableView);
 @end
 
 
-#define fnt(x)          fnt(NER_CONVERT_INT_TO_STRING(x))
+#define fnt(x)          fnt(NER_CONVERT_VALUE_TO_STRING(x))
 #define str(...)        str(NER_CHECK_IS_ATT_STRING(__VA_ARGS__)? NER_RETURN_OBJECT(__VA_ARGS__): Str(__VA_ARGS__))
 #define insets(...)     insets(NER_NORMALIZE_INSETS(__VA_ARGS__))
 

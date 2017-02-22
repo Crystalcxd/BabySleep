@@ -43,15 +43,15 @@ PODS:
   - MiPushSDK (2.2.4)
   - MJRefresh (3.1.12)
   - MOBFoundation (2.2.15)
-  - NerdyUI (0.0.5):
-    - NerdyUI/Chainable (= 0.0.5)
-    - NerdyUI/Private (= 0.0.5)
-    - NerdyUI/Public (= 0.0.5)
-  - NerdyUI/Chainable (0.0.5):
+  - NerdyUI (0.0.6):
+    - NerdyUI/Chainable (= 0.0.6)
+    - NerdyUI/Private (= 0.0.6)
+    - NerdyUI/Public (= 0.0.6)
+  - NerdyUI/Chainable (0.0.6):
     - NerdyUI/Private
     - NerdyUI/Public
-  - NerdyUI/Private (0.0.5)
-  - NerdyUI/Public (0.0.5):
+  - NerdyUI/Private (0.0.6)
+  - NerdyUI/Public (0.0.6):
     - NerdyUI/Private
   - pop (1.0.9)
   - Qiniu (7.1.5):
@@ -152,7 +152,7 @@ SPEC CHECKSUMS:
   MiPushSDK: a00fd49376456a961991b947bc95ef714f7e9534
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   MOBFoundation: 4975874f74c991f562151f6a4549e9a6ad743fd8
-  NerdyUI: 00dc809c6ca5f3b6c135d1979651c59f76bc6e06
+  NerdyUI: f048f83cec36757212c7c55de4a6badbc3989287
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   Qiniu: 77a3dba411556a383d72d17e842345a9d4c83252
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a

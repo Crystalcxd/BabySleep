@@ -62,19 +62,37 @@
 
 - (void)clickAction:(NSInteger)tag
 {
-    switch (tag) {
-        case TABLEVIEW_BEGIN_TAG:
-            
+    SSDKPlatformType type = 0;
+    NSString *icon = @"icon120.png";
+    NSString *title = @"妈咪说故事";
+    NSString *text = @"妈咪说故事";
+    NSString *shareUrl = @"https://itunes.apple.com/cn/app/id1141416675?mt=8";
+    
+    //1、创建分享参数（必要）
+    NSMutableDictionary *shareParams = [NSMutableDictionary dictionary];
+    
+    
+    switch (tag - TABLEVIEW_BEGIN_TAG) {
+        case 0:
+            [shareParams SSDKSetupWeChatParamsByText:text title:title url:[NSURL URLWithString:shareUrl] thumbImage:[UIImage imageNamed:icon] image:[UIImage imageNamed:icon] musicFileURL:nil extInfo:nil fileData:nil emoticonData:nil type:SSDKContentTypeWebPage forPlatformSubType:SSDKPlatformSubTypeWechatSession];// 微信好友子平台
+            type = SSDKPlatformSubTypeWechatSession;
             break;
-            
+        case 1:
+            [shareParams SSDKSetupWeChatParamsByText:title title:title url:[NSURL URLWithString:shareUrl] thumbImage:[UIImage imageNamed:icon] image:[UIImage imageNamed:icon] musicFileURL:nil extInfo:nil fileData:nil emoticonData:nil type:SSDKContentTypeWebPage forPlatformSubType:SSDKPlatformSubTypeWechatTimeline];// 微信好友子平台
+            type = SSDKPlatformSubTypeWechatTimeline;
+            break;
         default:
             break;
     }
-    WXMediaMessage *message = [self wxShareSiglMessageScene:[UIImage imageNamed:@"icon120.png"]];
-    message.title = @"宝贝快睡，婴儿睡眠好帮手";
-    message.description = @"宝贝快睡，婴儿睡眠好帮手";
     
-    [self ShareWeixinLinkContent:message WXType:tag - TABLEVIEW_BEGIN_TAG];
+    //2、分享
+    [ShareSDK share:type parameters:shareParams onStateChanged:^(SSDKResponseState state, NSDictionary *userData, SSDKContentEntity *contentEntity, NSError *error) {
+        if (state == SSDKResponseStateSuccess) {
+            
+        }else{
+            
+        }
+    }];
 }
 
 #pragma mark - 微信分享
