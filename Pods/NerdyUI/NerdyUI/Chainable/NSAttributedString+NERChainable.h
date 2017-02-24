@@ -135,9 +135,11 @@ NER_ATT_PROP(TwoInt)    range;
 /**
  * Apply styles to attributedString.
  * It support two kind of arguments:
-   1) NERStyle instance
+   1) NERStyle instance or Array of NERStyle instances.
    2) NSString contain a list of style names(separated by white space).
- * Usages: .styles(someStyle), .styles(@"style1 style2 style3")
+ 
+ * Usages: .styles(style), .styles(@[style1, style2, style3]),
+           .styles(@"style1"), .styles(@"style1 style2 style3")
  * See NERStyle+NERChainable.h for more information.
  */
 NER_ATT_PROP(Object)    styles;
@@ -149,6 +151,8 @@ NER_ATT_PROP(Object)    styles;
  * Usages: AttStr(@"@Tim at #Apple").matchHashTag.matchNameTag.color(@"red")
  */
 
+//Select all numbers (e.g. 1024, 3.14)
+- (instancetype)matchNumber;
 //Select all URLs
 - (instancetype)matchURL;
 //Select all # Tags

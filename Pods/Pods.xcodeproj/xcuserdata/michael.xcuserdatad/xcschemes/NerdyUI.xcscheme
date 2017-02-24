@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5AB34BCC2A5390C2CD01D674EE1EBAC0'
-               BlueprintName = 'JSONKit'
+               BlueprintIdentifier = '56F122BDEFE0C2D6EDFF48DA93BFDA65'
+               BlueprintName = 'NerdyUI'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libJSONKit.a'>
+               BuildableName = 'libNerdyUI.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -60,7 +60,7 @@ NER_PROP(v, Float)              cornerRadius;\
 NER_PROP(v, FloatObjectList)    border;\
 \
 /**
- * Setting layer.shadowOpacity, layer.shadowRadius(Optional), layer.shadowOffset(Optional) at the same time.
+ * Setting layer.shadowOpacity, layer.shadowRadius(default: 3), layer.shadowOffset(default: 0, 3) at the same time.
  * Usages: .shadow(1), .shadow(0.8, 1), .shadow(1, 2, 2, 2);
  */\
 NER_PROP(v, FloatList)          shadow;\
@@ -68,9 +68,11 @@ NER_PROP(v, FloatList)          shadow;\
 /**
  * Apply styles to the view.
  * It support two kind of arguments:
-    1) NERStyle instance
-    2) NSString contain a list of style names(separated by white space).
- * Usages: .styles(someStyle), .styles(@"style1"), .styles(@"style1 style2 style3")
+    1) Local styles: NERStyle instance or Array of NERStyle instances.
+    2) Global styles: NSString contain a list of style names(separated by white space).
+
+ * Usages: .styles(style), .styles(@[style1, style2, style3]),
+           .styles(@"style1"), .styles(@"style1 style2 style3")
  * See NERStyle+NERChainable.h for more information.
  */\
 NER_PROP(v, Object)             styles;\

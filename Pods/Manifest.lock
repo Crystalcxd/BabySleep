@@ -15,7 +15,7 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - CircleProgressBar (0.32)
-  - Crashlytics (3.8.3):
+  - Crashlytics (3.8.4):
     - Fabric (~> 1.6.3)
   - DACircularProgress (2.3.1)
   - DateTools (2.0.0)
@@ -42,15 +42,15 @@ PODS:
   - MiPushSDK (2.2.4)
   - MJRefresh (3.1.12)
   - MOBFoundation (2.2.15)
-  - NerdyUI (0.0.6):
-    - NerdyUI/Chainable (= 0.0.6)
-    - NerdyUI/Private (= 0.0.6)
-    - NerdyUI/Public (= 0.0.6)
-  - NerdyUI/Chainable (0.0.6):
+  - NerdyUI (1.0.0):
+    - NerdyUI/Chainable (= 1.0.0)
+    - NerdyUI/Private (= 1.0.0)
+    - NerdyUI/Public (= 1.0.0)
+  - NerdyUI/Chainable (1.0.0):
     - NerdyUI/Private
     - NerdyUI/Public
-  - NerdyUI/Private (0.0.6)
-  - NerdyUI/Public (0.0.6):
+  - NerdyUI/Private (1.0.0)
+  - NerdyUI/Public (1.0.0):
     - NerdyUI/Private
   - pop (1.0.9)
   - Qiniu (7.1.5):
@@ -130,7 +130,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   CircleProgressBar: 3920079be5224b62b3d9ed6eeb23ac01c835b681
-  Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
+  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   ELCImagePickerController: b1b7084434a7d49f2cfc916bde1f3ba353d38de9
@@ -149,7 +149,7 @@ SPEC CHECKSUMS:
   MiPushSDK: a00fd49376456a961991b947bc95ef714f7e9534
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   MOBFoundation: 4975874f74c991f562151f6a4549e9a6ad743fd8
-  NerdyUI: f048f83cec36757212c7c55de4a6badbc3989287
+  NerdyUI: 967b2a6cf6c9dddd58557142dac45d4144ebe2d3
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   Qiniu: 77a3dba411556a383d72d17e842345a9d4c83252
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a

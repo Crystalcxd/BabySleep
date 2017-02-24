@@ -305,6 +305,11 @@
 + (void)applyStyleObject:(id)value toItem:(id)item {
     if ([value isKindOfClass:NERStyle.class]) {
         [value applyToItem:item];
+    
+    } else if ([value isKindOfClass:NSArray.class]) {
+        for (NERStyle *style in value) {
+            [style applyToItem:item];
+        }
         
     } else if ([value isKindOfClass:NSString.class]) {
         NSArray *styles = [value componentsSeparatedByString:@" "];
@@ -312,6 +317,13 @@
             [[NERStyle styleWithKey:styleName] applyToItem:item];
         }
     }
+}
+
++ (NSArray *)numberArrayFromFLoatList:(NERFloatList)value {
+    id values = @[@(value.f1), @(value.f2), @(value.f3), @(value.f4), @(value.f5),
+                  @(value.f6), @(value.f7), @(value.f8), @(value.f9), @(value.f10)];
+    
+    return [values subarrayWithRange:NSMakeRange(0, value.validCount)];
 }
 
 + (UIViewController *)getVisibleViewController {
