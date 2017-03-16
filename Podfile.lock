@@ -61,6 +61,8 @@ PODS:
     - ShareSDK3/ShareSDK (= 3.6.1)
   - ShareSDK3/ShareSDK (3.6.1):
     - MOBFoundation
+  - ShareSDK3/ShareSDKPlatforms/AliPaySocial (3.6.1):
+    - MOBFoundation
   - ShareSDK3/ShareSDKPlatforms/Facebook (3.6.1):
     - MOBFoundation
   - ShareSDK3/ShareSDKPlatforms/QQ (3.6.1):
@@ -70,6 +72,8 @@ PODS:
   - ShareSDK3/ShareSDKPlatforms/SinaWeibo (3.6.1):
     - MOBFoundation
   - ShareSDK3/ShareSDKPlatforms/WeChat (3.6.1):
+    - MOBFoundation
+  - ShareSDK3/ShareSDKPlatforms/Yixin (3.6.1):
     - MOBFoundation
   - SlackTextViewController (1.9.5)
   - TTTAttributedLabel (2.0.0)
@@ -112,11 +116,13 @@ DEPENDENCIES:
   - SDAutoLayout
   - SDWebImage
   - ShareSDK3
+  - ShareSDK3/ShareSDKPlatforms/AliPaySocial
   - ShareSDK3/ShareSDKPlatforms/Facebook
   - ShareSDK3/ShareSDKPlatforms/QQ
   - ShareSDK3/ShareSDKPlatforms/RenRen
   - ShareSDK3/ShareSDKPlatforms/SinaWeibo
   - ShareSDK3/ShareSDKPlatforms/WeChat
+  - ShareSDK3/ShareSDKPlatforms/Yixin
   - SlackTextViewController
   - TTTAttributedLabel
   - UIActivityIndicator-for-SDWebImage
@@ -168,6 +174,6 @@ SPEC CHECKSUMS:
   WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 3ec7ded6eb1a1c5c1c236b5e5be05566e30fa276
+PODFILE CHECKSUM: ed605dd058883bb427989b83e4fdd42f879fc56c
 
 COCOAPODS: 1.2.1.beta.1

@@ -45,6 +45,8 @@ pod 'ShareSDK3/ShareSDKPlatforms/QQ'
 pod 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
 pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
 pod 'ShareSDK3/ShareSDKPlatforms/RenRen'
+pod 'ShareSDK3/ShareSDKPlatforms/AliPaySocial'
+pod 'ShareSDK3/ShareSDKPlatforms/Yixin'
 pod 'MOBFoundation'
 
 # Helper/Tool
