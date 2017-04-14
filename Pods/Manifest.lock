@@ -43,7 +43,7 @@ PODS:
   - MBProgressHUD (1.0.0)
   - MiPushSDK (2.2.4)
   - MJRefresh (3.1.12)
-  - MOBFoundation (2.2.17)
+  - MOBFoundation (2.2.18)
   - pop (1.0.9)
   - Qiniu (7.1.5):
     - AFNetworking (~> 3)
@@ -51,29 +51,29 @@ PODS:
   - RDVTabBarController (1.1.9)
   - RegexKitLite (4.0)
   - RSKImageCropper (1.6.1)
-  - SCLAlertView-Objective-C (1.1.1)
+  - SCLAlertView-Objective-C (1.1.2)
   - SDAutoLayout (2.1.7)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
-  - ShareSDK3 (3.6.2.1):
+  - ShareSDK3 (3.6.3):
     - MOBFoundation
-    - ShareSDK3/ShareSDK (= 3.6.2.1)
-  - ShareSDK3/ShareSDK (3.6.2.1):
+    - ShareSDK3/ShareSDK (= 3.6.3)
+  - ShareSDK3/ShareSDK (3.6.3):
     - MOBFoundation
-  - ShareSDK3/ShareSDKPlatforms/AliPaySocial (3.6.2.1):
+  - ShareSDK3/ShareSDKPlatforms/AliPaySocial (3.6.3):
     - MOBFoundation
-  - ShareSDK3/ShareSDKPlatforms/Facebook (3.6.2.1):
+  - ShareSDK3/ShareSDKPlatforms/Facebook (3.6.3):
     - MOBFoundation
-  - ShareSDK3/ShareSDKPlatforms/QQ (3.6.2.1):
+  - ShareSDK3/ShareSDKPlatforms/QQ (3.6.3):
     - MOBFoundation
-  - ShareSDK3/ShareSDKPlatforms/RenRen (3.6.2.1):
+  - ShareSDK3/ShareSDKPlatforms/RenRen (3.6.3):
     - MOBFoundation
-  - ShareSDK3/ShareSDKPlatforms/SinaWeibo (3.6.2.1):
+  - ShareSDK3/ShareSDKPlatforms/SinaWeibo (3.6.3):
     - MOBFoundation
-  - ShareSDK3/ShareSDKPlatforms/WeChat (3.6.2.1):
+  - ShareSDK3/ShareSDKPlatforms/WeChat (3.6.3):
     - MOBFoundation
-  - ShareSDK3/ShareSDKPlatforms/Yixin (3.6.2.1):
+  - ShareSDK3/ShareSDKPlatforms/Yixin (3.6.3):
     - MOBFoundation
   - SlackTextViewController (1.9.5)
   - TTTAttributedLabel (2.0.0)
@@ -155,16 +155,16 @@ SPEC CHECKSUMS:
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MiPushSDK: a00fd49376456a961991b947bc95ef714f7e9534
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
-  MOBFoundation: fa12570bb16a7655dca3b3472ce6cd962e7ff5e3
+  MOBFoundation: 209abfa5bb189c193f693bb610fa33f0031956e4
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   Qiniu: 77a3dba411556a383d72d17e842345a9d4c83252
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
   RSKImageCropper: 0df8c99e77a8ea7ca7a8b83ef468556f31584254
-  SCLAlertView-Objective-C: d397ae2b52bae7dedf7188fa1616fcb89200b33a
+  SCLAlertView-Objective-C: 0e54351fa4f98a5c7c6ad3727e6dbb46784534e5
   SDAutoLayout: e9b36d04b8c0b504762a04d76fbbe5108944297a
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  ShareSDK3: 3c531b5e64576e4b947127b9b1f46b685dfa3b37
+  ShareSDK3: d271520113160eb24b31cd642b45b38fcd592d93
   SlackTextViewController: fbcdadbb8090673f604484ff5b6eb8d77baed42a
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
@@ -176,4 +176,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: ed605dd058883bb427989b83e4fdd42f879fc56c
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1
