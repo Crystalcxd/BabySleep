@@ -1234,6 +1234,7 @@
 		829184153BB802B6C01E9C42240BC160 /* DTTimePeriodCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodCollection.h; path = DateTools/DateTools/DTTimePeriodCollection.h; sourceTree = "<group>"; };
 		82A3EBFFB20CC3192B78E1CCD0A6F317 /* UIStepper+NERChainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIStepper+NERChainable.m"; path = "NerdyUI/Chainable/UIStepper+NERChainable.m"; sourceTree = "<group>"; };
 		8331F877D59278F15362FE566DE3FEE0 /* YYClassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYClassInfo.m; path = YYModel/YYClassInfo.m; sourceTree = "<group>"; };
+		841EC25FC0C2232CA32D20FFE6FEC605 /* libjpush-ios-3.0.5.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.0.5.a"; sourceTree = "<group>"; };
 		84349B51C33FFE21CA9CEB1EC7FF9840 /* NSObject+YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYModel.h"; path = "YYModel/NSObject+YYModel.h"; sourceTree = "<group>"; };
 		849F9670CF35234211C0E29611F62DCB /* HappyDNS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HappyDNS.xcconfig; sourceTree = "<group>"; };
 		84BD8B426FE9B2ED829F3A3C9328D303 /* UISwitch+NERChainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISwitch+NERChainable.h"; path = "NerdyUI/Chainable/UISwitch+NERChainable.h"; sourceTree = "<group>"; };
@@ -1305,7 +1306,6 @@
 		9FDA269E1A50287BDB4511F6A7172370 /* UITextView+NERChainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+NERChainable.h"; path = "NerdyUI/Chainable/UITextView+NERChainable.h"; sourceTree = "<group>"; };
 		A094521F69BA8373D7229BF7DD4A6412 /* POPPropertyAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPPropertyAnimation.mm; path = pop/POPPropertyAnimation.mm; sourceTree = "<group>"; };
 		A1A671EAFC89C201C7346FA1D516B5C2 /* ELCAlbumPickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ELCAlbumPickerController.m; path = Classes/ELCImagePicker/ELCAlbumPickerController.m; sourceTree = "<group>"; };
-		A2CF9594225C371742E27FD599FC4BAB /* libjcore-ios-1.1.2.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-1.1.2.a"; sourceTree = "<group>"; };
 		A337CA186C8240084AE4B4D75F1A12F2 /* ELCAssetCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ELCAssetCell.m; path = Classes/ELCImagePicker/ELCAssetCell.m; sourceTree = "<group>"; };
 		A370F139EA0CF8ACBA72BDF261BB389C /* ELCImagePickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ELCImagePickerController.m; path = Classes/ELCImagePicker/ELCImagePickerController.m; sourceTree = "<group>"; };
 		A396701C21802E5D5BA6CBBAE661E219 /* UIStepper+NERChainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIStepper+NERChainable.h"; path = "NerdyUI/Chainable/UIStepper+NERChainable.h"; sourceTree = "<group>"; };
@@ -1433,7 +1433,6 @@
 		D5A59F16C77EBA2873A07EE10EA03C3E /* UIActivityIndicator-for-SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicator-for-SDWebImage-prefix.pch"; sourceTree = "<group>"; };
 		D636E91CB891FD8B16862F59E3015C95 /* UIButton+NERChainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+NERChainable.h"; path = "NerdyUI/Chainable/UIButton+NERChainable.h"; sourceTree = "<group>"; };
 		D680D225D00FC2E43FC54481D173F7B6 /* MJRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoNormalFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
-		D6A9B135F000657BA4A9121E7ACFC825 /* libjpush-ios-3.0.3.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.0.3.a"; sourceTree = "<group>"; };
 		D700F0DF4F7E6693ABB8BD9A7F89340D /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTKeyPathCoding.h; path = Mantle/extobjc/EXTKeyPathCoding.h; sourceTree = "<group>"; };
 		D7834AD97B2C1040507FA6DEFE250790 /* UILabel+NERLink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+NERLink.m"; path = "NerdyUI/Public/UILabel+NERLink.m"; sourceTree = "<group>"; };
 		D78F25C7B38511B88FD6D51B0FF798D4 /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
@@ -1453,6 +1452,7 @@
 		DB8A8D799CEEA063F1C8C63A58F72A1E /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMJRefresh.a; path = libMJRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC18E14018947F8080CD017347BD1F00 /* QNResolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNResolver.h; path = HappyDNS/Local/QNResolver.h; sourceTree = "<group>"; };
 		DC228C24D821E599A0F636FABAA0CD74 /* CircleProgressBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CircleProgressBar.h; path = CircleProgressBarDemo/CircleProgressBar/CircleProgressBar.h; sourceTree = "<group>"; };
+		DC4E19E2A339D2FE1247B7733FB8F3A5 /* libjcore-ios-1.1.3.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-1.1.3.a"; sourceTree = "<group>"; };
 		DCC771D5AF4A635CF8288BC0B51A89C7 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
 		DCE9C8207278B05C99D7583A760E7622 /* QNDnspodFree.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNDnspodFree.m; path = HappyDNS/Http/QNDnspodFree.m; sourceTree = "<group>"; };
 		DD2FFAB0665F3DB4099DC1DC26C1A72F /* ELCAssetTablePicker.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ELCAssetTablePicker.xib; path = Classes/ELCImagePicker/Resources/ELCAssetTablePicker.xib; sourceTree = "<group>"; };
@@ -1871,7 +1871,7 @@
 		09813E7BBE9CDD8FABFB23B4B46FB487 /* JCore */ = {
 			isa = PBXGroup;
 			children = (
-				7D812C7AFAC7C3B9D4959422B055E02D /* Frameworks */,
+				FD5C70FC02E47384BA0F0F462F940CFA /* Frameworks */,
 			);
 			name = JCore;
 			path = JCore;
@@ -2332,14 +2332,6 @@
 			path = "../Target Support Files/MJRefresh";
 			sourceTree = "<group>";
 		};
-		39F79FB4B83002FF639C08E487D93A3E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D6A9B135F000657BA4A9121E7ACFC825 /* libjpush-ios-3.0.3.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		3C30EEF4B6DE139AA1D545756FB72951 /* HMSegmentedControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -2663,7 +2655,7 @@
 			isa = PBXGroup;
 			children = (
 				4EBA1EDCB9651A77619E9945A306A8F0 /* JPUSHService.h */,
-				39F79FB4B83002FF639C08E487D93A3E /* Frameworks */,
+				D6D45F055AC73CCD9880E142C8E4C0B0 /* Frameworks */,
 			);
 			name = JPush;
 			path = JPush;
@@ -2756,14 +2748,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SlackTextViewController";
-			sourceTree = "<group>";
-		};
-		7D812C7AFAC7C3B9D4959422B055E02D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A2CF9594225C371742E27FD599FC4BAB /* libjcore-ios-1.1.2.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -3341,6 +3325,14 @@
 			path = "../Target Support Files/TTTAttributedLabel";
 			sourceTree = "<group>";
 		};
+		D6D45F055AC73CCD9880E142C8E4C0B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				841EC25FC0C2232CA32D20FFE6FEC605 /* libjpush-ios-3.0.5.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D7973568A5D650D7F261E4EC6EB812C2 /* Mantle */ = {
 			isa = PBXGroup;
 			children = (
@@ -3550,6 +3542,14 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Mantle";
+			sourceTree = "<group>";
+		};
+		FD5C70FC02E47384BA0F0F462F940CFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC4E19E2A339D2FE1247B7733FB8F3A5 /* libjcore-ios-1.1.3.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
