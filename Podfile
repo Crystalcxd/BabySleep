@@ -29,6 +29,7 @@ pod 'SCLAlertView-Objective-C'
 pod 'FXBlurView' #毛玻璃效果
 pod 'RSKImageCropper'
 pod 'CircleProgressBar'
+pod 'SKCalendarView'
 
 # Vendor
 pod 'UMengAnalytics-NO-IDFA' # 友盟 SDK（无 IDFA）

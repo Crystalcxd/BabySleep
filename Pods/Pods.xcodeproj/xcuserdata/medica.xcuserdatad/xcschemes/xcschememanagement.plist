@@ -129,6 +129,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SKCalendarView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SlackTextViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>

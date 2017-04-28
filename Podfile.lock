@@ -75,6 +75,8 @@ PODS:
     - MOBFoundation
   - ShareSDK3/ShareSDKPlatforms/Yixin (3.6.3):
     - MOBFoundation
+  - SKCalendarView (0.0.3):
+    - Masonry (~> 1.0.1)
   - SlackTextViewController (1.9.5)
   - TTTAttributedLabel (2.0.0)
   - UIActivityIndicator-for-SDWebImage (1.2):
@@ -123,6 +125,7 @@ DEPENDENCIES:
   - ShareSDK3/ShareSDKPlatforms/SinaWeibo
   - ShareSDK3/ShareSDKPlatforms/WeChat
   - ShareSDK3/ShareSDKPlatforms/Yixin
+  - SKCalendarView
   - SlackTextViewController
   - TTTAttributedLabel
   - UIActivityIndicator-for-SDWebImage
@@ -165,6 +168,7 @@ SPEC CHECKSUMS:
   SDAutoLayout: 5a4b48d6b8a5172ae8d088d2879e40dd795e6251
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   ShareSDK3: d271520113160eb24b31cd642b45b38fcd592d93
+  SKCalendarView: b9c2484ed1cadfdc46ec839f8538c09050873501
   SlackTextViewController: fbcdadbb8090673f604484ff5b6eb8d77baed42a
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
@@ -174,6 +178,6 @@ SPEC CHECKSUMS:
   WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: ed605dd058883bb427989b83e4fdd42f879fc56c
+PODFILE CHECKSUM: ed2b2757b517c8e8e37ee6fcf514b789b4166490
 
 COCOAPODS: 1.2.1
