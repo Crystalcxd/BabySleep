@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'EDA35F3FD20C32BEA22EF19125E2BEB1'
-               BlueprintName = 'RDVTabBarController'
+               BlueprintIdentifier = '44221CE3E09579AEC40A17E7614F5340'
+               BlueprintName = 'SKCalendarView'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'RDVTabBarController.framework'>
+               BuildableName = 'SKCalendarView.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
