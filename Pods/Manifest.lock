@@ -58,7 +58,7 @@ PODS:
     - HappyDNS (~> 0.3)
   - RDVTabBarController (1.1.9)
   - RegexKitLite (4.0)
-  - RSKImageCropper (1.6.1)
+  - RSKImageCropper (1.6.2)
   - SDAutoLayout (2.1.8)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
@@ -154,7 +154,7 @@ SPEC CHECKSUMS:
   Qiniu: 77a3dba411556a383d72d17e842345a9d4c83252
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
-  RSKImageCropper: 0df8c99e77a8ea7ca7a8b83ef468556f31584254
+  RSKImageCropper: 3e579d0000945a8be1c0efdad728fd9e25c2fd79
   SDAutoLayout: 5a4b48d6b8a5172ae8d088d2879e40dd795e6251
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   ShareSDK3: d271520113160eb24b31cd642b45b38fcd592d93
