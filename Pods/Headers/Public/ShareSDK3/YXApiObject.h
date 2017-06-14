@@ -1,1 +1,1 @@
-../../../ShareSDK3/ShareSDK/Support/PlatformSDK/YiXinSDK/YXApiObject.h
+../../../ShareSDK3/SDK/ShareSDK/Support/PlatformSDK/YiXinSDK/YXApiObject.h

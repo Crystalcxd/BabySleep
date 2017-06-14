@@ -1,1 +1,1 @@
-../../../ShareSDK3/ShareSDK/Support/PlatformSDK/APSocialSDK/APOpenAPI.h
+../../../ShareSDK3/SDK/ShareSDK/Support/PlatformSDK/APSocialSDK/APOpenAPI.h
