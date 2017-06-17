@@ -88,9 +88,9 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "ELCImagePickerController/Classes/ELCImagePicker/Resources/Overlay@2x.png"
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "RSKImageCropper/RSKImageCropper/RSKImageCropperStrings.bundle"
-  install_resource "ShareSDK3/ShareSDK/Support/Required/ShareSDK.bundle"
-  install_resource "ShareSDK3/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenApi_IOS_Bundle.bundle"
-  install_resource "ShareSDK3/ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WeiboSDK.bundle"
+  install_resource "ShareSDK3/SDK/ShareSDK/Support/Required/ShareSDK.bundle"
+  install_resource "ShareSDK3/SDK/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenApi_IOS_Bundle.bundle"
+  install_resource "ShareSDK3/SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WeiboSDK.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "DateTools/DateTools/DateTools/DateTools.bundle"
@@ -101,9 +101,9 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "ELCImagePickerController/Classes/ELCImagePicker/Resources/Overlay@2x.png"
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "RSKImageCropper/RSKImageCropper/RSKImageCropperStrings.bundle"
-  install_resource "ShareSDK3/ShareSDK/Support/Required/ShareSDK.bundle"
-  install_resource "ShareSDK3/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenApi_IOS_Bundle.bundle"
-  install_resource "ShareSDK3/ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WeiboSDK.bundle"
+  install_resource "ShareSDK3/SDK/ShareSDK/Support/Required/ShareSDK.bundle"
+  install_resource "ShareSDK3/SDK/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenApi_IOS_Bundle.bundle"
+  install_resource "ShareSDK3/SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WeiboSDK.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
