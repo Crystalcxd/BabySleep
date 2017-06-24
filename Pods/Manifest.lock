@@ -42,17 +42,17 @@ PODS:
   - MiPushSDK (2.2.4)
   - MJRefresh (3.1.12)
   - MOBFoundation (3.0.0)
-  - NerdyUI (1.1.0):
-    - NerdyUI/Chainable (= 1.1.0)
-    - NerdyUI/Private (= 1.1.0)
-    - NerdyUI/Public (= 1.1.0)
-  - NerdyUI/Chainable (1.1.0):
+  - NerdyUI (1.2.0):
+    - NerdyUI/Chainable (= 1.2.0)
+    - NerdyUI/Private (= 1.2.0)
+    - NerdyUI/Public (= 1.2.0)
+  - NerdyUI/Chainable (1.2.0):
     - NerdyUI/Private
     - NerdyUI/Public
-  - NerdyUI/Private (1.1.0)
-  - NerdyUI/Public (1.1.0):
+  - NerdyUI/Private (1.2.0)
+  - NerdyUI/Public (1.2.0):
     - NerdyUI/Private
-  - pop (1.0.9)
+  - pop (1.0.10)
   - Qiniu (7.1.5):
     - AFNetworking (~> 3)
     - HappyDNS (~> 0.3)
@@ -149,8 +149,8 @@ SPEC CHECKSUMS:
   MiPushSDK: a00fd49376456a961991b947bc95ef714f7e9534
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   MOBFoundation: e6572a62983a44fa048c4038842ade1494c10059
-  NerdyUI: cf4bb5e3fc4f588eb02cbd9da5acbbbef43d8cd7
-  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  NerdyUI: 84f4cc0171d293d38dab9f4b85a5f346ce53f0d9
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   Qiniu: 77a3dba411556a383d72d17e842345a9d4c83252
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
