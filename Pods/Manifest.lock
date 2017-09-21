@@ -45,7 +45,7 @@ PODS:
   - MJRefresh (3.1.12)
   - MOBFoundation (3.0.2)
   - pop (1.0.10)
-  - Qiniu (7.1.6):
+  - Qiniu (7.1.8):
     - AFNetworking (~> 3)
     - HappyDNS (~> 0.3)
   - RDVTabBarController (1.1.9)
@@ -160,7 +160,7 @@ SPEC CHECKSUMS:
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   MOBFoundation: d5e27c4638d911d3c7501aa5df458955d4814359
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
-  Qiniu: 8af94ce9b1611ed5f4350883e41d4a62cabad491
+  Qiniu: 2f1b9d13904b6a7608a66a2d02c5b7b24575622a
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
   RSKImageCropper: 356e36fc58c57c371b5d8b23d603936d6a73df6c
