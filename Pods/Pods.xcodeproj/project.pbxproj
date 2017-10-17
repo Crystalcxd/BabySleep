@@ -950,7 +950,6 @@
 
 /* Begin PBXFileReference section */
 		000BBFBAD99E0514FAC19CDA8810F054 /* DACircularProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DACircularProgress-dummy.m"; sourceTree = "<group>"; };
-		0010E483B45CA92606A649156830793E /* QQConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QQConnector.framework; path = SDK/ShareSDK/Support/PlatformConnector/QQConnector.framework; sourceTree = "<group>"; };
 		00380DDCB6AFCCCF1745F5BAF1777C04 /* POPAnimationTracer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracer.h; path = pop/POPAnimationTracer.h; sourceTree = "<group>"; };
 		003BD86E3DB170E0150E39E1A317DB35 /* MJRefreshBackStateFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackStateFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.m; sourceTree = "<group>"; };
 		0071683F1A07E488F803580820E37A5A /* SKCalendarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKCalendarView.m; path = SKCalendarView/SKCalendarView/View/SKCalendarView.m; sourceTree = "<group>"; };
@@ -975,7 +974,6 @@
 		070EB72C73CF7F7929616DE6B8B03AD1 /* SDAutoLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SDAutoLayout.modulemap; sourceTree = "<group>"; };
 		073E47FBB7E8C200CD9E9D285280D0F7 /* RDVTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RDVTabBarController.m; path = RDVTabBarController/RDVTabBarController.m; sourceTree = "<group>"; };
 		080224CDBF47EDA855CE0AD41E4D7EA3 /* Valet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Valet-umbrella.h"; sourceTree = "<group>"; };
-		08107F5D24134A4FAE244A95E38BE6DE /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TencentOpenApi_IOS_Bundle.bundle; path = SDK/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
 		083595DCF79090203C80D9BAF028AEF1 /* QNUpToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNUpToken.h; path = QiniuSDK/Storage/QNUpToken.h; sourceTree = "<group>"; };
 		08676E04B0C450F121E8E9F96331FEC0 /* WebViewJavascriptBridge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = WebViewJavascriptBridge.modulemap; sourceTree = "<group>"; };
 		09C563DDCD53E661CDD6FDF2C8D14E9E /* RenrenConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RenrenConnector.framework; path = SDK/ShareSDK/Support/PlatformConnector/RenrenConnector.framework; sourceTree = "<group>"; };
@@ -1033,6 +1031,7 @@
 		19972E58422B3EAF4D46A880DFFEC190 /* POPCGUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCGUtils.h; path = pop/POPCGUtils.h; sourceTree = "<group>"; };
 		19B29C358FA6330389F0B3C39C55A117 /* POPGeometry.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPGeometry.mm; path = pop/POPGeometry.mm; sourceTree = "<group>"; };
 		1A19559A06E922668F14720183FE5871 /* SCLTimerDisplay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLTimerDisplay.m; path = SCLAlertView/SCLTimerDisplay.m; sourceTree = "<group>"; };
+		1A3742AC16A7345F747ADC83620A7CF4 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TencentOpenAPI.framework; path = SDK/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenAPI.framework; sourceTree = "<group>"; };
 		1A4B10D4ECF231259C99CED6C5681384 /* pop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "pop-prefix.pch"; sourceTree = "<group>"; };
 		1B9E9B0167DC259F228D5DF508C0B02B /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
 		1BE84C026FDAD4F8DEEA30B83F6096AD /* FMDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-umbrella.h"; sourceTree = "<group>"; };
@@ -1390,7 +1389,6 @@
 		8BAF4EB77512A44E5B6BFCE2330118D2 /* MJRefreshComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshComponent.m; path = MJRefresh/Base/MJRefreshComponent.m; sourceTree = "<group>"; };
 		8BFB4480EBA010A9DBCD6BF5D3600060 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
 		8C635CBF23D150C27BA45E09415FCF4E /* GBDeviceInfo_Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBDeviceInfo_Subclass.h; path = GBDeviceInfo/GBDeviceInfo_Subclass.h; sourceTree = "<group>"; };
-		8CCFE9EE30DB54E75911754565CD7C8E /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TencentOpenAPI.framework; path = SDK/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenAPI.framework; sourceTree = "<group>"; };
 		8CE0F8DB6B399A23769D8D3145F9B07D /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
 		8D2B9120FA7EDAFBD13D70576E32C83D /* RSKImageCropper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSKImageCropper-prefix.pch"; sourceTree = "<group>"; };
 		8D99C843B9E00D2BD8FDD83BE2276EDD /* QNPHAssetResource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNPHAssetResource.h; path = QiniuSDK/Common/QNPHAssetResource.h; sourceTree = "<group>"; };
@@ -1568,6 +1566,7 @@
 		C5484CCB265B63B4CB9AC17044F28339 /* MJRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJRefresh-prefix.pch"; sourceTree = "<group>"; };
 		C55F7E42E71A429941F1870D673AA428 /* DTTimePeriod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriod.h; path = DateTools/DateTools/DTTimePeriod.h; sourceTree = "<group>"; };
 		C567867785D9D9D1E96A4A2C46A8F4F3 /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = SDK/ShareSDK/Support/PlatformSDK/WeChatSDK/libWeChatSDK.a; sourceTree = "<group>"; };
+		C596D48C59CD56C7FD4B98D1CBBC2926 /* QQConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QQConnector.framework; path = SDK/ShareSDK/Support/PlatformConnector/QQConnector.framework; sourceTree = "<group>"; };
 		C5D72F2109F90A432F788DB59BD7B8DC /* SKConstant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKConstant.h; path = SKCalendarView/SKCalendarView/Tool/SKConstant.h; sourceTree = "<group>"; };
 		C60192AA420BF8D85B61B0177C52D775 /* RSKInternalUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSKInternalUtility.m; path = RSKImageCropper/RSKInternalUtility.m; sourceTree = "<group>"; };
 		C65E6978182D7EF22D04D3462AF75DCA /* APOpenAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APOpenAPI.h; path = SDK/ShareSDK/Support/PlatformSDK/APSocialSDK/APOpenAPI.h; sourceTree = "<group>"; };
@@ -2079,6 +2078,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00785DAE024F0553A52C93C368610779 /* QQ */ = {
+			isa = PBXGroup;
+			children = (
+				8532220E7A782F63E7020B72CA470519 /* Frameworks */,
+				885C4EF7EC26D417EF382144C701E414 /* Resources */,
+			);
+			name = QQ;
+			sourceTree = "<group>";
+		};
 		00E96D9B44FEAF24A860D8DF7B6E391D /* Yixin */ = {
 			isa = PBXGroup;
 			children = (
@@ -2611,15 +2619,6 @@
 			path = "../Target Support Files/AFNetworking";
 			sourceTree = "<group>";
 		};
-		4DD13133896E22574FC6BFFD945B09E3 /* QQ */ = {
-			isa = PBXGroup;
-			children = (
-				842E2CFD202A7D3CB9A7CE9786D00A22 /* Frameworks */,
-				8E071B234BD14136ACC8488DC62EB614 /* Resources */,
-			);
-			name = QQ;
-			sourceTree = "<group>";
-		};
 		51A9F3D44147E2AD5739B6AE5971029C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -2781,7 +2780,7 @@
 			children = (
 				29C131A3C4EE6FA28260B2737BBE608B /* AliPaySocial */,
 				EAADA12388C6EF9558B51F973696176D /* Facebook */,
-				4DD13133896E22574FC6BFFD945B09E3 /* QQ */,
+				00785DAE024F0553A52C93C368610779 /* QQ */,
 				9A63D3D55568A222AF2B2EE5E7C81C53 /* RenRen */,
 				0757E6366A0F6023B1CB268DF26A7387 /* SinaWeibo */,
 				9E5A89DBD60D289A0C874E2D54932139 /* WeChat */,
@@ -2903,19 +2902,18 @@
 			path = "../Target Support Files/SDAutoLayout";
 			sourceTree = "<group>";
 		};
-		842E2CFD202A7D3CB9A7CE9786D00A22 /* Frameworks */ = {
+		8532220E7A782F63E7020B72CA470519 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0010E483B45CA92606A649156830793E /* QQConnector.framework */,
-				8CCFE9EE30DB54E75911754565CD7C8E /* TencentOpenAPI.framework */,
+				C596D48C59CD56C7FD4B98D1CBBC2926 /* QQConnector.framework */,
+				1A3742AC16A7345F747ADC83620A7CF4 /* TencentOpenAPI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8E071B234BD14136ACC8488DC62EB614 /* Resources */ = {
+		885C4EF7EC26D417EF382144C701E414 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				08107F5D24134A4FAE244A95E38BE6DE /* TencentOpenApi_IOS_Bundle.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
