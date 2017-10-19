@@ -1011,7 +1011,6 @@
 		37592FDE963DE181234A130DB0915C56 /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoGifFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
 		37CCBB2B6AED42CDDCE298BF21F60041 /* libDateTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libDateTools.a; path = libDateTools.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		37FA3CB8E1DFD88A64C399288959C8C7 /* NERBlockInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NERBlockInfo.h; path = NerdyUI/Private/NERBlockInfo.h; sourceTree = "<group>"; };
-		388B713F3FC44B5DC9BFEE2213DBC766 /* libjpush-ios-3.0.6.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.0.6.a"; sourceTree = "<group>"; };
 		38D9050AC51D95E4093A123BC6695F15 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
 		3967C7E45E924EC7D3A6C88062DE210F /* RegexKitLite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RegexKitLite-dummy.m"; sourceTree = "<group>"; };
 		3A003DBA05F9E7DE6302BCE662AD4522 /* QNSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNSessionManager.m; path = QiniuSDK/Http/QNSessionManager.m; sourceTree = "<group>"; };
@@ -1123,6 +1122,7 @@
 		5FCF808D78053BB39EBF9EEE22F92AEF /* QNResolver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNResolver.m; path = HappyDNS/Local/QNResolver.m; sourceTree = "<group>"; };
 		608C44614ABCC6E6E9BA0C8D9901FEEC /* QNConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNConfiguration.m; path = QiniuSDK/Storage/QNConfiguration.m; sourceTree = "<group>"; };
 		60B913424F3FFE4B9042A93335C55F33 /* RegexKitLite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RegexKitLite.xcconfig; sourceTree = "<group>"; };
+		60CCE8EFE880D23B3A80F63C3A2429D2 /* QQConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QQConnector.framework; path = SDK/ShareSDK/Support/PlatformConnector/QQConnector.framework; sourceTree = "<group>"; };
 		61532FB7010FEF10383C42C8239176A5 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDTemplateLayoutCell.h"; path = "Classes/UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
 		61878A0D2117DECD517BCC328BF87347 /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
 		61886F8F0014B5DAB623F42C6EAF1BD6 /* NSDictionary+MTLMappingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MTLMappingAdditions.h"; path = "Mantle/NSDictionary+MTLMappingAdditions.h"; sourceTree = "<group>"; };
@@ -1169,7 +1169,6 @@
 		7774813A2AEF534E4D5B00198814E20A /* UITextField+NERChainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+NERChainable.h"; path = "NerdyUI/Chainable/UITextField+NERChainable.h"; sourceTree = "<group>"; };
 		780D9DE7105705EE501CD51EC6A207A4 /* SLKTextInput+Implementation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SLKTextInput+Implementation.m"; path = "Source/SLKTextInput+Implementation.m"; sourceTree = "<group>"; };
 		786B7AEE226058227830FB303F71CBCD /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMMobClick.framework; path = "umsdk_IOS_analyics_no-idfa_v4.2.5/UMMobClick.framework"; sourceTree = "<group>"; };
-		79325AE9B2CB471E6A5CA2DEA51E5379 /* QQConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QQConnector.framework; path = SDK/ShareSDK/Support/PlatformConnector/QQConnector.framework; sourceTree = "<group>"; };
 		794E509FD9C993D3150284EA8B72E68E /* UIView+SLKAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+SLKAdditions.m"; path = "Source/UIView+SLKAdditions.m"; sourceTree = "<group>"; };
 		79A25DCF2B03DFEA3F22E30A2CA17527 /* RSKImageScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSKImageScrollView.m; path = RSKImageCropper/RSKImageScrollView.m; sourceTree = "<group>"; };
 		7B1F82ED984D14BB08DD9D2FE91A62A0 /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
@@ -1214,7 +1213,6 @@
 		8714528A1D7FCF1F443DD5492DA43280 /* Pods-BabySleep-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BabySleep-acknowledgements.markdown"; sourceTree = "<group>"; };
 		872CC9C58985F43507ECFE2D65244D99 /* NERConstraint+NERChainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NERConstraint+NERChainable.h"; path = "NerdyUI/Chainable/NERConstraint+NERChainable.h"; sourceTree = "<group>"; };
 		873F4273214BC1284EC4EA8AE87C611B /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
-		875B02F51CB279F60DAC13F856FB65BD /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TencentOpenAPI.framework; path = SDK/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenAPI.framework; sourceTree = "<group>"; };
 		87C970CBAC0AB2418ED6DD7FF46CB1D1 /* UIScrollView+SLKAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+SLKAdditions.h"; path = "Source/UIScrollView+SLKAdditions.h"; sourceTree = "<group>"; };
 		88529CAC1738ACDFB331E4BAA173AF5B /* NERStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NERStyle.h; path = NerdyUI/Private/NERStyle.h; sourceTree = "<group>"; };
 		8854CBF5035523826D431D2851BF4CFF /* ELCAsset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ELCAsset.h; path = Classes/ELCImagePicker/ELCAsset.h; sourceTree = "<group>"; };
@@ -1346,6 +1344,7 @@
 		B61F97B40B7AED29FD49689763C6763C /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDIndexPathHeightCache.m"; path = "Classes/UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
 		B627DBBF818B2E504FDF4A4FE794CE7D /* libQiniu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libQiniu.a; path = libQiniu.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62F50A3255FCEB8847259CBB73C0282 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		B68AC708BDAF4AEBB09AED847914B983 /* libjpush-ios-3.0.7.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.0.7.a"; sourceTree = "<group>"; };
 		B72D77623677EAF664592A589243C557 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
 		B731F02FEB1E351183F224975F9B102B /* Valet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Valet-prefix.pch"; sourceTree = "<group>"; };
 		B7382BB0979B7D0FE16DC7D03AD9836A /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = SDK/ShareSDK/Support/PlatformSDK/WeChatSDK/WXApi.h; sourceTree = "<group>"; };
@@ -1376,7 +1375,6 @@
 		C0796DA61B420A44ADBFC6D1193351E1 /* MTLReflection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLReflection.h; path = Mantle/MTLReflection.h; sourceTree = "<group>"; };
 		C27846715C1CFC31C8EDAF181FDD3B56 /* SDAutoLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDAutoLayout-dummy.m"; sourceTree = "<group>"; };
 		C28141AA0F4C5B734ADF970C4DA0D911 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
-		C2C0B01B517A7D1119ADEF55F44CCF3F /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TencentOpenApi_IOS_Bundle.bundle; path = SDK/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
 		C368EBA2B81DB99F61BB53122D00C205 /* QNUrlSafeBase64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNUrlSafeBase64.h; path = QiniuSDK/Common/QNUrlSafeBase64.h; sourceTree = "<group>"; };
 		C36A7567CE94D8D1325209BDC8ACE9A0 /* CircleProgressBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CircleProgressBar-dummy.m"; sourceTree = "<group>"; };
 		C36F053B77086FF672C9FB0151CD4851 /* RegexKitLite-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RegexKitLite-prefix.pch"; sourceTree = "<group>"; };
@@ -1407,6 +1405,7 @@
 		CB76CA3BA6812F34005186F5982F85FE /* libSDAutoLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSDAutoLayout.a; path = libSDAutoLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7C77A3C62D3ADF536D6E7C8B27EB40 /* WebViewJavascriptBridge-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WebViewJavascriptBridge-prefix.pch"; sourceTree = "<group>"; };
 		CB995D97304D28021C5311700C51E1C5 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
+		CBA64CD6670E1AE096CA2FDEFD1661BB /* libjcore-ios-1.1.6.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-1.1.6.a"; sourceTree = "<group>"; };
 		CBADC78C5B9C18BF752E894200422094 /* QNDomain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNDomain.h; path = HappyDNS/Common/QNDomain.h; sourceTree = "<group>"; };
 		CC2843CA91F5833F9F65A91A4CEC4DF1 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		CC3CD55F1A60D26EDBB33D9170DD06EA /* SLKTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLKTextView.m; path = Source/SLKTextView.m; sourceTree = "<group>"; };
@@ -1440,11 +1439,11 @@
 		D2B812D7ADCAA40D0D8542F0CBBE9BD2 /* UIApplication+RSKImageCropper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+RSKImageCropper.h"; path = "RSKImageCropper/UIApplication+RSKImageCropper.h"; sourceTree = "<group>"; };
 		D378298EE29D0072CDAE7CE5EA7BB90E /* SLKTextView+SLKAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SLKTextView+SLKAdditions.h"; path = "Source/SLKTextView+SLKAdditions.h"; sourceTree = "<group>"; };
 		D37DAA6635E6DBECFB679A64D6A73328 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		D3D66F5A79C7B6662B2ECDECAC5F6E59 /* libjcore-ios-1.1.5.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-1.1.5.a"; sourceTree = "<group>"; };
 		D41C09CFC599C2B0D195C99181F3B9C1 /* QNFormUpload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNFormUpload.m; path = QiniuSDK/Storage/QNFormUpload.m; sourceTree = "<group>"; };
 		D432FE760FDD391494FF585C01292EA8 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
 		D5A4465B04D76A80CA228117B658AB81 /* libRSKImageCropper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRSKImageCropper.a; path = libRSKImageCropper.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D611D1172D9A130FDEF811E0A62DA9A6 /* NERAlert+NERChainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NERAlert+NERChainable.m"; path = "NerdyUI/Chainable/NERAlert+NERChainable.m"; sourceTree = "<group>"; };
+		D661D5EBC741F77B41BCF1F8BDFD8DA4 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TencentOpenAPI.framework; path = SDK/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenAPI.framework; sourceTree = "<group>"; };
 		D66BF614F33F53572BA62D137A0E2E49 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
 		D7BCC6E62CF7FFF3A8A8846A864C6010 /* MJRefreshFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshFooter.h; path = MJRefresh/Base/MJRefreshFooter.h; sourceTree = "<group>"; };
 		D800C03EF69AD2D28AF010943B8E1FB7 /* RDVTabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RDVTabBar.m; path = RDVTabBarController/RDVTabBar.m; sourceTree = "<group>"; };
@@ -1934,6 +1933,13 @@
 			path = "../Target Support Files/AFNetworking";
 			sourceTree = "<group>";
 		};
+		0AD571BA254F65FC857195BC32A1A4ED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		0B2CA4BB5ED2B1026CA22805EF7E5849 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -2013,15 +2019,6 @@
 			path = "../Target Support Files/GVUserDefaults";
 			sourceTree = "<group>";
 		};
-		0EF4A9B6EC86F81B598E9D0C873E4A5D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				79325AE9B2CB471E6A5CA2DEA51E5379 /* QQConnector.framework */,
-				875B02F51CB279F60DAC13F856FB65BD /* TencentOpenAPI.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		0F9A67F6C017B4091E6E94E2BEA47FAF /* ShareSDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -2078,7 +2075,7 @@
 			isa = PBXGroup;
 			children = (
 				F1A40C1FABA13A14FF985CA3D142DA4E /* Facebook */,
-				254F5FDCFDFEF86FFF0E74188182DB32 /* QQ */,
+				A2C1FCE25E023C45306732B6021188F7 /* QQ */,
 				45C97F4852512F7FB8C15C7AED646CF4 /* SinaWeibo */,
 				9E0B069BD8E450310DE64A3501E20EDA /* WeChat */,
 			);
@@ -2136,6 +2133,15 @@
 			path = "UITableView+FDTemplateLayoutCell";
 			sourceTree = "<group>";
 		};
+		22B9E5A76C9128B20E89479D807C2703 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60CCE8EFE880D23B3A80F63C3A2429D2 /* QQConnector.framework */,
+				D661D5EBC741F77B41BCF1F8BDFD8DA4 /* TencentOpenAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		235BF448BB204DB2A231C13C79696777 /* HMSegmentedControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -2174,15 +2180,6 @@
 			);
 			name = FMDB;
 			path = FMDB;
-			sourceTree = "<group>";
-		};
-		254F5FDCFDFEF86FFF0E74188182DB32 /* QQ */ = {
-			isa = PBXGroup;
-			children = (
-				0EF4A9B6EC86F81B598E9D0C873E4A5D /* Frameworks */,
-				C83B60B2C48A8940DF32CC8D482A4157 /* Resources */,
-			);
-			name = QQ;
 			sourceTree = "<group>";
 		};
 		259FDCBC7DFB438EB6302533A4F1936A /* Resources */ = {
@@ -2401,14 +2398,6 @@
 			);
 			name = Masonry;
 			path = Masonry;
-			sourceTree = "<group>";
-		};
-		432B35764E2C44D8CDA97602EB7E04E6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				388B713F3FC44B5DC9BFEE2213DBC766 /* libjpush-ios-3.0.6.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		44B05714C1CF5864A858604ADBD910CD /* Resources */ = {
@@ -2792,10 +2781,10 @@
 			name = NSURLSession;
 			sourceTree = "<group>";
 		};
-		79AEDF805F448CD495FD24EB4E77B9CF /* Frameworks */ = {
+		7B7DC856731C6A8B73846552C547713A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D3D66F5A79C7B6662B2ECDECAC5F6E59 /* libjcore-ios-1.1.5.a */,
+				CBA64CD6670E1AE096CA2FDEFD1661BB /* libjcore-ios-1.1.6.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2908,7 +2897,7 @@
 			isa = PBXGroup;
 			children = (
 				EED1E920B0E4CE8E317C3FFE6DCD6E01 /* JPUSHService.h */,
-				432B35764E2C44D8CDA97602EB7E04E6 /* Frameworks */,
+				D2EBFE7A249BDE4B19AC09F0E992E6BC /* Frameworks */,
 			);
 			name = JPush;
 			path = JPush;
@@ -2954,7 +2943,7 @@
 		A0D221CAB0371276AF60FC1A3CE2619D /* JCore */ = {
 			isa = PBXGroup;
 			children = (
-				79AEDF805F448CD495FD24EB4E77B9CF /* Frameworks */,
+				7B7DC856731C6A8B73846552C547713A /* Frameworks */,
 			);
 			name = JCore;
 			path = JCore;
@@ -2969,6 +2958,15 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/ELCImagePickerController";
+			sourceTree = "<group>";
+		};
+		A2C1FCE25E023C45306732B6021188F7 /* QQ */ = {
+			isa = PBXGroup;
+			children = (
+				22B9E5A76C9128B20E89479D807C2703 /* Frameworks */,
+				0AD571BA254F65FC857195BC32A1A4ED /* Resources */,
+			);
+			name = QQ;
 			sourceTree = "<group>";
 		};
 		A2CE7669C4E27838775EAFAE039AE464 /* Frameworks */ = {
@@ -3138,14 +3136,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C83B60B2C48A8940DF32CC8D482A4157 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C2C0B01B517A7D1119ADEF55F44CCF3F /* TencentOpenApi_IOS_Bundle.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		CDEC147B662E893FF22FFCCAC6AFB599 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -3203,6 +3193,14 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Mantle";
+			sourceTree = "<group>";
+		};
+		D2EBFE7A249BDE4B19AC09F0E992E6BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B68AC708BDAF4AEBB09AED847914B983 /* libjpush-ios-3.0.7.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		DAF7AE5594E2317ACB8E5BA8E5BF24FE /* HappyDNS */ = {
