@@ -5347,6 +5347,27 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		000EFF17B2F9F4744BF333320719B004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA8FF2F3F2C1A79F2C010DC8E8C1114B /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		082542081F84C0DD49954B6A9D006AD4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E5D6D20E39600DDE3BED046867025718 /* SlackTextViewController.xcconfig */;
@@ -5605,28 +5626,6 @@
 			};
 			name = Release;
 		};
-		3DF956A357D278C29F53AD3094728975 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA8FF2F3F2C1A79F2C010DC8E8C1114B /* MBProgressHUD.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		3E44D8F2BB7188E4E3EC97E9D0AD6261 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3A576E0C331B118E8823B67CBC4FB8FB /* SDWebImage.xcconfig */;
@@ -5776,27 +5775,6 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		587AEEE2AC12944079DE6A6112E7E4C5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA8FF2F3F2C1A79F2C010DC8E8C1114B /* MBProgressHUD.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
 		};
 		58AC84FCFA889E69CF7CF2C14FE87F6E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -6391,6 +6369,28 @@
 			};
 			name = Release;
 		};
+		C44FF1034271A0DF9174FA3E91B6D082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA8FF2F3F2C1A79F2C010DC8E8C1114B /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		C5BF8AEF71A2DAD85DD9FC31F1390969 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 44A322256C634D8F8A25EABBDA4D75B9 /* SDAutoLayout.xcconfig */;
@@ -6916,8 +6916,8 @@
 		6B44251FA50022CA55D4B2FBE1468C76 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				587AEEE2AC12944079DE6A6112E7E4C5 /* Debug */,
-				3DF956A357D278C29F53AD3094728975 /* Release */,
+				000EFF17B2F9F4744BF333320719B004 /* Debug */,
+				C44FF1034271A0DF9174FA3E91B6D082 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
