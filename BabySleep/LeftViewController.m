@@ -55,13 +55,11 @@
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(39, 159 + i * 93, 15, 15)];
         NSString *imgStr = imageArr[i];
         imageView.image = [UIImage imageNamed:imgStr];
-//        [self.view addSubview:imageView];
         
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(imageView.frame) + 13, CGRectGetMinY(imageView.frame) - 8, 200, 28)];
         label.font = [UIFont fontWithName:@"DFPYuanW5" size:20];
         label.textColor = HexRGB(0xFFFFFF);
         label.text = titleArr[i];
-//        [self.view addSubview:label];
         
         UIImageView *line = [[UIImageView alloc] initWithFrame:CGRectMake(leftPadding, CGRectGetMinY(imageView.frame) + 47, SCREENWIDTH * 0.618667, 3)];
         line.image = [UIImage imageNamed:@"line"];
@@ -93,15 +91,12 @@
     [btn setTitleColor:HexRGB(0x1688D2) forState:UIControlStateNormal];
     [btn.titleLabel setFont:[UIFont fontWithName:@"DFPYuanW5" size:14]];
     [btn addTarget:self action:@selector(goOtherAppDownload) forControlEvents:UIControlEventTouchUpInside];
-//    [self.view addSubview:btn];
 }
 
 - (void)btnAction:(id)sender
 {
     UIButton *btn = (UIButton *)sender;
     
-//    BOOL wxInstalled = [WMUserDefault BoolValueForKey:@"WXInstalled"];
-
     if (btn.tag == TABLEVIEW_BEGIN_TAG) {
         [self goNoiseView];
     }else if (btn.tag == TABLEVIEW_BEGIN_TAG + 1){
@@ -153,20 +148,15 @@
     {
         case MFMailComposeResultCancelled:
             msg = NSLocalizedString(@"Cancel the email", nil);
-//            [self shareResult:msg];
             break;
         case MFMailComposeResultSaved:
             msg = NSLocalizedString(@"Save the email successfully", nil);
-//            [self shareResult:msg];
             break;
         case MFMailComposeResultSent:
             msg = NSLocalizedString(@"Email has been sent", nil);
-//            [self shareCountServe];
-//            [self shareResult:msg];
             break;
         case MFMailComposeResultFailed:
             msg = NSLocalizedString(@"Failed to send email", nil);
-//            [self shareResult:msg];
             break;
         default:
             break;
@@ -174,8 +164,6 @@
     
     NSLog(@"%@",msg);
     
-//    NSLog(@"%ld",(long)[ShareData defaultShareData].shareType);
-//    NSLog(@"%ld",(long)[ShareData defaultShareData].shareObjectType);
     [self dismissViewControllerAnimated:YES completion:^(){
         
     }];

@@ -109,13 +109,6 @@ static void displayStatusChanged(CFNotificationCenterRef center,
          
          switch (platformType)
          {
-//             case SSDKPlatformTypeSinaWeibo:
-//                 //设置新浪微博应用信息,其中authType设置为使用SSO＋Web形式授权
-//                 [appInfo SSDKSetupSinaWeiboByAppKey:@"568898243"
-//                                           appSecret:@"38a4f8204cc784f81f9f0daaf31e02e3"
-//                                         redirectUri:@"http://www.sharesdk.cn"
-//                                            authType:SSDKAuthTypeBoth];
-//                 break;
              case SSDKPlatformTypeFacebook:
                  [appInfo SSDKSetupFacebookByApiKey:@"171653689962069"
                                           appSecret:@"de99a30e3a35263c728a793f7b3e2a16"
@@ -129,19 +122,6 @@ static void displayStatusChanged(CFNotificationCenterRef center,
                  [appInfo SSDKSetupTwitterByConsumerKey:@"hRAIdIRQZmtZy7IgU7z6agxxK"
                                          consumerSecret:@"0xicvJluw4XGrcKcDMZWKewdlbfvIQhlB0kQ50J6smVmTYq5FH" redirectUri:@"http://BabySleep"];
                  break;
-
-//             case SSDKPlatformTypeQQ:
-//                 [appInfo SSDKSetupQQByAppId:@"100371282"
-//                                      appKey:@"aed9b0303e3ed1e27bae87c33761161d"
-//                                    authType:SSDKAuthTypeBoth];
-//                 break;
-//             case SSDKPlatformTypeRenren:
-//                 [appInfo        SSDKSetupRenRenByAppId:@"226427"
-//                                                 appKey:@"fc5b8aed373c4c27a05b712acba0f8c3"
-//                                              secretKey:@"f29df781abdd4f49beca5a2194676ca4"
-//                                               authType:SSDKAuthTypeBoth];
-//                 break;
-
              default:
                  break;
          }

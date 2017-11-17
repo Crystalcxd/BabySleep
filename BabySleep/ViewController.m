@@ -208,16 +208,13 @@
     switch (routeChangeReason) {
         case AVAudioSessionRouteChangeReasonNewDeviceAvailable:
             NSLog(@"AVAudioSessionRouteChangeReasonNewDeviceAvailable");
-//            tipWithMessage(@"耳机插入");
             break;
         case AVAudioSessionRouteChangeReasonOldDeviceUnavailable:
             NSLog(@"AVAudioSessionRouteChangeReasonOldDeviceUnavailable");
             [self playBtnAction:nil];
-//            tipWithMessage(@"耳机拔出，停止播放操作");
             break;
         case AVAudioSessionRouteChangeReasonCategoryChange:
             // called at start - also when other audio wants to play
-//            tipWithMessage(@"AVAudioSessionRouteChangeReasonCategoryChange");
             break;
     }
 }

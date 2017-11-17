@@ -24,11 +24,6 @@
 
 - (void)drawRect:(CGRect)rect
 {
-//    UIBezierPath* ovalPath = [UIBezierPath bezierPathWithOvalInRect: CGRectMake(0, 0, CGRectGetWidth(rect), CGRectGetHeight(rect))];
-//    [UIColor.redColor setStroke];
-//    ovalPath.lineWidth = 0.5;
-//    [ovalPath stroke];
-    
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     /*写文字*/

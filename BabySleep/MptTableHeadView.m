@@ -60,8 +60,7 @@
 @synthesize pageControl = _pageControl;
 
 - (void)dealloc{
-//    [self.runloopTimer invalidate];
-//    self.runloopTimer = nil;
+    
 }
 
 - (id)initWithFrame:(CGRect)frame Type:(NSInteger)type
@@ -91,7 +90,6 @@
         
         self.backArraw = [[UIImageView alloc] initWithFrame:CGRectMake(15, 164, 15, 38)];
         self.backArraw.image = [UIImage imageNamed:@"left"];
-//        self.backArraw.hidden = YES;
         self.backArraw.alpha = 0.0;
         [self addSubview:self.backArraw];
         
@@ -101,7 +99,6 @@
         self.nextArraw.transform = CGAffineTransformRotate(self.nextArraw.transform, M_PI);
 
         [self addSubview:self.nextArraw];
-//        [self addSubview:self.pageControl];
     }
     return self;
 }
@@ -177,10 +174,6 @@
 #pragma mark
 #pragma mark private method
 - (void)reloadData{
-    
-//    [self.runloopTimer invalidate];
-//    self.runloopTimer = nil;
-    
     for (MptTableHeadCell *cell in self.onScreenCells) {
         [cell viewWillDisappear];
         [cell removeFromSuperview];
@@ -222,17 +215,11 @@
     if (_total == 1) {
         return;
     }
-//    self.runloopTimer = [NSTimer scheduledTimerWithTimeInterval:kAutoLoopIntervalS
-//                                                                  target:self
-//                                                                selector:@selector(doAutoLoop)
-//                                                                userInfo:nil
-//                                                                 repeats:YES];
 }
 
 - (void)stopAnimation
 {
-//    [self.runloopTimer invalidate];
-//    self.runloopTimer = nil;
+    
 }
 
 - (void)scrollWithType:(ScrollType)type
@@ -337,16 +324,10 @@
         _curPage = [self validPageValue:_curPage-1];
         [self loadViews];
     }
-    
-    if (self.autoScroll) {
-//        self.pageControl.currentPage = _curPage;
-    }
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
     self.autoScroll = NO;
-//    [self.runloopTimer invalidate];
-//    self.runloopTimer = nil;
 }
 
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
@@ -374,11 +355,6 @@
         [_dataSource scrollView:self curIndex:_curPage];
     }
     
-//    self.runloopTimer = [NSTimer scheduledTimerWithTimeInterval:kAutoLoopIntervalS
-//                                                         target:self
-//                                                       selector:@selector(doAutoLoop)
-//                                                       userInfo:nil
-//                                                        repeats:YES];
     self.autoScroll = YES;
 }
 
