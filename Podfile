@@ -27,7 +27,6 @@ pod 'DACircularProgress'
 pod 'UIActivityIndicator-for-SDWebImage'
 pod 'SCLAlertView-Objective-C'
 pod 'FXBlurView' #毛玻璃效果
-pod 'RSKImageCropper'
 pod 'CircleProgressBar'
 pod 'SKCalendarView'
 

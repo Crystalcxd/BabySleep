@@ -21,6 +21,7 @@
 #import "HappyDNS.h"
 #import "QNDnspodEnterprise.h"
 #import "QNDnspodFree.h"
+#import "QNNiuDns.h"
 #import "QNHijackingDetectWrapper.h"
 #import "QNHosts.h"
 #import "QNResolver.h"

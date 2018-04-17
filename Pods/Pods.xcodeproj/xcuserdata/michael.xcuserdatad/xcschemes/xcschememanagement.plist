@@ -104,11 +104,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>RSKImageCropper.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>RegexKitLite.xcscheme</key>
 		<dict>
 			<key>isShown</key>
