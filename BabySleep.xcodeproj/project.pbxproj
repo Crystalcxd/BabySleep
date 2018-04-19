@@ -463,7 +463,6 @@
 				4CA0C71B1D1FAC4E001EDC89 /* Sources */,
 				4CA0C71C1D1FAC4E001EDC89 /* Frameworks */,
 				4CA0C71D1D1FAC4E001EDC89 /* Resources */,
-				609B04CCFE98B342E20622C3 /* [CP] Embed Pods Frameworks */,
 				E033BEC507B3C1A53E78B1BF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -610,21 +609,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		609B04CCFE98B342E20622C3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BabySleep/Pods-BabySleep-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D29EE8741C4DC0EEF5A28374 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
