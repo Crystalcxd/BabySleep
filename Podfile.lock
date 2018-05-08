@@ -1,18 +1,18 @@
 PODS:
-  - AFNetworking (3.2.0):
-    - AFNetworking/NSURLSession (= 3.2.0)
-    - AFNetworking/Reachability (= 3.2.0)
-    - AFNetworking/Security (= 3.2.0)
-    - AFNetworking/Serialization (= 3.2.0)
-    - AFNetworking/UIKit (= 3.2.0)
-  - AFNetworking/NSURLSession (3.2.0):
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.0)
-  - AFNetworking/Security (3.2.0)
-  - AFNetworking/Serialization (3.2.0)
-  - AFNetworking/UIKit (3.2.0):
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - CircleProgressBar (0.32)
   - Crashlytics (3.10.1):
@@ -29,7 +29,7 @@ PODS:
   - GBDeviceInfo/Core (5.1.0)
   - GTMBase64 (1.0.1)
   - GVUserDefaults (1.0.2)
-  - HappyDNS (0.3.13)
+  - HappyDNS (0.3.14)
   - HMSegmentedControl (1.5.4)
   - JCore (1.1.9)
   - JPush (3.0.9):
@@ -168,7 +168,7 @@ SPEC REPOS:
     - YYModel
 
 SPEC CHECKSUMS:
-  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   CircleProgressBar: 3920079be5224b62b3d9ed6eeb23ac01c835b681
   Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
@@ -179,7 +179,7 @@ SPEC CHECKSUMS:
   GBDeviceInfo: 8e43440ae1264d9a79beea81800363cf192ce322
   GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
-  HappyDNS: 17732b07a75bb9756bd6fe04452609e8da8c663e
+  HappyDNS: dc6a164ee81979093123c241c6353bcf0218add6
   HMSegmentedControl: b25bc4ec44766e073d62c473188fb354ee244b76
   JCore: 27598485098d0db99d2812cba048003457d08cfb
   JPush: 003d9eaef8ba2df76de32573d0c8aa62b92b3c82
