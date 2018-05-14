@@ -1,18 +1,18 @@
 PODS:
-  - AFNetworking (3.2.0):
-    - AFNetworking/NSURLSession (= 3.2.0)
-    - AFNetworking/Reachability (= 3.2.0)
-    - AFNetworking/Security (= 3.2.0)
-    - AFNetworking/Serialization (= 3.2.0)
-    - AFNetworking/UIKit (= 3.2.0)
-  - AFNetworking/NSURLSession (3.2.0):
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.0)
-  - AFNetworking/Security (3.2.0)
-  - AFNetworking/Serialization (3.2.0)
-  - AFNetworking/UIKit (3.2.0):
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - CircleProgressBar (0.32)
   - CocoaAsyncSocket (7.6.3)
@@ -31,7 +31,7 @@ PODS:
   - GBDeviceInfo/Core (5.1.0)
   - GTMBase64 (1.0.1)
   - GVUserDefaults (1.0.2)
-  - HappyDNS (0.3.13)
+  - HappyDNS (0.3.14)
   - HMSegmentedControl (1.5.4)
   - JCore (1.1.9)
   - JPush (3.0.9):
@@ -45,7 +45,7 @@ PODS:
   - MJRefresh (3.1.15.3)
   - MOBFoundation (3.1.5)
   - pop (1.0.10)
-  - Qiniu (7.2.3):
+  - Qiniu (7.2.4):
     - HappyDNS (~> 0.3)
   - RDVTabBarController (1.1.9)
   - RegexKitLite (4.0)
@@ -179,7 +179,7 @@ SPEC REPOS:
     - YYModel
 
 SPEC CHECKSUMS:
-  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   CircleProgressBar: 3920079be5224b62b3d9ed6eeb23ac01c835b681
   CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
   Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
@@ -192,7 +192,7 @@ SPEC CHECKSUMS:
   GBDeviceInfo: 8e43440ae1264d9a79beea81800363cf192ce322
   GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
-  HappyDNS: 17732b07a75bb9756bd6fe04452609e8da8c663e
+  HappyDNS: dc6a164ee81979093123c241c6353bcf0218add6
   HMSegmentedControl: b25bc4ec44766e073d62c473188fb354ee244b76
   JCore: 27598485098d0db99d2812cba048003457d08cfb
   JPush: 003d9eaef8ba2df76de32573d0c8aa62b92b3c82
@@ -203,7 +203,7 @@ SPEC CHECKSUMS:
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   MOBFoundation: d961251ce6de54917f678dc711962d1385ae7ee1
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
-  Qiniu: ae0fea1cc379fae1560d8748ac537e0fbeb8626e
+  Qiniu: 65384bca1cdb0480a68d9b9b8f54db53418c0355
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
   RSKImageCropper: 50d5a3e4160f0309b14d75b89d5ae2f496d56e0d
