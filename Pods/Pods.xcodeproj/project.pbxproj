@@ -1321,6 +1321,7 @@
 		747F2343EE4A2F76A3CC2835C03793B9 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		74AE158A17E273A863C40A96BDAB1B87 /* SDAutoLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDAutoLayout-prefix.pch"; sourceTree = "<group>"; };
 		74E25223A8093046D0CC703488D78ABE /* YYClassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYClassInfo.m; path = YYModel/YYClassInfo.m; sourceTree = "<group>"; };
+		75684E362F45707EF3C0B4D26C1D33DA /* libjcore-ios-1.2.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-1.2.0.a"; sourceTree = "<group>"; };
 		758A8B92AA5E153E537F1D33B1B82C36 /* DTTimePeriodGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodGroup.m; path = DateTools/DateTools/DTTimePeriodGroup.m; sourceTree = "<group>"; };
 		75E5327714CA342655BFCE483D3D8019 /* NSDictionary+MTLMappingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MTLMappingAdditions.h"; path = "Mantle/NSDictionary+MTLMappingAdditions.h"; sourceTree = "<group>"; };
 		761C210A888F1752023B583C85284577 /* UIScrollView+SLKAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+SLKAdditions.m"; path = "Source/UIScrollView+SLKAdditions.m"; sourceTree = "<group>"; };
@@ -1331,7 +1332,6 @@
 		77921DD9B78747FC90E10BDDC6535203 /* POPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDefines.h; path = pop/POPDefines.h; sourceTree = "<group>"; };
 		77EA1398392F886A7A9C90BD9F86A82D /* MJRefreshHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshHeader.m; path = MJRefresh/Base/MJRefreshHeader.m; sourceTree = "<group>"; };
 		77FD537307EA9EB00B79EF767498CF0B /* NSDictionary+MTLJSONKeyPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MTLJSONKeyPath.h"; path = "Mantle/NSDictionary+MTLJSONKeyPath.h"; sourceTree = "<group>"; };
-		78A630B40628E6E56CC1BEFCDCCF4DA5 /* libjcore-ios-1.1.9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-1.1.9.a"; sourceTree = "<group>"; };
 		791C8FCF676BB9E439821D579D8EEF0B /* HMSegmentedControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HMSegmentedControl-prefix.pch"; sourceTree = "<group>"; };
 		79941EF9C99D5B9FE2C3539A42550B9D /* ShareSDKConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShareSDKConnector.framework; path = SDK/ShareSDK/Support/Required/ShareSDKConnector.framework; sourceTree = "<group>"; };
 		79B05D3A753779815EC63C0E29640878 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
@@ -2301,6 +2301,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2EDDAF1747257100E56C0DD0D68C8927 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75684E362F45707EF3C0B4D26C1D33DA /* libjcore-ios-1.2.0.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2FEE5C361C09DF0D6BCFEFF5702E18A2 /* RSKImageCropper */ = {
 			isa = PBXGroup;
 			children = (
@@ -2684,7 +2692,7 @@
 		62179582D0480BFA712999D73357FC98 /* JCore */ = {
 			isa = PBXGroup;
 			children = (
-				7A18E0EFF85350473E67CC574532C854 /* Frameworks */,
+				2EDDAF1747257100E56C0DD0D68C8927 /* Frameworks */,
 			);
 			name = JCore;
 			path = JCore;
@@ -2895,14 +2903,6 @@
 			isa = PBXGroup;
 			children = (
 				2061721BB15DD28F902BCAD26F51B458 /* ShareSDK.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7A18E0EFF85350473E67CC574532C854 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				78A630B40628E6E56CC1BEFCDCCF4DA5 /* libjcore-ios-1.1.9.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
