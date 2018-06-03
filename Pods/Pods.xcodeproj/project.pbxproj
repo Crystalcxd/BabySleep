@@ -969,7 +969,6 @@
 		2C486D6F2A1B46B4B18B7A55EDA4FE12 /* RSKImageCropper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSKImageCropper-prefix.pch"; sourceTree = "<group>"; };
 		2C6654EF9E289892CE5454C17D900E06 /* POPAnimationTracer.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationTracer.mm; path = pop/POPAnimationTracer.mm; sourceTree = "<group>"; };
 		2C93A3D6DEDCEC11DD989D42CE38A424 /* RSKImageScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSKImageScrollView.h; path = RSKImageCropper/RSKImageScrollView.h; sourceTree = "<group>"; };
-		2CB4ED76CE2110D96FACB2A0F7472982 /* libjcore-ios-1.1.9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-1.1.9.a"; sourceTree = "<group>"; };
 		2CD18753639E6753A16F235E8F94EEB0 /* NERStaticTableView+NERChainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NERStaticTableView+NERChainable.h"; path = "NerdyUI/Chainable/NERStaticTableView+NERChainable.h"; sourceTree = "<group>"; };
 		2CE14E08D94A47516DD681A83CC00383 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
 		2D4B29389681AE77330E58F553B35593 /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WebViewJavascriptBridge.m; path = WebViewJavascriptBridge/WebViewJavascriptBridge.m; sourceTree = "<group>"; };
@@ -1215,6 +1214,7 @@
 		8C5FBFE2411BEA5466112DEC52FA5A29 /* NERBlockInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NERBlockInfo.h; path = NerdyUI/Private/NERBlockInfo.h; sourceTree = "<group>"; };
 		8C7CDC9E8D644B1D06881589C8685015 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDecoder.h; path = SDWebImage/SDWebImageDecoder.h; sourceTree = "<group>"; };
 		8CD551B0D43E035B120F913EA5E2BFC2 /* GBDeviceInfo_iOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GBDeviceInfo_iOS.m; path = GBDeviceInfo/GBDeviceInfo_iOS.m; sourceTree = "<group>"; };
+		8D330C207195DB5ADFF3594BA4143C38 /* libjcore-ios-1.2.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-1.2.0.a"; sourceTree = "<group>"; };
 		8D6AF1BED33B448D1C3F76F89E53DA3F /* QNConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNConfiguration.m; path = QiniuSDK/Storage/QNConfiguration.m; sourceTree = "<group>"; };
 		8D917A57C2B79D0634C9468738DDCB39 /* UILabel+NERLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+NERLink.h"; path = "NerdyUI/Public/UILabel+NERLink.h"; sourceTree = "<group>"; };
 		8DA2580B2C127EFA9076C71DAD34558E /* NSString+NERChainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+NERChainable.h"; path = "NerdyUI/Chainable/NSString+NERChainable.h"; sourceTree = "<group>"; };
@@ -2200,7 +2200,7 @@
 		36D2FEC3E82780104BF6DCE58D531F49 /* JCore */ = {
 			isa = PBXGroup;
 			children = (
-				759BA0F90C924498FCD3D6F6537523E2 /* Frameworks */,
+				EC9FBD76EC63B5B92578CFEF4A49C659 /* Frameworks */,
 			);
 			name = JCore;
 			path = JCore;
@@ -2638,14 +2638,6 @@
 			isa = PBXGroup;
 			children = (
 				765C688E2117C42CE5F5144159BAA08E /* Fabric.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		759BA0F90C924498FCD3D6F6537523E2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2CB4ED76CE2110D96FACB2A0F7472982 /* libjcore-ios-1.1.9.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -3415,6 +3407,14 @@
 			);
 			name = WebViewJavascriptBridge;
 			path = WebViewJavascriptBridge;
+			sourceTree = "<group>";
+		};
+		EC9FBD76EC63B5B92578CFEF4A49C659 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D330C207195DB5ADFF3594BA4143C38 /* libjcore-ios-1.2.0.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		ED4FFA63E31111626E0DF136C7B752A3 /* Support Files */ = {
