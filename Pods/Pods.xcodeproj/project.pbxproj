@@ -1018,7 +1018,6 @@
 		3D4049EBAD05296607EBF06D5CC874C4 /* QNNiuDns.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNNiuDns.m; path = HappyDNS/Http/QNNiuDns.m; sourceTree = "<group>"; };
 		3DF0EFDA491A9A6F43C2BA559CDEF940 /* POPAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimation.mm; path = pop/POPAnimation.mm; sourceTree = "<group>"; };
 		3DFCB8B59FB885E447E3CF062FD39D52 /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJExtension.h"; path = "MJRefresh/UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
-		3EB687DEC9C805E4AA9E26B7E4046B33 /* libjcore-ios-1.2.1.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-1.2.1.a"; sourceTree = "<group>"; };
 		3EC418D4377A0EC5D09E5F36318A7446 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
 		3F429DD2A2C4DA346CD20E3ADFE5CC4D /* MTLValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLValueTransformer.m; path = Mantle/MTLValueTransformer.m; sourceTree = "<group>"; };
 		3F8058031496FAF2033BB5F1746A4B02 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -1386,6 +1385,7 @@
 		C853784618AF7FC1546884616DDB192D /* NERStaticTableView+NERChainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NERStaticTableView+NERChainable.m"; path = "NerdyUI/Chainable/NERStaticTableView+NERChainable.m"; sourceTree = "<group>"; };
 		C876478D924772616288FAAB233486C7 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		C898578B89B611B417E5620B31D2DE07 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTTAttributedLabel.h; path = TTTAttributedLabel/TTTAttributedLabel.h; sourceTree = "<group>"; };
+		C94AE198AA8570ECA1380DBD1F167362 /* libjcore-ios-1.2.2.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-1.2.2.a"; sourceTree = "<group>"; };
 		C9970A525EE0078C4C03B43CF0D33373 /* QNFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNFile.m; path = QiniuSDK/Common/QNFile.m; sourceTree = "<group>"; };
 		C9A4C95E820698F2BC8307A298887F68 /* QNTxtResolver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNTxtResolver.m; path = HappyDNS/Local/QNTxtResolver.m; sourceTree = "<group>"; };
 		C9EA5B06219A7D67BA28E21E1E2CD383 /* QNRefresher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNRefresher.h; path = HappyDNS/QNRefresher.h; sourceTree = "<group>"; };
@@ -2200,7 +2200,7 @@
 		36D2FEC3E82780104BF6DCE58D531F49 /* JCore */ = {
 			isa = PBXGroup;
 			children = (
-				72932B0BC2F17F1ECD22D76DC0AE64AC /* Frameworks */,
+				F9E49725B40C954599CD85DB07AE7CF1 /* Frameworks */,
 			);
 			name = JCore;
 			path = JCore;
@@ -2632,14 +2632,6 @@
 				B6C5AC5E06C995C95B0A9F1F81A410EE /* AFSecurityPolicy.m */,
 			);
 			name = Security;
-			sourceTree = "<group>";
-		};
-		72932B0BC2F17F1ECD22D76DC0AE64AC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3EB687DEC9C805E4AA9E26B7E4046B33 /* libjcore-ios-1.2.1.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		72B66195BE9FD09A81109AAFDD0B09B4 /* Frameworks */ = {
@@ -3495,6 +3487,14 @@
 			children = (
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		F9E49725B40C954599CD85DB07AE7CF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C94AE198AA8570ECA1380DBD1F167362 /* libjcore-ios-1.2.2.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FC93F222E15EA2C9A4FDB1E46070301C /* Serialization */ = {
