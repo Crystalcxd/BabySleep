@@ -15,12 +15,12 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - CircleProgressBar (0.32)
-  - Crashlytics (3.10.9):
-    - Fabric (~> 1.7.13)
+  - Crashlytics (3.11.1):
+    - Fabric (~> 1.8.1)
   - DACircularProgress (2.3.1)
   - DateTools (2.0.0)
   - ELCImagePickerController (0.2.0)
-  - Fabric (1.7.13)
+  - Fabric (1.8.2)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
@@ -170,11 +170,11 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   CircleProgressBar: 3920079be5224b62b3d9ed6eeb23ac01c835b681
-  Crashlytics: 55e24fc23989680285a21cb1146578d9d18e432c
+  Crashlytics: ca7ab4bc304aa216bdc2e4c1a96389ee77252203
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   ELCImagePickerController: b1b7084434a7d49f2cfc916bde1f3ba353d38de9
-  Fabric: 25d0963b691fc97be566392243ff0ecef5a68338
+  Fabric: d2b22f443ba195d8a7cc204da230977c72733b40
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   GBDeviceInfo: ae80eb4243d67e2c68d9290a136593da35071382
   GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
