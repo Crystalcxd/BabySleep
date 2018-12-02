@@ -16,19 +16,19 @@ PODS:
     - AFNetworking/NSURLSession
   - CircleProgressBar (0.32)
   - CocoaAsyncSocket (7.6.3)
-  - Crashlytics (3.11.1):
-    - Fabric (~> 1.8.1)
+  - Crashlytics (3.12.0):
+    - Fabric (~> 1.9.0)
   - DACircularProgress (2.3.1)
   - DateTools (2.0.0)
   - ELCImagePickerController (0.2.0)
-  - Fabric (1.8.2)
+  - Fabric (1.9.0)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
   - FXBlurView (1.6.4)
-  - GBDeviceInfo (5.4.0):
-    - GBDeviceInfo/Core (= 5.4.0)
-  - GBDeviceInfo/Core (5.4.0)
+  - GBDeviceInfo (6.0.0):
+    - GBDeviceInfo/Core (= 6.0.0)
+  - GBDeviceInfo/Core (6.0.0)
   - GTMBase64 (1.0.1)
   - GVUserDefaults (1.0.2)
   - HappyDNS (0.3.14)
@@ -182,14 +182,14 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   CircleProgressBar: 3920079be5224b62b3d9ed6eeb23ac01c835b681
   CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
-  Crashlytics: ca7ab4bc304aa216bdc2e4c1a96389ee77252203
+  Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   ELCImagePickerController: b1b7084434a7d49f2cfc916bde1f3ba353d38de9
-  Fabric: d2b22f443ba195d8a7cc204da230977c72733b40
+  Fabric: f988e33c97f08930a413e08123064d2e5f68d655
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
-  GBDeviceInfo: ae80eb4243d67e2c68d9290a136593da35071382
+  GBDeviceInfo: b7576f403b3050c1d3f4b490ab1d7dbb951bb1d9
   GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   HappyDNS: dc6a164ee81979093123c241c6353bcf0218add6
