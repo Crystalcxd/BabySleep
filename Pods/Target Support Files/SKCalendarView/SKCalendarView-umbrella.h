@@ -10,8 +10,6 @@
 #endif
 #endif
 
-#import "AppDelegate.h"
-#import "ViewController.h"
 #import "SKCalendarManage.h"
 #import "SKCalendarAnimationManage.h"
 #import "SKConstant.h"
