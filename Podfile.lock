@@ -31,9 +31,9 @@ PODS:
   - GVUserDefaults (1.0.2)
   - HappyDNS (0.3.14)
   - HMSegmentedControl (1.5.5)
-  - JCore (1.2.5)
-  - JPush (3.1.1.1):
-    - JCore (~> 1.2.5)
+  - JCore (1.2.6)
+  - JPush (3.1.2):
+    - JCore (~> 1.2.6)
   - Mantle (2.1.0):
     - Mantle/extobjc (= 2.1.0)
   - Mantle/extobjc (2.1.0)
@@ -41,7 +41,7 @@ PODS:
   - MBProgressHUD (1.1.0)
   - MiPushSDK (2.2.8)
   - MJRefresh (3.1.15.7)
-  - MOBFoundation (3.2.0)
+  - MOBFoundation (3.2.1)
   - NerdyUI (1.2.1):
     - NerdyUI/Chainable (= 1.2.1)
     - NerdyUI/Private (= 1.2.1)
@@ -181,14 +181,14 @@ SPEC CHECKSUMS:
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   HappyDNS: dc6a164ee81979093123c241c6353bcf0218add6
   HMSegmentedControl: f514c6dad47aa3065e0ed2e8046b73efc71221b9
-  JCore: 14706de2640b25fb77dbd02332696491407f37c9
-  JPush: 25dd9013fbe106082c14f9f30a82364ee98852fb
+  JCore: cae516dd2bf1a73b578ce6e1065abd49e709e0f7
+  JPush: d0cead70ba223a6a3b52749899ebda830dfbc49a
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MiPushSDK: cd22d6430f8928a0920c60ff98de89ed5da146d9
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
-  MOBFoundation: ca11e6640e995875ff755faa56ea324eed260e70
+  MOBFoundation: ce2ba976fd435b0cb06897466b2746e639895b7d
   NerdyUI: ae4506046b544a5cdc0873a58c1ece61b29631d0
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   Qiniu: 909b408ee489ea54827e9717be90b94bc9dfbc48
