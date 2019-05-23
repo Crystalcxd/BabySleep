@@ -572,7 +572,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BabySleep/Pods-BabySleep-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-BabySleep/Pods-BabySleep-resources.sh",
 				"${PODS_ROOT}/ShareSDK3/SDK/ShareSDK/Support/Required/ShareSDK.bundle",
 				"${PODS_ROOT}/ShareSDK3/SDK/ShareSDK/Support/PlatformSDK/RenRenSDK/RennSDK.bundle",
 				"${PODS_ROOT}/ShareSDK3/SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WeiboSDK.bundle",
@@ -585,7 +585,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BabySleep/Pods-BabySleep-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BabySleep/Pods-BabySleep-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AB730EF6C94412F4F6630D09 /* [CP] Embed Pods Frameworks */ = {
@@ -594,7 +594,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BabySleep/Pods-BabySleep-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-BabySleep/Pods-BabySleep-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/CircleProgressBar/CircleProgressBar.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
@@ -667,7 +667,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BabySleep/Pods-BabySleep-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BabySleep/Pods-BabySleep-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AC38BC8F08B09A17989DEDB8 /* [CP] Check Pods Manifest.lock */ = {
