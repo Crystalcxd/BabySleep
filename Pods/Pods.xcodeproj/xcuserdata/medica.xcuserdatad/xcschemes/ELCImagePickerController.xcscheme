@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7DF68AF3B6BEB785886D7CF10706AA75"
+               BlueprintIdentifier = "2ED5872140B1A79DB224140DE31BB856"
+               BuildableName = "libELCImagePickerController.a"
                BlueprintName = "ELCImagePickerController"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libELCImagePickerController.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

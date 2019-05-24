@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CC4B91C5874BD0EE356A6EFEF8A1197D"
+               BlueprintIdentifier = "3CDCE032C93C46D826FB6AF8D715E776"
+               BuildableName = "libRegexKitLite.a"
                BlueprintName = "RegexKitLite"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libRegexKitLite.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

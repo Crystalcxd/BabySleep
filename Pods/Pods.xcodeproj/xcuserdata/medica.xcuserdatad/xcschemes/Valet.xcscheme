@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7E7A79F1B89551C94A3F8F5414F0D40B"
+               BlueprintIdentifier = "1175424220F3769CE1BD7909109936CF"
+               BuildableName = "libValet.a"
                BlueprintName = "Valet"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libValet.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "56F122BDEFE0C2D6EDFF48DA93BFDA65"
+               BlueprintIdentifier = "AABA6EA92CC8E75347397AB8AC743830"
+               BuildableName = "libNerdyUI.a"
                BlueprintName = "NerdyUI"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libNerdyUI.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
