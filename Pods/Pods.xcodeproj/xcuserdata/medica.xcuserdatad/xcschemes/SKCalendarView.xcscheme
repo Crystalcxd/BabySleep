@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "44221CE3E09579AEC40A17E7614F5340"
+               BlueprintIdentifier = "F9C564E15ABF2276F0F5FCFD4929EFE9"
+               BuildableName = "SKCalendarView.framework"
                BlueprintName = "SKCalendarView"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SKCalendarView.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "019B8DD7F9406148F9C695DB96EBC4A3"
+               BlueprintIdentifier = "2B1A4F9261E8F421732B6CB1319CCC3E"
+               BuildableName = "DateTools.framework"
                BlueprintName = "DateTools"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "DateTools.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

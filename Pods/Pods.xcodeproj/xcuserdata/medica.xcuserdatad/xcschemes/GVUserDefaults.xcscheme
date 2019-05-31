@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E0055BDB9BE6E3206E80BFAABF64FD04"
+               BlueprintIdentifier = "AD364BEC9F48BB6838C4913361D55A9F"
+               BuildableName = "GVUserDefaults.framework"
                BlueprintName = "GVUserDefaults"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "GVUserDefaults.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

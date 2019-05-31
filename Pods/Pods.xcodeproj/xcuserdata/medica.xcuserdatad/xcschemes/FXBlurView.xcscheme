@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BD5BFC2F630B07DE8A20EBC90A7C8D49"
+               BlueprintIdentifier = "10EEDE4F2EDE1C13963CDB0C964AC6FA"
+               BuildableName = "FXBlurView.framework"
                BlueprintName = "FXBlurView"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "FXBlurView.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ECBABB76DC53FF61BA1C49D806716DCC"
+               BlueprintIdentifier = "9E7BE764A21B2332EE0E009BA22A79BF"
+               BuildableName = "Pods-BabySleep.framework"
                BlueprintName = "Pods-BabySleep"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "Pods-BabySleep.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
