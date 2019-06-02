@@ -633,7 +633,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BabySleep/Pods-BabySleep-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-BabySleep/Pods-BabySleep-resources.sh",
 				"${PODS_ROOT}/DateTools/DateTools/DateTools/DateTools.bundle",
 				"${PODS_ROOT}/ELCImagePickerController/Classes/ELCImagePicker/Resources/ELCAlbumPickerController.xib",
 				"${PODS_ROOT}/ELCImagePickerController/Classes/ELCImagePicker/Resources/ELCAssetPicker.xib",
@@ -660,7 +660,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BabySleep/Pods-BabySleep-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BabySleep/Pods-BabySleep-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
