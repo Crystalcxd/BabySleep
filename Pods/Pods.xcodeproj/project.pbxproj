@@ -1051,6 +1051,7 @@
 		247C042327397C993F7BAAE47153CFCF /* UIImageView+UIActivityIndicatorForSDWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageView+UIActivityIndicatorForSDWebImage.h"; sourceTree = "<group>"; };
 		24906358D4472592AAB45254D975D5E2 /* libTTTAttributedLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTTTAttributedLabel.a; path = libTTTAttributedLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2522FFE1AFDBCC65C1D1D4BB70CA3F42 /* NERTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NERTypes.h; path = NerdyUI/Private/NERTypes.h; sourceTree = "<group>"; };
+		25288306425BFB47A0A3EA004D5C2BE0 /* MOBFoundationEx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MOBFoundationEx.framework; path = MOBFoundation/MOBFoundationEx.framework; sourceTree = "<group>"; };
 		256E428B00CB541CD63D83204F741DC2 /* Mantle-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Mantle-prefix.pch"; sourceTree = "<group>"; };
 		259710D9A53026C59B85BE77417A365F /* SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.xcconfig; sourceTree = "<group>"; };
 		262A87C136B623A354BC52DCF6D810C8 /* RegexKitLite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RegexKitLite.xcconfig; sourceTree = "<group>"; };
@@ -1141,7 +1142,6 @@
 		3FD86C5171FE5EBDB6EF514DFAEA7F00 /* Valet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Valet-dummy.m"; sourceTree = "<group>"; };
 		3FFFE20B49B486E404A59AC7CBA5AE74 /* UIPageControl+NERChainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIPageControl+NERChainable.m"; path = "NerdyUI/Chainable/UIPageControl+NERChainable.m"; sourceTree = "<group>"; };
 		4076C848D84A79C9E390C0586B9F3FCD /* POPAnimationRuntime.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationRuntime.mm; path = pop/POPAnimationRuntime.mm; sourceTree = "<group>"; };
-		407AE321AF95E37024D9C79E2D036E8E /* libjpush-ios-3.2.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.2.0.a"; sourceTree = "<group>"; };
 		409CD65BE32DDFD626FDDE2A9F811C5B /* NSValueTransformer+MTLInversionAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValueTransformer+MTLInversionAdditions.h"; path = "Mantle/NSValueTransformer+MTLInversionAdditions.h"; sourceTree = "<group>"; };
 		40C528AAA77B0328D0B7EC416514CECC /* NSDictionary+MTLManipulationAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MTLManipulationAdditions.h"; path = "Mantle/NSDictionary+MTLManipulationAdditions.h"; sourceTree = "<group>"; };
 		41812D34F837792C9479DA78C5EF1BE7 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
@@ -1291,6 +1291,7 @@
 		7316D200A033DE527C521752667DB6D0 /* NERBlockInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NERBlockInfo.h; path = NerdyUI/Private/NERBlockInfo.h; sourceTree = "<group>"; };
 		738410018356617B024E521FA545E5C9 /* MTLTransformerErrorHandling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLTransformerErrorHandling.m; path = Mantle/MTLTransformerErrorHandling.m; sourceTree = "<group>"; };
 		73DD22D8F2BFB207FAE276581FE20763 /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTKeyPathCoding.h; path = Mantle/extobjc/EXTKeyPathCoding.h; sourceTree = "<group>"; };
+		74500786B1DF4D62BE50244AF96B5FBB /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MOBFoundation.framework; path = MOBFoundation/MOBFoundation.framework; sourceTree = "<group>"; };
 		746CFB338B76F1AA49232273AC97E02F /* WBHttpRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBHttpRequest.h; path = SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WBHttpRequest.h; sourceTree = "<group>"; };
 		74A6025E68B75C2A1EF66C8CE20FCB07 /* QNHosts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNHosts.h; path = HappyDNS/Local/QNHosts.h; sourceTree = "<group>"; };
 		7534D9540EA232AB2F2CEF7E7237AD25 /* UIStepper+NERChainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIStepper+NERChainable.m"; path = "NerdyUI/Chainable/UIStepper+NERChainable.m"; sourceTree = "<group>"; };
@@ -1363,7 +1364,6 @@
 		8FDC8B05C08593790815549DF2E6E33E /* POPAnimatableProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatableProperty.h; path = pop/POPAnimatableProperty.h; sourceTree = "<group>"; };
 		901712ABA4332005B6EBFA26F8B00C5B /* MJRefreshGifHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshGifHeader.h; path = MJRefresh/Custom/Header/MJRefreshGifHeader.h; sourceTree = "<group>"; };
 		909B9146979267BD1D125B323C4E98DA /* TransformationMatrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TransformationMatrix.h; path = pop/WebCore/TransformationMatrix.h; sourceTree = "<group>"; };
-		9141C98ACF0616BAAE39F00754A98426 /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
 		914D5C4BF42529855FA985D0735842A7 /* MJRefresh.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJRefresh.xcconfig; sourceTree = "<group>"; };
 		91773A0563C3263AFCBFED2E1E12CDEF /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDIndexPathHeightCache.h"; path = "Classes/UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
 		91F603F0534273F63DA7B439E052347B /* RegexKitLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
@@ -1377,18 +1377,19 @@
 		93A09E5B814EE5530178AC442CBFE70A /* NSObject+MTLComparisonAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MTLComparisonAdditions.m"; path = "Mantle/NSObject+MTLComparisonAdditions.m"; sourceTree = "<group>"; };
 		93D83A576720CC26D2B126C41918CB60 /* POPAnimationTracer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracer.h; path = pop/POPAnimationTracer.h; sourceTree = "<group>"; };
 		93EAC0436BD6CD160B61AC1303691CBE /* JCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JCore.xcconfig; sourceTree = "<group>"; };
+		93EB687121CC8809E9F2B129867D4C18 /* libjpush-ios-3.2.1.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.2.1.a"; sourceTree = "<group>"; };
 		93FD66463A51AF368EAD225AA77EF0B1 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
 		9413651D7BA71B6B453F2393C2358524 /* QNFormUpload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNFormUpload.m; path = QiniuSDK/Storage/QNFormUpload.m; sourceTree = "<group>"; };
 		941D708986F710F180F2381E8B88201D /* NerdyUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NerdyUI-dummy.m"; sourceTree = "<group>"; };
 		94D7EDB5DF8EA71ACA55F7F4C54B5768 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
 		94E84B0749E3CC8E4079E0EB5F0349B8 /* POPCustomAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCustomAnimation.h; path = pop/POPCustomAnimation.h; sourceTree = "<group>"; };
 		9527128D8BAA77CFF81BA8C48C91536F /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
-		95389C13BFF8A13EAF76FB282FDBDD63 /* libjcore-ios-2.0.1.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.0.1.a"; sourceTree = "<group>"; };
 		95953A95C469ADF7E5A1251BA25E6CF9 /* WebViewJavascriptBridge.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WebViewJavascriptBridge.xcconfig; sourceTree = "<group>"; };
 		962C6298F8367D72BBC88798AC4DB647 /* WKWebViewJavascriptBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WKWebViewJavascriptBridge.m; path = WebViewJavascriptBridge/WKWebViewJavascriptBridge.m; sourceTree = "<group>"; };
 		96393A6428617864846C09DB65D62790 /* UIImage+NERChainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+NERChainable.m"; path = "NerdyUI/Chainable/UIImage+NERChainable.m"; sourceTree = "<group>"; };
 		96F6FBFA1B0DE916B3848E0A15037F02 /* DACircularProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DACircularProgressView.h; path = DACircularProgress/DACircularProgressView.h; sourceTree = "<group>"; };
 		97272E97B664C09138E22C84EB70CE74 /* POPAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationInternal.h; path = pop/POPAnimationInternal.h; sourceTree = "<group>"; };
+		972CC890D1D12E97EC1CF84B71109B50 /* libjcore-ios-2.0.2.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.0.2.a"; sourceTree = "<group>"; };
 		977BDF255A7F687A4DBBCB057EF00709 /* WebViewJavascriptBridge_JS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebViewJavascriptBridge_JS.h; path = WebViewJavascriptBridge/WebViewJavascriptBridge_JS.h; sourceTree = "<group>"; };
 		97AD03F1306699DCD471C4D9148AD51A /* Qiniu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Qiniu.xcconfig; sourceTree = "<group>"; };
 		9896F037E595DBF2DC57E1B0472DA4D7 /* NERUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NERUtils.h; path = NerdyUI/Private/NERUtils.h; sourceTree = "<group>"; };
@@ -1438,7 +1439,6 @@
 		A896C216BAEE47C536C3B2769AFDC392 /* NERPrivates.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NERPrivates.m; path = NerdyUI/Private/NERPrivates.m; sourceTree = "<group>"; };
 		A92435783E7FAD2765B86BA445D0807B /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFCompatibilityMacros.h; path = AFNetworking/AFCompatibilityMacros.h; sourceTree = "<group>"; };
 		A990C56EED29E78CA9FD38C5F8781A86 /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJRefresh.h"; path = "MJRefresh/UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
-		A9E08AF48EC265A907677B7DE5A2D15F /* MOBFoundationEx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundationEx.framework; sourceTree = "<group>"; };
 		AA678DAE1FF526D629160D4004E9D525 /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDIndexPathHeightCache.m"; path = "Classes/UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
 		AABAE6F5AE500F42CD64191F44FB331A /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
 		AB05323148BA49F71581CEF7B93AF839 /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/UIImage+GIF.h"; sourceTree = "<group>"; };
@@ -1971,14 +1971,6 @@
 			path = DACircularProgress;
 			sourceTree = "<group>";
 		};
-		0697BD799BF96C904A23B883D77D3A09 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				407AE321AF95E37024D9C79E2D036E8E /* libjpush-ios-3.2.0.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		06A9E06C34C0E145995B1D39005A5D88 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -2031,6 +2023,15 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/JCore";
+			sourceTree = "<group>";
+		};
+		0DAD1B4A0EA6B6475C3166F2F6665891 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74500786B1DF4D62BE50244AF96B5FBB /* MOBFoundation.framework */,
+				25288306425BFB47A0A3EA004D5C2BE0 /* MOBFoundationEx.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		0E6526D7D6E44D6EC79AAA2DEE918142 /* Mantle */ = {
@@ -2139,6 +2140,14 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SlackTextViewController";
+			sourceTree = "<group>";
+		};
+		162667F86075EC146644D5CB0A8797F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				972CC890D1D12E97EC1CF84B71109B50 /* libjcore-ios-2.0.2.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		194AC576C6DC189110411B7C7FD48173 /* SinaWeibo */ = {
@@ -2673,11 +2682,19 @@
 			isa = PBXGroup;
 			children = (
 				12152998633F357C8958DFC65E439957 /* JPUSHService.h */,
-				0697BD799BF96C904A23B883D77D3A09 /* Frameworks */,
+				8639F72492147000A509BBA9BDE77D8B /* Frameworks */,
 				75387A0412FD51ED7486D265645B7AD7 /* Support Files */,
 			);
 			name = JPush;
 			path = JPush;
+			sourceTree = "<group>";
+		};
+		8639F72492147000A509BBA9BDE77D8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93EB687121CC8809E9F2B129867D4C18 /* libjpush-ios-3.2.1.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8B7D919E5A060BB60701FF3D800C7954 /* UIActivityIndicator-for-SDWebImage */ = {
@@ -2889,7 +2906,7 @@
 		9F58F92C4FD5DE3F2F010ED5E9BBBEED /* MOBFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				BE7D009D7CEE0D2363FE5ECC708B28EF /* Frameworks */,
+				0DAD1B4A0EA6B6475C3166F2F6665891 /* Frameworks */,
 				2363C25115242EC70010E7EF155EE5D2 /* Support Files */,
 			);
 			name = MOBFoundation;
@@ -3123,15 +3140,6 @@
 			path = "../Target Support Files/pop";
 			sourceTree = "<group>";
 		};
-		BE7D009D7CEE0D2363FE5ECC708B28EF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9141C98ACF0616BAAE39F00754A98426 /* MOBFoundation.framework */,
-				A9E08AF48EC265A907677B7DE5A2D15F /* MOBFoundationEx.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		BF8531035F5068D8351CE83442EC6F5B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -3257,7 +3265,7 @@
 		CA593E432B7A1DB51D0B075D92F115AD /* JCore */ = {
 			isa = PBXGroup;
 			children = (
-				E018B275BB238316D99145A37FBDEE4E /* Frameworks */,
+				162667F86075EC146644D5CB0A8797F7 /* Frameworks */,
 				0ABF0E1F3B8BCE433F1867BA3CEACA69 /* Support Files */,
 			);
 			name = JCore;
@@ -3433,14 +3441,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Masonry";
-			sourceTree = "<group>";
-		};
-		E018B275BB238316D99145A37FBDEE4E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				95389C13BFF8A13EAF76FB282FDBDD63 /* libjcore-ios-2.0.1.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E1D529382552A1ABFE9A5DF0BD6B5F28 /* Frameworks */ = {
