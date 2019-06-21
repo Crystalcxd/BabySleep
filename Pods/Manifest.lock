@@ -16,12 +16,12 @@ PODS:
     - AFNetworking/NSURLSession
   - CircleProgressBar (0.32)
   - CocoaAsyncSocket (7.6.3)
-  - Crashlytics (3.13.1):
-    - Fabric (~> 1.10.1)
+  - Crashlytics (3.13.2):
+    - Fabric (~> 1.10.2)
   - DACircularProgress (2.3.1)
   - DateTools (2.0.0)
   - ELCImagePickerController (0.2.0)
-  - Fabric (1.10.1)
+  - Fabric (1.10.2)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
@@ -182,11 +182,11 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   CircleProgressBar: 3920079be5224b62b3d9ed6eeb23ac01c835b681
   CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
-  Crashlytics: 5aa8e90dcbf2f34898b4f5a0037787531246cca0
+  Crashlytics: 611738c7847f8291a1a51084e35987b86ba6b3ee
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   ELCImagePickerController: b1b7084434a7d49f2cfc916bde1f3ba353d38de9
-  Fabric: f6f21452846788bb44595d73e9909d79d328e617
+  Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
   GBDeviceInfo: b7576f403b3050c1d3f4b490ab1d7dbb951bb1d9
