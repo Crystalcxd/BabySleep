@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AABA6EA92CC8E75347397AB8AC743830"
+               BlueprintIdentifier = "EC7CAE6D9DC3A98C02336675FDF5B0B9"
                BuildableName = "libNerdyUI.a"
                BlueprintName = "NerdyUI"
                ReferencedContainer = "container:Pods.xcodeproj">

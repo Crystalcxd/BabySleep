@@ -15,12 +15,12 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - CircleProgressBar (0.32)
-  - Crashlytics (3.13.1):
-    - Fabric (~> 1.10.1)
+  - Crashlytics (3.13.2):
+    - Fabric (~> 1.10.2)
   - DACircularProgress (2.3.1)
   - DateTools (2.0.0)
   - ELCImagePickerController (0.2.0)
-  - Fabric (1.10.1)
+  - Fabric (1.10.2)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
@@ -57,7 +57,7 @@ PODS:
     - HappyDNS (~> 0.3)
   - RDVTabBarController (1.2.0)
   - RegexKitLite (4.0)
-  - RSKImageCropper (2.2.1)
+  - RSKImageCropper (2.2.2)
   - SDAutoLayout (2.2.1)
   - SDWebImage (3.8.3):
     - SDWebImage/Core (= 3.8.3)
@@ -170,11 +170,11 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   CircleProgressBar: 3920079be5224b62b3d9ed6eeb23ac01c835b681
-  Crashlytics: 5aa8e90dcbf2f34898b4f5a0037787531246cca0
+  Crashlytics: 611738c7847f8291a1a51084e35987b86ba6b3ee
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   ELCImagePickerController: b1b7084434a7d49f2cfc916bde1f3ba353d38de9
-  Fabric: f6f21452846788bb44595d73e9909d79d328e617
+  Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   GBDeviceInfo: b7576f403b3050c1d3f4b490ab1d7dbb951bb1d9
   GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
@@ -194,7 +194,7 @@ SPEC CHECKSUMS:
   Qiniu: 909b408ee489ea54827e9717be90b94bc9dfbc48
   RDVTabBarController: b6d63a7fc49b00568ba07255c6171edc737ad833
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
-  RSKImageCropper: 98296ad26b41753f796b6898d015509598f13d97
+  RSKImageCropper: 05e3b82a18da83ea3c2b7bffa7f2199a621d6802
   SDAutoLayout: 8bf6b3bbc8b01f775d4defbb4fda2ace805461be
   SDWebImage: a72e880a8fe0f7fc31efe15aaed443c074d2a80c
   ShareSDK3: 75b57bab0cbe3119e281c7668eaad9d48adf3fde
