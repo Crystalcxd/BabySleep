@@ -1347,6 +1347,7 @@
 		48054444F57E764990E13D43FADF4467 /* RDVTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RDVTabBar.h; path = RDVTabBarController/RDVTabBar.h; sourceTree = "<group>"; };
 		4882EEE5ACE56544ADC074BDEED792B2 /* MJRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoNormalFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
 		48ABC1179E065F950D0A041DB38E0B1B /* POPAnimationTracerInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracerInternal.h; path = pop/POPAnimationTracerInternal.h; sourceTree = "<group>"; };
+		4906C57F6B7485364936570A2B5256C3 /* libjpush-ios-3.2.2.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.2.2.a"; sourceTree = "<group>"; };
 		4990F8D6A2E9037005DC205379AECE1E /* WebViewJavascriptBridgeBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebViewJavascriptBridgeBase.h; path = WebViewJavascriptBridge/WebViewJavascriptBridgeBase.h; sourceTree = "<group>"; };
 		4993C623F3B623E63397FA95EDCEB827 /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
 		4AE8094A8D4AF86088A67264A62469C1 /* POPAnimatableProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimatableProperty.mm; path = pop/POPAnimatableProperty.mm; sourceTree = "<group>"; };
@@ -1581,7 +1582,6 @@
 		95F8D75402738B2D16759910324B25C5 /* ELCAssetTablePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ELCAssetTablePicker.h; path = Classes/ELCImagePicker/ELCAssetTablePicker.h; sourceTree = "<group>"; };
 		960E1F18CA0379FC514479335D6D7C68 /* DACircularProgress-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DACircularProgress-umbrella.h"; sourceTree = "<group>"; };
 		963C99D7AD22B7F10AFA58EC9C177246 /* QNResolvUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNResolvUtil.m; path = HappyDNS/Local/QNResolvUtil.m; sourceTree = "<group>"; };
-		963F385253B2746364A6A02D69DDA3E3 /* libjpush-ios-3.2.1.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.2.1.a"; sourceTree = "<group>"; };
 		9648A99537CD37BD52503733E896C39C /* POPCustomAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPCustomAnimation.mm; path = pop/POPCustomAnimation.mm; sourceTree = "<group>"; };
 		967C7AD56265DB9AE7F8CB73034FA775 /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDTemplateLayoutCell.m"; path = "Classes/UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
 		97E018C3587C264449FB1F6E1613EE1D /* SKCalendarView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SKCalendarView-prefix.pch"; sourceTree = "<group>"; };
@@ -2544,6 +2544,14 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/DACircularProgress";
+			sourceTree = "<group>";
+		};
+		2789DE11DDD6E486A211D8EA74D10118 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4906C57F6B7485364936570A2B5256C3 /* libjpush-ios-3.2.2.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		2993F0D7E0FD54137C3C3BE1CF481611 /* standard */ = {
@@ -3750,7 +3758,7 @@
 			isa = PBXGroup;
 			children = (
 				C7E196C3A00764213BBC2874CBD6879E /* JPUSHService.h */,
-				E6E1CEC603DCA1DD7C399736D4DCABB8 /* Frameworks */,
+				2789DE11DDD6E486A211D8EA74D10118 /* Frameworks */,
 				1BAAC3DCEDBCF8DADBDAE814045D6BB8 /* Support Files */,
 			);
 			name = JPush;
@@ -4035,14 +4043,6 @@
 			);
 			name = Crashlytics;
 			path = Crashlytics;
-			sourceTree = "<group>";
-		};
-		E6E1CEC603DCA1DD7C399736D4DCABB8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				963F385253B2746364A6A02D69DDA3E3 /* libjpush-ios-3.2.1.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E850C07AA239F42096437FD6A46CCFB5 /* RDVTabBarController */ = {
