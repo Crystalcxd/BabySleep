@@ -1264,6 +1264,7 @@
 		6766EB87B1189DF1BC5B574153FC16BE /* ELCAssetPicker.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ELCAssetPicker.xib; path = Classes/ELCImagePicker/Resources/ELCAssetPicker.xib; sourceTree = "<group>"; };
 		67807B3DB18DF778E9FD00E84DF81C75 /* GTMBase64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMBase64.m; path = GTMBase64/GTMBase64.m; sourceTree = "<group>"; };
 		67C594718B88D94E1BBD7348D90D360D /* NERStaticTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NERStaticTableView.m; path = NerdyUI/Private/NERStaticTableView.m; sourceTree = "<group>"; };
+		68BF576EDE442265B33DB9EE2EB782EF /* libjpush-ios-3.2.2.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.2.2.a"; sourceTree = "<group>"; };
 		68D6257E86898E67B9D0FC98C261D9A2 /* libELCImagePickerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libELCImagePickerController.a; path = libELCImagePickerController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		696EF639A7304C907F19A99F393EC751 /* QNDomain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNDomain.h; path = HappyDNS/Common/QNDomain.h; sourceTree = "<group>"; };
 		6973D6E87FC2F38FC31396C4CD7CD285 /* QNTxtResolver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNTxtResolver.m; path = HappyDNS/Local/QNTxtResolver.m; sourceTree = "<group>"; };
@@ -1378,7 +1379,6 @@
 		93A09E5B814EE5530178AC442CBFE70A /* NSObject+MTLComparisonAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MTLComparisonAdditions.m"; path = "Mantle/NSObject+MTLComparisonAdditions.m"; sourceTree = "<group>"; };
 		93D83A576720CC26D2B126C41918CB60 /* POPAnimationTracer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracer.h; path = pop/POPAnimationTracer.h; sourceTree = "<group>"; };
 		93EAC0436BD6CD160B61AC1303691CBE /* JCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JCore.xcconfig; sourceTree = "<group>"; };
-		93EB687121CC8809E9F2B129867D4C18 /* libjpush-ios-3.2.1.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.2.1.a"; sourceTree = "<group>"; };
 		93FD66463A51AF368EAD225AA77EF0B1 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
 		9413651D7BA71B6B453F2393C2358524 /* QNFormUpload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNFormUpload.m; path = QiniuSDK/Storage/QNFormUpload.m; sourceTree = "<group>"; };
 		941D708986F710F180F2381E8B88201D /* NerdyUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NerdyUI-dummy.m"; sourceTree = "<group>"; };
@@ -2479,6 +2479,14 @@
 			path = "../Target Support Files/SDWebImage";
 			sourceTree = "<group>";
 		};
+		4F2682C7FB848945707E528CF0E3704A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68BF576EDE442265B33DB9EE2EB782EF /* libjpush-ios-3.2.2.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		56F741EE8B42365A698FC0083DF8DD7C /* Private */ = {
 			isa = PBXGroup;
 			children = (
@@ -2674,19 +2682,11 @@
 			isa = PBXGroup;
 			children = (
 				12152998633F357C8958DFC65E439957 /* JPUSHService.h */,
-				8639F72492147000A509BBA9BDE77D8B /* Frameworks */,
+				4F2682C7FB848945707E528CF0E3704A /* Frameworks */,
 				75387A0412FD51ED7486D265645B7AD7 /* Support Files */,
 			);
 			name = JPush;
 			path = JPush;
-			sourceTree = "<group>";
-		};
-		8639F72492147000A509BBA9BDE77D8B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				93EB687121CC8809E9F2B129867D4C18 /* libjpush-ios-3.2.1.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8B7D919E5A060BB60701FF3D800C7954 /* UIActivityIndicator-for-SDWebImage */ = {
