@@ -1343,6 +1343,7 @@
 		476B026A0151E5D9DE51BEB7F7CDAD71 /* NSValueTransformer+MTLInversionAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValueTransformer+MTLInversionAdditions.h"; path = "Mantle/NSValueTransformer+MTLInversionAdditions.h"; sourceTree = "<group>"; };
 		47BACA85709FE6D73BEEC8672A0A86FF /* MJRefreshGifHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshGifHeader.h; path = MJRefresh/Custom/Header/MJRefreshGifHeader.h; sourceTree = "<group>"; };
 		47C6D0347C77005D43F2CF4244ABE0AB /* WebViewJavascriptBridge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WebViewJavascriptBridge.modulemap; sourceTree = "<group>"; };
+		47D81FE5871F28FBF364EE37EFFA87A1 /* libjcore-ios-2.1.2.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.1.2.a"; sourceTree = "<group>"; };
 		47F97CC4EBF2D2B99F2850887E999481 /* UITableView+FDTemplateLayoutCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell-dummy.m"; sourceTree = "<group>"; };
 		48054444F57E764990E13D43FADF4467 /* RDVTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RDVTabBar.h; path = RDVTabBarController/RDVTabBar.h; sourceTree = "<group>"; };
 		4882EEE5ACE56544ADC074BDEED792B2 /* MJRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoNormalFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
@@ -1603,7 +1604,6 @@
 		9F88B2E4CA32E360285F9F1FC67B6015 /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDKeyedHeightCache.h"; path = "Classes/UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
 		9FA5C2D7C29C04D51784CF80556EFE57 /* UITableView+FDTemplateLayoutCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell-prefix.pch"; sourceTree = "<group>"; };
 		9FAECC67B222C94F1DD7B9846E529B54 /* WBHttpRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBHttpRequest.h; path = SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WBHttpRequest.h; sourceTree = "<group>"; };
-		9FBE97B8EE75D8A64D5CE337A5F6B583 /* libjcore-ios-2.1.1.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.1.1.a"; sourceTree = "<group>"; };
 		A0769CA65C185700AB1F9BA170F69625 /* GTMBase64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMBase64.m; path = GTMBase64/GTMBase64.m; sourceTree = "<group>"; };
 		A08C7ED186C379BC022D21464CC1335F /* SLKTypingIndicatorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLKTypingIndicatorView.m; path = Source/SLKTypingIndicatorView.m; sourceTree = "<group>"; };
 		A0BF721560F8E78139472A636EFA74A3 /* FXBlurView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FXBlurView.framework; path = FXBlurView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2349,11 +2349,19 @@
 		168E0010A2F1CF79A814F50B812A5F6F /* JCore */ = {
 			isa = PBXGroup;
 			children = (
-				613220815596C7463D5119662F657790 /* Frameworks */,
+				18C95877DD95C4C9E701CCD43C19BC79 /* Frameworks */,
 				6D69F999F8B8B6E02C852FEAE8953E6A /* Support Files */,
 			);
 			name = JCore;
 			path = JCore;
+			sourceTree = "<group>";
+		};
+		18C95877DD95C4C9E701CCD43C19BC79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47D81FE5871F28FBF364EE37EFFA87A1 /* libjcore-ios-2.1.2.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		198D2F4202621D897B82029F4236B0BB /* DateTools */ = {
@@ -2978,14 +2986,6 @@
 				3C4B76EF0DACAAFCFA41A7A7198D9250 /* AFURLSessionManager.m */,
 			);
 			name = NSURLSession;
-			sourceTree = "<group>";
-		};
-		613220815596C7463D5119662F657790 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9FBE97B8EE75D8A64D5CE337A5F6B583 /* libjcore-ios-2.1.1.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		6177D6156CAE08BBA937CF8F9BC4DDC2 /* Facebook */ = {
