@@ -1088,6 +1088,7 @@
 		2DDC48484DAB04A022D30E9A6C5A4CA7 /* NSAttributedString+NERChainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+NERChainable.m"; path = "NerdyUI/Chainable/NSAttributedString+NERChainable.m"; sourceTree = "<group>"; };
 		2E300F8250445C6746FC3DC43B4835DA /* SDAutoLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDAutoLayout-prefix.pch"; sourceTree = "<group>"; };
 		2E7CFEBCA93D66C0950BDAFE57285949 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		2E901FC9F749A76878F8D39D6CD3A880 /* libjcore-ios-2.1.2.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.1.2.a"; sourceTree = "<group>"; };
 		2F61A49FB182A954CD6391917C867EB7 /* NSValueTransformer+MTLInversionAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValueTransformer+MTLInversionAdditions.m"; path = "Mantle/NSValueTransformer+MTLInversionAdditions.m"; sourceTree = "<group>"; };
 		2F7BF2D8026581A2BCDC51B7B6FB6661 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
 		2F998F4592D970AAEBDB6615E9B66273 /* QNDnspodFree.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNDnspodFree.m; path = HappyDNS/Http/QNDnspodFree.m; sourceTree = "<group>"; };
@@ -1281,7 +1282,6 @@
 		6C293D5CEA59B1F066421A92EAE46C81 /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+SDAutoLayout.m"; path = "SDAutoLayoutDemo/SDAutoLayout/UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
 		6CD5047F144222F54981033D28786794 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		6D154B6E848625DC8EA5F6AA126AAEE0 /* DTConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTConstants.h; path = DateTools/DateTools/DTConstants.h; sourceTree = "<group>"; };
-		6D7954B098EFB1D9149BD68752CADF51 /* libjcore-ios-2.1.1.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.1.1.a"; sourceTree = "<group>"; };
 		6EC8C936FF4484FA9AF9AE63A5EB6E45 /* NERConstraint+NERChainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NERConstraint+NERChainable.m"; path = "NerdyUI/Chainable/NERConstraint+NERChainable.m"; sourceTree = "<group>"; };
 		6FCF812CB4C64414355CC23B2879E2F2 /* GTMBase64-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GTMBase64-dummy.m"; sourceTree = "<group>"; };
 		6FE6C431FF6DBCDC10C1269D3AC3AF72 /* ELCAlbumPickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ELCAlbumPickerController.h; path = Classes/ELCImagePicker/ELCAlbumPickerController.h; sourceTree = "<group>"; };
@@ -2670,6 +2670,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		820996E098DEBC6AD41375CED5C04726 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E901FC9F749A76878F8D39D6CD3A880 /* libjcore-ios-2.1.2.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		82A7C1213308934D4E8EA44D0116A6DF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -3257,7 +3265,7 @@
 		CA593E432B7A1DB51D0B075D92F115AD /* JCore */ = {
 			isa = PBXGroup;
 			children = (
-				CE8B306AEFB2D3FCAED94F3E7B6DBE89 /* Frameworks */,
+				820996E098DEBC6AD41375CED5C04726 /* Frameworks */,
 				0ABF0E1F3B8BCE433F1867BA3CEACA69 /* Support Files */,
 			);
 			name = JCore;
@@ -3277,14 +3285,6 @@
 			);
 			name = AFNetworking;
 			path = AFNetworking;
-			sourceTree = "<group>";
-		};
-		CE8B306AEFB2D3FCAED94F3E7B6DBE89 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6D7954B098EFB1D9149BD68752CADF51 /* libjcore-ios-2.1.1.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
