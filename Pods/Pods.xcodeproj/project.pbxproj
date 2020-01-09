@@ -1313,6 +1313,7 @@
 		5CE012324094F8E58299CA8DBFBD26AE /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
 		5D7686352F47EA07525EFCE5C08A08DE /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
 		5D821833E7944EF16BDAC2E92EFA6766 /* POPAnimatableProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatableProperty.h; path = pop/POPAnimatableProperty.h; sourceTree = "<group>"; };
+		5DA5057F720970D835C1216E4CB43096 /* libjcore-ios-2.1.8.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.1.8.a"; sourceTree = "<group>"; };
 		5E9810B5B76BDC8AF02838C8CCCE1003 /* POPCGUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCGUtils.h; path = pop/POPCGUtils.h; sourceTree = "<group>"; };
 		5EADCFE0FD5F295A9B6A04527D0E1299 /* GBDeviceInfo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GBDeviceInfo.modulemap; sourceTree = "<group>"; };
 		5F0A3A810BBA1243ABFA69B7E60D2652 /* HMSegmentedControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HMSegmentedControl.m; path = HMSegmentedControl/HMSegmentedControl.m; sourceTree = "<group>"; };
@@ -1723,7 +1724,6 @@
 		DD6CCECFACB047110F8AA699F01EE1D4 /* SKDateSecurity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKDateSecurity.h; path = Source/SKCalendarView/Tool/SKDateSecurity.h; sourceTree = "<group>"; };
 		DE8E3D15BEF4DA90C0A8C797D886BD95 /* UIActivityIndicator-for-SDWebImage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UIActivityIndicator-for-SDWebImage-Info.plist"; sourceTree = "<group>"; };
 		DE9D4E40565DAA2DDE43CEA2882AB5C3 /* YYClassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYClassInfo.m; path = YYModel/YYClassInfo.m; sourceTree = "<group>"; };
-		DEC32EB2CD955BC7294F73473B56B4A1 /* libjpush-ios-3.2.6.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.2.6.a"; sourceTree = "<group>"; };
 		DEC4F4B3EF769AFBB3FAF4EFDD997C4E /* QNSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNSessionManager.h; path = QiniuSDK/Http/QNSessionManager.h; sourceTree = "<group>"; };
 		DF3DF56429FF1335370D7796551327D7 /* GVUserDefaults-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GVUserDefaults-prefix.pch"; sourceTree = "<group>"; };
 		DFFE09DAFDFA7A0C5CD361CE2B93CCD0 /* YXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXApiObject.h; path = SDK/ShareSDK/Support/PlatformSDK/YiXinSDK/YXApiObject.h; sourceTree = "<group>"; };
@@ -1736,7 +1736,6 @@
 		E3AABA371CA5CDBC6BDCA1416E05AC13 /* ELCImagePickerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ELCImagePickerController.xcconfig; sourceTree = "<group>"; };
 		E460D5B0416D36F66EE8EC89E5D2FA0A /* YYModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YYModel.framework; path = YYModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MJRefresh.framework; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E55F61E2FBFF5A2F88531817B141AC07 /* libjcore-ios-2.1.4.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.1.4.a"; sourceTree = "<group>"; };
 		E581FC3371271ED7C792988B908CA534 /* GBDeviceInfoTypes_Common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBDeviceInfoTypes_Common.h; path = GBDeviceInfo/GBDeviceInfoTypes_Common.h; sourceTree = "<group>"; };
 		E670C3B02658095DCEA776CB7AE7A947 /* Valet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Valet-dummy.m"; sourceTree = "<group>"; };
 		E747AB0D6905E9B898CF9A0FCB967846 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
@@ -1756,6 +1755,7 @@
 		EC9E19451A52EFA018D2184AE8FAC76F /* SCLAlertView-Objective-C-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SCLAlertView-Objective-C-Info.plist"; sourceTree = "<group>"; };
 		EC9F4024FBB1808C8B035215F58582EB /* NSDictionary+MTLManipulationAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MTLManipulationAdditions.h"; path = "Mantle/NSDictionary+MTLManipulationAdditions.h"; sourceTree = "<group>"; };
 		ECB2A14FC2B17DFEDF033C1F3FE49090 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		ECE7593BF6E475A98D237300FDBEC139 /* libjpush-ios-3.2.8.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.2.8.a"; sourceTree = "<group>"; };
 		ED2CADEAA8569E0CAE6A1E288710C0C1 /* Qiniu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Qiniu-Info.plist"; sourceTree = "<group>"; };
 		ED53434CF2125E849A0E08A46A55FB54 /* UIActivityIndicator-for-SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicator-for-SDWebImage-prefix.pch"; sourceTree = "<group>"; };
 		ED5BC17A28B54B3F387A5297EF396D72 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
@@ -2124,14 +2124,6 @@
 				6A1010020346ED8CA403FFF02156D5D2 /* ShareSDK.bundle */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		02F6CCCE0A8950E3391268F57DDB6291 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E55F61E2FBFF5A2F88531817B141AC07 /* libjcore-ios-2.1.4.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		0650B0B16008203FD30FE12A35F35D4E /* NSURLSession */ = {
@@ -2541,7 +2533,7 @@
 		439F8C57C6939CB5740427CFADCEB07A /* JCore */ = {
 			isa = PBXGroup;
 			children = (
-				02F6CCCE0A8950E3391268F57DDB6291 /* Frameworks */,
+				86136A61008884118AD2C44E5A27388E /* Frameworks */,
 				2146EB99165ED9FB7169EEA221A46B02 /* Support Files */,
 			);
 			name = JCore;
@@ -2703,6 +2695,14 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		5D28249E67E8A0710C88AA8D3F86D8D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECE7593BF6E475A98D237300FDBEC139 /* libjpush-ios-3.2.8.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		6253A2A901972E2B6F5239FE731CAFD1 /* Resources */ = {
@@ -2997,6 +2997,14 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/UMengAnalytics-NO-IDFA";
+			sourceTree = "<group>";
+		};
+		86136A61008884118AD2C44E5A27388E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DA5057F720970D835C1216E4CB43096 /* libjcore-ios-2.1.8.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		877832778DB82429435A4C4C25A72BCC /* MOBFoundation */ = {
@@ -3349,7 +3357,7 @@
 			isa = PBXGroup;
 			children = (
 				840E8DC6D99A2E4022E6FD74A526D005 /* JPUSHService.h */,
-				E24741F2CCA5282D90E32326A236DE1C /* Frameworks */,
+				5D28249E67E8A0710C88AA8D3F86D8D4 /* Frameworks */,
 				3AC6B62335935054A97348E4A0B4E7C2 /* Support Files */,
 			);
 			name = JPush;
@@ -3788,14 +3796,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/CocoaAsyncSocket";
-			sourceTree = "<group>";
-		};
-		E24741F2CCA5282D90E32326A236DE1C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DEC32EB2CD955BC7294F73473B56B4A1 /* libjpush-ios-3.2.6.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E376ABDA28D98D60D89F6D532D856C9E /* Pods */ = {
@@ -5209,6 +5209,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = C2424D50EEC171B61799D6FF8AED6CF9 /* Products */;
