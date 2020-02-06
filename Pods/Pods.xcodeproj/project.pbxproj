@@ -1212,6 +1212,7 @@
 		39AE5848502924FF712A76EAFCE6BFBF /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
 		39DF6EA26D528DBD20708A6DCF216E02 /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
 		39FFFD027D658162744C761816B21DC3 /* POPAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationInternal.h; path = pop/POPAnimationInternal.h; sourceTree = "<group>"; };
+		3A0D0A8F0ADBCF7FE2CFCCBECE2612BE /* libjcore-ios-2.2.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.2.0.a"; sourceTree = "<group>"; };
 		3A26C7F8AD35D343F1AB71B931648CEE /* TTTAttributedLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTTAttributedLabel-prefix.pch"; sourceTree = "<group>"; };
 		3A3789F711E7CE8559BD48B6B977483E /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
 		3A6078B26225ADC437F3BE39D5C93814 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
@@ -1564,7 +1565,6 @@
 		A1F8AAC3237232E00D4FAD8AA1D6563D /* HMSegmentedControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HMSegmentedControl-dummy.m"; sourceTree = "<group>"; };
 		A1F9E0512BA3D8E49B2015B0FBD1B947 /* POPAnimationTracer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracer.h; path = pop/POPAnimationTracer.h; sourceTree = "<group>"; };
 		A20E8E7F574752AC698BF61E34E3A869 /* SCLAlertView-Objective-C.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SCLAlertView-Objective-C.debug.xcconfig"; sourceTree = "<group>"; };
-		A299507F46BAC469B0AA585DE6E6CB27 /* libjcore-ios-2.1.8.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.1.8.a"; sourceTree = "<group>"; };
 		A2BA6100C88B8FA7DF7A52AC7EF9D693 /* MTLTransformerErrorHandling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLTransformerErrorHandling.m; path = Mantle/MTLTransformerErrorHandling.m; sourceTree = "<group>"; };
 		A347121732666AE8EEE6CADC5204C30A /* SCLAlertView-Objective-C-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SCLAlertView-Objective-C-Info.plist"; sourceTree = "<group>"; };
 		A34E914E46DECB93D63E3278BC14D340 /* QNAsyncRun.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNAsyncRun.m; path = QiniuSDK/Common/QNAsyncRun.m; sourceTree = "<group>"; };
@@ -2235,7 +2235,7 @@
 		082E9A8A52BEFD225B2403F7935ED2CE /* JCore */ = {
 			isa = PBXGroup;
 			children = (
-				66CFE7803F10A1699FD0B847078DBA7D /* Frameworks */,
+				5E629251D85B362EB775084D6BB763DE /* Frameworks */,
 				3865D56F333F59EBE776F0A2E217E8FE /* Support Files */,
 			);
 			name = JCore;
@@ -2853,6 +2853,14 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		5E629251D85B362EB775084D6BB763DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A0D0A8F0ADBCF7FE2CFCCBECE2612BE /* libjcore-ios-2.2.0.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		64F13C289B1278049B79AA743F9FBAC2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -2866,14 +2874,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/YYModel";
-			sourceTree = "<group>";
-		};
-		66CFE7803F10A1699FD0B847078DBA7D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A299507F46BAC469B0AA585DE6E6CB27 /* libjcore-ios-2.1.8.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		6856AF8F5EC3C3859FEDF40BB055F769 /* NSURLSession */ = {
