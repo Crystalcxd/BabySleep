@@ -1293,6 +1293,7 @@
 		8EB68B7943515E4F13CC6BE690FFD564 /* libWebViewJavascriptBridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libWebViewJavascriptBridge.a; path = libWebViewJavascriptBridge.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F40CF13028BD6CF006E3DBEC95A2FAE /* RDVTabBarController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RDVTabBarController.debug.xcconfig; sourceTree = "<group>"; };
 		8F5CE4974354554CCC46AFAA864860EA /* SDAutoLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAutoLayout.h; path = SDAutoLayoutDemo/SDAutoLayout/SDAutoLayout.h; sourceTree = "<group>"; };
+		8F68A5588C7B8C7922314F451350788D /* libjcore-ios-2.2.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.2.0.a"; sourceTree = "<group>"; };
 		8F971C283AB36FBAF1B73461B3B93C8F /* NERStack+NERChainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NERStack+NERChainable.h"; path = "NerdyUI/Chainable/NERStack+NERChainable.h"; sourceTree = "<group>"; };
 		907BC5BA9AAF27275A3D275EE7DE1EF3 /* SLKTextView+SLKAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SLKTextView+SLKAdditions.h"; path = "Source/SLKTextView+SLKAdditions.h"; sourceTree = "<group>"; };
 		908E22C664234AF1E425B609EB2E37F0 /* QNRecorderDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNRecorderDelegate.h; path = QiniuSDK/Recorder/QNRecorderDelegate.h; sourceTree = "<group>"; };
@@ -1410,7 +1411,6 @@
 		B664EB8B7AC860E9847C6CCE1F6F153A /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		B6F9B5C62FF6487AFC2002CD4C7B0410 /* QNHttpDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNHttpDelegate.h; path = QiniuSDK/Http/QNHttpDelegate.h; sourceTree = "<group>"; };
 		B8092E3227F6A6D4650817744A6F65CD /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
-		B82A3148AA83DA17F53EF72C1152417F /* libjcore-ios-2.1.8.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.1.8.a"; sourceTree = "<group>"; };
 		B84689F824F1A34DEFEA1321DD8ECBB1 /* UIView+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MJExtension.h"; path = "MJRefresh/UIView+MJExtension.h"; sourceTree = "<group>"; };
 		B894D38C8538A8EA78BCC04CD241F671 /* WBHttpRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBHttpRequest.h; path = SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WBHttpRequest.h; sourceTree = "<group>"; };
 		B9059712611CC1401783300DD3E99188 /* libGVUserDefaults.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libGVUserDefaults.a; path = libGVUserDefaults.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2946,14 +2946,6 @@
 			path = "../Target Support Files/Fabric";
 			sourceTree = "<group>";
 		};
-		8803C4EB92F07D5C2577A8E7B2FCFBCC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B82A3148AA83DA17F53EF72C1152417F /* libjcore-ios-2.1.8.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		89962D2851F3E13C87E35C38C818FAE3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -3235,7 +3227,7 @@
 		BD4E3E8BCB3C21F8F49AB382069CC4BE /* JCore */ = {
 			isa = PBXGroup;
 			children = (
-				8803C4EB92F07D5C2577A8E7B2FCFBCC /* Frameworks */,
+				E641D13F5E8D617AFC77CF0F18C5F306 /* Frameworks */,
 				9B46D7C4F9F4DBEB00DC220EFEF0A50B /* Support Files */,
 			);
 			name = JCore;
@@ -3450,6 +3442,14 @@
 			);
 			name = MiPushSDK;
 			path = MiPushSDK;
+			sourceTree = "<group>";
+		};
+		E641D13F5E8D617AFC77CF0F18C5F306 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F68A5588C7B8C7922314F451350788D /* libjcore-ios-2.2.0.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E960195209A824FA0742C88A20B4B9A5 /* Support Files */ = {
