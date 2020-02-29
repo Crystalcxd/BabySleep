@@ -1185,6 +1185,7 @@
 		6572303C97F45752DCDD5F45A4C94A4C /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
 		657FB51A0B9F9750A93E2A67AB701F20 /* NERAlertMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NERAlertMaker.m; path = NerdyUI/Private/NERAlertMaker.m; sourceTree = "<group>"; };
 		65C7719D07A74AD98C2F27FCFD064DC8 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		65DFBBE2ECF3E718DB7FD2E91E39789E /* libjpush-ios-3.3.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.3.0.a"; sourceTree = "<group>"; };
 		65E5598770BBFC2A047E33E1B8B7C659 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
 		6617BF6775B53E05CFC50DB86FB486E7 /* NSAttributedString+NERChainable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+NERChainable.m"; path = "NerdyUI/Chainable/NSAttributedString+NERChainable.m"; sourceTree = "<group>"; };
 		67CE171F205670F7167EC5DCEE55CA7A /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
@@ -1293,7 +1294,6 @@
 		8EB68B7943515E4F13CC6BE690FFD564 /* libWebViewJavascriptBridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libWebViewJavascriptBridge.a; path = libWebViewJavascriptBridge.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F40CF13028BD6CF006E3DBEC95A2FAE /* RDVTabBarController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RDVTabBarController.debug.xcconfig; sourceTree = "<group>"; };
 		8F5CE4974354554CCC46AFAA864860EA /* SDAutoLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAutoLayout.h; path = SDAutoLayoutDemo/SDAutoLayout/SDAutoLayout.h; sourceTree = "<group>"; };
-		8F68A5588C7B8C7922314F451350788D /* libjcore-ios-2.2.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.2.0.a"; sourceTree = "<group>"; };
 		8F971C283AB36FBAF1B73461B3B93C8F /* NERStack+NERChainable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NERStack+NERChainable.h"; path = "NerdyUI/Chainable/NERStack+NERChainable.h"; sourceTree = "<group>"; };
 		907BC5BA9AAF27275A3D275EE7DE1EF3 /* SLKTextView+SLKAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SLKTextView+SLKAdditions.h"; path = "Source/SLKTextView+SLKAdditions.h"; sourceTree = "<group>"; };
 		908E22C664234AF1E425B609EB2E37F0 /* QNRecorderDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNRecorderDelegate.h; path = QiniuSDK/Recorder/QNRecorderDelegate.h; sourceTree = "<group>"; };
@@ -1369,7 +1369,6 @@
 		A8FD5133F114453E4258D082EC42AA16 /* NERStack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NERStack.m; path = NerdyUI/Public/NERStack.m; sourceTree = "<group>"; };
 		A9AC42CF274DD7F02B0E035E4D5B4847 /* POPAnimationRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationRuntime.h; path = pop/POPAnimationRuntime.h; sourceTree = "<group>"; };
 		A9CD3CE12C1F6C475D2D51171C233CC3 /* libMiPushSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libMiPushSDK.a; path = libMiPushSDK/libMiPushSDK.a; sourceTree = "<group>"; };
-		A9F6E2B43C9252C0A6099465E704A7CE /* libjpush-ios-3.2.8.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjpush-ios-3.2.8.a"; sourceTree = "<group>"; };
 		AA48588246708803132B6364124B3E50 /* POPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDefines.h; path = pop/POPDefines.h; sourceTree = "<group>"; };
 		AA562656273176C141F084AFF07274D4 /* Valet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Valet-prefix.pch"; sourceTree = "<group>"; };
 		AA8541F3234452102E6E5A4446D52860 /* CircleProgressBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircleProgressBar.release.xcconfig; sourceTree = "<group>"; };
@@ -1486,6 +1485,7 @@
 		D2F12E6036737BCDC2BF0B1464D7EA41 /* GBDeviceInfoTypes_Common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBDeviceInfoTypes_Common.h; path = GBDeviceInfo/GBDeviceInfoTypes_Common.h; sourceTree = "<group>"; };
 		D2F58957D9794F814D1157C1E6537135 /* POPAnimationTracer.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationTracer.mm; path = pop/POPAnimationTracer.mm; sourceTree = "<group>"; };
 		D36E71FF75ABF2203A7BF7BC1825F52E /* QNResponseInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNResponseInfo.h; path = QiniuSDK/Http/QNResponseInfo.h; sourceTree = "<group>"; };
+		D4E357E3FFC78DAC7C6437B03C733AB4 /* libjcore-ios-2.2.2.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.2.2.a"; sourceTree = "<group>"; };
 		D4E554EA42E7281B525680DDA2C37F14 /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
 		D50B2754AF66EF67E3040C5514252014 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
 		D522D83FBFEE6C00B6A5CF2C4A4E0911 /* POPDecayAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDecayAnimationInternal.h; path = pop/POPDecayAnimationInternal.h; sourceTree = "<group>"; };
@@ -2074,7 +2074,7 @@
 			isa = PBXGroup;
 			children = (
 				84EF1D428E74FF1E1DE344BB2571F074 /* JPUSHService.h */,
-				FC754912F8E3217709045B8D1CB4F92F /* Frameworks */,
+				35A3F98881911BD8CEBB31E0FA7C99C3 /* Frameworks */,
 				9075CD1B4F94DA954D57B3BEF4A7F2B9 /* Support Files */,
 			);
 			name = JPush;
@@ -2246,6 +2246,14 @@
 			);
 			name = TTTAttributedLabel;
 			path = TTTAttributedLabel;
+			sourceTree = "<group>";
+		};
+		35A3F98881911BD8CEBB31E0FA7C99C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65DFBBE2ECF3E718DB7FD2E91E39789E /* libjpush-ios-3.3.0.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		3A20A91C217BB9D25AD9EB65941F30C9 /* UIKit */ = {
@@ -3227,7 +3235,7 @@
 		BD4E3E8BCB3C21F8F49AB382069CC4BE /* JCore */ = {
 			isa = PBXGroup;
 			children = (
-				E641D13F5E8D617AFC77CF0F18C5F306 /* Frameworks */,
+				DCBDC43BDB814A9912D69E6FA7DE3D3A /* Frameworks */,
 				9B46D7C4F9F4DBEB00DC220EFEF0A50B /* Support Files */,
 			);
 			name = JCore;
@@ -3396,6 +3404,14 @@
 			path = "../Target Support Files/MBProgressHUD";
 			sourceTree = "<group>";
 		};
+		DCBDC43BDB814A9912D69E6FA7DE3D3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4E357E3FFC78DAC7C6437B03C733AB4 /* libjcore-ios-2.2.2.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DD4270DD06235BBDF6A9C056E813396D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -3442,14 +3458,6 @@
 			);
 			name = MiPushSDK;
 			path = MiPushSDK;
-			sourceTree = "<group>";
-		};
-		E641D13F5E8D617AFC77CF0F18C5F306 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8F68A5588C7B8C7922314F451350788D /* libjcore-ios-2.2.0.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E960195209A824FA0742C88A20B4B9A5 /* Support Files */ = {
@@ -3542,14 +3550,6 @@
 				E460D5B0416D36F66EE8EC89E5D2FA0A /* libYYModel.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		FC754912F8E3217709045B8D1CB4F92F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A9F6E2B43C9252C0A6099465E704A7CE /* libjpush-ios-3.2.8.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
