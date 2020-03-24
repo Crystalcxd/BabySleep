@@ -40,7 +40,7 @@ PODS:
   - MBProgressHUD (1.2.0)
   - MiPushSDK (2.2.8)
   - MJRefresh (3.3.1)
-  - MOBFoundation (3.2.10)
+  - MOBFoundation (3.2.12)
   - NerdyUI (1.2.1):
     - NerdyUI/Chainable (= 1.2.1)
     - NerdyUI/Private (= 1.2.1)
@@ -184,7 +184,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MiPushSDK: cd22d6430f8928a0920c60ff98de89ed5da146d9
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
-  MOBFoundation: e224d709cca757a6a5a4220ed4c9c6280042c8ba
+  MOBFoundation: 8b679c59f14588770fa307b830e64290d31f3227
   NerdyUI: ae4506046b544a5cdc0873a58c1ece61b29631d0
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   Qiniu: a248627a07bb8a39c6a11ae8059b7161c363539b
