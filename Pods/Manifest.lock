@@ -30,7 +30,7 @@ PODS:
   - GTMBase64 (1.0.1)
   - GVUserDefaults (1.0.2)
   - HMSegmentedControl (1.5.5)
-  - JCore (2.2.4)
+  - JCore (2.2.5)
   - JPush (3.3.2):
     - JCore (< 3.0.0, >= 2.0.0)
   - Mantle (2.1.1):
@@ -40,7 +40,7 @@ PODS:
   - MBProgressHUD (1.2.0)
   - MiPushSDK (2.2.8)
   - MJRefresh (3.4.1)
-  - MOBFoundation (3.2.12)
+  - MOBFoundation (3.2.14)
   - NerdyUI (1.2.1):
     - NerdyUI/Chainable (= 1.2.1)
     - NerdyUI/Private (= 1.2.1)
@@ -177,14 +177,14 @@ SPEC CHECKSUMS:
   GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   HMSegmentedControl: f514c6dad47aa3065e0ed2e8046b73efc71221b9
-  JCore: b007693f7ac4d12d5c77861660a4184522454eb1
+  JCore: d75c0306dc99875d323d23e5a063b3a3ef22335a
   JPush: 9468c84a3809dc3ac2fc1c89c6d1d6c858a91bf5
   Mantle: 35238ae6f2e2b2d474fa7b67fee82a59fea71915
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MiPushSDK: cd22d6430f8928a0920c60ff98de89ed5da146d9
   MJRefresh: 3153c59a363159092c08b2177ec3a7d09f90bfaf
-  MOBFoundation: 8b679c59f14588770fa307b830e64290d31f3227
+  MOBFoundation: 1663e6202a753bfa4bc7e889a837362870510587
   NerdyUI: ae4506046b544a5cdc0873a58c1ece61b29631d0
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   Qiniu: a248627a07bb8a39c6a11ae8059b7161c363539b
@@ -205,4 +205,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: b07412da6c8273aa84a52005c2029cbf677fda4e
 
-COCOAPODS: 1.9.0
+COCOAPODS: 1.9.1
