@@ -60,4 +60,8 @@ pod 'GTMBase64'
 pod 'SDAutoLayout'
 pod 'FMDB'
 
+pod 'Firebase/Crashlytics'
+
+# Recommended: Add the Firebase pod for Google Analytics
+pod 'Firebase/Analytics'
 end

@@ -19,6 +19,45 @@ PODS:
   - DACircularProgress (2.3.1)
   - DateTools (2.0.0)
   - ELCImagePickerController (0.2.0)
+  - Firebase/Analytics (6.34.0):
+    - Firebase/Core
+  - Firebase/Core (6.34.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 6.9.0)
+  - Firebase/CoreOnly (6.34.0):
+    - FirebaseCore (= 6.10.4)
+  - Firebase/Crashlytics (6.34.0):
+    - Firebase/CoreOnly
+    - FirebaseCrashlytics (~> 4.6.2)
+  - FirebaseAnalytics (6.9.0):
+    - FirebaseCore (~> 6.10)
+    - FirebaseInstallations (~> 1.7)
+    - GoogleAppMeasurement (= 6.9.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
+    - GoogleUtilities/MethodSwizzler (~> 6.7)
+    - GoogleUtilities/Network (~> 6.7)
+    - "GoogleUtilities/NSData+zlib (~> 6.7)"
+    - nanopb (~> 1.30906.0)
+  - FirebaseCore (6.10.4):
+    - FirebaseCoreDiagnostics (~> 1.6)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/Logger (~> 6.7)
+  - FirebaseCoreDiagnostics (1.7.0):
+    - GoogleDataTransport (~> 7.4)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/Logger (~> 6.7)
+    - nanopb (~> 1.30906.0)
+  - FirebaseCrashlytics (4.6.2):
+    - FirebaseCore (~> 6.10)
+    - FirebaseInstallations (~> 1.6)
+    - GoogleDataTransport (~> 7.2)
+    - nanopb (~> 1.30906.0)
+    - PromisesObjC (~> 1.2)
+  - FirebaseInstallations (1.7.0):
+    - FirebaseCore (~> 6.10)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/UserDefaults (~> 6.7)
+    - PromisesObjC (~> 1.2)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
@@ -26,6 +65,33 @@ PODS:
   - GBDeviceInfo (6.6.0):
     - GBDeviceInfo/Core (= 6.6.0)
   - GBDeviceInfo/Core (6.6.0)
+  - GoogleAppMeasurement (6.9.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
+    - GoogleUtilities/MethodSwizzler (~> 6.7)
+    - GoogleUtilities/Network (~> 6.7)
+    - "GoogleUtilities/NSData+zlib (~> 6.7)"
+    - nanopb (~> 1.30906.0)
+  - GoogleDataTransport (7.5.1):
+    - nanopb (~> 1.30906.0)
+  - GoogleUtilities/AppDelegateSwizzler (6.7.2):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.7.2):
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/Logger (6.7.2):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.7.2):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.7.2):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.7.2)"
+  - GoogleUtilities/Reachability (6.7.2):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (6.7.2):
+    - GoogleUtilities/Logger
   - GTMBase64 (1.0.1)
   - GVUserDefaults (1.0.2)
   - HappyDNS (0.3.17)
@@ -41,7 +107,13 @@ PODS:
   - MiPushSDK (2.2.8)
   - MJRefresh (3.5.0)
   - MOBFoundation (3.2.24)
+  - nanopb (1.30906.0):
+    - nanopb/decode (= 1.30906.0)
+    - nanopb/encode (= 1.30906.0)
+  - nanopb/decode (1.30906.0)
+  - nanopb/encode (1.30906.0)
   - pop (1.0.12)
+  - PromisesObjC (1.2.12)
   - Qiniu (8.1.2):
     - HappyDNS (~> 0.3.17)
   - RDVTabBarController (1.3.0)
@@ -90,6 +162,8 @@ DEPENDENCIES:
   - DACircularProgress
   - DateTools
   - ELCImagePickerController
+  - Firebase/Analytics
+  - Firebase/Crashlytics
   - FMDB
   - FXBlurView
   - GBDeviceInfo
@@ -137,9 +211,18 @@ SPEC REPOS:
     - DACircularProgress
     - DateTools
     - ELCImagePickerController
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCrashlytics
+    - FirebaseInstallations
     - FMDB
     - FXBlurView
     - GBDeviceInfo
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleUtilities
     - GTMBase64
     - GVUserDefaults
     - HappyDNS
@@ -152,7 +235,9 @@ SPEC REPOS:
     - MiPushSDK
     - MJRefresh
     - MOBFoundation
+    - nanopb
     - pop
+    - PromisesObjC
     - Qiniu
     - RDVTabBarController
     - RegexKitLite
@@ -178,9 +263,18 @@ SPEC CHECKSUMS:
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   ELCImagePickerController: b1b7084434a7d49f2cfc916bde1f3ba353d38de9
+  Firebase: c23a36d9e4cdf7877dfcba8dd0c58add66358999
+  FirebaseAnalytics: 3bb096873ee0d7fa4b6c70f5e9166b6da413cc7f
+  FirebaseCore: d3a978a3cfa3240bf7e4ba7d137fdf5b22b628ec
+  FirebaseCoreDiagnostics: 770ac5958e1372ce67959ae4b4f31d8e127c3ac1
+  FirebaseCrashlytics: 1a747c9cc084a24dc6d9511c991db1cd078154eb
+  FirebaseInstallations: 466c7b4d1f58fe16707693091da253726a731ed2
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
   GBDeviceInfo: ed0db16230d2fa280e1cbb39a5a7f60f6946aaec
+  GoogleAppMeasurement: a6a3a066369828db64eda428cb2856dc1cdc7c4e
+  GoogleDataTransport: f56af7caa4ed338dc8e138a5d7c5973e66440833
+  GoogleUtilities: 7f2f5a07f888cdb145101d6042bc4422f57e70b3
   GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   HappyDNS: 848ef73e24f2b0e2752064223ce2dc0dd88900ea
@@ -193,7 +287,9 @@ SPEC CHECKSUMS:
   MiPushSDK: cd22d6430f8928a0920c60ff98de89ed5da146d9
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   MOBFoundation: 934ee1a43aed452d51942b416bc3dc4d0813ac82
+  nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   Qiniu: 227df98daf83303c3684bce92b8dbcf7689c59fe
   RDVTabBarController: 28a5c6546b9991cf2712d59947324c6b06603e14
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
@@ -212,6 +308,6 @@ SPEC CHECKSUMS:
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 53f3bbd5456f071b360ee79acf166bb10ee507d9
+PODFILE CHECKSUM: 01c01c238903458223a67ace1c700f89e03086a0
 
 COCOAPODS: 1.9.1
