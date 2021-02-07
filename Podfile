@@ -57,8 +57,6 @@ pod 'GBDeviceInfo' # 设备信息
 pod 'Valet' # keychain
 pod 'pop'
 pod 'GTMBase64'
-pod 'Fabric'
-pod 'Crashlytics'
 pod 'SDAutoLayout'
 pod 'FMDB'
 

@@ -15,40 +15,39 @@ PODS:
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
   - CircleProgressBar (0.32)
-  - CocoaAsyncSocket (7.6.4)
-  - Crashlytics (3.14.0):
-    - Fabric (~> 1.10.2)
+  - CocoaAsyncSocket (7.6.5)
   - DACircularProgress (2.3.1)
   - DateTools (2.0.0)
   - ELCImagePickerController (0.2.0)
-  - Fabric (1.10.2)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
   - FXBlurView (1.6.4)
-  - GBDeviceInfo (6.3.0):
-    - GBDeviceInfo/Core (= 6.3.0)
-  - GBDeviceInfo/Core (6.3.0)
+  - GBDeviceInfo (6.6.0):
+    - GBDeviceInfo/Core (= 6.6.0)
+  - GBDeviceInfo/Core (6.6.0)
   - GTMBase64 (1.0.1)
   - GVUserDefaults (1.0.2)
+  - HappyDNS (0.3.17)
   - HMSegmentedControl (1.5.6)
-  - JCore (2.2.5)
-  - JPush (3.3.3):
+  - JCore (2.4.0)
+  - JPush (3.4.0):
     - JCore (< 3.0.0, >= 2.0.0)
-  - Mantle (2.1.1):
-    - Mantle/extobjc (= 2.1.1)
-  - Mantle/extobjc (2.1.1)
+  - Mantle (2.1.6):
+    - Mantle/extobjc (= 2.1.6)
+  - Mantle/extobjc (2.1.6)
   - Masonry (1.0.2)
   - MBProgressHUD (1.2.0)
   - MiPushSDK (2.2.8)
-  - MJRefresh (3.4.3)
-  - MOBFoundation (3.2.17)
+  - MJRefresh (3.5.0)
+  - MOBFoundation (3.2.24)
   - pop (1.0.12)
-  - Qiniu (7.3.5)
+  - Qiniu (8.1.2):
+    - HappyDNS (~> 0.3.17)
   - RDVTabBarController (1.3.0)
   - RegexKitLite (4.0)
-  - RSKImageCropper (2.2.3)
-  - SCLAlertView-Objective-C (1.1.6)
+  - RSKImageCropper (3.0.2)
+  - SCLAlertView-Objective-C (1.2.0)
   - SDAutoLayout (2.2.1)
   - SDWebImage (3.8.3):
     - SDWebImage/Core (= 3.8.3)
@@ -80,7 +79,7 @@ PODS:
     - SDWebImage (~> 3.7)
   - "UITableView+FDTemplateLayoutCell (1.6)"
   - UMengAnalytics-NO-IDFA (4.2.5)
-  - Valet (3.2.8)
+  - Valet (4.1.1)
   - WebViewJavascriptBridge (6.0.3)
   - YYModel (1.0.4)
 
@@ -88,11 +87,9 @@ DEPENDENCIES:
   - AFNetworking
   - CircleProgressBar
   - CocoaAsyncSocket
-  - Crashlytics
   - DACircularProgress
   - DateTools
   - ELCImagePickerController
-  - Fabric
   - FMDB
   - FXBlurView
   - GBDeviceInfo
@@ -137,16 +134,15 @@ SPEC REPOS:
     - AFNetworking
     - CircleProgressBar
     - CocoaAsyncSocket
-    - Crashlytics
     - DACircularProgress
     - DateTools
     - ELCImagePickerController
-    - Fabric
     - FMDB
     - FXBlurView
     - GBDeviceInfo
     - GTMBase64
     - GVUserDefaults
+    - HappyDNS
     - HMSegmentedControl
     - JCore
     - JPush
@@ -178,32 +174,31 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   CircleProgressBar: 3920079be5224b62b3d9ed6eeb23ac01c835b681
-  CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
-  Crashlytics: 540b7e5f5da5a042647227a5e3ac51d85eed06df
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   ELCImagePickerController: b1b7084434a7d49f2cfc916bde1f3ba353d38de9
-  Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
-  GBDeviceInfo: a3f39dba1a04dcb630abff65d6f7e8fbf319eadd
+  GBDeviceInfo: ed0db16230d2fa280e1cbb39a5a7f60f6946aaec
   GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
+  HappyDNS: 848ef73e24f2b0e2752064223ce2dc0dd88900ea
   HMSegmentedControl: 34c1f54d822d8308e7b24f5d901ec674dfa31352
-  JCore: d75c0306dc99875d323d23e5a063b3a3ef22335a
-  JPush: 61b3dc8c2bdefb7c48e7ca283f9fe42e71bfe063
-  Mantle: 35238ae6f2e2b2d474fa7b67fee82a59fea71915
+  JCore: a29e4b0ee54e1301446dc02d8e1c350404108b34
+  JPush: defaa108c38806f6efdcfaf4c416854d25fca8e5
+  Mantle: 4c0ed6ce47c96eccc4dc3bb071deb3def0e2c3be
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MiPushSDK: cd22d6430f8928a0920c60ff98de89ed5da146d9
-  MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
-  MOBFoundation: 37e2c100051fd710976b1f8d00643d28f31fcaca
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  MOBFoundation: 934ee1a43aed452d51942b416bc3dc4d0813ac82
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
-  Qiniu: 9d20cbf08a3bcf9d01869626f3c2a23a1b842f65
+  Qiniu: 227df98daf83303c3684bce92b8dbcf7689c59fe
   RDVTabBarController: 28a5c6546b9991cf2712d59947324c6b06603e14
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
-  RSKImageCropper: a446db0e8444a036b34f3c43db01b2373baa4b2a
-  SCLAlertView-Objective-C: 2bb9be204bffaf24762a0e33fe6ca9645819b3b7
+  RSKImageCropper: 1ac71e9a82e3f41eea3eedfff8eacb0d3821c9ec
+  SCLAlertView-Objective-C: 84f12f66d779dadad7f293e5e8b7697ba4254ee0
   SDAutoLayout: 8bf6b3bbc8b01f775d4defbb4fda2ace805461be
   SDWebImage: a72e880a8fe0f7fc31efe15aaed443c074d2a80c
   ShareSDK3: 75b57bab0cbe3119e281c7668eaad9d48adf3fde
@@ -213,10 +208,10 @@ SPEC CHECKSUMS:
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
   "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
   UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
-  Valet: 16d0537d70db79d9ba953b9060b5da4fb8004e51
+  Valet: 11ab0e318b7284888a81392e36136563b4af5deb
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: b20e4ded9d99eceef36902ed795d88a65609b69a
+PODFILE CHECKSUM: 53f3bbd5456f071b360ee79acf166bb10ee507d9
 
 COCOAPODS: 1.9.1
