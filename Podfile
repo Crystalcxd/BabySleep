@@ -41,8 +41,6 @@ pod 'GVUserDefaults'
 pod 'DateTools'
 pod 'Valet' # keychain
 pod 'pop'
-pod 'Fabric'
-pod 'Crashlytics'
 pod 'GTMBase64'
 pod 'SDAutoLayout'
 pod 'FMDB'
