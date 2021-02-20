@@ -204,7 +204,7 @@ DEPENDENCIES:
   - YYModel
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - AFNetworking
     - CircleProgressBar
     - CocoaAsyncSocket
@@ -308,6 +308,6 @@ SPEC CHECKSUMS:
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 01c01c238903458223a67ace1c700f89e03086a0
+PODFILE CHECKSUM: 0e637f8c40cc4db86114f28f29c50db9333b2761
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.1
