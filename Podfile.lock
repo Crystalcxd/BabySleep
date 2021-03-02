@@ -114,7 +114,7 @@ PODS:
   - nanopb/encode (1.30906.0)
   - pop (1.0.12)
   - PromisesObjC (1.2.12)
-  - Qiniu (8.1.2):
+  - Qiniu (8.2.0):
     - HappyDNS (~> 0.3.17)
   - RDVTabBarController (1.3.0)
   - RegexKitLite (4.0)
@@ -204,7 +204,7 @@ DEPENDENCIES:
   - YYModel
 
 SPEC REPOS:
-  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - CircleProgressBar
     - CocoaAsyncSocket
@@ -290,7 +290,7 @@ SPEC CHECKSUMS:
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
-  Qiniu: 227df98daf83303c3684bce92b8dbcf7689c59fe
+  Qiniu: 95e913e7ab91f6c4dff643164e8d66a7f79c5c5e
   RDVTabBarController: 28a5c6546b9991cf2712d59947324c6b06603e14
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
   RSKImageCropper: 1ac71e9a82e3f41eea3eedfff8eacb0d3821c9ec
@@ -308,6 +308,6 @@ SPEC CHECKSUMS:
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 0e637f8c40cc4db86114f28f29c50db9333b2761
+PODFILE CHECKSUM: 01c01c238903458223a67ace1c700f89e03086a0
 
 COCOAPODS: 1.10.1
