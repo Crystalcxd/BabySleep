@@ -122,7 +122,7 @@ PODS:
     - NerdyUI/Private
   - pop (1.0.12)
   - PromisesObjC (1.2.10)
-  - Qiniu (8.1.2):
+  - Qiniu (8.2.0):
     - HappyDNS (~> 0.3.17)
   - RDVTabBarController (1.3.0)
   - RegexKitLite (4.0)
@@ -196,7 +196,7 @@ DEPENDENCIES:
   - YYModel
 
 SPEC REPOS:
-  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - CircleProgressBar
     - DACircularProgress
@@ -278,7 +278,7 @@ SPEC CHECKSUMS:
   NerdyUI: ae4506046b544a5cdc0873a58c1ece61b29631d0
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
-  Qiniu: 227df98daf83303c3684bce92b8dbcf7689c59fe
+  Qiniu: 95e913e7ab91f6c4dff643164e8d66a7f79c5c5e
   RDVTabBarController: 28a5c6546b9991cf2712d59947324c6b06603e14
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
   RSKImageCropper: cde3c539d0bfb0226635637caa30087668c9bed7
@@ -294,6 +294,6 @@ SPEC CHECKSUMS:
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: df5d2cb9daa1d2c89ac8b31831f4f83686187c63
+PODFILE CHECKSUM: c0e977e15b06bc1430ade82759e6e91df9c5a6ef
 
 COCOAPODS: 1.10.1
