@@ -2523,6 +2523,7 @@
 		92084D5B7690611E29DE763477F98697 /* MTLModel+NSCoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MTLModel+NSCoding.m"; path = "Mantle/MTLModel+NSCoding.m"; sourceTree = "<group>"; };
 		925DEF0A9B5364A4542ACA32945D1D45 /* NSError+MTLModelException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+MTLModelException.m"; path = "Mantle/NSError+MTLModelException.m"; sourceTree = "<group>"; };
 		926332C604FB586B351F50A91EBE5A17 /* UIImageView+UIActivityIndicatorForSDWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageView+UIActivityIndicatorForSDWebImage.h"; sourceTree = "<group>"; };
+		9286ED369F773088910A9DB4D6B22120 /* libjcore-ios-2.6.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.6.0.a"; sourceTree = "<group>"; };
 		92B8DEC87DA0D10B77E71C8583613FC5 /* QNUpToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNUpToken.h; path = QiniuSDK/Storage/QNUpToken.h; sourceTree = "<group>"; };
 		92F4CF4E0FB23693544BC3134D978186 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
 		931E7BF48B2F978AF923EAFBEA91EDE9 /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = SDK/ShareSDK/Support/PlatformSDK/WeChatSDK/WXApiObject.h; sourceTree = "<group>"; };
@@ -2763,7 +2764,6 @@
 		C0F381639523EFC1182C15D360A770BE /* cct.nanopb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cct.nanopb.h; path = GoogleDataTransport/GDTCCTLibrary/Protogen/nanopb/cct.nanopb.h; sourceTree = "<group>"; };
 		C111DCD23C6146FD61BB3E6DFDA687B9 /* QNHosts.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNHosts.m; path = HappyDNS/Local/QNHosts.m; sourceTree = "<group>"; };
 		C1150B850D8D9E927CC58D83512E0EF3 /* POPAnimationEvent.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationEvent.mm; path = pop/POPAnimationEvent.mm; sourceTree = "<group>"; };
-		C143AE754DF02A578DE6A67FD84CB835 /* libjcore-ios-2.4.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.4.0.a"; sourceTree = "<group>"; };
 		C1E6E45958CB8D4CEBAEEE109285AD3F /* GBDeviceInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GBDeviceInfo.release.xcconfig; sourceTree = "<group>"; };
 		C1EC63E2656B54E7C14127E7C9BB7163 /* NSObject+MTLComparisonAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MTLComparisonAdditions.m"; path = "Mantle/NSObject+MTLComparisonAdditions.m"; sourceTree = "<group>"; };
 		C202B4F712363C7EC441A1A331E7F4E8 /* FIRCLSBinaryImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRCLSBinaryImage.h; path = Crashlytics/Crashlytics/Components/FIRCLSBinaryImage.h; sourceTree = "<group>"; };
@@ -3628,7 +3628,7 @@
 		1D25CDD62BFA693AE2790457D3C36162 /* JCore */ = {
 			isa = PBXGroup;
 			children = (
-				A63B2CF2C3A01E152E170FB4AC5F3FE7 /* Frameworks */,
+				48F423E024AE9DE45AAA0EAA3A450E55 /* Frameworks */,
 				E28D32F87980854D48FD1C9124C64871 /* Support Files */,
 			);
 			name = JCore;
@@ -4282,6 +4282,14 @@
 			);
 			name = GVUserDefaults;
 			path = GVUserDefaults;
+			sourceTree = "<group>";
+		};
+		48F423E024AE9DE45AAA0EAA3A450E55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9286ED369F773088910A9DB4D6B22120 /* libjcore-ios-2.6.0.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		4C1DF5D730D1A77C5483025701355833 /* DateTools */ = {
@@ -5176,14 +5184,6 @@
 			isa = PBXGroup;
 			children = (
 				99EC8B2F4FD64BAEA6D5B456D600384D /* ShareSDKConnector.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A63B2CF2C3A01E152E170FB4AC5F3FE7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C143AE754DF02A578DE6A67FD84CB835 /* libjcore-ios-2.4.0.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
