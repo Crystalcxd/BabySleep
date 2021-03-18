@@ -2356,6 +2356,7 @@
 		423B2E9B3CA0859F592D90110A72DD80 /* GULNetwork.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULNetwork.m; path = GoogleUtilities/Network/GULNetwork.m; sourceTree = "<group>"; };
 		424832B0580569DE4A465B853FC346B3 /* GoogleDataTransport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleDataTransport.debug.xcconfig; sourceTree = "<group>"; };
 		4258AA56D53862D0BA338E35ADFF8D89 /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
+		4289828DED366839CEA692D557EEC789 /* libjcore-ios-2.6.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.6.0.a"; sourceTree = "<group>"; };
 		429A4F057712B10664C91E9926AA3F33 /* FIRCLSFABAsyncOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRCLSFABAsyncOperation.h; path = Crashlytics/Shared/FIRCLSOperation/FIRCLSFABAsyncOperation.h; sourceTree = "<group>"; };
 		42EDCEEBB8483CF5FBFD62B5291D7FA1 /* QNLogUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNLogUtil.m; path = QiniuSDK/Utils/QNLogUtil.m; sourceTree = "<group>"; };
 		4311E83501229799E2095FEBA5BB4597 /* GDTCORUploadCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORUploadCoordinator.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCORUploadCoordinator.h; sourceTree = "<group>"; };
@@ -2497,7 +2498,6 @@
 		58DB737E6FA469D44A8D5ACE88B25781 /* SCLTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCLTextView.m; path = SCLAlertView/SCLTextView.m; sourceTree = "<group>"; };
 		5915E79A0198C25DAA23DA681F13C724 /* MJRefreshConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshConfig.h; path = MJRefresh/MJRefreshConfig.h; sourceTree = "<group>"; };
 		592EF670868D25F8D5CA1747896A2849 /* HMSegmentedControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HMSegmentedControl.m; path = HMSegmentedControl/HMSegmentedControl.m; sourceTree = "<group>"; };
-		59496A48F2F0627DA795DCF5FE92D7F5 /* libjcore-ios-2.4.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = "libjcore-ios-2.4.0.a"; sourceTree = "<group>"; };
 		59ADDFA561FF9F4FDBAD7DA594B38B59 /* PromisesObjC-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PromisesObjC-Info.plist"; sourceTree = "<group>"; };
 		59B0AE6980DE775422BAA497ECD210DD /* CircleProgressBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircleProgressBar.release.xcconfig; sourceTree = "<group>"; };
 		59ECCC2806734F18CEE8DB5F1ED1BDBE /* WebViewJavascriptBridge_JS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WebViewJavascriptBridge_JS.m; path = WebViewJavascriptBridge/WebViewJavascriptBridge_JS.m; sourceTree = "<group>"; };
@@ -3896,7 +3896,7 @@
 		058B713850347847878C7BF7747CA3C0 /* JCore */ = {
 			isa = PBXGroup;
 			children = (
-				4BC6752FC9C003BE3E544A1E41C2E7B6 /* Frameworks */,
+				24DC88405F39F4E1FD193DE60FA24A8D /* Frameworks */,
 				C5D18E24DE4EB47625297DA6B6929B00 /* Support Files */,
 			);
 			name = JCore;
@@ -4161,6 +4161,14 @@
 				8FEB8CF71C9DE504272BE31283462D94 /* Resources */,
 			);
 			name = Yixin;
+			sourceTree = "<group>";
+		};
+		24DC88405F39F4E1FD193DE60FA24A8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4289828DED366839CEA692D557EEC789 /* libjcore-ios-2.6.0.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		25BB02F5B087D88C28F576EEF3270534 /* CircleProgressBar */ = {
@@ -4769,14 +4777,6 @@
 			);
 			name = FirebaseInstallations;
 			path = FirebaseInstallations;
-			sourceTree = "<group>";
-		};
-		4BC6752FC9C003BE3E544A1E41C2E7B6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				59496A48F2F0627DA795DCF5FE92D7F5 /* libjcore-ios-2.4.0.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		4CDFBDB9A876BD335AE67F0205BB8D53 /* Resources */ = {
